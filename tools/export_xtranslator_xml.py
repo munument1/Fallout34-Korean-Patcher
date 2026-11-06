@@ -6,15 +6,18 @@ Source, Dest). Source/target are UTF-8. Repeated subrecord occurrences receive
 REC id (1-based) and idMax. Source CR is XML-escaped as &#13; to preserve CRLF.
 
 Two XMLs are generated per converted ESM:
-  * *_en_ko.xml: safe-to-review default; excludes *globally ambiguous English*
+  * *_en_ko.xml: string-only *review* dictionary; excludes *globally ambiguous English*
     that has multiple Korean translations in otherwise verified field plans.
   * *_CONTEXT_REVIEW.xml: context-sensitive assignments only; NEVER bulk
     import this XML with source-only matching.
 
-The record field bytes are reverified against the pinned installed ESM, but
-installed files are NEVER written. This is NOT an ESM builder and does not
-establish in-game reachability or context correctness. The generated XMLs
-are for xTranslator import/review, not directly usable runtime localization.
+The exporter does NOT know xTranslator's native sID for each record. Therefore
+these XML files have no sID and may be applied by text-to-text matching rather
+than precise record identity. The EDID and REC fields are descriptive, NOT
+proof that xTranslator will import by record ID. Do not mass-apply until tested
+on the exact target ESM in Fallout 4 workspace and reviewed in the GUI.
+The record field bytes are verified against the pinned installed ESM, but
+installed files are NEVER written. XML is not directly usable localization.
 """
 from __future__ import annotations
 
@@ -187,11 +190,13 @@ def extract(game: str, workdir: Path):
         "distinct_english_with_ambiguous_korean": len(ambiguous),
         "invalid_xml_rows_excluded": counter["xml_1_0_illegal_text_skipped"],
         "fallback_formid_edid_records": counter["fallback_bracket_formid_edid"],
+        "native_xtranslator_sid_available": False,
+        "xtranslator_matching_method": "potential_text_to_text_fallback_NOT_record_identified",
         "xml_sha256": {
             p.name: digest(p) for p in (safe, review)
         },
         "verified_source_plan_counts": dict(by_source),
-        "import_note": "Load the matching converted ESM in xTranslator Fallout4 mode. Use Import Translation -> XML; preview matches. Context-review XML MUST NOT be mass-imported by English string only. Data was not in-game QA tested. No installed ESM changed.",
+        "import_note": "CAUTION: no native xTranslator sID. This XML may match by English alone and MUST NOT be trusted as FormID-exact on import. Load Fallout34.esm or FalloutNV34.esm in the Fallout4 workspace, NOT original Fallout3.esm/FalloutNV.esm. Preview record correspondence; do not apply blindly. Context-review XML is manual-only. GUI/in-game QA pending.",
     }
     (workdir / f"{Path(plugin).stem}_XML_report.json").write_text(
         json.dumps(stat, ensure_ascii=False, indent=2) + "\n", encoding="utf8"
@@ -217,12 +222,19 @@ def run():
     notes = (
         "Fallout34 한국어판 — xTranslator XML 번역 가져오기\n"
         "=============================================\n"
+        "[주의] 이 XML은 xTranslator 고유 sID를 포함하지 않습니다.\n"
+        "       내보낸 xTranslator 원본 XML과 달리, 텍스트 기준 대조로 처리될 수 있습니다.\n"
+        "       XML의 EDID/REC가 있어도 원본 레코드가 정확히 매칭된다는 보장은 없습니다.\n"
+        "       적용 전 미리보기에서 문맥/레코드를 확인하고 무조건 일괄 적용하지 마세요.\n"
         "1. xTranslator를 Fallout 4 게임 모드로 실행하세요.\n"
         "2. XML의 Addon과 같은 이름의 Fallout34.esm 또는 FalloutNV34.esm을 엽니다.\n"
+        "   FalloutNV.esm (원본 뉴베가스)에는 이 XML을 적용하면 안 됩니다.\n"
         "3. 파일(File) -> 번역 가져오기(Import Translation) -> XML 파일로\n"
         "   해당 게임의 *_en_ko.xml을 하나씩 불러옵니다.\n"
-        "4. 가급적 레코드/FormID 참조 기반으로 가져오고, 적용 미리보기를 검사하세요.\n"
-        "   영어가 동일하다는 이유로 모든 문구를 무조건 덮어쓰면 안 됩니다.\n"
+        "4. 적용 미리보기의 원문/번역/게임 내 의미가 맞는지 확인하세요.\n"
+        "   이 XML만으로 레코드 ID와 문맥을 보장할 수 없기 때문에\n"
+        "   sID가 필요한 정확한 가져오기는 대상 ESM에서 xTranslator가 직접\n"
+        "   내보낸 XML 템플릿에 번역을 병합하는 별도 절차가 필요합니다.\n"
         "5. *_CONTEXT_REVIEW.xml은 같은 영문에 서로 다른 검증 번역이 존재하는\n"
         "   특수 항목입니다. 일괄 가져오지 말고 레코드별로 수동 확인하세요.\n"
         "   같은 이름의 *_CONTEXT_REVIEW.tsv에서 각 FormID를 확인할 수 있습니다.\n"
@@ -256,7 +268,7 @@ def run():
         "zip_sha256": digest(result_file),
         "files": [p.name for p in files],
         "games": manifest,
-        "warning": "XML syntax round-trip validated, not yet imported in xTranslator GUI or tested in game.",
+        "warning": "EXPERIMENTAL TEXT-ONLY XML: native xTranslator sID unavailable; may match only English strings, not record identity. Never import into FalloutNV.esm / Fallout3.esm or a non-Fallout4 workspace. XML syntax and ESM plan verified but GUI import/runtime untested.",
     }
     (args.output / "Fallout34_xTranslator_XML_manifest.json").write_text(
         json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf8"

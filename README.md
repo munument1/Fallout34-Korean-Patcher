@@ -6,6 +6,8 @@ Fallout34 v0.9.33의 폴아웃 3 본편 및 DLC 변환 결과물을 대상으로
 
 > **검증된 로컬 ESM 미리보기:** FO3와 FNV의 한국어 ESM 복사본을 별도로 생성해 모든 레코드·필드에 대한 독립 정적 검증을 통과했습니다. 그러나 **실제 게임에서 실행해 본 것은 아니므로 완역·정상 실행은 미확정**입니다. 설치된 원본 ESM 및 F드라이브 원본 사전은 수정하지 않습니다. ESM 바이너리는 게임 자산이므로 GitHub에 올리거나 재배포하지 않습니다.
 
+> **xTranslator XML 주의 (2026-11-06):** 생성한 XML은 실제 xTranslator 내보내기 파일의 고유 `sID`가 없으므로 프로그램에서 **영문 원문 기준의 문자열 매칭으로 처리될 수 있는 시험용 파일**입니다. FormID/EDID/REC를 기록했어도 실제 가져오기 시 그 정보로 안전하게 결합된다는 뜻이 아닙니다. **FalloutNV.esm / Fallout3.esm 같은 원본 게임 ESM에 가져오지 마세요.** 포팅된 `Fallout34.esm`, `FalloutNV34.esm`을 **Fallout4 작업 공간**에서 열어야 하며, 가져온 결과는 반드시 문맥 검수가 필요합니다. 이 XML에 대해서는 아직 xTranslator GUI에서 가져오기 성공 여부를 검증하지 못했습니다.
+
 ## 원문 자료
 
 - Fallout34 변환 ESM: `C:\Games\Steam\steamapps\common\Fallout 4\Fallout34_Work\fo3\staging\Data\Fallout34.esm`

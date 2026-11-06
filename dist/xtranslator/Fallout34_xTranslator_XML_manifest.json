@@ -1,8 +1,8 @@
 {
   "format": "xTranslator SSTXMLRessources XML v2",
   "zip_name": "Fallout34_FO3_FNV_xTranslator_Korean_XML.zip",
-  "zip_size_bytes": 10466331,
-  "zip_sha256": "92d476cc05086a6047fbbfc1321cb4f68a9bd22954fe5667fb983b4102ed2bc2",
+  "zip_size_bytes": 10466776,
+  "zip_sha256": "18dc1e4be417009a0775b790e3174bba8677e567db38aac60ae20ba4fa549f6f",
   "files": [
     "Fallout34_CONTEXT_REVIEW.tsv",
     "Fallout34_CONTEXT_REVIEW.xml",
@@ -25,6 +25,8 @@
       "distinct_english_with_ambiguous_korean": 26,
       "invalid_xml_rows_excluded": 0,
       "fallback_formid_edid_records": 70796,
+      "native_xtranslator_sid_available": false,
+      "xtranslator_matching_method": "potential_text_to_text_fallback_NOT_record_identified",
       "xml_sha256": {
         "Fallout34_en_ko.xml": "d0f6a98fb7c7fc5f91017ca7a1a9889e24a492d70e372db02ce275bf3aad7e68",
         "Fallout34_CONTEXT_REVIEW.xml": "7d65f784a4fca16dfc3839a730f874d87b5b97bbfac2f9eaac0b4d56e8e1f51e"
@@ -44,7 +46,7 @@
         "verified_plan_translation_memory_verified.jsonl.gz": 182,
         "native_sst_semantic_copy_verified.jsonl.gz": 20
       },
-      "import_note": "Load the matching converted ESM in xTranslator Fallout4 mode. Use Import Translation -> XML; preview matches. Context-review XML MUST NOT be mass-imported by English string only. Data was not in-game QA tested. No installed ESM changed."
+      "import_note": "CAUTION: no native xTranslator sID. This XML may match by English alone and MUST NOT be trusted as FormID-exact on import. Load Fallout34.esm or FalloutNV34.esm in the Fallout4 workspace, NOT original Fallout3.esm/FalloutNV.esm. Preview record correspondence; do not apply blindly. Context-review XML is manual-only. GUI/in-game QA pending."
     },
     {
       "game": "fnv",
@@ -56,6 +58,8 @@
       "distinct_english_with_ambiguous_korean": 75,
       "invalid_xml_rows_excluded": 0,
       "fallback_formid_edid_records": 150447,
+      "native_xtranslator_sid_available": false,
+      "xtranslator_matching_method": "potential_text_to_text_fallback_NOT_record_identified",
       "xml_sha256": {
         "FalloutNV34_en_ko.xml": "3e6c3cf1e65daab11472e2c57f38f522fb387ce0230ef03367eed7a41f7fa727",
         "FalloutNV34_CONTEXT_REVIEW.xml": "d4bf32a69f791aacec2a613c155eeff98ab2c30206abcb636daa473c058b887d"
@@ -76,8 +80,8 @@
         "native_sst_semantic_copy_verified.jsonl.gz": 19,
         "punctuation_normalized_verified.jsonl.gz": 8
       },
-      "import_note": "Load the matching converted ESM in xTranslator Fallout4 mode. Use Import Translation -> XML; preview matches. Context-review XML MUST NOT be mass-imported by English string only. Data was not in-game QA tested. No installed ESM changed."
+      "import_note": "CAUTION: no native xTranslator sID. This XML may match by English alone and MUST NOT be trusted as FormID-exact on import. Load Fallout34.esm or FalloutNV34.esm in the Fallout4 workspace, NOT original Fallout3.esm/FalloutNV.esm. Preview record correspondence; do not apply blindly. Context-review XML is manual-only. GUI/in-game QA pending."
     }
   ],
-  "warning": "XML syntax round-trip validated, not yet imported in xTranslator GUI or tested in game."
+  "warning": "EXPERIMENTAL TEXT-ONLY XML: native xTranslator sID unavailable; may match only English strings, not record identity. Never import into FalloutNV.esm / Fallout3.esm or a non-Fallout4 workspace. XML syntax and ESM plan verified but GUI import/runtime untested."
 }
