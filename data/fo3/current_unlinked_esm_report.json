@@ -1,34 +1,38 @@
 {
   "game": "fo3",
   "esm_sha256": "be0e7f25d0a28c672de2c12afbbf402bff0bb202037c231930d4649afd138603",
-  "translation_plan_rows_total": 69824,
+  "translation_plan_rows_total": 72192,
   "rows_by_plan": {
     "indexed_patch_plan_candidates.jsonl.gz": 48241,
     "indexed_patch_plan_v2_strict_extra.jsonl.gz": 20301,
     "xtranslator_verified_visible_extra.jsonl.gz": 6,
     "manual_visible_translation_verified.jsonl.gz": 254,
-    "sibling_info_field_verified.jsonl.gz": 1022
+    "sibling_info_field_verified.jsonl.gz": 1022,
+    "import_manifest_migrated_verified.jsonl.gz": 2,
+    "cross_field_long_text_verified.jsonl.gz": 2366
   },
   "xtranslator_current_unlinked_occurrence_states": {
-    "unlinked_missing_translation_match": 12623,
-    "unlinked_gameplay_name_or_description_candidate": 2337,
-    "unlinked_existing_korean_needs_context": 34675,
+    "unlinked_missing_translation_match": 12612,
+    "unlinked_gameplay_name_or_description_candidate": 2336,
+    "unlinked_existing_korean_needs_context": 32318,
     "unlinked_editor_or_special_field_needs_runtime_check": 2032,
-    "unlinked_direct_screen_text_candidate": 40179,
+    "unlinked_direct_screen_text_candidate": 37457,
     "unlinked_other_field_needs_runtime_check": 59,
-    "resolved_by_new_plan": 1282,
+    "resolved_by_new_plan": 3650,
     "unlinked_non_content_whitespace": 2659,
+    "unlinked_external_fallout4_master_record": 355,
     "unlinked_non_content_symbols": 18,
     "unlinked_conditional_field_needs_procedure_review": 14
   },
   "unlinked_distinct_type_field_english_by_class": {
-    "gameplay_name_or_description_candidate": 1856,
-    "non_content_whitespace": 4,
+    "gameplay_name_or_description_candidate": 1855,
     "editor_or_special_field_needs_runtime_check": 1090,
-    "non_content_symbols": 1,
-    "direct_screen_text_candidate": 18779,
     "other_field_needs_runtime_check": 53,
-    "conditional_field_needs_procedure_review": 6
+    "non_content_whitespace": 4,
+    "non_content_symbols": 1,
+    "conditional_field_needs_procedure_review": 6,
+    "direct_screen_text_candidate": 16929,
+    "external_fallout4_master_record": 355
   },
   "by_type_field_and_current_state": {
     "ACTI/FULL": {
@@ -89,7 +93,7 @@
     },
     "INFO/NAM1": {
       "missing_translation_match:direct_screen_text_candidate": 376,
-      "existing_korean_needs_context:direct_screen_text_candidate": 11089,
+      "existing_korean_needs_context:direct_screen_text_candidate": 8745,
       "missing_translation_match:non_content_symbols": 18,
       "missing_translation_match:non_content_whitespace": 2640
     },
@@ -102,7 +106,8 @@
       "existing_korean_needs_context:gameplay_name_or_description_candidate": 4
     },
     "LSCR/DESC": {
-      "missing_translation_match:direct_screen_text_candidate": 355
+      "missing_translation_match:direct_screen_text_candidate": 1,
+      "missing_translation_match:external_fallout4_master_record": 354
     },
     "MESG/DESC": {
       "missing_translation_match:direct_screen_text_candidate": 545
@@ -149,7 +154,7 @@
     },
     "QUST/CNAM": {
       "missing_translation_match:direct_screen_text_candidate": 220,
-      "existing_korean_needs_context:direct_screen_text_candidate": 4,
+      "existing_korean_needs_context:direct_screen_text_candidate": 2,
       "missing_translation_match:non_content_whitespace": 14
     },
     "QUST/FULL": {
@@ -175,12 +180,12 @@
       "missing_translation_match:non_content_whitespace": 4
     },
     "TERM/FULL": {
-      "existing_korean_needs_context:direct_screen_text_candidate": 386,
+      "existing_korean_needs_context:direct_screen_text_candidate": 375,
       "missing_translation_match:direct_screen_text_candidate": 577
     },
     "TERM/ITXT": {
       "existing_korean_needs_context:direct_screen_text_candidate": 331,
-      "missing_translation_match:direct_screen_text_candidate": 1148
+      "missing_translation_match:direct_screen_text_candidate": 1137
     },
     "TERM/RNAM": {
       "missing_translation_match:direct_screen_text_candidate": 97,
@@ -197,7 +202,8 @@
       "missing_translation_match:gameplay_name_or_description_candidate": 21
     },
     "WRLD/FULL": {
-      "missing_translation_match:gameplay_name_or_description_candidate": 21,
+      "missing_translation_match:external_fallout4_master_record": 1,
+      "missing_translation_match:gameplay_name_or_description_candidate": 20,
       "existing_korean_needs_context:gameplay_name_or_description_candidate": 1
     }
   },

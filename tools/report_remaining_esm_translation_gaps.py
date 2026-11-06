@@ -21,6 +21,16 @@ PLANS = (
     "manual_visible_translation_verified.jsonl.gz",
     "sibling_info_field_verified.jsonl.gz",
 )
+MIGRATED_PLANS = {
+    "fo3": (
+        "import_manifest_migrated_verified.jsonl.gz",
+        "cross_field_long_text_verified.jsonl.gz",
+    ),
+    "fnv": (
+        "import_manifest_migrated_verified.jsonl.gz",
+        "fnv_cross_field_long_text_verified.jsonl.gz",
+    ),
+}
 DIRECT = {
     ("INFO", "NAM1"), ("INFO", "RNAM"),
     ("TERM", "ITXT"), ("TERM", "BTXT"), ("TERM", "UNAM"),
@@ -69,6 +79,11 @@ def digest(path):
 
 
 def category(row):
+    # Fallout34.esm and FalloutNV34.esm reference their Fallout4.esm
+    # master with load-order index 00. These are NOT FO3/FNV strings to
+    # retranslate, even when xTranslator includes them as English text.
+    if int(row["formid"], 16) >> 24 == 0:
+        return "external_fallout4_master_record"
     text = row["english"]
     if not text.strip():
         return "non_content_whitespace"
@@ -95,7 +110,7 @@ def main():
             raise RuntimeError(f"{game}: installed ESM not version pinned")
         planned = {}
         per_plan = Counter()
-        for name in PLANS:
+        for name in (*PLANS, *MIGRATED_PLANS[game]):
             for r in load(d / name):
                 k = key(r)
                 value = (r["english"], r["korean"])

@@ -21,6 +21,10 @@ EXTRAS = [
     "manual_visible_translation_verified.jsonl.gz",
     "sibling_info_field_verified.jsonl.gz",
 ]
+MIGRATED_EXTRAS = {
+    "fo3": ("import_manifest_migrated_verified.jsonl.gz", "cross_field_long_text_verified.jsonl.gz"),
+    "fnv": ("import_manifest_migrated_verified.jsonl.gz", "fnv_cross_field_long_text_verified.jsonl.gz"),
+}
 TOKEN = re.compile(
     r"%[A-Za-z_][A-Za-z0-9_]*%|(?<!%)%(?:\d+\$)?[-+.#0-9]*[diufsg]"
     r"|&[A-Za-z_][A-Za-z0-9_]*;|<Global=[^>]{1,120}>"
@@ -46,7 +50,9 @@ def verify(game):
     expected = json.loads((folder / "indexed_plan_report.json").read_text("utf8"))["esm_sha256"]
     if sha256(esm) != expected:
         raise ValueError(f"{game}: installed ESM no longer matches pinned revision")
-    assignments, plan_counts = load_assignments(folder, [folder / x for x in EXTRAS])
+    assignments, plan_counts = load_assignments(
+        folder, [folder / x for x in (*EXTRAS, *MIGRATED_EXTRAS[game])]
+    )
     by_record = defaultdict(dict)
     for (fid, typ, field, idx), (english, korean) in assignments.items():
         if Counter(TOKEN.findall(english)) != Counter(TOKEN.findall(korean)):

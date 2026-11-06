@@ -1,0 +1,37 @@
+{
+  "game": "fo3",
+  "scope": "long >=40 character P0 ESM screen fields, current residuals with no plan",
+  "target_esm_sha256": "be0e7f25d0a28c672de2c12afbbf402bff0bb202037c231930d4649afd138603",
+  "original_source_esm_hashes": {
+    "fallout3.esm": "d9fb0a33af495ddb43992b96ea74f2741b123fefdb1fcdcea28096f7649b0d06",
+    "anchorage.esm": "1abf286336e585cc2898086d03d0933c1b8e9c6dcce45b42d7faf3835f7b7f56",
+    "thepitt.esm": "cf747f11aee781b611e688c965cb363e82e952ac4d821d46c13b9f4ca042f724",
+    "brokensteel.esm": "9ee6b6cca86ca9e7e9ad5dee3842ece4831a6de1cc4b97d0fe80bd282e42bd6f",
+    "pointlookout.esm": "56bd9366ec97b2d48b2ce2fce00fcbb7372c0b0df9ffaad8716af6d1b1e926d7",
+    "zeta.esm": "e34bbf1123603b86696f4730cdfabd06b4ef3abc1e7aa1d5acb6c851202bed05"
+  },
+  "original_korean_sst_hashes": {
+    "fallout3_en_ko.sst": "79b5a65b6e6236a03a9b603923a014f3b4b8d54244ccc7de1d5e3c71b8b57c1c",
+    "anchorage_en_ko.sst": "2cd6dd8eb20a33445f081b40e4dd979293657d1b399e28c22ea5f079ea6a3305",
+    "thepitt_en_ko.sst": "7c4cecd3082f28f6f2bf7fcde6134239d565b0799e46de77dd9521e99c0faad6",
+    "brokensteel_en_ko.sst": "3772604863b5b2354a28e0ee3d504e9f6d068bb2ddaee1dd4c83396d3f2d0a71",
+    "pointlookout_en_ko.sst": "a82f075536f45cea75ba247cea315803d4e096da814952cf9319802210f18af7",
+    "zeta_en_ko.sst": "842c042f9b530401b39e3e0f5b8b51c4f850523e79b94a15e29d2b4bd6c681c5"
+  },
+  "potential_source_lines": 4022,
+  "remaining_fields_checked": 5857,
+  "new_text_assignments_verified": 2366,
+  "classes": {
+    "original_field_untranslated_in_sst": 3446,
+    "multiple_source_records_or_fields": 42,
+    "unique_original_text_field_sst_verified": 2366,
+    "no_original_source_line": 3
+  },
+  "source_to_target_field_migrations": {
+    "INFO/RNAM -> INFO/NAM1": 1753,
+    "DIAL/FULL -> INFO/NAM1": 591,
+    "NOTE/FULL -> TERM/FULL": 11,
+    "NOTE/FULL -> TERM/ITXT": 11
+  },
+  "warning": "Cross-field text-only high-confidence provenance, not an exact FormID converter mapping. Source strings are original-unique, but actual gameplay context and speaker still need review. No ESM or patch emitted."
+}
