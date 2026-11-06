@@ -1,0 +1,1519 @@
+{
+  "game": "fo3",
+  "definitions_path": "F:\\번역\\프로그램\\xTranslator\\Data\\Fallout4\\_recorddefs.txt",
+  "definitions_sha256": "19c4df8a5db362783c36dc2b8fc0118a268680d7890421668bf26d561f8f28c6",
+  "definition_rule_count": 38,
+  "esm_sha256": "be0e7f25d0a28c672de2c12afbbf402bff0bb202037c231930d4649afd138603",
+  "source_size": 354912705,
+  "counts": {
+    "xtranslator_field_occurrences": 121442,
+    "not_decoded_as_plain_text": 4320,
+    "xtranslator_decoded_text_occurrences": 117122,
+    "missing_translation_match": 12883,
+    "existing_korean_needs_context": 35697,
+    "planned_existing": 48241,
+    "planned_strict": 20301
+  },
+  "by_record_field": {
+    "ACTI/FULL": {
+      "planned_existing": 567,
+      "missing_translation_match": 63
+    },
+    "ALCH/DESC": {
+      "not_decoded": 42,
+      "missing_translation_match": 1
+    },
+    "ALCH/DNAM": {
+      "not_decoded": 43
+    },
+    "ALCH/FULL": {
+      "missing_translation_match": 31,
+      "planned_existing": 12
+    },
+    "AMMO/DESC": {
+      "not_decoded": 20
+    },
+    "AMMO/FULL": {
+      "missing_translation_match": 10,
+      "planned_existing": 10
+    },
+    "AMMO/ONAM": {
+      "missing_translation_match": 11,
+      "planned_existing": 9
+    },
+    "ARMO/DESC": {
+      "not_decoded": 353
+    },
+    "ARMO/FULL": {
+      "missing_translation_match": 212,
+      "planned_existing": 127,
+      "existing_korean_needs_context": 3
+    },
+    "AVIF/DESC": {
+      "not_decoded": 33
+    },
+    "AVIF/FULL": {
+      "missing_translation_match": 22
+    },
+    "BOOK/CNAM": {
+      "not_decoded": 28
+    },
+    "BOOK/DESC": {
+      "missing_translation_match": 16,
+      "not_decoded": 1,
+      "planned_existing": 11
+    },
+    "BOOK/FULL": {
+      "missing_translation_match": 18,
+      "existing_korean_needs_context": 1,
+      "planned_existing": 2
+    },
+    "CELL/FULL": {
+      "planned_existing": 597,
+      "missing_translation_match": 113,
+      "existing_korean_needs_context": 4
+    },
+    "CONT/FULL": {
+      "planned_existing": 608,
+      "missing_translation_match": 135,
+      "existing_korean_needs_context": 50
+    },
+    "DOOR/FULL": {
+      "planned_existing": 407,
+      "missing_translation_match": 13
+    },
+    "ENCH/FULL": {
+      "missing_translation_match": 84,
+      "not_decoded": 6
+    },
+    "EXPL/FULL": {
+      "planned_existing": 89,
+      "missing_translation_match": 40
+    },
+    "FACT/FULL": {
+      "missing_translation_match": 183,
+      "existing_korean_needs_context": 15,
+      "planned_existing": 16
+    },
+    "FURN/FULL": {
+      "planned_existing": 174,
+      "missing_translation_match": 54
+    },
+    "GMST/DATA": {
+      "not_decoded": 5
+    },
+    "HAZD/FULL": {
+      "missing_translation_match": 219
+    },
+    "INFO/NAM1": {
+      "planned_existing": 37726,
+      "missing_translation_match": 3034,
+      "existing_korean_needs_context": 11089,
+      "planned_strict": 1,
+      "not_decoded": 313
+    },
+    "INFO/RNAM": {
+      "existing_korean_needs_context": 22641,
+      "planned_strict": 20300,
+      "missing_translation_match": 40
+    },
+    "KEYM/FULL": {
+      "missing_translation_match": 162,
+      "planned_existing": 23,
+      "existing_korean_needs_context": 4
+    },
+    "LSCR/DESC": {
+      "planned_existing": 174,
+      "missing_translation_match": 355
+    },
+    "MESG/DESC": {
+      "missing_translation_match": 550,
+      "not_decoded": 35,
+      "planned_existing": 155
+    },
+    "MESG/FULL": {
+      "missing_translation_match": 168,
+      "planned_existing": 110
+    },
+    "MESG/ITXT": {
+      "planned_existing": 143,
+      "missing_translation_match": 197,
+      "existing_korean_needs_context": 4
+    },
+    "MGEF/DNAM": {
+      "not_decoded": 121
+    },
+    "MGEF/FULL": {
+      "existing_korean_needs_context": 14,
+      "missing_translation_match": 82,
+      "planned_existing": 25
+    },
+    "MISC/FULL": {
+      "missing_translation_match": 663,
+      "existing_korean_needs_context": 23,
+      "planned_existing": 54
+    },
+    "MSTT/FULL": {
+      "missing_translation_match": 8,
+      "planned_existing": 16
+    },
+    "NOTE/FULL": {
+      "missing_translation_match": 574,
+      "planned_existing": 486,
+      "existing_korean_needs_context": 24
+    },
+    "NPC_/FULL": {
+      "planned_existing": 2634,
+      "missing_translation_match": 292,
+      "existing_korean_needs_context": 12,
+      "not_decoded": 1634
+    },
+    "OMOD/DESC": {
+      "not_decoded": 64
+    },
+    "PERK/DESC": {
+      "not_decoded": 12,
+      "missing_translation_match": 88,
+      "planned_existing": 53,
+      "existing_korean_needs_context": 1
+    },
+    "PERK/EPFD": {
+      "missing_translation_match": 14,
+      "not_decoded": 38
+    },
+    "PERK/FULL": {
+      "missing_translation_match": 123,
+      "planned_existing": 30,
+      "existing_korean_needs_context": 1
+    },
+    "PROJ/FULL": {
+      "planned_existing": 62,
+      "missing_translation_match": 17
+    },
+    "QUST/CNAM": {
+      "planned_existing": 280,
+      "missing_translation_match": 234,
+      "existing_korean_needs_context": 4
+    },
+    "QUST/FULL": {
+      "missing_translation_match": 194
+    },
+    "QUST/NNAM": {
+      "planned_existing": 467,
+      "not_decoded": 13,
+      "missing_translation_match": 45
+    },
+    "RACE/DESC": {
+      "not_decoded": 5
+    },
+    "RACE/FULL": {
+      "not_decoded": 5
+    },
+    "REFR/FULL": {
+      "missing_translation_match": 44,
+      "planned_existing": 226
+    },
+    "SPEL/DESC": {
+      "not_decoded": 327
+    },
+    "SPEL/FULL": {
+      "missing_translation_match": 252,
+      "planned_existing": 53,
+      "existing_korean_needs_context": 2
+    },
+    "TACT/FULL": {
+      "existing_korean_needs_context": 13,
+      "missing_translation_match": 26,
+      "planned_existing": 37
+    },
+    "TERM/BTXT": {
+      "planned_existing": 317,
+      "existing_korean_needs_context": 107,
+      "missing_translation_match": 958
+    },
+    "TERM/FULL": {
+      "planned_existing": 426,
+      "existing_korean_needs_context": 386,
+      "missing_translation_match": 610
+    },
+    "TERM/ITXT": {
+      "planned_existing": 1265,
+      "existing_korean_needs_context": 331,
+      "missing_translation_match": 1179,
+      "not_decoded": 2
+    },
+    "TERM/RNAM": {
+      "planned_existing": 274,
+      "missing_translation_match": 274
+    },
+    "TERM/UNAM": {
+      "planned_existing": 295,
+      "existing_korean_needs_context": 967,
+      "missing_translation_match": 975,
+      "not_decoded": 4
+    },
+    "TERM/WNAM": {
+      "missing_translation_match": 458,
+      "not_decoded": 957
+    },
+    "WEAP/DESC": {
+      "not_decoded": 259
+    },
+    "WEAP/FULL": {
+      "planned_existing": 238,
+      "missing_translation_match": 21
+    },
+    "WRLD/FULL": {
+      "missing_translation_match": 21,
+      "planned_existing": 43,
+      "existing_korean_needs_context": 1
+    }
+  },
+  "new_fields_not_in_old_handmade_scanner": {
+    "TERM/WNAM": 1415,
+    "TERM/RNAM": 548,
+    "QUST/NNAM": 525,
+    "REFR/FULL": 270,
+    "HAZD/FULL": 219,
+    "ENCH/FULL": 90,
+    "PROJ/FULL": 79,
+    "PERK/EPFD": 52,
+    "ALCH/DNAM": 43,
+    "AVIF/DESC": 33,
+    "MSTT/FULL": 24,
+    "AVIF/FULL": 22,
+    "AMMO/DESC": 20,
+    "AMMO/ONAM": 20,
+    "GMST/DATA": 5,
+    "RACE/FULL": 5,
+    "RACE/DESC": 5
+  },
+  "unmatched_occurrences_by_priority": {
+    "P1": 2662,
+    "P0": 9879,
+    "P2": 342
+  },
+  "missing_distinct_text_by_field_and_priority": [
+    {
+      "type": "TERM",
+      "field": "ITXT",
+      "priority": "P0",
+      "distinct_english": 918
+    },
+    {
+      "type": "TERM",
+      "field": "BTXT",
+      "priority": "P0",
+      "distinct_english": 757
+    },
+    {
+      "type": "MISC",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 581
+    },
+    {
+      "type": "MESG",
+      "field": "DESC",
+      "priority": "P0",
+      "distinct_english": 534
+    },
+    {
+      "type": "TERM",
+      "field": "FULL",
+      "priority": "P0",
+      "distinct_english": 518
+    },
+    {
+      "type": "NOTE",
+      "field": "FULL",
+      "priority": "P0",
+      "distinct_english": 488
+    },
+    {
+      "type": "TERM",
+      "field": "UNAM",
+      "priority": "P0",
+      "distinct_english": 469
+    },
+    {
+      "type": "INFO",
+      "field": "NAM1",
+      "priority": "P0",
+      "distinct_english": 362
+    },
+    {
+      "type": "LSCR",
+      "field": "DESC",
+      "priority": "P0",
+      "distinct_english": 355
+    },
+    {
+      "type": "QUST",
+      "field": "CNAM",
+      "priority": "P0",
+      "distinct_english": 220
+    },
+    {
+      "type": "QUST",
+      "field": "FULL",
+      "priority": "P0",
+      "distinct_english": 191
+    },
+    {
+      "type": "ARMO",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 188
+    },
+    {
+      "type": "FACT",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 174
+    },
+    {
+      "type": "KEYM",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 161
+    },
+    {
+      "type": "MESG",
+      "field": "ITXT",
+      "priority": "P0",
+      "distinct_english": 158
+    },
+    {
+      "type": "NPC_",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 136
+    },
+    {
+      "type": "SPEL",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 132
+    },
+    {
+      "type": "MESG",
+      "field": "FULL",
+      "priority": "P0",
+      "distinct_english": 116
+    },
+    {
+      "type": "PERK",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 107
+    },
+    {
+      "type": "CONT",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 83
+    },
+    {
+      "type": "TERM",
+      "field": "RNAM",
+      "priority": "P0",
+      "distinct_english": 78
+    },
+    {
+      "type": "CELL",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 76
+    },
+    {
+      "type": "ENCH",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 74
+    },
+    {
+      "type": "PERK",
+      "field": "DESC",
+      "priority": "P1",
+      "distinct_english": 74
+    },
+    {
+      "type": "MGEF",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 62
+    },
+    {
+      "type": "ACTI",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 61
+    },
+    {
+      "type": "REFR",
+      "field": "FULL",
+      "priority": "P2",
+      "distinct_english": 43
+    },
+    {
+      "type": "ALCH",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 30
+    },
+    {
+      "type": "EXPL",
+      "field": "FULL",
+      "priority": "P2",
+      "distinct_english": 27
+    },
+    {
+      "type": "QUST",
+      "field": "NNAM",
+      "priority": "P0",
+      "distinct_english": 23
+    },
+    {
+      "type": "AVIF",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 22
+    },
+    {
+      "type": "WRLD",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 21
+    },
+    {
+      "type": "INFO",
+      "field": "RNAM",
+      "priority": "P0",
+      "distinct_english": 20
+    },
+    {
+      "type": "TACT",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 19
+    },
+    {
+      "type": "WEAP",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 19
+    },
+    {
+      "type": "BOOK",
+      "field": "FULL",
+      "priority": "P0",
+      "distinct_english": 17
+    },
+    {
+      "type": "BOOK",
+      "field": "DESC",
+      "priority": "P0",
+      "distinct_english": 16
+    },
+    {
+      "type": "FURN",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 15
+    },
+    {
+      "type": "PROJ",
+      "field": "FULL",
+      "priority": "P2",
+      "distinct_english": 13
+    },
+    {
+      "type": "DOOR",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 10
+    },
+    {
+      "type": "TERM",
+      "field": "WNAM",
+      "priority": "P0",
+      "distinct_english": 10
+    },
+    {
+      "type": "AMMO",
+      "field": "ONAM",
+      "priority": "P1",
+      "distinct_english": 9
+    },
+    {
+      "type": "MSTT",
+      "field": "FULL",
+      "priority": "P2",
+      "distinct_english": 8
+    },
+    {
+      "type": "AMMO",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 8
+    },
+    {
+      "type": "PERK",
+      "field": "EPFD",
+      "priority": "P2",
+      "distinct_english": 6
+    },
+    {
+      "type": "ALCH",
+      "field": "DESC",
+      "priority": "P1",
+      "distinct_english": 1
+    },
+    {
+      "type": "HAZD",
+      "field": "FULL",
+      "priority": "P2",
+      "distinct_english": 1
+    }
+  ],
+  "samples": {
+    "FACT/FULL/missing_translation_match": [
+      {
+        "id": "0107E635",
+        "english": "MQ07 Captured Lamplighter Faction"
+      },
+      {
+        "id": "0107E0B5",
+        "english": "Enemy faction to Vault 101 Security"
+      },
+      {
+        "id": "0107C722",
+        "english": "Vance and Holly's Faction"
+      }
+    ],
+    "FACT/FULL/existing_korean_needs_context": [
+      {
+        "id": "0107B81A",
+        "english": "Capital Building Talon Company"
+      },
+      {
+        "id": "0109189D",
+        "english": "Bloatfly Faction"
+      },
+      {
+        "id": "0109070E",
+        "english": "Doctor Li's Lab Staff"
+      }
+    ],
+    "MGEF/FULL/existing_korean_needs_context": [
+      {
+        "id": "0105E0CC",
+        "english": "MS13RemoveCollarEffect"
+      },
+      {
+        "id": "01051DEE",
+        "english": "MS14 Med-X Withdrawal"
+      },
+      {
+        "id": "010C0546",
+        "english": "GNR Boradcast Effect"
+      }
+    ],
+    "MGEF/FULL/missing_translation_match": [
+      {
+        "id": "010770C7",
+        "english": "Damage +10%"
+      },
+      {
+        "id": "010679F4",
+        "english": "Damage +25%"
+      },
+      {
+        "id": "0101DEA7",
+        "english": "VictoryRifleKnockdownEffect"
+      }
+    ],
+    "ENCH/FULL/missing_translation_match": [
+      {
+        "id": "019D6522",
+        "english": "Ledoux's Hockey Mask"
+      },
+      {
+        "id": "0197F638",
+        "english": "Three Dog's Head Wrap"
+      },
+      {
+        "id": "01E04552",
+        "english": "Linden's Power Armor"
+      }
+    ],
+    "SPEL/FULL/missing_translation_match": [
+      {
+        "id": "0107E474",
+        "english": "Stealth Boy Invis Spell"
+      },
+      {
+        "id": "0107D4F3",
+        "english": "Poison Immunity"
+      },
+      {
+        "id": "0107D4F2",
+        "english": "RL3 Survive"
+      }
+    ],
+    "SPEL/FULL/existing_korean_needs_context": [
+      {
+        "id": "0106F592",
+        "english": "Better Rivet City Prices"
+      },
+      {
+        "id": "01032DEE",
+        "english": "Minor Rad Poison."
+      }
+    ],
+    "ACTI/FULL/missing_translation_match": [
+      {
+        "id": "010A6AC9",
+        "english": "Console"
+      },
+      {
+        "id": "010842B9",
+        "english": "Radio Signal Kilo Bravo"
+      },
+      {
+        "id": "0109D422",
+        "english": "4"
+      }
+    ],
+    "TACT/FULL/existing_korean_needs_context": [
+      {
+        "id": "0107E1DF",
+        "english": "Loudspeaker"
+      },
+      {
+        "id": "0107DDCE",
+        "english": "President Eden"
+      },
+      {
+        "id": "01B44288",
+        "english": "President Eden"
+      }
+    ],
+    "TACT/FULL/missing_translation_match": [
+      {
+        "id": "010CA77A",
+        "english": "Intercom"
+      },
+      {
+        "id": "010C4991",
+        "english": "House Radio for Jukebox"
+      },
+      {
+        "id": "0103E930",
+        "english": "Radio Signal Papa November"
+      }
+    ],
+    "ARMO/FULL/missing_translation_match": [
+      {
+        "id": "0107C109",
+        "english": "ChildBlastoffHelmet"
+      },
+      {
+        "id": "01074952",
+        "english": "Wasteland Scout Hat"
+      },
+      {
+        "id": "01074950",
+        "english": "Ragamuffin Tophat"
+      }
+    ],
+    "ARMO/FULL/existing_korean_needs_context": [
+      {
+        "id": "010C111A",
+        "english": "Makeshift Gas Mask"
+      },
+      {
+        "id": "01034105",
+        "english": "Ranger Battle Helmet"
+      },
+      {
+        "id": "010340EF",
+        "english": "Vault 112 Jumpsuit"
+      }
+    ],
+    "BOOK/FULL/missing_translation_match": [
+      {
+        "id": "010C5634",
+        "english": "Wasteland Survival Guide"
+      },
+      {
+        "id": "010BACFE",
+        "english": "Paradise Lost"
+      },
+      {
+        "id": "0106A80C",
+        "english": "Duck and Cover!"
+      }
+    ],
+    "BOOK/DESC/missing_translation_match": [
+      {
+        "id": "010C5634",
+        "english": "Wasteland Survival Guide"
+      },
+      {
+        "id": "010BACFE",
+        "english": "Paradise Lost"
+      },
+      {
+        "id": "0106A80C",
+        "english": "Duck and Cover!"
+      }
+    ],
+    "BOOK/FULL/existing_korean_needs_context": [
+      {
+        "id": "010AB2EF",
+        "english": "You're SPECIAL!"
+      }
+    ],
+    "CONT/FULL/missing_translation_match": [
+      {
+        "id": "0107B46B",
+        "english": "Chem Supplies"
+      },
+      {
+        "id": "010615B2",
+        "english": "Nuka-Cola fridge"
+      },
+      {
+        "id": "01073EB8",
+        "english": "Restoration Supplies"
+      }
+    ],
+    "CONT/FULL/existing_korean_needs_context": [
+      {
+        "id": "0107087A",
+        "english": "Sword Cabinet"
+      },
+      {
+        "id": "0106DDD3",
+        "english": "Dashwood's Safe"
+      },
+      {
+        "id": "0106141C",
+        "english": "Mirelurk Spawning Pod"
+      }
+    ],
+    "DOOR/FULL/missing_translation_match": [
+      {
+        "id": "01018486",
+        "english": "Stall Door"
+      },
+      {
+        "id": "01079F0D",
+        "english": "Ant Tunnel"
+      },
+      {
+        "id": "010463CD",
+        "english": "Garage Door"
+      }
+    ],
+    "MISC/FULL/missing_translation_match": [
+      {
+        "id": "0105A795",
+        "english": "Wasteland Survival Guide"
+      },
+      {
+        "id": "01070CD4",
+        "english": "Donovan's Wrench"
+      },
+      {
+        "id": "0106835F",
+        "english": "Sheet Music Book"
+      }
+    ],
+    "MISC/FULL/existing_korean_needs_context": [
+      {
+        "id": "010C7AF0",
+        "english": "House: Love Machine Theme"
+      },
+      {
+        "id": "010347DE",
+        "english": "Experimental Rho ID"
+      },
+      {
+        "id": "010033FF",
+        "english": "Soil Stradivarius"
+      }
+    ],
+    "MSTT/FULL/missing_translation_match": [
+      {
+        "id": "010C858A",
+        "english": "Coffee Mug"
+      },
+      {
+        "id": "010C8589",
+        "english": "Drinking Glass"
+      },
+      {
+        "id": "010C8588",
+        "english": "Glass Pitcher"
+      }
+    ],
+    "FURN/FULL/missing_translation_match": [
+      {
+        "id": "01056E98",
+        "english": "Makeshift Bedding"
+      },
+      {
+        "id": "01056AB3",
+        "english": "Makeshift Bedding"
+      },
+      {
+        "id": "0105A731",
+        "english": "Log"
+      }
+    ],
+    "WEAP/FULL/missing_translation_match": [
+      {
+        "id": "0105DEEE",
+        "english": "SatcomNuclearStrike"
+      },
+      {
+        "id": "0103E5E2",
+        "english": "Vertibird Bomb Gun"
+      },
+      {
+        "id": "010B8793",
+        "english": "Acid Spit"
+      }
+    ],
+    "AMMO/FULL/missing_translation_match": [
+      {
+        "id": "010615AF",
+        "english": "Electron Charge Pack"
+      },
+      {
+        "id": "01056634",
+        "english": "Sonic Energy"
+      },
+      {
+        "id": "0106B53E",
+        "english": "Electron Charge Pack"
+      }
+    ],
+    "AMMO/ONAM/missing_translation_match": [
+      {
+        "id": "010615AF",
+        "english": "EC Pack"
+      },
+      {
+        "id": "01056634",
+        "english": "Sonic"
+      },
+      {
+        "id": "0106B53E",
+        "english": "EC Pack"
+      }
+    ],
+    "NPC_/FULL/missing_translation_match": [
+      {
+        "id": "01061990",
+        "english": "TestQAHiuLaiFHair12"
+      },
+      {
+        "id": "0106198F",
+        "english": "TestQAHiuLaiFHair11"
+      },
+      {
+        "id": "0106198D",
+        "english": "TestQAHiuLaiFHair10"
+      }
+    ],
+    "NPC_/FULL/existing_korean_needs_context": [
+      {
+        "id": "01032EB8",
+        "english": "Sleeping Guy"
+      },
+      {
+        "id": "010A0C21",
+        "english": "Wasteland Captive"
+      },
+      {
+        "id": "010A0C20",
+        "english": "Wasteland Captive"
+      }
+    ],
+    "KEYM/FULL/missing_translation_match": [
+      {
+        "id": "0107CF72",
+        "english": "Tenpenny Resident's Key"
+      },
+      {
+        "id": "0107CF64",
+        "english": "Vera Weatherly's Room Key"
+      },
+      {
+        "id": "0107CF5E",
+        "english": "Dr. Preston's Room Key"
+      }
+    ],
+    "KEYM/FULL/existing_korean_needs_context": [
+      {
+        "id": "0102BF5A",
+        "english": "Dave's Special Key"
+      },
+      {
+        "id": "0102B8DB",
+        "english": "Dukov's Special Key"
+      },
+      {
+        "id": "0102B8DA",
+        "english": "Ted Strayer's Special Key"
+      }
+    ],
+    "ALCH/FULL/missing_translation_match": [
+      {
+        "id": "01065175",
+        "english": "Hatchling Mirelurk Meat"
+      },
+      {
+        "id": "010ABD17",
+        "english": "Mole Rat Wonder Meat"
+      },
+      {
+        "id": "01095F48",
+        "english": "NukaLurk Meat"
+      }
+    ],
+    "ALCH/DESC/missing_translation_match": [
+      {
+        "id": "01D17A20",
+        "english": "Shows your Fallout 3 karma and skills."
+      }
+    ],
+    "NOTE/FULL/missing_translation_match": [
+      {
+        "id": "0107E3BF",
+        "english": "CapitalPostTerminalNote3b"
+      },
+      {
+        "id": "010673D5",
+        "english": "Bounty Notice: &PCName;"
+      },
+      {
+        "id": "01067344",
+        "english": "Private Contract: Kill &PCName;!"
+      }
+    ],
+    "NOTE/FULL/existing_korean_needs_context": [
+      {
+        "id": "01052394",
+        "english": "Burn this Goddamn Jumpsuit"
+      },
+      {
+        "id": "010C1956",
+        "english": "Enclave Field Report"
+      },
+      {
+        "id": "010C1954",
+        "english": "Enclave Field Report"
+      }
+    ],
+    "PROJ/FULL/missing_translation_match": [
+      {
+        "id": "010BEDF6",
+        "english": "Flame"
+      },
+      {
+        "id": "010AFE4C",
+        "english": "RailSpikeProjectile"
+      },
+      {
+        "id": "010A73D6",
+        "english": "Plasma beam"
+      }
+    ],
+    "HAZD/FULL/missing_translation_match": [
+      {
+        "id": "01D647B2",
+        "english": "Radiation"
+      },
+      {
+        "id": "0190DD51",
+        "english": "Radiation"
+      },
+      {
+        "id": "019B1EBC",
+        "english": "Radiation"
+      }
+    ],
+    "TERM/WNAM/missing_translation_match": [
+      {
+        "id": "01067110",
+        "english": "-Server 3-"
+      },
+      {
+        "id": "01064B8D",
+        "english": "-Server 5-"
+      },
+      {
+        "id": "01064B8C",
+        "english": "-Server 5-"
+      }
+    ],
+    "TERM/UNAM/existing_korean_needs_context": [
+      {
+        "id": "01067110",
+        "english": "CONFIDENTIAL! \r\nTOP-LEVEL SECURITY ONLY!\r\n\r\nFrom: Chief Officer\r\nSubject: Raid on Rebels\r\n\r\nIn light of increased agitation from the rebel elements, I have come to the conclusion t"
+      },
+      {
+        "id": "010CB595",
+        "english": "Patient Name: Tom Mallone\r\nInjury: Extreme muscle injury to groin area\r\n\r\nDiagnosis:\r\nMr. Mallone was admitted by the staff at the Statesman Hotel across the street with an extreme"
+      },
+      {
+        "id": "010CB595",
+        "english": "Patient Name: Harold Worthington III\r\nInjury: Sharp pain in knees and in left arm from a fall\r\n\r\nDiagnosis:\r\nMr. Worthington was admitted by the staff at the Statesman Hotel across"
+      }
+    ],
+    "TERM/BTXT/existing_korean_needs_context": [
+      {
+        "id": "01064B8D",
+        "english": "      SoftLock Solutions, Inc\r\n\"Your Security is Our Security\"\r\n>\\ Welcome, USER\r\n"
+      },
+      {
+        "id": "01064B8C",
+        "english": "      SoftLock Solutions, Inc\r\n\"Your Security is Our Security\"\r\n>\\ Welcome, USER\r\n"
+      },
+      {
+        "id": "01064B8B",
+        "english": "      SoftLock Solutions, Inc\r\n\"Your Security is Our Security\"\r\n>\\ Welcome, USER\r\n"
+      }
+    ],
+    "TERM/UNAM/missing_translation_match": [
+      {
+        "id": "01064B80",
+        "english": "<!>Please Exercise Caution<!>"
+      },
+      {
+        "id": "01064B80",
+        "english": "RobcOS v.85\r\n(C)2076 RobCo \r\n========================\r\n| User Log:\r\n| >> Administrator (RobCoID 2398-H)  \r\n| >> New_Admin: FUCK YOU                \r\n| Welcome new user, FUCK YOU\r\n|"
+      },
+      {
+        "id": "01064B80",
+        "english": "RobcOS v.85\r\n(C)2076 RobCo \r\n========================\r\n| User Log:\r\n| >> Administrator (RobCoID 2398-H)  \r\n| >> New_Admin: rfy780gsejio               \r\n| Welcome new user, rfy780gs"
+      }
+    ],
+    "TERM/ITXT/existing_korean_needs_context": [
+      {
+        "id": "01064B80",
+        "english": "System Information"
+      },
+      {
+        "id": "01064B80",
+        "english": "System Information"
+      },
+      {
+        "id": "01064B80",
+        "english": "System Information"
+      }
+    ],
+    "TERM/RNAM/missing_translation_match": [
+      {
+        "id": "01064B80",
+        "english": "Loading LOG file..."
+      },
+      {
+        "id": "01064B80",
+        "english": "Loading LOG file..."
+      },
+      {
+        "id": "01064B80",
+        "english": "Loading LOG file..."
+      }
+    ],
+    "TERM/ITXT/missing_translation_match": [
+      {
+        "id": "010CB509",
+        "english": "Jul 19, 2077"
+      },
+      {
+        "id": "010CB509",
+        "english": "Dec 24, 2077"
+      },
+      {
+        "id": "010CB509",
+        "english": "Dec 25, 2077"
+      }
+    ],
+    "TERM/FULL/existing_korean_needs_context": [
+      {
+        "id": "010CAADB",
+        "english": "Isabella Proud's Terminal"
+      },
+      {
+        "id": "01081170",
+        "english": "Welcome to the Capital Preservation Society"
+      },
+      {
+        "id": "01058824",
+        "english": "Armory Terminal"
+      }
+    ],
+    "TERM/BTXT/missing_translation_match": [
+      {
+        "id": "010CAA3D",
+        "english": "-***-------  FIELD OPERATIONS\r\n*-*-*------      ENCLAVE \r\n-***-------\r\n-----------\r\n-----------  GOD BLESS AMERICA\r\n"
+      },
+      {
+        "id": "010CAA3C",
+        "english": "-***-------  FIELD OPERATIONS\r\n*-*-*------      ENCLAVE \r\n-***-------\r\n-----------\r\n-----------  GOD BLESS AMERICA\r\n"
+      },
+      {
+        "id": "010C83E8",
+        "english": "Journal-It Software © 2072 PagSoft\r\nUSER: suk me  hahaha"
+      }
+    ],
+    "TERM/FULL/missing_translation_match": [
+      {
+        "id": "010CAA35",
+        "english": "Surgeon's Notes"
+      },
+      {
+        "id": "010C0C7F",
+        "english": "Metro Map Terminal"
+      },
+      {
+        "id": "010A60DB",
+        "english": "Enclave Field Research Terminal: Crater Camp"
+      }
+    ],
+    "CELL/FULL/missing_translation_match": [
+      {
+        "id": "015390A9",
+        "english": "Restrooms"
+      },
+      {
+        "id": "012DFD20",
+        "english": "Apt. Building"
+      },
+      {
+        "id": "0136793C",
+        "english": "Apt. Building"
+      }
+    ],
+    "CELL/FULL/existing_korean_needs_context": [
+      {
+        "id": "01064C6C",
+        "english": "Abandoned Tent"
+      },
+      {
+        "id": "0102DEB3",
+        "english": "Ronald Laren's Home"
+      },
+      {
+        "id": "0102DEB4",
+        "english": "Sierra Petrovita's Home"
+      }
+    ],
+    "WRLD/FULL/missing_translation_match": [
+      {
+        "id": "0000003C",
+        "english": "Commonwealth"
+      },
+      {
+        "id": "0170003C",
+        "english": "Wasteland"
+      },
+      {
+        "id": "01014E0E",
+        "english": "GrantTestWorld"
+      }
+    ],
+    "REFR/FULL/missing_translation_match": [
+      {
+        "id": "01CA3C43",
+        "english": "Vertibird (Capital Wasteland, Mojave)"
+      },
+      {
+        "id": "0101EB92",
+        "english": "DC06c"
+      },
+      {
+        "id": "01094287",
+        "english": "DC01a"
+      }
+    ],
+    "WRLD/FULL/existing_korean_needs_context": [
+      {
+        "id": "01031E12",
+        "english": "Holding pen for freeform encounters"
+      }
+    ],
+    "QUST/FULL/missing_translation_match": [
+      {
+        "id": "0107E262",
+        "english": "Hit sounds for creatures (Capital Wasteland)"
+      },
+      {
+        "id": "010C8E15",
+        "english": "Mini Quests Dialog and Scripting (Capital Wasteland)"
+      },
+      {
+        "id": "010C6E93",
+        "english": "WaterBeggars (Capital Wasteland)"
+      }
+    ],
+    "QUST/CNAM/missing_translation_match": [
+      {
+        "id": "01038AEF",
+        "english": "Check if barter skill (skill 1) is now one of the 3 highest skills?"
+      },
+      {
+        "id": "01035B9F",
+        "english": "Incompetent mugger"
+      },
+      {
+        "id": "01035B9F",
+        "english": "MS01A - Scavenger: Condition to occur after MS01"
+      }
+    ],
+    "QUST/CNAM/existing_korean_needs_context": [
+      {
+        "id": "01035B9E",
+        "english": "; hit squads"
+      },
+      {
+        "id": "01035B9E",
+        "english": "; hit squads"
+      },
+      {
+        "id": "01032B30",
+        "english": "Hunters and their prey."
+      }
+    ],
+    "QUST/NNAM/missing_translation_match": [
+      {
+        "id": "01014E96",
+        "english": "Return to Moira."
+      },
+      {
+        "id": "01014E96",
+        "english": "Return to Moira."
+      },
+      {
+        "id": "01014E96",
+        "english": "Return to Moira."
+      }
+    ],
+    "INFO/NAM1/missing_translation_match": [
+      {
+        "id": "0104C19E",
+        "english": "Hi there, mister. You need something?"
+      },
+      {
+        "id": "0104C19F",
+        "english": "Hi there, miss. Can I help you with something?"
+      },
+      {
+        "id": "0104C1A1",
+        "english": "Hello again. Did you need something else?"
+      }
+    ],
+    "INFO/NAM1/existing_korean_needs_context": [
+      {
+        "id": "010C6E77",
+        "english": "You've helped me so much, it seems wrong to ask, but can you spare any more water?"
+      },
+      {
+        "id": "010C6E78",
+        "english": "I'll never forget you. Thank you for your help."
+      },
+      {
+        "id": "010C6E78",
+        "english": "I hate to ask but... do you have any more water?"
+      }
+    ],
+    "INFO/RNAM/existing_korean_needs_context": [
+      {
+        "id": "01A7B131",
+        "english": "I can try getting that collar off. But it might explode if I tinker with it."
+      },
+      {
+        "id": "01E4FF55",
+        "english": "You're a slave. Deal with it."
+      },
+      {
+        "id": "01CA25EF",
+        "english": "I have to go now."
+      }
+    ],
+    "INFO/RNAM/missing_translation_match": [
+      {
+        "id": "01BD810A",
+        "english": "Here. Have this Purified Water."
+      },
+      {
+        "id": "01ABBEB3",
+        "english": "All I have is irradiated water."
+      },
+      {
+        "id": "01B6CB88",
+        "english": "I'm sorry. I don't have any water to give you."
+      }
+    ],
+    "LSCR/DESC/missing_translation_match": [
+      {
+        "id": "010610FC",
+        "english": "If you're successfully hidden, your first attack against an opponent will always result in a critical hit."
+      },
+      {
+        "id": "0024A0AA",
+        "english": "Exiting back to the Main Menu will create an Exitsave. Next time you play and load the Exitsave, it will delete itself until the next time you exit back to the Main Menu."
+      },
+      {
+        "id": "00249F8C",
+        "english": "In Survival, both you and your companion's Carry Weight has been significantly reduced. Exceeding your carry weight reduces your Endurance and Agility stats, and periodically damag"
+      }
+    ],
+    "EXPL/FULL/missing_translation_match": [
+      {
+        "id": "010CC279",
+        "english": "LD Scientist Accident"
+      },
+      {
+        "id": "0105AC6D",
+        "english": "Stun Grenade"
+      },
+      {
+        "id": "010182BA",
+        "english": "Limb Explosion Bug"
+      }
+    ],
+    "PERK/FULL/missing_translation_match": [
+      {
+        "id": "010770CC",
+        "english": "YaoGuaiMeatPerk"
+      },
+      {
+        "id": "0106835C",
+        "english": "PsychoPerk"
+      },
+      {
+        "id": "01061822",
+        "english": "Well Rested"
+      }
+    ],
+    "PERK/EPFD/missing_translation_match": [
+      {
+        "id": "010770CC",
+        "english": "ÍÌŒ?"
+      },
+      {
+        "id": "01061822",
+        "english": "ÍÌŒ?"
+      },
+      {
+        "id": "01094EBF",
+        "english": "š™™?"
+      }
+    ],
+    "PERK/DESC/missing_translation_match": [
+      {
+        "id": "01061822",
+        "english": "After sleeping in a safe bed, you will wake well rested. You earn 10% more experience points for several hours."
+      },
+      {
+        "id": "01058FDF",
+        "english": "You have received the specialized training needed to move in any form of Power Armor."
+      },
+      {
+        "id": "010C1A6C",
+        "english": "Your body has been genetically enhanced with the perception and flame resistance of the Grayditch Fire Ants! Your Perception has increased by 1 and you are now 25% resistant to fir"
+      }
+    ],
+    "PERK/FULL/existing_korean_needs_context": [
+      {
+        "id": "01003142",
+        "english": "Child at Heart"
+      }
+    ],
+    "PERK/DESC/existing_korean_needs_context": [
+      {
+        "id": "01003142",
+        "english": "The Child at Heart perk greatly improves your interactions with children, usually in the form of unique dialogue choices."
+      }
+    ],
+    "AVIF/FULL/missing_translation_match": [
+      {
+        "id": "01DE62CF",
+        "english": "Small Guns"
+      },
+      {
+        "id": "01D9BD9A",
+        "english": "Big Guns"
+      },
+      {
+        "id": "0198864C",
+        "english": "Energy Weapons"
+      }
+    ],
+    "MESG/DESC/missing_translation_match": [
+      {
+        "id": "0105A7AD",
+        "english": "The door has locked shut behind you. There is no exit."
+      },
+      {
+        "id": "0104C5FC",
+        "english": "Caleb Smith is dead."
+      },
+      {
+        "id": "0104C5C6",
+        "english": "Advanced technology from the Commonwealth has increased your reaction speed, giving you a higher chance to hit in V.A.T.S."
+      }
+    ],
+    "MESG/FULL/missing_translation_match": [
+      {
+        "id": "0104C5FC",
+        "english": "Head of State"
+      },
+      {
+        "id": "0104C5C6",
+        "english": "Wired Reflexes Perk Added"
+      },
+      {
+        "id": "0104C597",
+        "english": "Dream Crusher Perk Added"
+      }
+    ],
+    "MESG/ITXT/missing_translation_match": [
+      {
+        "id": "010C8033",
+        "english": "Push the skate."
+      },
+      {
+        "id": "010C72EE",
+        "english": "Attempt to fix the switch."
+      },
+      {
+        "id": "010C502E",
+        "english": "Get some Ice Cold Nuka-Cola"
+      }
+    ],
+    "MESG/ITXT/existing_korean_needs_context": [
+      {
+        "id": "011D05E8",
+        "english": "[Repair: 30] Disable the Vent"
+      },
+      {
+        "id": "011D05E8",
+        "english": "[Repair: 30] Disable the Vent"
+      },
+      {
+        "id": "011D05D9",
+        "english": "[Science: 71] Override the door controls."
+      }
+    ]
+  },
+  "limitations": "Uses installed xTranslator _recorddefs field definitions and mirrors plain string fallback, but not all conditional proc logic, dynamic VMAD/script strings, BSA/BA2, or in-game reachability. A field can be translatable yet unused in game. No original ESM was modified."
+}

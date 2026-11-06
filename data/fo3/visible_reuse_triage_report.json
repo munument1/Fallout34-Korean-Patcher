@@ -1,0 +1,2311 @@
+{
+  "game": "fo3",
+  "scope": "currently-uncovered potentially visible fields, not runtime-certified strings",
+  "original_sst_count": 6,
+  "counts": {
+    "no_translation_in_current_sst": 29662,
+    "preferred_original_field_unique_ko": 33969,
+    "other_field_unique_ko": 1247,
+    "preferred_original_field_conflicting_ko": 44,
+    "other_field_conflicting_ko": 2
+  },
+  "distinct_by_field_and_english_by_status": {
+    "no_translation_in_current_sst": 6997,
+    "preferred_original_field_unique_ko": 13680,
+    "other_field_unique_ko": 774,
+    "preferred_original_field_conflicting_ko": 17,
+    "other_field_conflicting_ko": 1
+  },
+  "by_field": {
+    "FACT/FULL": {
+      "no_translation_in_current_sst": 171,
+      "preferred_original_field_unique_ko": 15,
+      "other_field_unique_ko": 11
+    },
+    "MGEF/FULL": {
+      "preferred_original_field_unique_ko": 14,
+      "no_translation_in_current_sst": 82
+    },
+    "SPEL/FULL": {
+      "no_translation_in_current_sst": 245,
+      "preferred_original_field_unique_ko": 2,
+      "other_field_unique_ko": 7
+    },
+    "ACTI/FULL": {
+      "no_translation_in_current_sst": 52,
+      "other_field_unique_ko": 1
+    },
+    "TACT/FULL": {
+      "preferred_original_field_unique_ko": 13,
+      "preferred_original_field_conflicting_ko": 8,
+      "no_translation_in_current_sst": 7,
+      "other_field_unique_ko": 11
+    },
+    "ARMO/FULL": {
+      "no_translation_in_current_sst": 212,
+      "preferred_original_field_unique_ko": 3
+    },
+    "BOOK/FULL": {
+      "other_field_unique_ko": 2,
+      "no_translation_in_current_sst": 16,
+      "preferred_original_field_unique_ko": 1
+    },
+    "BOOK/DESC": {
+      "other_field_unique_ko": 2,
+      "no_translation_in_current_sst": 14
+    },
+    "CONT/FULL": {
+      "no_translation_in_current_sst": 129,
+      "preferred_original_field_unique_ko": 50,
+      "other_field_unique_ko": 6
+    },
+    "DOOR/FULL": {
+      "no_translation_in_current_sst": 13
+    },
+    "MISC/FULL": {
+      "other_field_unique_ko": 22,
+      "no_translation_in_current_sst": 639,
+      "preferred_original_field_unique_ko": 23
+    },
+    "FURN/FULL": {
+      "no_translation_in_current_sst": 42,
+      "other_field_unique_ko": 5,
+      "preferred_original_field_conflicting_ko": 7
+    },
+    "WEAP/FULL": {
+      "no_translation_in_current_sst": 20,
+      "other_field_unique_ko": 1
+    },
+    "AMMO/FULL": {
+      "no_translation_in_current_sst": 8,
+      "other_field_unique_ko": 1
+    },
+    "NPC_/FULL": {
+      "no_translation_in_current_sst": 94,
+      "preferred_original_field_unique_ko": 12,
+      "preferred_original_field_conflicting_ko": 1,
+      "other_field_unique_ko": 197
+    },
+    "KEYM/FULL": {
+      "no_translation_in_current_sst": 162,
+      "preferred_original_field_unique_ko": 4
+    },
+    "ALCH/FULL": {
+      "no_translation_in_current_sst": 30,
+      "other_field_unique_ko": 1
+    },
+    "ALCH/DESC": {
+      "no_translation_in_current_sst": 1
+    },
+    "NOTE/FULL": {
+      "no_translation_in_current_sst": 555,
+      "preferred_original_field_unique_ko": 24,
+      "other_field_unique_ko": 16
+    },
+    "TERM/UNAM": {
+      "preferred_original_field_unique_ko": 967,
+      "other_field_unique_ko": 152,
+      "no_translation_in_current_sst": 820,
+      "other_field_conflicting_ko": 2
+    },
+    "TERM/BTXT": {
+      "preferred_original_field_unique_ko": 107,
+      "no_translation_in_current_sst": 606,
+      "preferred_original_field_conflicting_ko": 3,
+      "other_field_unique_ko": 342
+    },
+    "TERM/ITXT": {
+      "preferred_original_field_unique_ko": 331,
+      "no_translation_in_current_sst": 771,
+      "other_field_unique_ko": 350,
+      "preferred_original_field_conflicting_ko": 8
+    },
+    "TERM/FULL": {
+      "preferred_original_field_unique_ko": 386,
+      "no_translation_in_current_sst": 587,
+      "preferred_original_field_conflicting_ko": 2,
+      "other_field_unique_ko": 18
+    },
+    "CELL/FULL": {
+      "no_translation_in_current_sst": 112,
+      "preferred_original_field_unique_ko": 4,
+      "other_field_unique_ko": 1
+    },
+    "WRLD/FULL": {
+      "no_translation_in_current_sst": 21,
+      "preferred_original_field_unique_ko": 1
+    },
+    "QUST/FULL": {
+      "no_translation_in_current_sst": 194
+    },
+    "QUST/CNAM": {
+      "no_translation_in_current_sst": 220,
+      "preferred_original_field_unique_ko": 4
+    },
+    "INFO/NAM1": {
+      "no_translation_in_current_sst": 947,
+      "preferred_original_field_unique_ko": 10513,
+      "preferred_original_field_conflicting_ko": 5
+    },
+    "INFO/RNAM": {
+      "preferred_original_field_unique_ko": 21489,
+      "no_translation_in_current_sst": 21482,
+      "preferred_original_field_conflicting_ko": 10
+    },
+    "LSCR/DESC": {
+      "no_translation_in_current_sst": 355
+    },
+    "EXPL/FULL": {
+      "no_translation_in_current_sst": 40
+    },
+    "PERK/FULL": {
+      "no_translation_in_current_sst": 110,
+      "other_field_unique_ko": 13,
+      "preferred_original_field_unique_ko": 1
+    },
+    "PERK/DESC": {
+      "no_translation_in_current_sst": 65,
+      "other_field_unique_ko": 23,
+      "preferred_original_field_unique_ko": 1
+    },
+    "MESG/DESC": {
+      "no_translation_in_current_sst": 541,
+      "other_field_unique_ko": 9
+    },
+    "MESG/FULL": {
+      "other_field_unique_ko": 43,
+      "no_translation_in_current_sst": 124
+    },
+    "MESG/ITXT": {
+      "no_translation_in_current_sst": 175,
+      "other_field_unique_ko": 13,
+      "preferred_original_field_unique_ko": 4
+    }
+  },
+  "samples": {
+    "FACT/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "0107E635",
+        "english": "MQ07 Captured Lamplighter Faction",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0107E0B5",
+        "english": "Enemy faction to Vault 101 Security",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0107C722",
+        "english": "Vance and Holly's Faction",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01078C9F",
+        "english": "TenpennyTowerResidentFaction",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "FACT/FULL|preferred_original_field_unique_ko": [
+      {
+        "formid": "0107B81A",
+        "english": "Capital Building Talon Company",
+        "ko": "국회의사당 탈론 컴퍼니",
+        "original_ids": []
+      },
+      {
+        "formid": "0109189D",
+        "english": "Bloatfly Faction",
+        "ko": "거대 파리 진영",
+        "original_ids": []
+      },
+      {
+        "formid": "0109070E",
+        "english": "Doctor Li's Lab Staff",
+        "ko": "리 박사의 연구실 직원",
+        "original_ids": []
+      },
+      {
+        "formid": "010410B5",
+        "english": "Main Quest Player BOS Ally Faction",
+        "ko": "메인 퀘스트 플레이어 브라더후드 아군 진영",
+        "original_ids": []
+      }
+    ],
+    "FACT/FULL|other_field_unique_ko": [
+      {
+        "formid": "010A5EE6",
+        "english": "Brotherhood Outcast",
+        "ko": "브라더후드 아웃캐스트",
+        "original_ids": []
+      },
+      {
+        "formid": "01030520",
+        "english": "Brotherhood Outcast",
+        "ko": "브라더후드 아웃캐스트",
+        "original_ids": []
+      },
+      {
+        "formid": "0102B895",
+        "english": "Republic of Dave",
+        "ko": "데이브 공화국",
+        "original_ids": []
+      },
+      {
+        "formid": "010295A3",
+        "english": "Reilly's Rangers",
+        "ko": "라일리의 레인저",
+        "original_ids": []
+      }
+    ],
+    "MGEF/FULL|preferred_original_field_unique_ko": [
+      {
+        "formid": "0105E0CC",
+        "english": "MS13RemoveCollarEffect",
+        "ko": "MS13 목걸이 제거 효과",
+        "original_ids": []
+      },
+      {
+        "formid": "01051DEE",
+        "english": "MS14 Med-X Withdrawal",
+        "ko": "MS14 메드-X 금단 현상",
+        "original_ids": []
+      },
+      {
+        "formid": "010C0546",
+        "english": "GNR Boradcast Effect",
+        "ko": "GNR 방송 효과",
+        "original_ids": []
+      },
+      {
+        "formid": "0101BE9C",
+        "english": "MS13Frenzy",
+        "ko": "MS13 광란",
+        "original_ids": []
+      }
+    ],
+    "MGEF/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "010770C7",
+        "english": "Damage +10%",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010679F4",
+        "english": "Damage +25%",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0101DEA7",
+        "english": "VictoryRifleKnockdownEffect",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010C1937",
+        "english": "GlowingOneBurstScriptEffect",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "SPEL/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "0107E474",
+        "english": "Stealth Boy Invis Spell",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0107D4F3",
+        "english": "Poison Immunity",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0107D4F2",
+        "english": "RL3 Survive",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0106DC6E",
+        "english": "Nectar Withdrawal",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "SPEL/FULL|preferred_original_field_unique_ko": [
+      {
+        "formid": "0106F592",
+        "english": "Better Rivet City Prices",
+        "ko": "리벳 시티 가격 할인",
+        "original_ids": []
+      },
+      {
+        "formid": "01032DEE",
+        "english": "Minor Rad Poison.",
+        "ko": "방사능 중독 1기",
+        "original_ids": []
+      }
+    ],
+    "SPEL/FULL|other_field_unique_ko": [
+      {
+        "formid": "01044CA3",
+        "english": "Impartial Mediation",
+        "ko": "공정한 중재",
+        "original_ids": []
+      },
+      {
+        "formid": "01031D8D",
+        "english": "Cyborg",
+        "ko": "사이보그",
+        "original_ids": []
+      },
+      {
+        "formid": "01020D77",
+        "english": "Terrible Water",
+        "ko": "끔찍한 물",
+        "original_ids": []
+      },
+      {
+        "formid": "01184C69",
+        "english": "Nuclear Anomaly",
+        "ko": "핵 돌연변이",
+        "original_ids": []
+      }
+    ],
+    "ACTI/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "010A6AC9",
+        "english": "Console",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010842B9",
+        "english": "Radio Signal Kilo Bravo",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0107DD51",
+        "english": "My First Infirmary",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0107DD4F",
+        "english": "My First Laboratory",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "ACTI/FULL|other_field_unique_ko": [
+      {
+        "formid": "01057F6B",
+        "english": "Mailbox",
+        "ko": "우체통",
+        "original_ids": []
+      }
+    ],
+    "TACT/FULL|preferred_original_field_unique_ko": [
+      {
+        "formid": "0107E1DF",
+        "english": "Loudspeaker",
+        "ko": "확성기",
+        "original_ids": []
+      },
+      {
+        "formid": "0107DDCE",
+        "english": "President Eden",
+        "ko": "이든 대통령",
+        "original_ids": []
+      },
+      {
+        "formid": "01B44288",
+        "english": "President Eden",
+        "ko": "이든 대통령",
+        "original_ids": []
+      },
+      {
+        "formid": "01090A1F",
+        "english": "Deputy Weld",
+        "ko": "보안관보 웰드",
+        "original_ids": []
+      }
+    ],
+    "TACT/FULL|preferred_original_field_conflicting_ko": [
+      {
+        "formid": "010CA77A",
+        "english": "Intercom",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010B16D4",
+        "english": "Intercom",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0106EC64",
+        "english": "Intercom",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0104692A",
+        "english": "Intercom",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "TACT/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "010C4991",
+        "english": "House Radio for Jukebox",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0106F6A5",
+        "english": "Radio Signal Kilo Bravo",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0108A6DA",
+        "english": "Agatha's Station",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01083511",
+        "english": "Vault 101 Emergency Frequency",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "TACT/FULL|other_field_unique_ko": [
+      {
+        "formid": "0103E930",
+        "english": "Radio Signal Papa November",
+        "ko": "라디오 신호 파파 노벰버",
+        "original_ids": []
+      },
+      {
+        "formid": "0103D758",
+        "english": "Radio Signal Sierra Victor",
+        "ko": "라디오 신호 시에라 빅터",
+        "original_ids": []
+      },
+      {
+        "formid": "0103926E",
+        "english": "Radio Signal Sierra Romeo",
+        "ko": "라디오 신호 시에라 로메오",
+        "original_ids": []
+      },
+      {
+        "formid": "0102DF15",
+        "english": "Radio Signal Yankee Bravo",
+        "ko": "라디오 신호 양키 브라보",
+        "original_ids": []
+      }
+    ],
+    "ARMO/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "0107C109",
+        "english": "ChildBlastoffHelmet",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01074952",
+        "english": "Wasteland Scout Hat",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01074950",
+        "english": "Ragamuffin Tophat",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0107494C",
+        "english": "Blast Off Helmet",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "ARMO/FULL|preferred_original_field_unique_ko": [
+      {
+        "formid": "010C111A",
+        "english": "Makeshift Gas Mask",
+        "ko": "급조한 방독면",
+        "original_ids": []
+      },
+      {
+        "formid": "01034105",
+        "english": "Ranger Battle Helmet",
+        "ko": "★ 레인저 전투모",
+        "original_ids": []
+      },
+      {
+        "formid": "010340EF",
+        "english": "Vault 112 Jumpsuit",
+        "ko": "볼트 112 점프슈트",
+        "original_ids": []
+      }
+    ],
+    "BOOK/FULL|other_field_unique_ko": [
+      {
+        "formid": "010C5634",
+        "english": "Wasteland Survival Guide",
+        "ko": "황무지 생존 가이드북",
+        "original_ids": []
+      },
+      {
+        "formid": "0103403E",
+        "english": "Guns and Bullets",
+        "ko": "총기와 탄약",
+        "original_ids": []
+      }
+    ],
+    "BOOK/DESC|other_field_unique_ko": [
+      {
+        "formid": "010C5634",
+        "english": "Wasteland Survival Guide",
+        "ko": "황무지 생존 가이드북",
+        "original_ids": []
+      },
+      {
+        "formid": "0103403E",
+        "english": "Guns and Bullets",
+        "ko": "총기와 탄약",
+        "original_ids": []
+      }
+    ],
+    "BOOK/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "010BACFE",
+        "english": "Paradise Lost",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0106A80C",
+        "english": "Duck and Cover!",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01034048",
+        "english": "U.S. Army: 30 Handy Flamethrower Recipes",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01034046",
+        "english": "Tumblers Today",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "BOOK/DESC|no_translation_in_current_sst": [
+      {
+        "formid": "010BACFE",
+        "english": "Paradise Lost",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0106A80C",
+        "english": "Duck and Cover!",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01034048",
+        "english": "U.S. Army: 30 Handy Flamethrower Recipes",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01034046",
+        "english": "Tumblers Today",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "BOOK/FULL|preferred_original_field_unique_ko": [
+      {
+        "formid": "010AB2EF",
+        "english": "You're SPECIAL!",
+        "ko": "당신은 특별해요!",
+        "original_ids": []
+      }
+    ],
+    "CONT/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "0107B46B",
+        "english": "Chem Supplies",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010615B2",
+        "english": "Nuka-Cola fridge",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01073EB8",
+        "english": "Restoration Supplies",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01070875",
+        "english": "William Brandice's Footlocker",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "CONT/FULL|preferred_original_field_unique_ko": [
+      {
+        "formid": "0107087A",
+        "english": "Sword Cabinet",
+        "ko": "검 진열장",
+        "original_ids": []
+      },
+      {
+        "formid": "0106DDD3",
+        "english": "Dashwood's Safe",
+        "ko": "대시우드의 금고",
+        "original_ids": []
+      },
+      {
+        "formid": "0106141C",
+        "english": "Mirelurk Spawning Pod",
+        "ko": "마이얼럭 산란장",
+        "original_ids": []
+      },
+      {
+        "formid": "010613D7",
+        "english": "Mirelurk Spawning Pod",
+        "ko": "마이얼럭 산란장",
+        "original_ids": []
+      }
+    ],
+    "CONT/FULL|other_field_unique_ko": [
+      {
+        "formid": "012F0538",
+        "english": "Corpse",
+        "ko": "시체",
+        "original_ids": []
+      },
+      {
+        "formid": "01289750",
+        "english": "Corpse",
+        "ko": "시체",
+        "original_ids": []
+      },
+      {
+        "formid": "01254489",
+        "english": "Corpse",
+        "ko": "시체",
+        "original_ids": []
+      },
+      {
+        "formid": "01496A8B",
+        "english": "Corpse",
+        "ko": "시체",
+        "original_ids": []
+      }
+    ],
+    "DOOR/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "01018486",
+        "english": "Stall Door",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01079F0D",
+        "english": "Ant Tunnel",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010463CD",
+        "english": "Garage Door",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01033181",
+        "english": "Stall Door",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "MISC/FULL|other_field_unique_ko": [
+      {
+        "formid": "0105A795",
+        "english": "Wasteland Survival Guide",
+        "ko": "황무지 생존 가이드북",
+        "original_ids": []
+      },
+      {
+        "formid": "0108C219",
+        "english": "U.S. Declaration of War on China",
+        "ko": "대중 전쟁선언문",
+        "original_ids": []
+      },
+      {
+        "formid": "0108C218",
+        "english": "U.S. Declaration of War on Germany",
+        "ko": "대독 전쟁선언문",
+        "original_ids": []
+      },
+      {
+        "formid": "0108C217",
+        "english": "Monroe Doctrine",
+        "ko": "먼로주의",
+        "original_ids": []
+      }
+    ],
+    "MISC/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "01070CD4",
+        "english": "Donovan's Wrench",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0106835F",
+        "english": "Sheet Music Book",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010CAFA2",
+        "english": "Junders Plunkett's Finger",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010CADE6",
+        "english": "Nuka-Cola Clear Formula",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "MISC/FULL|preferred_original_field_unique_ko": [
+      {
+        "formid": "010C7AF0",
+        "english": "House: Love Machine Theme",
+        "ko": "집: 러브 머신 테마",
+        "original_ids": []
+      },
+      {
+        "formid": "010347DE",
+        "english": "Experimental Rho ID",
+        "ko": "시험용 RHO 신분증",
+        "original_ids": []
+      },
+      {
+        "formid": "010033FF",
+        "english": "Soil Stradivarius",
+        "ko": "스완 스트라디바리우스",
+        "original_ids": []
+      },
+      {
+        "formid": "0105B5A9",
+        "english": "Computer Password Module",
+        "ko": "컴퓨터 암호화 모듈",
+        "original_ids": []
+      }
+    ],
+    "FURN/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "01056E98",
+        "english": "Makeshift Bedding",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01056AB3",
+        "english": "Makeshift Bedding",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0105A731",
+        "english": "Log",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0105A72F",
+        "english": "Stump",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "FURN/FULL|other_field_unique_ko": [
+      {
+        "formid": "01090CE8",
+        "english": "Desk",
+        "ko": "책상",
+        "original_ids": []
+      },
+      {
+        "formid": "010908F5",
+        "english": "Desk",
+        "ko": "책상",
+        "original_ids": []
+      },
+      {
+        "formid": "01089B23",
+        "english": "Desk",
+        "ko": "책상",
+        "original_ids": []
+      },
+      {
+        "formid": "010874EB",
+        "english": "Desk",
+        "ko": "책상",
+        "original_ids": []
+      }
+    ],
+    "FURN/FULL|preferred_original_field_conflicting_ko": [
+      {
+        "formid": "0108D34B",
+        "english": "Queen Sized Bed",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0108D349",
+        "english": "Queen Sized Bed",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0108D345",
+        "english": "Queen Sized Bed",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0108B5E2",
+        "english": "Queen Sized Bed",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "WEAP/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "0105DEEE",
+        "english": "SatcomNuclearStrike",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0103E5E2",
+        "english": "Vertibird Bomb Gun",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010B8793",
+        "english": "Acid Spit",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0106E8CE",
+        "english": "Acid Spit",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "WEAP/FULL|other_field_unique_ko": [
+      {
+        "formid": "01033D84",
+        "english": "Baseball",
+        "ko": "야구공",
+        "original_ids": []
+      }
+    ],
+    "AMMO/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "010615AF",
+        "english": "Electron Charge Pack",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01056634",
+        "english": "Sonic Energy",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0106B53E",
+        "english": "Electron Charge Pack",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01078CC4",
+        "english": "5.56mm Round",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "AMMO/FULL|other_field_unique_ko": [
+      {
+        "formid": "01078CC3",
+        "english": "Microfusion Cell",
+        "ko": "마이크로퓨전 셀",
+        "original_ids": []
+      }
+    ],
+    "NPC_/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "01061990",
+        "english": "TestQAHiuLaiFHair12",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0106198F",
+        "english": "TestQAHiuLaiFHair11",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0106198D",
+        "english": "TestQAHiuLaiFHair10",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0106198B",
+        "english": "TestQAHiuLaiFHair09",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "NPC_/FULL|preferred_original_field_unique_ko": [
+      {
+        "formid": "01032EB8",
+        "english": "Sleeping Guy",
+        "ko": "잠자는 남자",
+        "original_ids": []
+      },
+      {
+        "formid": "010A0C21",
+        "english": "Wasteland Captive",
+        "ko": "황무지 포로",
+        "original_ids": []
+      },
+      {
+        "formid": "010A0C20",
+        "english": "Wasteland Captive",
+        "ko": "황무지 포로",
+        "original_ids": []
+      },
+      {
+        "formid": "010A0C1E",
+        "english": "Wasteland Captive",
+        "ko": "황무지 포로",
+        "original_ids": []
+      }
+    ],
+    "NPC_/FULL|preferred_original_field_conflicting_ko": [
+      {
+        "formid": "010B0E7B",
+        "english": "Brotherhood of Steel Knight",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "NPC_/FULL|other_field_unique_ko": [
+      {
+        "formid": "0107BDA7",
+        "english": "Mister Gutsy",
+        "ko": "미스터 것시",
+        "original_ids": []
+      },
+      {
+        "formid": "0104C67D",
+        "english": "Failed FEV Subject",
+        "ko": "실패한 FEV 피험체",
+        "original_ids": []
+      },
+      {
+        "formid": "01073E1D",
+        "english": "Scavenger's Dog",
+        "ko": "폐품업자의 개",
+        "original_ids": []
+      },
+      {
+        "formid": "01073E10",
+        "english": "Scavenger's Dog",
+        "ko": "폐품업자의 개",
+        "original_ids": []
+      }
+    ],
+    "KEYM/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "0107CF72",
+        "english": "Tenpenny Resident's Key",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0107CF64",
+        "english": "Vera Weatherly's Room Key",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0107CF5E",
+        "english": "Dr. Preston's Room Key",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0107CF5D",
+        "english": "Flak and Shrapnel's Room Key",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "KEYM/FULL|preferred_original_field_unique_ko": [
+      {
+        "formid": "0102BF5A",
+        "english": "Dave's Special Key",
+        "ko": "데이브의 특수 열쇠",
+        "original_ids": []
+      },
+      {
+        "formid": "0102B8DB",
+        "english": "Dukov's Special Key",
+        "ko": "듀코브의 특수 열쇠",
+        "original_ids": []
+      },
+      {
+        "formid": "0102B8DA",
+        "english": "Ted Strayer's Special Key",
+        "ko": "테드 스트레이어의 특수 열쇠",
+        "original_ids": []
+      },
+      {
+        "formid": "01022643",
+        "english": "Key to Tenpenny Generator Room",
+        "ko": "텐페니 타워 발전기실 열쇠",
+        "original_ids": []
+      }
+    ],
+    "ALCH/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "01065175",
+        "english": "Hatchling Mirelurk Meat",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010ABD17",
+        "english": "Mole Rat Wonder Meat",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01095F48",
+        "english": "NukaLurk Meat",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01085ABB",
+        "english": "Fire Ant Nectar",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "ALCH/FULL|other_field_unique_ko": [
+      {
+        "formid": "010284F9",
+        "english": "Nuka-Cola Quantum",
+        "ko": "누카-콜라 퀀텀",
+        "original_ids": []
+      }
+    ],
+    "ALCH/DESC|no_translation_in_current_sst": [
+      {
+        "formid": "01D17A20",
+        "english": "Shows your Fallout 3 karma and skills.",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "NOTE/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "0107E3BF",
+        "english": "CapitalPostTerminalNote3b",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010673D5",
+        "english": "Bounty Notice: &PCName;",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01067344",
+        "english": "Private Contract: Kill &PCName;!",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010CB593",
+        "english": "MS18NursesStationNote03",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "NOTE/FULL|preferred_original_field_unique_ko": [
+      {
+        "formid": "01052394",
+        "english": "Burn this Goddamn Jumpsuit",
+        "ko": "이 망할 점프슈트를 태워버려",
+        "original_ids": []
+      },
+      {
+        "formid": "010C1956",
+        "english": "Enclave Field Report",
+        "ko": "엔클레이브 현장 보고서",
+        "original_ids": []
+      },
+      {
+        "formid": "010C1954",
+        "english": "Enclave Field Report",
+        "ko": "엔클레이브 현장 보고서",
+        "original_ids": []
+      },
+      {
+        "formid": "010BF0C0",
+        "english": "January 26, 2077 -- Little Lamplight!",
+        "ko": "2077년 1월 26일, 리틀 램프라이트다!",
+        "original_ids": []
+      }
+    ],
+    "NOTE/FULL|other_field_unique_ko": [
+      {
+        "formid": "010C0C7E",
+        "english": "DCTA Metro Map",
+        "ko": "지하철 지도",
+        "original_ids": []
+      },
+      {
+        "formid": "01076812",
+        "english": "Beta Testing Notice",
+        "ko": "베타 테스트 공지",
+        "original_ids": []
+      },
+      {
+        "formid": "0102A441",
+        "english": "Security Log",
+        "ko": "경비 일지",
+        "original_ids": []
+      },
+      {
+        "formid": "0102A43F",
+        "english": "RE: Bannon",
+        "ko": "Re: 배넌",
+        "original_ids": []
+      }
+    ],
+    "TERM/UNAM|preferred_original_field_unique_ko": [
+      {
+        "formid": "01067110",
+        "english": "CONFIDENTIAL! \r\nTOP-LEVEL SECURITY ONLY!\r\n\r\nFrom: Chief Officer\r\nSubject: Raid on Rebels\r\n\r\nIn light of increased agitation from the re",
+        "ko": "극비!최고 등급 보안 관계자만!보내는 이: 경비대장제목: 반역자 습격\r\n반란분자들 때문에 소요가 증가함에 따라, 난 그 쓰레기들한테 자비를 \r\n더는 베풀면 안 된다고 결론 내렸다. 일부는 평화적인 해결책을 바랄지\r\n도 모르지만, 놈들이 우리에게 싸움을 걸어오는 건 시간문제일 뿐이다.\r\n 우리가 아니라면, 우리의 가족들에게 말이다.한밤중에 놈들의 기지를 \r\n습격할 것을 제안하는 바이다. 실탄을 사용하며, 자비는 없을 것이다.\r\n 반격하는 녀석 한두 명을 본보기로 처리하면, 나머지는 알아서 길 것이\r\n다. 우리 애들이 한두 명 죽을지도 모르나, 그 대가로 이 볼트 전체\r\n를 살리게 될 것이다. 중요한 건 바로 그거다.이 계획을 오버시어나 \r\n온건파 경비들에게 알려서는 안 될 것이다. 그들은 이 계획에 반대하거\r\n나 우리가 질 거라며 만류할 게 뻔하다. 일이 다 끝나면, 그들도 이\r\n 계획이 실행할 가치가 있었다고 깨닫게 될 것이다.이 계획이 그 쓰레\r\n기들에게 우리 볼트를 어지럽히면 어떻게 되는지 똑똑히 가르쳐줄 것이다.",
+        "original_ids": []
+      },
+      {
+        "formid": "010CB595",
+        "english": "Patient Name: Tom Mallone\r\nInjury: Extreme muscle injury to groin area\r\n\r\nDiagnosis:\r\nMr. Mallone was admitted by the staff at the Stat",
+        "ko": "환자 이름: 톰 말론증상: 사타구니 부위에 심한\r\n 근육 손상진단:말론 씨는 사타구니 부위에 극심한\r\n 통증을 느낀 뒤, 건너편에 있는 스테이츠먼 호\r\n텔 직원들의 부축을 받으며 우리 병원에 입원했다.\r\n 그는 당시에 세네카 클락슨 양과 함께 있었던 \r\n것으로 추정되지만, 어쩌다가 그녀와 함께 있게 됐\r\n는지는 밝혀지지 않았다. 증상이 있는 근육은 박\r\n근과 내전근이다.치료:약물과 물리치료가 권장된다.",
+        "original_ids": []
+      },
+      {
+        "formid": "010CB595",
+        "english": "Patient Name: Harold Worthington III\r\nInjury: Sharp pain in knees and in left arm from a fall\r\n\r\nDiagnosis:\r\nMr. Worthington was admitt",
+        "ko": "환자 이름: 해럴드 워싱턴 3세증상: 낙상으로 인한 무\r\n릎과 왼팔에 심한 통증진단:워싱턴 씨는 앞서 말한 증상\r\n으로 인해, 건너편에 있는 스테이츠먼 호텔 직원들의 부\r\n축을 받으며 우리 병원에 입원했다. 그는 호텔 제빙기에\r\n서 새어 나온 물 때문에 축축해진 바닥에 미끄러져서 낙\r\n상을 당했다고 주장했다. 하룻밤의 입원과 함께 광범위한\r\n 검사를 시행했지만, 치료해야 할 부상을 발견할 수 없\r\n었다.또한 워싱턴 씨는 잠을 자는 데 베개를 8개 이상\r\n 달라고 요구했고, 그가 퇴원한 다음 날 그의 방을 청\r\n소해보니, 그 베개들은 전부 사라진 상태였다.치료:없음.",
+        "original_ids": []
+      },
+      {
+        "formid": "010CB595",
+        "english": "Patient Name: Richard Maynard Watson\r\nInjury: Eyes were splashed with caustic chemicals\r\n\r\nDiagnosis:\r\nMr. Watson was admitted by some ",
+        "ko": "환자 이름: 리처드 메이너드 왓슨증상: 눈\r\n에 부식성 화학물질이 튐진단:왓슨 씨는 휴\r\n브릭스 코믹스 동료 직원들의 부축을 받으며\r\n 우리 병원에 입원했다. 보아하니 인쇄기 \r\n하나가 오작동을 일으켜서, 그의 얼굴과 눈에\r\n 뜨거운 증기와 함께 부식성 화학물질을 뿌\r\n린 것 같다. 그는 심각한 화상과 신경 손\r\n상을 입었다.그가 입은 부상의 특성을 고려\r\n하여, 그는 전문 치료를 받기 위해 볼티모\r\n어의 홉킨스 병원으로 보내졌다.치료:위탁됨.",
+        "original_ids": []
+      }
+    ],
+    "TERM/BTXT|preferred_original_field_unique_ko": [
+      {
+        "formid": "01064B8D",
+        "english": "      SoftLock Solutions, Inc\r\n\"Your Security is Our Security\"\r\n>\\ Welcome, USER\r\n",
+        "ko": "      (주) 소프트락 솔루션스\r\n\"여러분의 안전이 우리의 안전입니다\"\r\n\r\n>\\ 환영합니다, 사용자",
+        "original_ids": []
+      },
+      {
+        "formid": "01064B8C",
+        "english": "      SoftLock Solutions, Inc\r\n\"Your Security is Our Security\"\r\n>\\ Welcome, USER\r\n",
+        "ko": "      (주) 소프트락 솔루션스\r\n\"여러분의 안전이 우리의 안전입니다\"\r\n\r\n>\\ 환영합니다, 사용자",
+        "original_ids": []
+      },
+      {
+        "formid": "01064B8B",
+        "english": "      SoftLock Solutions, Inc\r\n\"Your Security is Our Security\"\r\n>\\ Welcome, USER\r\n",
+        "ko": "      (주) 소프트락 솔루션스\r\n\"여러분의 안전이 우리의 안전입니다\"\r\n\r\n>\\ 환영합니다, 사용자",
+        "original_ids": []
+      },
+      {
+        "formid": "01064B8A",
+        "english": "      SoftLock Solutions, Inc\r\n\"Your Security is Our Security\"\r\n>\\ Welcome, USER\r\n",
+        "ko": "      (주) 소프트락 솔루션스\r\n\"여러분의 안전이 우리의 안전입니다\"\r\n\r\n>\\ 환영합니다, 사용자",
+        "original_ids": []
+      }
+    ],
+    "TERM/UNAM|other_field_unique_ko": [
+      {
+        "formid": "01064B80",
+        "english": "<!>Please Exercise Caution<!>",
+        "ko": "<!>조심하십시오<!>",
+        "original_ids": []
+      },
+      {
+        "formid": "01064B7E",
+        "english": "<!>Please Exercise Caution<!>",
+        "ko": "<!>조심하십시오<!>",
+        "original_ids": []
+      },
+      {
+        "formid": "01064B7C",
+        "english": "<!>Please Exercise Caution<!>",
+        "ko": "<!>조심하십시오<!>",
+        "original_ids": []
+      },
+      {
+        "formid": "01064B7A",
+        "english": "<!>Please Exercise Caution<!>",
+        "ko": "<!>조심하십시오<!>",
+        "original_ids": []
+      }
+    ],
+    "TERM/ITXT|preferred_original_field_unique_ko": [
+      {
+        "formid": "01064B80",
+        "english": "System Information",
+        "ko": "시스템 정보",
+        "original_ids": []
+      },
+      {
+        "formid": "01064B80",
+        "english": "System Information",
+        "ko": "시스템 정보",
+        "original_ids": []
+      },
+      {
+        "formid": "01064B80",
+        "english": "System Information",
+        "ko": "시스템 정보",
+        "original_ids": []
+      },
+      {
+        "formid": "01064B80",
+        "english": "System Information",
+        "ko": "시스템 정보",
+        "original_ids": []
+      }
+    ],
+    "TERM/UNAM|no_translation_in_current_sst": [
+      {
+        "formid": "01064B80",
+        "english": "RobcOS v.85\r\n(C)2076 RobCo \r\n========================\r\n| User Log:\r\n| >> Administrator (RobCoID 2398-H)  \r\n| >> New_Admin: FUCK YOU    ",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01064B80",
+        "english": "RobcOS v.85\r\n(C)2076 RobCo \r\n========================\r\n| User Log:\r\n| >> Administrator (RobCoID 2398-H)  \r\n| >> New_Admin: rfy780gsejio",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01064B80",
+        "english": "RobcOS v.85\r\n(C)2076 Robco \r\n========================\r\n| User Log:\r\n| >> Administrator (RobcoID 2398-H)  \r\n| >> Default Targeting_Param",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01064B80",
+        "english": "RobcOS v.85\r\n(C)2076 RobCo \r\n========================\r\n| User Log:\r\n| >> Administrator (RobCoID 2398-H)  \r\n| >> New_Admin: Outcast\r\n| W",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "TERM/ITXT|no_translation_in_current_sst": [
+      {
+        "formid": "010CB509",
+        "english": "Jul 19, 2077",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010CB509",
+        "english": "Dec 24, 2077",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010CB509",
+        "english": "Dec 25, 2077",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010CB509",
+        "english": "Feb 13 2078",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "TERM/FULL|preferred_original_field_unique_ko": [
+      {
+        "formid": "010CAADB",
+        "english": "Isabella Proud's Terminal",
+        "ko": "이사벨라 프라우드의 단말기",
+        "original_ids": []
+      },
+      {
+        "formid": "01081170",
+        "english": "Welcome to the Capital Preservation Society",
+        "ko": "수도보존협회에 오신 것을 환영합니다",
+        "original_ids": []
+      },
+      {
+        "formid": "01058824",
+        "english": "Armory Terminal",
+        "ko": "무기고 단말기",
+        "original_ids": []
+      },
+      {
+        "formid": "01E7A034",
+        "english": "Note From Pronto",
+        "ko": "프론토가 준 노트",
+        "original_ids": []
+      }
+    ],
+    "TERM/BTXT|no_translation_in_current_sst": [
+      {
+        "formid": "010CAA3D",
+        "english": "-***-------  FIELD OPERATIONS\r\n*-*-*------      ENCLAVE \r\n-***-------\r\n-----------\r\n-----------  GOD BLESS AMERICA\r\n",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010CAA3C",
+        "english": "-***-------  FIELD OPERATIONS\r\n*-*-*------      ENCLAVE \r\n-***-------\r\n-----------\r\n-----------  GOD BLESS AMERICA\r\n",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010C83E8",
+        "english": "Journal-It Software © 2072 PagSoft\r\nUSER: suk me  hahaha",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010C0C7F",
+        "english": "DCTA Metro Map\r\n------------------------------------",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "TERM/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "010CAA35",
+        "english": "Surgeon's Notes",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010C0C7F",
+        "english": "Metro Map Terminal",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010A60DB",
+        "english": "Enclave Field Research Terminal: Crater Camp",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0105A47B",
+        "english": "Tulip's Terminal",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "TERM/ITXT|other_field_unique_ko": [
+      {
+        "formid": "010BD69F",
+        "english": "Mirelurks",
+        "ko": "마이얼럭",
+        "original_ids": []
+      },
+      {
+        "formid": "010BD69F",
+        "english": "Radscorpions",
+        "ko": "방사능 전갈",
+        "original_ids": []
+      },
+      {
+        "formid": "010BD69F",
+        "english": "Yao Guai",
+        "ko": "야오과이",
+        "original_ids": []
+      },
+      {
+        "formid": "010BD69E",
+        "english": "Paradise Falls",
+        "ko": "파라다이스 폴스",
+        "original_ids": []
+      }
+    ],
+    "TERM/ITXT|preferred_original_field_conflicting_ko": [
+      {
+        "formid": "010035E5",
+        "english": "Run Maintenance Routine",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010035E5",
+        "english": "Run Maintenance Routine",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010B16D3",
+        "english": "Run Maintenance Routine",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010B16D3",
+        "english": "Run Maintenance Routine",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "TERM/FULL|preferred_original_field_conflicting_ko": [
+      {
+        "formid": "010B16D3",
+        "english": "Automated Maintenence",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010AB802",
+        "english": "Automated Maintenence",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "TERM/BTXT|preferred_original_field_conflicting_ko": [
+      {
+        "formid": "010B16D3",
+        "english": "RobCo Service Terminal\r\nV 6.0.3.2.1.a\r\n\r\n------------------------------------\r\nFor More Top Of The Line \r\nRobCo Products See\r\nYour Loca",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01080CB5",
+        "english": "ERROR 0x03C663A1\r\n\"Network connection not found\"\r\n\"Dummy terminal inactive\"",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01080CAA",
+        "english": "ERROR 0x03C663A1\r\n\"Network connection not found\"\r\n\"Dummy terminal inactive\"",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "TERM/UNAM|other_field_conflicting_ko": [
+      {
+        "formid": "010B16D3",
+        "english": "<ERROR> Maintenance In Progress",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010AB802",
+        "english": "<ERROR> Maintenance In Progress",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "TERM/FULL|other_field_unique_ko": [
+      {
+        "formid": "0104D847",
+        "english": "Patient Files",
+        "ko": "환자 파일",
+        "original_ids": []
+      },
+      {
+        "formid": "01096381",
+        "english": "Vault-Tec Mainframe",
+        "ko": "볼트-텍 메인프레임",
+        "original_ids": []
+      },
+      {
+        "formid": "01D2F7E1",
+        "english": "DCTA Metro Map",
+        "ko": "지하철 지도",
+        "original_ids": []
+      },
+      {
+        "formid": "01DBCE78",
+        "english": "Beta Testing Notice",
+        "ko": "베타 테스트 공지",
+        "original_ids": []
+      }
+    ],
+    "TERM/BTXT|other_field_unique_ko": [
+      {
+        "formid": "01E7A034",
+        "english": "Note From Pronto",
+        "ko": "프론토가 준 노트",
+        "original_ids": []
+      },
+      {
+        "formid": "01D7F569",
+        "english": "Assault Rifle",
+        "ko": "돌격 소총",
+        "original_ids": []
+      },
+      {
+        "formid": "01DCAAD0",
+        "english": "10mm Pistol",
+        "ko": "10mm 권총",
+        "original_ids": []
+      },
+      {
+        "formid": "01C2B1E6",
+        "english": "Finding the Formula",
+        "ko": "제조법을 찾아라",
+        "original_ids": []
+      }
+    ],
+    "CELL/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "015390A9",
+        "english": "Restrooms",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "012DFD20",
+        "english": "Apt. Building",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0136793C",
+        "english": "Apt. Building",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "016CEDA7",
+        "english": "Vault-Tec Registration Center",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "CELL/FULL|preferred_original_field_unique_ko": [
+      {
+        "formid": "01064C6C",
+        "english": "Abandoned Tent",
+        "ko": "버려진 텐트",
+        "original_ids": []
+      },
+      {
+        "formid": "0102DEB3",
+        "english": "Ronald Laren's Home",
+        "ko": "로널드 라렌의 집",
+        "original_ids": []
+      },
+      {
+        "formid": "0102DEB4",
+        "english": "Sierra Petrovita's Home",
+        "ko": "시에라 페트로비타의 집",
+        "original_ids": []
+      },
+      {
+        "formid": "010151E3",
+        "english": "Empty House",
+        "ko": "빈집",
+        "original_ids": []
+      }
+    ],
+    "CELL/FULL|other_field_unique_ko": [
+      {
+        "formid": "01534BD7",
+        "english": "L'Enfant Plaza",
+        "ko": "랑팡 플라자",
+        "original_ids": []
+      }
+    ],
+    "WRLD/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "0000003C",
+        "english": "Commonwealth",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0170003C",
+        "english": "Wasteland",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01014E0E",
+        "english": "GrantTestWorld",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01048964",
+        "english": "QA Testing Exterior",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "WRLD/FULL|preferred_original_field_unique_ko": [
+      {
+        "formid": "01031E12",
+        "english": "Holding pen for freeform encounters",
+        "ko": "프리폼 인카운터 대기 구역",
+        "original_ids": []
+      }
+    ],
+    "QUST/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "0107E262",
+        "english": "Hit sounds for creatures (Capital Wasteland)",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010C8E15",
+        "english": "Mini Quests Dialog and Scripting (Capital Wasteland)",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010C6E93",
+        "english": "WaterBeggars (Capital Wasteland)",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010C4992",
+        "english": "HD00 Jukebox Music (Capital Wasteland)",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "QUST/CNAM|no_translation_in_current_sst": [
+      {
+        "formid": "01038AEF",
+        "english": "Check if barter skill (skill 1) is now one of the 3 highest skills?",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01035B9F",
+        "english": "Incompetent mugger",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01035B9F",
+        "english": "MS01A - Scavenger: Condition to occur after MS01",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01035B9F",
+        "english": "MS01B-F, Condition to occur after MS01 if the player helped residents of Big Town",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "QUST/CNAM|preferred_original_field_unique_ko": [
+      {
+        "formid": "01035B9E",
+        "english": "; hit squads",
+        "ko": "; 암살단",
+        "original_ids": []
+      },
+      {
+        "formid": "01035B9E",
+        "english": "; hit squads",
+        "ko": "; 암살단",
+        "original_ids": []
+      },
+      {
+        "formid": "01032B30",
+        "english": "Hunters and their prey.",
+        "ko": "사냥꾼과 그들의 먹잇감.",
+        "original_ids": []
+      },
+      {
+        "formid": "01032B30",
+        "english": "Hunters and their prey.",
+        "ko": "사냥꾼과 그들의 먹잇감.",
+        "original_ids": []
+      }
+    ],
+    "INFO/NAM1|no_translation_in_current_sst": [
+      {
+        "formid": "0104C19E",
+        "english": "Hi there, mister. You need something?",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0104C19F",
+        "english": "Hi there, miss. Can I help you with something?",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0104C1A1",
+        "english": "Hello again. Did you need something else?",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0104C1A5",
+        "english": "I doubt I can help you. I'm just a kid, you know.",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "INFO/NAM1|preferred_original_field_unique_ko": [
+      {
+        "formid": "010C6E77",
+        "english": "You've helped me so much, it seems wrong to ask, but can you spare any more water?",
+        "ko": "넌 날 많이 도와줬고, 이런 부탁은 잘못된 것 같지만, 물을 더 나눠줄 수 있겠어?",
+        "original_ids": []
+      },
+      {
+        "formid": "010C6E78",
+        "english": "I'll never forget you. Thank you for your help.",
+        "ko": "널 절대로 잊지 않을게. 도와줘서 고마워.",
+        "original_ids": []
+      },
+      {
+        "formid": "010C6E78",
+        "english": "I hate to ask but... do you have any more water?",
+        "ko": "이런 부탁은 싫지만... 물을 더 가지고 있니?",
+        "original_ids": []
+      },
+      {
+        "formid": "010C6E79",
+        "english": "You've saved my life. Thank you, stranger. I hate to ask you this, but times are hard...",
+        "ko": "넌 내 목숨을 구했어. 고마워, 이방인. 이런 부탁 하긴 싫지만, 시간이 촉박해서...",
+        "original_ids": []
+      }
+    ],
+    "INFO/RNAM|preferred_original_field_unique_ko": [
+      {
+        "formid": "01A7B131",
+        "english": "I can try getting that collar off. But it might explode if I tinker with it.",
+        "ko": "내가 그 목걸이를 제거해 볼게. 근데 내가 건드렸다가 폭발할지도 몰라.",
+        "original_ids": []
+      },
+      {
+        "formid": "01E4FF55",
+        "english": "You're a slave. Deal with it.",
+        "ko": "넌 노예야. 네 신세를 받아들여.",
+        "original_ids": []
+      },
+      {
+        "formid": "01CA25EF",
+        "english": "I have to go now.",
+        "ko": "이제 가봐야겠어.",
+        "original_ids": []
+      },
+      {
+        "formid": "01EB833E",
+        "english": "I can try getting that collar off. But it might explode if I tinker with it.",
+        "ko": "내가 그 목걸이를 제거해 볼게. 근데 내가 건드렸다가 폭발할지도 몰라.",
+        "original_ids": []
+      }
+    ],
+    "INFO/RNAM|no_translation_in_current_sst": [
+      {
+        "formid": "019D9D93",
+        "english": "More...",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01F6117F",
+        "english": "More...",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01C8CAD2",
+        "english": "More...",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01E666E0",
+        "english": "More...",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "INFO/NAM1|preferred_original_field_conflicting_ko": [
+      {
+        "formid": "01D40D15",
+        "english": "It's too dangerous here, Dogmeat. Go wait for me at Vault 101.",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0195134E",
+        "english": "Come on, Dogmeat. Let's go!",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01EBBD17",
+        "english": "Sorry, Dogmeat. I don't have any Stimpaks for you right now.",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01EABEF0",
+        "english": "Bad, Dogmeat! Very bad!",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "INFO/RNAM|preferred_original_field_conflicting_ko": [
+      {
+        "formid": "01D40D15",
+        "english": "It's too dangerous here, Dogmeat. Go wait for me at Vault 101.",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0195134E",
+        "english": "Come on, Dogmeat. Let's go!",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01EBBD17",
+        "english": "Sorry, Dogmeat. I don't have any Stimpaks for you right now.",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01EABEF0",
+        "english": "Bad, Dogmeat! Very bad!",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "LSCR/DESC|no_translation_in_current_sst": [
+      {
+        "formid": "010610FC",
+        "english": "If you're successfully hidden, your first attack against an opponent will always result in a critical hit.",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0024A0AA",
+        "english": "Exiting back to the Main Menu will create an Exitsave. Next time you play and load the Exitsave, it will delete itself until the next t",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "00249F8C",
+        "english": "In Survival, both you and your companion's Carry Weight has been significantly reduced. Exceeding your carry weight reduces your Endura",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "00249F8B",
+        "english": "In Survival, Stimpaks and Ammo both have weight. Bullets and shells have a small amount of weight, which varies by caliber. Heavier ite",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "EXPL/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "010CC279",
+        "english": "LD Scientist Accident",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0105AC6D",
+        "english": "Stun Grenade",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010182BA",
+        "english": "Limb Explosion Bug",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010BC2CD",
+        "english": "RavenRockExplosion02",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "PERK/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "010770CC",
+        "english": "YaoGuaiMeatPerk",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0106835C",
+        "english": "PsychoPerk",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01061822",
+        "english": "Well Rested",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01058FDF",
+        "english": "Power Armor Training",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "PERK/DESC|no_translation_in_current_sst": [
+      {
+        "formid": "01061822",
+        "english": "After sleeping in a safe bed, you will wake well rested. You earn 10% more experience points for several hours.",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "01058FDF",
+        "english": "You have received the specialized training needed to move in any form of Power Armor.",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010C1A6C",
+        "english": "Your body has been genetically enhanced with the perception and flame resistance of the Grayditch Fire Ants! Your Perception has increa",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010C1A6B",
+        "english": "Your body has been genetically enhanced with the strength and flame resistance of the Grayditch Fire Ants! Your Strength has increased ",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "PERK/FULL|other_field_unique_ko": [
+      {
+        "formid": "0109982E",
+        "english": "Size Matters (1)",
+        "ko": "크기가 중요하지 (1)",
+        "original_ids": []
+      },
+      {
+        "formid": "01E17CEB",
+        "english": "Size Matters (2)",
+        "ko": "크기가 중요하지 (2)",
+        "original_ids": []
+      },
+      {
+        "formid": "01D3012B",
+        "english": "Size Matters (3)",
+        "ko": "크기가 중요하지 (3)",
+        "original_ids": []
+      },
+      {
+        "formid": "01044CB0",
+        "english": "Infiltrator",
+        "ko": "침입자",
+        "original_ids": []
+      }
+    ],
+    "PERK/DESC|other_field_unique_ko": [
+      {
+        "formid": "01044CB1",
+        "english": "With the Intense Training perk, you can put a single point into any of your S.P.E.C.I.A.L. attributes.",
+        "ko": "혹독한 훈련 퍽을 얻으면 S.P.E.C.I.A.L. 중 하나에 1점을 올릴 수 있습니다.",
+        "original_ids": []
+      },
+      {
+        "formid": "01DC2E96",
+        "english": "With the Intense Training perk, you can put a single point into any of your S.P.E.C.I.A.L. attributes.",
+        "ko": "혹독한 훈련 퍽을 얻으면 S.P.E.C.I.A.L. 중 하나에 1점을 올릴 수 있습니다.",
+        "original_ids": []
+      },
+      {
+        "formid": "01EAA2E5",
+        "english": "With the Intense Training perk, you can put a single point into any of your S.P.E.C.I.A.L. attributes.",
+        "ko": "혹독한 훈련 퍽을 얻으면 S.P.E.C.I.A.L. 중 하나에 1점을 올릴 수 있습니다.",
+        "original_ids": []
+      },
+      {
+        "formid": "019D88CA",
+        "english": "With the Intense Training perk, you can put a single point into any of your S.P.E.C.I.A.L. attributes.",
+        "ko": "혹독한 훈련 퍽을 얻으면 S.P.E.C.I.A.L. 중 하나에 1점을 올릴 수 있습니다.",
+        "original_ids": []
+      }
+    ],
+    "PERK/FULL|preferred_original_field_unique_ko": [
+      {
+        "formid": "01003142",
+        "english": "Child at Heart",
+        "ko": "동심",
+        "original_ids": []
+      }
+    ],
+    "PERK/DESC|preferred_original_field_unique_ko": [
+      {
+        "formid": "01003142",
+        "english": "The Child at Heart perk greatly improves your interactions with children, usually in the form of unique dialogue choices.",
+        "ko": "동심 퍽은 아이들과의 대화 도중에 독특한 선택지가 나타나는 형태로 아이들과의 관계를 크게 개선해줍니다.",
+        "original_ids": []
+      }
+    ],
+    "MESG/DESC|no_translation_in_current_sst": [
+      {
+        "formid": "0105A7AD",
+        "english": "The door has locked shut behind you. There is no exit.",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0104C5FC",
+        "english": "Caleb Smith is dead.",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0104C5C6",
+        "english": "Advanced technology from the Commonwealth has increased your reaction speed, giving you a higher chance to hit in V.A.T.S.",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0104C597",
+        "english": "Something about your presence dampens others' desires to exceed. Any enemy's chance of getting critical hits on you is now reduced by h",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "MESG/FULL|other_field_unique_ko": [
+      {
+        "formid": "0104C5FC",
+        "english": "Head of State",
+        "ko": "국가 원수",
+        "original_ids": []
+      },
+      {
+        "formid": "01079241",
+        "english": "Janet Rockwell's Diary",
+        "ko": "재닛 락웰의 일기",
+        "original_ids": []
+      },
+      {
+        "formid": "0107887A",
+        "english": "Head of State",
+        "ko": "국가 원수",
+        "original_ids": []
+      },
+      {
+        "formid": "010C8034",
+        "english": "Be careful!",
+        "ko": "조심해!",
+        "original_ids": []
+      }
+    ],
+    "MESG/FULL|no_translation_in_current_sst": [
+      {
+        "formid": "0104C5C6",
+        "english": "Wired Reflexes Perk Added",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0104C597",
+        "english": "Dream Crusher Perk Added",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0104C596",
+        "english": "Rad Regeneration Perk Added",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "0104C54A",
+        "english": "Hematophage Perk Added",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "MESG/DESC|other_field_unique_ko": [
+      {
+        "formid": "0107887A",
+        "english": "Hannibal Hamlin is dead.",
+        "ko": "해니벌 햄린은 죽었어.",
+        "original_ids": []
+      },
+      {
+        "formid": "010388B8",
+        "english": "The bodies of the Wests have bite marks on the neck area that go to the bone. The lack of bloodstains on the sheets is strange, as any ",
+        "ko": "웨스트 부부의 시신에는 목에 뼈가 보일 정도로 물린 흔적이 있습니다. 이 정도의 상처라면 분명 대량출혈이 일어났을 텐데 주변에 핏자국이 조금밖에 없는 걸 보니 수상합니다. 목에 물린 흔적을 보니 앞니가 날카로운 인간이나 개가 물어뜯은 것 같습니다.",
+        "original_ids": []
+      },
+      {
+        "formid": "010388B7",
+        "english": "The bodies of the Wests have bite marks on the neck area that go to the bone. The lack of bloodstains on the sheets is strange, as any ",
+        "ko": "웨스트 부부의 시신에는 목에 뼈가 보일 정도로 물린 흔적이 있습니다. 이 정도의 상처라면 분명 대량출혈이 일어났을 텐데 주변에 핏자국이 조금밖에 없는 걸 보니 수상합니다.",
+        "original_ids": []
+      },
+      {
+        "formid": "010388B6",
+        "english": "The bodies of the Wests have bite marks on the neck area that go to the bone.",
+        "ko": "웨스트 부부의 시신에는 목에 뼈가 보일 정도로 물린 흔적이 있습니다.",
+        "original_ids": []
+      }
+    ],
+    "MESG/ITXT|no_translation_in_current_sst": [
+      {
+        "formid": "010C8033",
+        "english": "Push the skate.",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010C72EE",
+        "english": "Attempt to fix the switch.",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010C502E",
+        "english": "Get some Ice Cold Nuka-Cola",
+        "ko": null,
+        "original_ids": []
+      },
+      {
+        "formid": "010C502E",
+        "english": "Do nothing",
+        "ko": null,
+        "original_ids": []
+      }
+    ],
+    "MESG/ITXT|other_field_unique_ko": [
+      {
+        "formid": "010BB7CD",
+        "english": "Yes.",
+        "ko": "그래.",
+        "original_ids": []
+      },
+      {
+        "formid": "010BB7CD",
+        "english": "Never mind.",
+        "ko": "아무것도 아니야.",
+        "original_ids": []
+      },
+      {
+        "formid": "010BB7CC",
+        "english": "Yes.",
+        "ko": "그래.",
+        "original_ids": []
+      },
+      {
+        "formid": "010BB7CC",
+        "english": "Never mind.",
+        "ko": "아무것도 아니야.",
+        "original_ids": []
+      }
+    ],
+    "MESG/ITXT|preferred_original_field_unique_ko": [
+      {
+        "formid": "011D05E8",
+        "english": "[Repair: 30] Disable the Vent",
+        "ko": "[수리 30] 환기구를 끈다.",
+        "original_ids": []
+      },
+      {
+        "formid": "011D05E8",
+        "english": "[Repair: 30] Disable the Vent",
+        "ko": "[수리 30] 환기구를 끈다.",
+        "original_ids": []
+      },
+      {
+        "formid": "011D05D9",
+        "english": "[Science: 71] Override the door controls.",
+        "ko": "[과학 71] 문의 제어 장치를 무효화한다.",
+        "original_ids": []
+      },
+      {
+        "formid": "011D05D9",
+        "english": "[Science: 71] Override the door controls.",
+        "ko": "[과학 71] 문의 제어 장치를 무효화한다.",
+        "original_ids": []
+      }
+    ]
+  },
+  "key_source_index_target_ids": 0,
+  "note": "Source exact match if possible, else original field preference. These are translation recovery candidates only. Actual runtime reachability and patch generation are separate."
+}

@@ -1,0 +1,1323 @@
+{
+  "game": "fnv",
+  "definitions_path": "F:\\번역\\프로그램\\xTranslator\\Data\\Fallout4\\_recorddefs.txt",
+  "definitions_sha256": "19c4df8a5db362783c36dc2b8fc0118a268680d7890421668bf26d561f8f28c6",
+  "definition_rule_count": 38,
+  "esm_sha256": "caa2d4649c99bfcdd36e8a489f865e55f5ee9fc6087469ba0d1de2e410318897",
+  "source_size": 369045237,
+  "counts": {
+    "xtranslator_field_occurrences": 238860,
+    "not_decoded_as_plain_text": 8603,
+    "xtranslator_decoded_text_occurrences": 230257,
+    "planned_existing": 83480,
+    "missing_translation_match": 15723,
+    "existing_korean_needs_context": 52739,
+    "planned_strict": 78315
+  },
+  "by_record_field": {
+    "ACTI/FULL": {
+      "planned_existing": 1162,
+      "missing_translation_match": 12,
+      "existing_korean_needs_context": 26
+    },
+    "ALCH/DESC": {
+      "not_decoded": 175,
+      "missing_translation_match": 1
+    },
+    "ALCH/DNAM": {
+      "not_decoded": 176
+    },
+    "ALCH/FULL": {
+      "planned_existing": 170,
+      "missing_translation_match": 6
+    },
+    "AMMO/DESC": {
+      "not_decoded": 136
+    },
+    "AMMO/FULL": {
+      "planned_existing": 135,
+      "missing_translation_match": 1
+    },
+    "AMMO/ONAM": {
+      "missing_translation_match": 18,
+      "planned_existing": 118
+    },
+    "ARMO/DESC": {
+      "not_decoded": 510
+    },
+    "ARMO/FULL": {
+      "missing_translation_match": 41,
+      "planned_existing": 446
+    },
+    "AVIF/DESC": {
+      "not_decoded": 29
+    },
+    "AVIF/FULL": {
+      "missing_translation_match": 24
+    },
+    "BOOK/CNAM": {
+      "not_decoded": 27
+    },
+    "BOOK/DESC": {
+      "planned_existing": 26,
+      "not_decoded": 1
+    },
+    "BOOK/FULL": {
+      "planned_existing": 20
+    },
+    "CELL/FULL": {
+      "planned_existing": 483,
+      "missing_translation_match": 7
+    },
+    "CONT/FULL": {
+      "planned_existing": 3348,
+      "missing_translation_match": 3,
+      "existing_korean_needs_context": 3
+    },
+    "DOOR/FULL": {
+      "planned_existing": 463
+    },
+    "ENCH/FULL": {
+      "missing_translation_match": 115,
+      "not_decoded": 1
+    },
+    "EXPL/FULL": {
+      "planned_existing": 160,
+      "missing_translation_match": 17,
+      "existing_korean_needs_context": 17
+    },
+    "FACT/FULL": {
+      "planned_existing": 428,
+      "missing_translation_match": 56,
+      "existing_korean_needs_context": 3
+    },
+    "FURN/FULL": {
+      "planned_existing": 213
+    },
+    "GMST/DATA": {
+      "not_decoded": 5
+    },
+    "HAZD/FULL": {
+      "missing_translation_match": 77
+    },
+    "INFO/NAM1": {
+      "planned_existing": 29641,
+      "planned_strict": 3814,
+      "missing_translation_match": 10787,
+      "existing_korean_needs_context": 27264,
+      "not_decoded": 141
+    },
+    "INFO/RNAM": {
+      "existing_korean_needs_context": 24304,
+      "planned_existing": 23949,
+      "planned_strict": 73323,
+      "missing_translation_match": 1001
+    },
+    "KEYM/FULL": {
+      "planned_existing": 313
+    },
+    "LSCR/DESC": {
+      "planned_existing": 283,
+      "missing_translation_match": 357,
+      "existing_korean_needs_context": 1
+    },
+    "MESG/DESC": {
+      "planned_existing": 1486,
+      "not_decoded": 57,
+      "missing_translation_match": 67,
+      "existing_korean_needs_context": 22
+    },
+    "MESG/FULL": {
+      "existing_korean_needs_context": 27,
+      "planned_existing": 515,
+      "missing_translation_match": 59
+    },
+    "MESG/ITXT": {
+      "planned_existing": 852,
+      "existing_korean_needs_context": 15,
+      "missing_translation_match": 137
+    },
+    "MGEF/DNAM": {
+      "not_decoded": 237
+    },
+    "MGEF/FULL": {
+      "planned_existing": 124,
+      "missing_translation_match": 107,
+      "existing_korean_needs_context": 6
+    },
+    "MISC/FULL": {
+      "planned_existing": 987,
+      "missing_translation_match": 2
+    },
+    "MSTT/FULL": {
+      "planned_existing": 30
+    },
+    "NOTE/FULL": {
+      "planned_existing": 1025,
+      "missing_translation_match": 191,
+      "existing_korean_needs_context": 9
+    },
+    "NPC_/FULL": {
+      "planned_existing": 5410,
+      "missing_translation_match": 74,
+      "not_decoded": 4132
+    },
+    "OMOD/DESC": {
+      "not_decoded": 140
+    },
+    "PERK/DESC": {
+      "planned_existing": 1372,
+      "not_decoded": 30,
+      "missing_translation_match": 18
+    },
+    "PERK/EPFD": {
+      "not_decoded": 578,
+      "missing_translation_match": 178
+    },
+    "PERK/FULL": {
+      "planned_existing": 229,
+      "planned_strict": 1178,
+      "missing_translation_match": 13
+    },
+    "PROJ/FULL": {
+      "planned_existing": 130,
+      "missing_translation_match": 4
+    },
+    "QUST/CNAM": {
+      "planned_existing": 527,
+      "existing_korean_needs_context": 17,
+      "missing_translation_match": 18
+    },
+    "QUST/FULL": {
+      "missing_translation_match": 514
+    },
+    "QUST/NNAM": {
+      "planned_existing": 1427,
+      "not_decoded": 18,
+      "missing_translation_match": 37
+    },
+    "RACE/DESC": {
+      "not_decoded": 10
+    },
+    "RACE/FULL": {
+      "not_decoded": 10
+    },
+    "REFR/FULL": {
+      "planned_existing": 320,
+      "missing_translation_match": 1
+    },
+    "SPEL/DESC": {
+      "not_decoded": 519
+    },
+    "SPEL/FULL": {
+      "planned_existing": 382,
+      "missing_translation_match": 87,
+      "existing_korean_needs_context": 4
+    },
+    "TACT/FULL": {
+      "planned_existing": 119,
+      "missing_translation_match": 6
+    },
+    "TERM/BTXT": {
+      "planned_existing": 1472,
+      "existing_korean_needs_context": 1,
+      "missing_translation_match": 204
+    },
+    "TERM/FULL": {
+      "planned_existing": 1494,
+      "missing_translation_match": 191,
+      "existing_korean_needs_context": 9
+    },
+    "TERM/ITXT": {
+      "planned_existing": 2087,
+      "existing_korean_needs_context": 258,
+      "not_decoded": 1,
+      "missing_translation_match": 205
+    },
+    "TERM/RNAM": {
+      "planned_existing": 372,
+      "missing_translation_match": 469
+    },
+    "TERM/UNAM": {
+      "existing_korean_needs_context": 751,
+      "missing_translation_match": 116,
+      "planned_existing": 1291,
+      "not_decoded": 9
+    },
+    "TERM/WNAM": {
+      "missing_translation_match": 483,
+      "not_decoded": 1201
+    },
+    "WEAP/DESC": {
+      "not_decoded": 460
+    },
+    "WEAP/FULL": {
+      "planned_existing": 440,
+      "missing_translation_match": 18,
+      "existing_korean_needs_context": 2
+    },
+    "WRLD/FULL": {
+      "missing_translation_match": 1,
+      "planned_existing": 31
+    }
+  },
+  "new_fields_not_in_old_handmade_scanner": {
+    "TERM/WNAM": 1684,
+    "QUST/NNAM": 1482,
+    "TERM/RNAM": 841,
+    "PERK/EPFD": 756,
+    "REFR/FULL": 321,
+    "ALCH/DNAM": 176,
+    "AMMO/DESC": 136,
+    "AMMO/ONAM": 136,
+    "PROJ/FULL": 134,
+    "ENCH/FULL": 116,
+    "HAZD/FULL": 77,
+    "MSTT/FULL": 30,
+    "AVIF/DESC": 29,
+    "AVIF/FULL": 24,
+    "RACE/FULL": 10,
+    "RACE/DESC": 10,
+    "GMST/DATA": 5
+  },
+  "unmatched_occurrences_by_priority": {
+    "P1": 610,
+    "P0": 14836,
+    "P2": 277
+  },
+  "missing_distinct_text_by_field_and_priority": [
+    {
+      "type": "INFO",
+      "field": "NAM1",
+      "priority": "P0",
+      "distinct_english": 3145
+    },
+    {
+      "type": "QUST",
+      "field": "FULL",
+      "priority": "P0",
+      "distinct_english": 511
+    },
+    {
+      "type": "LSCR",
+      "field": "DESC",
+      "priority": "P0",
+      "distinct_english": 357
+    },
+    {
+      "type": "INFO",
+      "field": "RNAM",
+      "priority": "P0",
+      "distinct_english": 220
+    },
+    {
+      "type": "TERM",
+      "field": "ITXT",
+      "priority": "P0",
+      "distinct_english": 197
+    },
+    {
+      "type": "TERM",
+      "field": "BTXT",
+      "priority": "P0",
+      "distinct_english": 196
+    },
+    {
+      "type": "NOTE",
+      "field": "FULL",
+      "priority": "P0",
+      "distinct_english": 191
+    },
+    {
+      "type": "TERM",
+      "field": "FULL",
+      "priority": "P0",
+      "distinct_english": 191
+    },
+    {
+      "type": "ENCH",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 95
+    },
+    {
+      "type": "MGEF",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 74
+    },
+    {
+      "type": "MESG",
+      "field": "ITXT",
+      "priority": "P0",
+      "distinct_english": 70
+    },
+    {
+      "type": "NPC_",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 68
+    },
+    {
+      "type": "MESG",
+      "field": "DESC",
+      "priority": "P0",
+      "distinct_english": 62
+    },
+    {
+      "type": "TERM",
+      "field": "UNAM",
+      "priority": "P0",
+      "distinct_english": 58
+    },
+    {
+      "type": "SPEL",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 56
+    },
+    {
+      "type": "MESG",
+      "field": "FULL",
+      "priority": "P0",
+      "distinct_english": 54
+    },
+    {
+      "type": "FACT",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 53
+    },
+    {
+      "type": "TERM",
+      "field": "RNAM",
+      "priority": "P0",
+      "distinct_english": 45
+    },
+    {
+      "type": "ARMO",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 38
+    },
+    {
+      "type": "PERK",
+      "field": "EPFD",
+      "priority": "P2",
+      "distinct_english": 30
+    },
+    {
+      "type": "AVIF",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 24
+    },
+    {
+      "type": "WEAP",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 18
+    },
+    {
+      "type": "QUST",
+      "field": "CNAM",
+      "priority": "P0",
+      "distinct_english": 18
+    },
+    {
+      "type": "PERK",
+      "field": "DESC",
+      "priority": "P1",
+      "distinct_english": 18
+    },
+    {
+      "type": "AMMO",
+      "field": "ONAM",
+      "priority": "P1",
+      "distinct_english": 17
+    },
+    {
+      "type": "QUST",
+      "field": "NNAM",
+      "priority": "P0",
+      "distinct_english": 16
+    },
+    {
+      "type": "EXPL",
+      "field": "FULL",
+      "priority": "P2",
+      "distinct_english": 13
+    },
+    {
+      "type": "PERK",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 13
+    },
+    {
+      "type": "ACTI",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 12
+    },
+    {
+      "type": "TERM",
+      "field": "WNAM",
+      "priority": "P0",
+      "distinct_english": 10
+    },
+    {
+      "type": "CELL",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 7
+    },
+    {
+      "type": "TACT",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 6
+    },
+    {
+      "type": "ALCH",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 6
+    },
+    {
+      "type": "CONT",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 3
+    },
+    {
+      "type": "PROJ",
+      "field": "FULL",
+      "priority": "P2",
+      "distinct_english": 3
+    },
+    {
+      "type": "MISC",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 2
+    },
+    {
+      "type": "AMMO",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 1
+    },
+    {
+      "type": "ALCH",
+      "field": "DESC",
+      "priority": "P1",
+      "distinct_english": 1
+    },
+    {
+      "type": "HAZD",
+      "field": "FULL",
+      "priority": "P2",
+      "distinct_english": 1
+    },
+    {
+      "type": "WRLD",
+      "field": "FULL",
+      "priority": "P1",
+      "distinct_english": 1
+    },
+    {
+      "type": "REFR",
+      "field": "FULL",
+      "priority": "P2",
+      "distinct_english": 1
+    }
+  ],
+  "samples": {
+    "FACT/FULL/missing_translation_match": [
+      {
+        "id": "01173507",
+        "english": "Vault19PowderGangerFaction"
+      },
+      {
+        "id": "0115F16E",
+        "english": "Vipers Faction"
+      },
+      {
+        "id": "0115E9E1",
+        "english": "Vault 34 Dwellers"
+      }
+    ],
+    "FACT/FULL/existing_korean_needs_context": [
+      {
+        "id": "010EE68A",
+        "english": "Caesar's Legion Faction"
+      },
+      {
+        "id": "010E6758",
+        "english": "Nightkin Faction"
+      },
+      {
+        "id": "0119201A",
+        "english": "Hologram Generic Faction"
+      }
+    ],
+    "MGEF/FULL/missing_translation_match": [
+      {
+        "id": "01143FAF",
+        "english": "LegateKnockdownEffect3"
+      },
+      {
+        "id": "01143FAE",
+        "english": "LegateKnockdownEffect2"
+      },
+      {
+        "id": "011438C8",
+        "english": "LegateKnockdownEffect"
+      }
+    ],
+    "MGEF/FULL/existing_korean_needs_context": [
+      {
+        "id": "015C6B82",
+        "english": "Spore Carrier Burst Magic Effect"
+      },
+      {
+        "id": "01C6CBD7",
+        "english": "Cazador Poison"
+      },
+      {
+        "id": "01AA75A6",
+        "english": "Stealth Field Stop Combat"
+      }
+    ],
+    "ENCH/FULL/missing_translation_match": [
+      {
+        "id": "01C351B1",
+        "english": "Initiate Armor"
+      },
+      {
+        "id": "019102A2",
+        "english": "Oliver's Uniform"
+      },
+      {
+        "id": "01D5BA0F",
+        "english": "Lab Coat"
+      }
+    ],
+    "SPEL/FULL/missing_translation_match": [
+      {
+        "id": "011787BB",
+        "english": "Mk. III Turret DT"
+      },
+      {
+        "id": "01160140",
+        "english": "Securitron Mk 2 DT"
+      },
+      {
+        "id": "0113E5BD",
+        "english": "Tough Dog DT"
+      }
+    ],
+    "SPEL/FULL/existing_korean_needs_context": [
+      {
+        "id": "01143FB7",
+        "english": "LegateKickAss"
+      },
+      {
+        "id": "01112C2F",
+        "english": "BurningNormal"
+      },
+      {
+        "id": "01112C2A",
+        "english": "BurningNormal"
+      }
+    ],
+    "ACTI/FULL/missing_translation_match": [
+      {
+        "id": "01159780",
+        "english": "VicWarnsYouFool"
+      },
+      {
+        "id": "01158346",
+        "english": "GSGeckomanSpringTrap"
+      },
+      {
+        "id": "01154131",
+        "english": " "
+      }
+    ],
+    "ACTI/FULL/existing_korean_needs_context": [
+      {
+        "id": "014E6F47",
+        "english": "Light Switch"
+      },
+      {
+        "id": "0142040C",
+        "english": "Light Switch"
+      },
+      {
+        "id": "014316BB",
+        "english": "Light Switch"
+      }
+    ],
+    "TACT/FULL/missing_translation_match": [
+      {
+        "id": "01112E46",
+        "english": "Christine Voice Activator"
+      },
+      {
+        "id": "01112E45",
+        "english": "Dean Voice Activator"
+      },
+      {
+        "id": "0110F2C5",
+        "english": "743.00Hz ULF"
+      }
+    ],
+    "ARMO/FULL/missing_translation_match": [
+      {
+        "id": "0117A189",
+        "english": "CSArmorRadiationSuit"
+      },
+      {
+        "id": "0113F3A6",
+        "english": "[PowerArmor] DamWar Enclave Scientist"
+      },
+      {
+        "id": "0113F3A3",
+        "english": "[PowerArmor] DamWar Enclave Officer"
+      }
+    ],
+    "CONT/FULL/missing_translation_match": [
+      {
+        "id": "0108D21E",
+        "english": "Cliff Briscoe's Trunk"
+      },
+      {
+        "id": "010B41DA",
+        "english": "Flak 'N Shrapnel's Trunk"
+      },
+      {
+        "id": "015B0DE7",
+        "english": "Hologram Vendor Container"
+      }
+    ],
+    "CONT/FULL/existing_korean_needs_context": [
+      {
+        "id": "01DF22B1",
+        "english": "Footlocker"
+      },
+      {
+        "id": "019851FA",
+        "english": "Tops Bartender Chest"
+      },
+      {
+        "id": "01E35133",
+        "english": "Tops Bartender Chest"
+      }
+    ],
+    "MISC/FULL/missing_translation_match": [
+      {
+        "id": "0103D34D",
+        "english": "G.E.C.K."
+      },
+      {
+        "id": "011476B0",
+        "english": "12.7mm Submachine Gun Silencer"
+      }
+    ],
+    "WEAP/FULL/missing_translation_match": [
+      {
+        "id": "0105DEEE",
+        "english": "SatcomNuclearStrike"
+      },
+      {
+        "id": "01046BDD",
+        "english": "Bloatfly1HP"
+      },
+      {
+        "id": "01196A6F",
+        "english": "NVDLC03LaserStingerSmall10"
+      }
+    ],
+    "WEAP/FULL/existing_korean_needs_context": [
+      {
+        "id": "0110FDA7",
+        "english": "Hologram Beam"
+      },
+      {
+        "id": "01192032",
+        "english": "Hologram Beam"
+      }
+    ],
+    "AMMO/ONAM/missing_translation_match": [
+      {
+        "id": "01176E5C",
+        "english": "9mm"
+      },
+      {
+        "id": "01176E54",
+        "english": "MCA"
+      },
+      {
+        "id": "01160C41",
+        "english": ".223"
+      }
+    ],
+    "AMMO/FULL/missing_translation_match": [
+      {
+        "id": "0102935B",
+        "english": "BB"
+      }
+    ],
+    "NPC_/FULL/missing_translation_match": [
+      {
+        "id": "011727DA",
+        "english": "DrunkTestMale"
+      },
+      {
+        "id": "0113FD80",
+        "english": "DrunkTestMale"
+      },
+      {
+        "id": "0113FD7F",
+        "english": "DrunkTestMale"
+      }
+    ],
+    "ALCH/FULL/missing_translation_match": [
+      {
+        "id": "011613C3",
+        "english": "Fire Ant Fricassée"
+      },
+      {
+        "id": "0115F0E7",
+        "english": "Jalapeño Pepper"
+      },
+      {
+        "id": "011598EF",
+        "english": "testfx"
+      }
+    ],
+    "ALCH/DESC/missing_translation_match": [
+      {
+        "id": "01D17A20",
+        "english": "Shows your Fallout 3 karma and skills."
+      }
+    ],
+    "NOTE/FULL/missing_translation_match": [
+      {
+        "id": "0116A22B",
+        "english": "V03TrentEmail"
+      },
+      {
+        "id": "01166B6A",
+        "english": "HVRamosJournal01"
+      },
+      {
+        "id": "01166B69",
+        "english": "VHDInventoryNote03"
+      }
+    ],
+    "NOTE/FULL/existing_korean_needs_context": [
+      {
+        "id": "011622D5",
+        "english": "V19Note"
+      },
+      {
+        "id": "011622D3",
+        "english": "V19Note"
+      },
+      {
+        "id": "01147542",
+        "english": "V19Note"
+      }
+    ],
+    "PROJ/FULL/missing_translation_match": [
+      {
+        "id": "0114C65C",
+        "english": "C4"
+      },
+      {
+        "id": "01130043",
+        "english": "C4"
+      },
+      {
+        "id": "0162406B",
+        "english": "Tomahawk Projectile"
+      }
+    ],
+    "HAZD/FULL/missing_translation_match": [
+      {
+        "id": "01E66925",
+        "english": "Radiation"
+      },
+      {
+        "id": "01BF8D81",
+        "english": "Radiation"
+      },
+      {
+        "id": "01E4729B",
+        "english": "Radiation"
+      }
+    ],
+    "TERM/WNAM/missing_translation_match": [
+      {
+        "id": "0117B7A0",
+        "english": "-Server 0-"
+      },
+      {
+        "id": "0117B79F",
+        "english": "-Server 0-"
+      },
+      {
+        "id": "011672C6",
+        "english": "-Server 8-"
+      }
+    ],
+    "TERM/UNAM/existing_korean_needs_context": [
+      {
+        "id": "0116A228",
+        "english": "From: Trent Meyer\r\nTo: Vincent Vanmiller\r\n\r\nHey Vincent,\r\nI've been going over our inventory of replacements parts and noticed that we've only got one reverse pulse cleaner. I know"
+      },
+      {
+        "id": "01166B56",
+        "english": "We've begun to take stock of what's left here, but my first impression is \"not much.\" The equipment here is in terrible condition, and will require extensive repairs to get even mi"
+      },
+      {
+        "id": "01166B56",
+        "english": "Johnson, I've come across a crate with a couple of suits made of a material I don't even recognize. Do you know what the hell this is? Looks like pre-war tech to me. The eggheads w"
+      }
+    ],
+    "TERM/RNAM/missing_translation_match": [
+      {
+        "id": "01166B56",
+        "english": "Loading..."
+      },
+      {
+        "id": "01166B56",
+        "english": "Loading..."
+      },
+      {
+        "id": "01166B56",
+        "english": "Loading..."
+      }
+    ],
+    "TERM/ITXT/existing_korean_needs_context": [
+      {
+        "id": "01166B54",
+        "english": "Read Journal 653"
+      },
+      {
+        "id": "01166B54",
+        "english": "Read Journal 653"
+      },
+      {
+        "id": "01166B54",
+        "english": "Read Journal 653"
+      }
+    ],
+    "TERM/UNAM/missing_translation_match": [
+      {
+        "id": "01166B53",
+        "english": "Resetting targeting parameters..."
+      },
+      {
+        "id": "0115ECEF",
+        "english": "... Accessing Data."
+      },
+      {
+        "id": "0115A157",
+        "english": "Isolation confirmed."
+      }
+    ],
+    "TERM/BTXT/existing_korean_needs_context": [
+      {
+        "id": "01166B32",
+        "english": "Chief Fire Officer Terminal"
+      }
+    ],
+    "TERM/ITXT/missing_translation_match": [
+      {
+        "id": "01135F1B",
+        "english": "138.u84d.983.we.r"
+      },
+      {
+        "id": "01135F1B",
+        "english": "gi.d3.8o20"
+      },
+      {
+        "id": "01135F1B",
+        "english": "md.45.7ld2"
+      }
+    ],
+    "TERM/BTXT/missing_translation_match": [
+      {
+        "id": "0110AF1A",
+        "english": "l;fkajsdlkfjasdlkfjasdklfjadkslfjasdf\r\nas;dlkfjasd;lkfjasdlkfjadklsfjasdlkfja\r\nouitypioufyhin mrewtw.etj;aljga0oij\r\nkjnhiubvyp;oihjernthjouyshgoha'ijf"
+      },
+      {
+        "id": "010CAADB",
+        "english": "Journal-It Software © 2072 PagSoft\r\nIsabella Proud's Journal"
+      },
+      {
+        "id": "010ACD1F",
+        "english": "Journal-It Software © 2072 PagSoft\r\nUSER: Ryan Brigg's"
+      }
+    ],
+    "TERM/FULL/missing_translation_match": [
+      {
+        "id": "01C0971E",
+        "english": "V03TrentEmail"
+      },
+      {
+        "id": "01E16B77",
+        "english": "HVRamosJournal01"
+      },
+      {
+        "id": "01A965E8",
+        "english": "VHDInventoryNote03"
+      }
+    ],
+    "TERM/FULL/existing_korean_needs_context": [
+      {
+        "id": "01F76510",
+        "english": "V19Note"
+      },
+      {
+        "id": "01A6F477",
+        "english": "V19Note"
+      },
+      {
+        "id": "01A7895E",
+        "english": "V19Note"
+      }
+    ],
+    "CELL/FULL/missing_translation_match": [
+      {
+        "id": "0110F2BC",
+        "english": "Debug Cell"
+      },
+      {
+        "id": "0160F8F5",
+        "english": "ILO Testing Cell"
+      },
+      {
+        "id": "015C9510",
+        "english": "Level Design Toolbox Cell"
+      }
+    ],
+    "WRLD/FULL/missing_translation_match": [
+      {
+        "id": "0000003C",
+        "english": "Commonwealth"
+      }
+    ],
+    "REFR/FULL/missing_translation_match": [
+      {
+        "id": "01DD0891",
+        "english": "Vertibird (Commonwealth, Capital Wasteland)"
+      }
+    ],
+    "QUST/FULL/missing_translation_match": [
+      {
+        "id": "0117BA15",
+        "english": "Patch04Debug (Mojave)"
+      },
+      {
+        "id": "0117BA14",
+        "english": "Faction Hit-Squad Master Quest (Mojave)"
+      },
+      {
+        "id": "0117BA13",
+        "english": "Santiago FX Sequence (Mojave)"
+      }
+    ],
+    "QUST/CNAM/existing_korean_needs_context": [
+      {
+        "id": "0114F3B1",
+        "english": "Fail state."
+      },
+      {
+        "id": "011349A7",
+        "english": "Talk to Boone."
+      },
+      {
+        "id": "011349A7",
+        "english": "Talk to Boone."
+      }
+    ],
+    "QUST/NNAM/missing_translation_match": [
+      {
+        "id": "01140C3B",
+        "english": "Return to Diane for your payment."
+      },
+      {
+        "id": "01140C3B",
+        "english": "Return to Diane for your payment."
+      },
+      {
+        "id": "0113E5AF",
+        "english": "Report back to Samuel Cooke."
+      }
+    ],
+    "QUST/CNAM/missing_translation_match": [
+      {
+        "id": "01113AA5",
+        "english": "Disable all the starting enemies in the Villa.  Useful for testing the Villa in other circumstances, such as after the Gala event."
+      },
+      {
+        "id": "01113AA5",
+        "english": "Enables all the starting creatures in the villa.  Intended for testing system limits if the player has been avoiding enemies all the way to the gala event."
+      },
+      {
+        "id": "01113AA5",
+        "english": "Jump the player to the autodoc where Christine joins, add Christine to the party, and enable the enemies that spawn after Christine joins."
+      }
+    ],
+    "INFO/NAM1/missing_translation_match": [
+      {
+        "id": "01152C2C",
+        "english": "If it isn't the courier who's done everything he can to defy the will of mighty Caesar!"
+      },
+      {
+        "id": "01152D2D",
+        "english": "Had the Legionaries at Nelson been more seasoned, we'd still hold the settlement."
+      },
+      {
+        "id": "011755F6",
+        "english": "You hear about this courier doing shit around the Strip? Like what, delivering mail?"
+      }
+    ],
+    "INFO/NAM1/existing_korean_needs_context": [
+      {
+        "id": "0114C48D",
+        "english": "What do you want?"
+      },
+      {
+        "id": "0114C491",
+        "english": "What?"
+      },
+      {
+        "id": "01154804",
+        "english": "What can I do for you?"
+      }
+    ],
+    "INFO/RNAM/existing_korean_needs_context": [
+      {
+        "id": "01BA456F",
+        "english": "Who is that?"
+      },
+      {
+        "id": "01F74449",
+        "english": "Friend of yours?"
+      },
+      {
+        "id": "01951EC5",
+        "english": "Ooh, look. A body. I really should be going."
+      }
+    ],
+    "INFO/RNAM/missing_translation_match": [
+      {
+        "id": "01F97367",
+        "english": "What's your story?"
+      },
+      {
+        "id": "01948067",
+        "english": "What's your story?"
+      },
+      {
+        "id": "01EC286A",
+        "english": "Never mind."
+      }
+    ],
+    "LSCR/DESC/missing_translation_match": [
+      {
+        "id": "0024A0AA",
+        "english": "Exiting back to the Main Menu will create an Exitsave. Next time you play and load the Exitsave, it will delete itself until the next time you exit back to the Main Menu."
+      },
+      {
+        "id": "00249F8C",
+        "english": "In Survival, both you and your companion's Carry Weight has been significantly reduced. Exceeding your carry weight reduces your Endurance and Agility stats, and periodically damag"
+      },
+      {
+        "id": "00249F8B",
+        "english": "In Survival, Stimpaks and Ammo both have weight. Bullets and shells have a small amount of weight, which varies by caliber. Heavier items such as fusion cores, rockets, and mini-nu"
+      }
+    ],
+    "LSCR/DESC/existing_korean_needs_context": [
+      {
+        "id": "001F6D96",
+        "english": "Want to prevent an enemy from fleeing? Cripple the legs."
+      }
+    ],
+    "EXPL/FULL/missing_translation_match": [
+      {
+        "id": "011622D1",
+        "english": "40mm Grenade Explosion Inc."
+      },
+      {
+        "id": "0116201B",
+        "english": "Holy Frag Explosion"
+      },
+      {
+        "id": "01160303",
+        "english": "Gauss Impact Explosion"
+      }
+    ],
+    "EXPL/FULL/existing_korean_needs_context": [
+      {
+        "id": "01130044",
+        "english": "C4 Explosion"
+      },
+      {
+        "id": "010E2C39",
+        "english": "Missile Explosion"
+      },
+      {
+        "id": "010E2C38",
+        "english": "Missile Explosion"
+      }
+    ],
+    "PERK/DESC/missing_translation_match": [
+      {
+        "id": "01165AF0",
+        "english": "When you're deep in enemy territory, you just start chucking grenades and hope for the best. All explosives have a 25% larger area of effect."
+      },
+      {
+        "id": "01165AEF",
+        "english": "You're just so excited about plasma that you can't (magnetically) contain yourself! The V.A.T.S. Action Point cost of all plasma weapons (including Plasma Grenades) is reduced by 2"
+      },
+      {
+        "id": "0116578B",
+        "english": "Your precision with a scattergun is something to behold. When using shotguns, regardless of ammunition used, you ignore about a quarter of a target's armor."
+      }
+    ],
+    "PERK/EPFD/missing_translation_match": [
+      {
+        "id": "01165AEF",
+        "english": "ÍÌL?"
+      },
+      {
+        "id": "01165AEC",
+        "english": "š™™?"
+      },
+      {
+        "id": "01165789",
+        "english": "33“?"
+      }
+    ],
+    "PERK/FULL/missing_translation_match": [
+      {
+        "id": "010770CC",
+        "english": "YaoGuaiMeatPerk"
+      },
+      {
+        "id": "0106835C",
+        "english": "PsychoPerk"
+      },
+      {
+        "id": "0110F217",
+        "english": "NVDLC01InShiningArmorEyewear"
+      }
+    ],
+    "AVIF/FULL/missing_translation_match": [
+      {
+        "id": "019B7F8C",
+        "english": "Sneak"
+      },
+      {
+        "id": "01A5996A",
+        "english": "Medicine"
+      },
+      {
+        "id": "01FFCFC7",
+        "english": "Barter"
+      }
+    ],
+    "MESG/DESC/missing_translation_match": [
+      {
+        "id": "01174AC6",
+        "english": "..."
+      },
+      {
+        "id": "0170018D",
+        "english": "Ammunition is used by almost all Guns and Energy Weapons but is sometimes used by other weapon types. Basic ammo types have no special effects, but ammo subtypes may increase damag"
+      },
+      {
+        "id": "011607AA",
+        "english": "Well, then, let {gramma}grandma see what she's got....{audio breaks up into static over this line}"
+      }
+    ],
+    "MESG/DESC/existing_korean_needs_context": [
+      {
+        "id": "01700190",
+        "english": "Welcome to Hardcore Mode! There are three basic needs that Hardcore Mode requires you to monitor: dehydration (H2O), starvation (FOD), and sleep deprivation (SLP). Each of these ne"
+      },
+      {
+        "id": "0170018F",
+        "english": "You have established a reputation with a group of people in the wasteland! Whether that reputation is good or bad, you're finally somebody, and people associated with that group wi"
+      },
+      {
+        "id": "0170018E",
+        "english": "Three basic types of objects in the world can launch the crafting interface: Campfires, Workbenches, and Reloading Benches. Each station allows the creation of a subset of items. T"
+      }
+    ],
+    "MESG/FULL/existing_korean_needs_context": [
+      {
+        "id": "01700190",
+        "english": "Hardcore Needs"
+      },
+      {
+        "id": "0170018F",
+        "english": "Reputation"
+      },
+      {
+        "id": "0170018E",
+        "english": "Crafting"
+      }
+    ],
+    "MESG/ITXT/existing_korean_needs_context": [
+      {
+        "id": "011572EE",
+        "english": "Try To Fix It (Repair)"
+      },
+      {
+        "id": "011572EE",
+        "english": "Try To Fix It (Repair)"
+      },
+      {
+        "id": "01038AED",
+        "english": "The Overseer."
+      }
+    ],
+    "MESG/ITXT/missing_translation_match": [
+      {
+        "id": "0108D19C",
+        "english": "Power off the generator."
+      },
+      {
+        "id": "0108D19C",
+        "english": "Power on the generator."
+      },
+      {
+        "id": "01038AEB",
+        "english": "Put a firecracker in the toilet. That's sure to cause some chaos."
+      }
+    ],
+    "MESG/FULL/missing_translation_match": [
+      {
+        "id": "01098747",
+        "english": "VATS"
+      },
+      {
+        "id": "0170017D",
+        "english": "V.A.T.S."
+      },
+      {
+        "id": "01D9E594",
+        "english": "Launch Music"
+      }
+    ]
+  },
+  "limitations": "Uses installed xTranslator _recorddefs field definitions and mirrors plain string fallback, but not all conditional proc logic, dynamic VMAD/script strings, BSA/BA2, or in-game reachability. A field can be translatable yet unused in game. No original ESM was modified."
+}

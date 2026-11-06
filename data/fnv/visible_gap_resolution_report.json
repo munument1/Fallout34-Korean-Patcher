@@ -1,0 +1,192 @@
+{
+  "game": "fnv",
+  "base_plan_count": 83480,
+  "strict_additions": 78315,
+  "strict_additions_by_method": {
+    "same_source_id_editor_directions_removed": 3814,
+    "converter_generated_more_button": 70587,
+    "same_source_id_added_skill_prefix": 2736,
+    "converter_generated_perk_rank_suffix": 1178
+  },
+  "medium_context_review_count": 52739,
+  "remaining_non_captured_visible_occurrences": 6831,
+  "remaining_distinct_record_type_field_english": 5176,
+  "remaining_p0_p1_unique_english_field_pairs": 4252,
+  "state_counts": {
+    "needs_new_translation_or_other_source": 6831,
+    "unique_korean_context_review": 52739,
+    "external_fo4_base_text": 358,
+    "strict_recovered": 78315
+  },
+  "distinct_english_by_field_status": {
+    "FACT/FULL|needs_new_translation_or_other_source": 52,
+    "FACT/FULL|unique_korean_context_review": 3,
+    "MGEF/FULL|needs_new_translation_or_other_source": 74,
+    "MGEF/FULL|unique_korean_context_review": 6,
+    "SPEL/FULL|needs_new_translation_or_other_source": 56,
+    "SPEL/FULL|unique_korean_context_review": 3,
+    "ACTI/FULL|needs_new_translation_or_other_source": 11,
+    "ACTI/FULL|unique_korean_context_review": 4,
+    "TACT/FULL|needs_new_translation_or_other_source": 6,
+    "ARMO/FULL|needs_new_translation_or_other_source": 38,
+    "CONT/FULL|needs_new_translation_or_other_source": 3,
+    "CONT/FULL|unique_korean_context_review": 2,
+    "MISC/FULL|needs_new_translation_or_other_source": 1,
+    "WEAP/FULL|needs_new_translation_or_other_source": 18,
+    "WEAP/FULL|unique_korean_context_review": 1,
+    "NPC_/FULL|needs_new_translation_or_other_source": 67,
+    "ALCH/FULL|needs_new_translation_or_other_source": 6,
+    "ALCH/DESC|needs_new_translation_or_other_source": 1,
+    "NOTE/FULL|needs_new_translation_or_other_source": 191,
+    "NOTE/FULL|unique_korean_context_review": 1,
+    "TERM/UNAM|unique_korean_context_review": 560,
+    "TERM/ITXT|unique_korean_context_review": 64,
+    "TERM/UNAM|needs_new_translation_or_other_source": 54,
+    "TERM/BTXT|unique_korean_context_review": 1,
+    "TERM/ITXT|needs_new_translation_or_other_source": 197,
+    "TERM/BTXT|needs_new_translation_or_other_source": 196,
+    "TERM/FULL|needs_new_translation_or_other_source": 191,
+    "TERM/FULL|unique_korean_context_review": 1,
+    "CELL/FULL|needs_new_translation_or_other_source": 6,
+    "QUST/FULL|needs_new_translation_or_other_source": 511,
+    "QUST/CNAM|unique_korean_context_review": 7,
+    "QUST/CNAM|needs_new_translation_or_other_source": 18,
+    "INFO/NAM1|strict_recovered": 3257,
+    "INFO/NAM1|needs_new_translation_or_other_source": 3041,
+    "INFO/NAM1|unique_korean_context_review": 11914,
+    "INFO/RNAM|unique_korean_context_review": 9453,
+    "INFO/RNAM|strict_recovered": 1021,
+    "INFO/RNAM|needs_new_translation_or_other_source": 219,
+    "LSCR/DESC|unique_korean_context_review": 1,
+    "EXPL/FULL|needs_new_translation_or_other_source": 13,
+    "EXPL/FULL|unique_korean_context_review": 7,
+    "PERK/DESC|needs_new_translation_or_other_source": 18,
+    "PERK/FULL|strict_recovered": 1175,
+    "PERK/FULL|needs_new_translation_or_other_source": 13,
+    "MESG/DESC|unique_korean_context_review": 19,
+    "MESG/FULL|unique_korean_context_review": 24,
+    "MESG/DESC|needs_new_translation_or_other_source": 60,
+    "MESG/ITXT|unique_korean_context_review": 8,
+    "MESG/ITXT|needs_new_translation_or_other_source": 62,
+    "MESG/FULL|needs_new_translation_or_other_source": 53
+  },
+  "by_field": {
+    "FACT/FULL": {
+      "needs_new_translation_or_other_source": 55,
+      "unique_korean_context_review": 3
+    },
+    "MGEF/FULL": {
+      "needs_new_translation_or_other_source": 107,
+      "unique_korean_context_review": 6
+    },
+    "SPEL/FULL": {
+      "needs_new_translation_or_other_source": 87,
+      "unique_korean_context_review": 4
+    },
+    "ACTI/FULL": {
+      "needs_new_translation_or_other_source": 11,
+      "unique_korean_context_review": 26
+    },
+    "TACT/FULL": {
+      "needs_new_translation_or_other_source": 6
+    },
+    "ARMO/FULL": {
+      "needs_new_translation_or_other_source": 41
+    },
+    "CONT/FULL": {
+      "needs_new_translation_or_other_source": 3,
+      "unique_korean_context_review": 3
+    },
+    "MISC/FULL": {
+      "needs_new_translation_or_other_source": 1
+    },
+    "WEAP/FULL": {
+      "needs_new_translation_or_other_source": 18,
+      "unique_korean_context_review": 2
+    },
+    "NPC_/FULL": {
+      "needs_new_translation_or_other_source": 73
+    },
+    "ALCH/FULL": {
+      "needs_new_translation_or_other_source": 6
+    },
+    "ALCH/DESC": {
+      "needs_new_translation_or_other_source": 1
+    },
+    "NOTE/FULL": {
+      "needs_new_translation_or_other_source": 191,
+      "unique_korean_context_review": 9
+    },
+    "TERM/UNAM": {
+      "unique_korean_context_review": 751,
+      "needs_new_translation_or_other_source": 112
+    },
+    "TERM/ITXT": {
+      "unique_korean_context_review": 258,
+      "needs_new_translation_or_other_source": 205
+    },
+    "TERM/BTXT": {
+      "unique_korean_context_review": 1,
+      "needs_new_translation_or_other_source": 204
+    },
+    "TERM/FULL": {
+      "needs_new_translation_or_other_source": 191,
+      "unique_korean_context_review": 9
+    },
+    "CELL/FULL": {
+      "needs_new_translation_or_other_source": 6
+    },
+    "WRLD/FULL": {
+      "external_fo4_base_text": 1
+    },
+    "QUST/FULL": {
+      "needs_new_translation_or_other_source": 514
+    },
+    "QUST/CNAM": {
+      "unique_korean_context_review": 17,
+      "needs_new_translation_or_other_source": 18
+    },
+    "INFO/NAM1": {
+      "strict_recovered": 3814,
+      "needs_new_translation_or_other_source": 3688,
+      "unique_korean_context_review": 27264
+    },
+    "INFO/RNAM": {
+      "unique_korean_context_review": 24304,
+      "strict_recovered": 73323,
+      "needs_new_translation_or_other_source": 993
+    },
+    "LSCR/DESC": {
+      "external_fo4_base_text": 357,
+      "unique_korean_context_review": 1
+    },
+    "EXPL/FULL": {
+      "needs_new_translation_or_other_source": 17,
+      "unique_korean_context_review": 17
+    },
+    "PERK/DESC": {
+      "needs_new_translation_or_other_source": 18
+    },
+    "PERK/FULL": {
+      "strict_recovered": 1178,
+      "needs_new_translation_or_other_source": 13
+    },
+    "MESG/DESC": {
+      "unique_korean_context_review": 22,
+      "needs_new_translation_or_other_source": 65
+    },
+    "MESG/FULL": {
+      "unique_korean_context_review": 27,
+      "needs_new_translation_or_other_source": 58
+    },
+    "MESG/ITXT": {
+      "unique_korean_context_review": 15,
+      "needs_new_translation_or_other_source": 129
+    }
+  },
+  "strict_qa_rejections": {
+    "placeholder_or_same_text": 30
+  },
+  "backlog_csv": "D:\\Codex_Trans\\Fallout34-KR-Patcher\\data\\fnv\\visible_translation_backlog.csv",
+  "warning": "No ESP/STRINGS generated. P0/P1 are possibly visible strings, not verified runtime reachability. Tier-B matches are not automatically applied; all remaining entries require source provenance, scope and context checks."
+}

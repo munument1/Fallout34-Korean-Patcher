@@ -1,0 +1,41 @@
+{
+  "counts": {
+    "same_english_skill_prefix_no_source": 1728
+  },
+  "examples": {
+    "same_english_skill_prefix_no_source": [
+      {
+        "en": "[Speech <Global=F34_F3_SpeechChance_2>%] Make it 400 caps and it's all yours.",
+        "ko": "[화술 <Global=F34_F3_SpeechChance_2>%] 400 캡으로 해주면 이건 네 거야.",
+        "formid": "01D9B4A6",
+        "origins": []
+      },
+      {
+        "en": "[Speech] Make it 400 caps and it's all yours.",
+        "ko": "[화술] 400 캡으로 해주면 이건 네 거야.",
+        "formid": "01D9B4A6",
+        "origins": []
+      },
+      {
+        "en": "[Speech] Make it 400 caps and it's all yours.",
+        "ko": "[화술] 400 캡으로 해주면 이건 네 거야.",
+        "formid": "01C9441E",
+        "origins": []
+      },
+      {
+        "en": "[Speech <Global=F34_F3_SpeechChance_2>%] Make it 30 caps each and you got yourself a deal.",
+        "ko": "[화술 <Global=F34_F3_SpeechChance_2>%] 개당 30 캡으로 쳐주면 거래 성사야.",
+        "formid": "01B725A9",
+        "origins": []
+      },
+      {
+        "en": "[Speech] Make it 30 caps each and you got yourself a deal.",
+        "ko": "[화술] 개당 30 캡으로 쳐주면 거래 성사야.",
+        "formid": "01B725A9",
+        "origins": []
+      }
+    ]
+  },
+  "status": "uninstalled patch suggestions",
+  "warning": "Skill prefix translated while preserving numeric and global expression. Source-ID matches are stronger; text-only remains manual review."
+}

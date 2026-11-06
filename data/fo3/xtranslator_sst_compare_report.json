@@ -1,0 +1,869 @@
+{
+  "game": "fo3",
+  "sst_records_with_translation_per_game": {
+    "fo3": 56810,
+    "fnv": 86339
+  },
+  "unassigned_xtranslator_text_occurrences": 12883,
+  "distinct_type_field_english_matches": 7411,
+  "classification": {
+    "other_game_exact_type_field_unique": 2925,
+    "no_matching_english_in_either_sst": 4073,
+    "same_game_exact_type_field_unique": 255,
+    "other_game_exact_type_field_conflict": 1,
+    "other_game_different_field_unique": 4487,
+    "same_game_exact_type_field_conflict": 36,
+    "same_game_different_field_unique": 1088,
+    "other_game_different_field_conflict": 8,
+    "same_game_different_field_conflict": 10
+  },
+  "classification_distinct": {
+    "other_game_exact_type_field_unique": 2457,
+    "no_matching_english_in_either_sst": 3272,
+    "same_game_exact_type_field_unique": 52,
+    "other_game_exact_type_field_conflict": 1,
+    "other_game_different_field_unique": 956,
+    "same_game_exact_type_field_conflict": 10,
+    "same_game_different_field_unique": 652,
+    "other_game_different_field_conflict": 3,
+    "same_game_different_field_conflict": 8
+  },
+  "by_field": {
+    "FACT/FULL": {
+      "other_game_exact_type_field_unique": 163,
+      "no_matching_english_in_either_sst": 20
+    },
+    "MGEF/FULL": {
+      "other_game_exact_type_field_unique": 30,
+      "no_matching_english_in_either_sst": 52
+    },
+    "ENCH/FULL": {
+      "other_game_exact_type_field_unique": 58,
+      "no_matching_english_in_either_sst": 4,
+      "same_game_exact_type_field_unique": 22
+    },
+    "SPEL/FULL": {
+      "other_game_exact_type_field_unique": 191,
+      "no_matching_english_in_either_sst": 5,
+      "other_game_exact_type_field_conflict": 1,
+      "other_game_different_field_unique": 55
+    },
+    "ACTI/FULL": {
+      "other_game_exact_type_field_unique": 15,
+      "no_matching_english_in_either_sst": 46,
+      "other_game_different_field_unique": 2
+    },
+    "TACT/FULL": {
+      "same_game_exact_type_field_conflict": 8,
+      "other_game_exact_type_field_unique": 18
+    },
+    "ARMO/FULL": {
+      "other_game_exact_type_field_unique": 149,
+      "no_matching_english_in_either_sst": 63
+    },
+    "BOOK/FULL": {
+      "other_game_exact_type_field_unique": 18
+    },
+    "BOOK/DESC": {
+      "other_game_exact_type_field_unique": 16
+    },
+    "CONT/FULL": {
+      "other_game_exact_type_field_unique": 86,
+      "no_matching_english_in_either_sst": 41,
+      "other_game_different_field_unique": 8
+    },
+    "DOOR/FULL": {
+      "other_game_exact_type_field_unique": 5,
+      "no_matching_english_in_either_sst": 8
+    },
+    "MISC/FULL": {
+      "other_game_exact_type_field_unique": 144,
+      "no_matching_english_in_either_sst": 510,
+      "other_game_different_field_unique": 6,
+      "same_game_different_field_unique": 3
+    },
+    "MSTT/FULL": {
+      "other_game_exact_type_field_unique": 8
+    },
+    "FURN/FULL": {
+      "other_game_exact_type_field_unique": 46,
+      "same_game_exact_type_field_conflict": 7,
+      "no_matching_english_in_either_sst": 1
+    },
+    "WEAP/FULL": {
+      "no_matching_english_in_either_sst": 5,
+      "other_game_exact_type_field_unique": 16
+    },
+    "AMMO/FULL": {
+      "other_game_exact_type_field_unique": 9,
+      "no_matching_english_in_either_sst": 1
+    },
+    "AMMO/ONAM": {
+      "other_game_exact_type_field_unique": 8,
+      "no_matching_english_in_either_sst": 3
+    },
+    "NPC_/FULL": {
+      "no_matching_english_in_either_sst": 63,
+      "same_game_exact_type_field_conflict": 1,
+      "other_game_exact_type_field_unique": 4,
+      "same_game_different_field_unique": 195,
+      "other_game_different_field_conflict": 2,
+      "other_game_different_field_unique": 27
+    },
+    "KEYM/FULL": {
+      "other_game_exact_type_field_unique": 155,
+      "no_matching_english_in_either_sst": 7
+    },
+    "ALCH/FULL": {
+      "no_matching_english_in_either_sst": 9,
+      "other_game_exact_type_field_unique": 22
+    },
+    "ALCH/DESC": {
+      "no_matching_english_in_either_sst": 1
+    },
+    "NOTE/FULL": {
+      "other_game_exact_type_field_unique": 283,
+      "no_matching_english_in_either_sst": 291
+    },
+    "PROJ/FULL": {
+      "other_game_exact_type_field_unique": 11,
+      "no_matching_english_in_either_sst": 5,
+      "same_game_different_field_unique": 1
+    },
+    "HAZD/FULL": {
+      "other_game_different_field_unique": 219
+    },
+    "TERM/WNAM": {
+      "no_matching_english_in_either_sst": 458
+    },
+    "TERM/UNAM": {
+      "same_game_different_field_unique": 152,
+      "other_game_different_field_unique": 640,
+      "no_matching_english_in_either_sst": 181,
+      "same_game_different_field_conflict": 2
+    },
+    "TERM/RNAM": {
+      "same_game_exact_type_field_unique": 196,
+      "other_game_exact_type_field_unique": 65,
+      "other_game_different_field_unique": 1,
+      "no_matching_english_in_either_sst": 12
+    },
+    "TERM/ITXT": {
+      "other_game_exact_type_field_unique": 206,
+      "no_matching_english_in_either_sst": 364,
+      "same_game_exact_type_field_conflict": 8,
+      "same_game_exact_type_field_unique": 2,
+      "other_game_different_field_unique": 264,
+      "same_game_different_field_unique": 335
+    },
+    "TERM/BTXT": {
+      "other_game_different_field_unique": 303,
+      "same_game_different_field_conflict": 3,
+      "no_matching_english_in_either_sst": 304,
+      "other_game_different_field_conflict": 6,
+      "same_game_different_field_unique": 342
+    },
+    "TERM/FULL": {
+      "other_game_exact_type_field_unique": 31,
+      "same_game_exact_type_field_conflict": 2,
+      "no_matching_english_in_either_sst": 295,
+      "other_game_different_field_unique": 267,
+      "same_game_different_field_unique": 15
+    },
+    "CELL/FULL": {
+      "other_game_exact_type_field_unique": 2,
+      "no_matching_english_in_either_sst": 109,
+      "other_game_different_field_unique": 1,
+      "same_game_different_field_unique": 1
+    },
+    "WRLD/FULL": {
+      "no_matching_english_in_either_sst": 20,
+      "other_game_exact_type_field_unique": 1
+    },
+    "REFR/FULL": {
+      "no_matching_english_in_either_sst": 44
+    },
+    "QUST/FULL": {
+      "no_matching_english_in_either_sst": 194
+    },
+    "QUST/CNAM": {
+      "no_matching_english_in_either_sst": 220,
+      "other_game_different_field_unique": 14
+    },
+    "QUST/NNAM": {
+      "same_game_exact_type_field_unique": 32,
+      "no_matching_english_in_either_sst": 13
+    },
+    "INFO/NAM1": {
+      "other_game_exact_type_field_unique": 194,
+      "no_matching_english_in_either_sst": 189,
+      "other_game_different_field_unique": 2646,
+      "same_game_different_field_conflict": 5
+    },
+    "INFO/RNAM": {
+      "other_game_exact_type_field_unique": 8,
+      "other_game_different_field_unique": 4,
+      "no_matching_english_in_either_sst": 18,
+      "same_game_exact_type_field_conflict": 10
+    },
+    "LSCR/DESC": {
+      "no_matching_english_in_either_sst": 355
+    },
+    "EXPL/FULL": {
+      "other_game_exact_type_field_unique": 37,
+      "no_matching_english_in_either_sst": 3
+    },
+    "PERK/FULL": {
+      "no_matching_english_in_either_sst": 22,
+      "other_game_exact_type_field_unique": 69,
+      "same_game_different_field_unique": 10,
+      "other_game_different_field_unique": 22
+    },
+    "PERK/EPFD": {
+      "no_matching_english_in_either_sst": 14
+    },
+    "PERK/DESC": {
+      "other_game_exact_type_field_unique": 71,
+      "no_matching_english_in_either_sst": 15,
+      "same_game_different_field_unique": 2
+    },
+    "AVIF/FULL": {
+      "no_matching_english_in_either_sst": 9,
+      "same_game_different_field_unique": 1,
+      "other_game_exact_type_field_unique": 12
+    },
+    "MESG/DESC": {
+      "other_game_exact_type_field_unique": 472,
+      "no_matching_english_in_either_sst": 73,
+      "same_game_different_field_unique": 5
+    },
+    "MESG/FULL": {
+      "other_game_exact_type_field_unique": 137,
+      "no_matching_english_in_either_sst": 5,
+      "same_game_different_field_unique": 21,
+      "other_game_different_field_unique": 5
+    },
+    "MESG/ITXT": {
+      "other_game_exact_type_field_unique": 165,
+      "same_game_exact_type_field_unique": 3,
+      "no_matching_english_in_either_sst": 21,
+      "same_game_different_field_unique": 5,
+      "other_game_different_field_unique": 3
+    }
+  },
+  "examples": {
+    "other_game_exact_type_field_unique": [
+      {
+        "formid": "0107E635",
+        "record_type": "FACT",
+        "field": "FULL",
+        "english": "MQ07 Captured Lamplighter Faction",
+        "suggested_korean": [
+          "MQ07 붙잡힌 램프라이트 주민 진영"
+        ]
+      },
+      {
+        "formid": "0107E0B5",
+        "record_type": "FACT",
+        "field": "FULL",
+        "english": "Enemy faction to Vault 101 Security",
+        "suggested_korean": [
+          "볼트 101 보안대의 적대 진영"
+        ]
+      },
+      {
+        "formid": "0107C722",
+        "record_type": "FACT",
+        "field": "FULL",
+        "english": "Vance and Holly's Faction",
+        "suggested_korean": [
+          "밴스와 홀리의 진영"
+        ]
+      },
+      {
+        "formid": "01078C9F",
+        "record_type": "FACT",
+        "field": "FULL",
+        "english": "TenpennyTowerResidentFaction",
+        "suggested_korean": [
+          "텐페니 타워 거주민 진영"
+        ]
+      },
+      {
+        "formid": "01071F5B",
+        "record_type": "FACT",
+        "field": "FULL",
+        "english": "Lamplight Dog Faction",
+        "suggested_korean": [
+          "램프라이트 개 진영"
+        ]
+      },
+      {
+        "formid": "010711A6",
+        "record_type": "FACT",
+        "field": "FULL",
+        "english": "Faction for NPCs that play general idles",
+        "suggested_korean": [
+          "일반 대기 모션을 취하는 NPC용 진영"
+        ]
+      },
+      {
+        "formid": "010711A4",
+        "record_type": "FACT",
+        "field": "FULL",
+        "english": "Faction for NPCs that smoke",
+        "suggested_korean": [
+          "흡연하는 NPC용 진영"
+        ]
+      },
+      {
+        "formid": "0106DDF5",
+        "record_type": "FACT",
+        "field": "FULL",
+        "english": "Flak & Shrapnel Sell",
+        "suggested_korean": [
+          "플랙과 샤프넬 판매"
+        ]
+      }
+    ],
+    "no_matching_english_in_either_sst": [
+      {
+        "formid": "0104E324",
+        "record_type": "FACT",
+        "field": "FULL",
+        "english": "FF",
+        "suggested_korean": []
+      },
+      {
+        "formid": "0101C6D3",
+        "record_type": "FACT",
+        "field": "FULL",
+        "english": "Faction that feral ghouls should be in",
+        "suggested_korean": []
+      },
+      {
+        "formid": "01105003",
+        "record_type": "FACT",
+        "field": "FULL",
+        "english": "4 Point Strike Team Member",
+        "suggested_korean": []
+      },
+      {
+        "formid": "01105002",
+        "record_type": "FACT",
+        "field": "FULL",
+        "english": "3 Point Strike Team Member",
+        "suggested_korean": []
+      },
+      {
+        "formid": "01105001",
+        "record_type": "FACT",
+        "field": "FULL",
+        "english": "2 Point Strike Team Member",
+        "suggested_korean": []
+      },
+      {
+        "formid": "01105000",
+        "record_type": "FACT",
+        "field": "FULL",
+        "english": "1 Point Strike Team Member",
+        "suggested_korean": []
+      },
+      {
+        "formid": "011043F2",
+        "record_type": "FACT",
+        "field": "FULL",
+        "english": "Anchorage Sim Combat -- American Faction",
+        "suggested_korean": []
+      },
+      {
+        "formid": "0110362E",
+        "record_type": "FACT",
+        "field": "FULL",
+        "english": "Soldier Conversation Faction",
+        "suggested_korean": []
+      }
+    ],
+    "same_game_exact_type_field_unique": [
+      {
+        "formid": "019E0C55",
+        "record_type": "ENCH",
+        "field": "FULL",
+        "english": "Enclave Armor",
+        "suggested_korean": [
+          "엔클레이브 아머"
+        ]
+      },
+      {
+        "formid": "01BFA5CD",
+        "record_type": "ENCH",
+        "field": "FULL",
+        "english": "Wasteland Outfit",
+        "suggested_korean": [
+          "황무지 복장"
+        ]
+      },
+      {
+        "formid": "01A60DE1",
+        "record_type": "ENCH",
+        "field": "FULL",
+        "english": "Stealth Armor",
+        "suggested_korean": [
+          "스텔스 아머"
+        ]
+      },
+      {
+        "formid": "019B07BF",
+        "record_type": "ENCH",
+        "field": "FULL",
+        "english": "General Chase's Coat",
+        "suggested_korean": [
+          "체이스 장군의 코트"
+        ]
+      },
+      {
+        "formid": "01BE8BFE",
+        "record_type": "ENCH",
+        "field": "FULL",
+        "english": "Heavy Metal Armor",
+        "suggested_korean": [
+          "무거운 강철 갑옷"
+        ]
+      },
+      {
+        "formid": "0198179C",
+        "record_type": "ENCH",
+        "field": "FULL",
+        "english": "Bombshell Armor",
+        "suggested_korean": [
+          "(★) 폭탄 껍데기 갑옷"
+        ]
+      },
+      {
+        "formid": "01E09608",
+        "record_type": "ENCH",
+        "field": "FULL",
+        "english": "Tribal Power Armor",
+        "suggested_korean": [
+          "(★) 부족 파워 아머"
+        ]
+      },
+      {
+        "formid": "01D27A20",
+        "record_type": "ENCH",
+        "field": "FULL",
+        "english": "Wasteland Outfit",
+        "suggested_korean": [
+          "황무지 복장"
+        ]
+      }
+    ],
+    "other_game_exact_type_field_conflict": [
+      {
+        "formid": "010A73D7",
+        "record_type": "SPEL",
+        "field": "FULL",
+        "english": "Burning Explosion",
+        "suggested_korean": [
+          "화상 폭발",
+          "금속 상자"
+        ]
+      }
+    ],
+    "other_game_different_field_unique": [
+      {
+        "formid": "01FCB46A",
+        "record_type": "SPEL",
+        "field": "FULL",
+        "english": "Radiation",
+        "suggested_korean": [
+          "방사능"
+        ]
+      },
+      {
+        "formid": "01901004",
+        "record_type": "SPEL",
+        "field": "FULL",
+        "english": "Radiation",
+        "suggested_korean": [
+          "방사능"
+        ]
+      },
+      {
+        "formid": "01DF719A",
+        "record_type": "SPEL",
+        "field": "FULL",
+        "english": "Radiation",
+        "suggested_korean": [
+          "방사능"
+        ]
+      },
+      {
+        "formid": "01913D9E",
+        "record_type": "SPEL",
+        "field": "FULL",
+        "english": "Radiation",
+        "suggested_korean": [
+          "방사능"
+        ]
+      },
+      {
+        "formid": "01D93A27",
+        "record_type": "SPEL",
+        "field": "FULL",
+        "english": "Radiation",
+        "suggested_korean": [
+          "방사능"
+        ]
+      },
+      {
+        "formid": "01AF99C5",
+        "record_type": "SPEL",
+        "field": "FULL",
+        "english": "Radiation",
+        "suggested_korean": [
+          "방사능"
+        ]
+      },
+      {
+        "formid": "01B59E99",
+        "record_type": "SPEL",
+        "field": "FULL",
+        "english": "Radiation",
+        "suggested_korean": [
+          "방사능"
+        ]
+      },
+      {
+        "formid": "01C228E6",
+        "record_type": "SPEL",
+        "field": "FULL",
+        "english": "Radiation",
+        "suggested_korean": [
+          "방사능"
+        ]
+      }
+    ],
+    "same_game_exact_type_field_conflict": [
+      {
+        "formid": "010CA77A",
+        "record_type": "TACT",
+        "field": "FULL",
+        "english": "Intercom",
+        "suggested_korean": [
+          "인터콤",
+          "인터컴"
+        ]
+      },
+      {
+        "formid": "010B16D4",
+        "record_type": "TACT",
+        "field": "FULL",
+        "english": "Intercom",
+        "suggested_korean": [
+          "인터콤",
+          "인터컴"
+        ]
+      },
+      {
+        "formid": "0106EC64",
+        "record_type": "TACT",
+        "field": "FULL",
+        "english": "Intercom",
+        "suggested_korean": [
+          "인터콤",
+          "인터컴"
+        ]
+      },
+      {
+        "formid": "0104692A",
+        "record_type": "TACT",
+        "field": "FULL",
+        "english": "Intercom",
+        "suggested_korean": [
+          "인터콤",
+          "인터컴"
+        ]
+      },
+      {
+        "formid": "01037374",
+        "record_type": "TACT",
+        "field": "FULL",
+        "english": "Intercom",
+        "suggested_korean": [
+          "인터콤",
+          "인터컴"
+        ]
+      },
+      {
+        "formid": "01036F5B",
+        "record_type": "TACT",
+        "field": "FULL",
+        "english": "Intercom",
+        "suggested_korean": [
+          "인터콤",
+          "인터컴"
+        ]
+      },
+      {
+        "formid": "01031D47",
+        "record_type": "TACT",
+        "field": "FULL",
+        "english": "Intercom",
+        "suggested_korean": [
+          "인터콤",
+          "인터컴"
+        ]
+      },
+      {
+        "formid": "0101E7B3",
+        "record_type": "TACT",
+        "field": "FULL",
+        "english": "Intercom",
+        "suggested_korean": [
+          "인터콤",
+          "인터컴"
+        ]
+      }
+    ],
+    "same_game_different_field_unique": [
+      {
+        "formid": "01524698",
+        "record_type": "MISC",
+        "field": "FULL",
+        "english": "Three Dog",
+        "suggested_korean": [
+          "쓰리 독"
+        ]
+      },
+      {
+        "formid": "01372849",
+        "record_type": "MISC",
+        "field": "FULL",
+        "english": "Ham Radio",
+        "suggested_korean": [
+          "햄 라디오"
+        ]
+      },
+      {
+        "formid": "015C17E4",
+        "record_type": "MISC",
+        "field": "FULL",
+        "english": "Dart",
+        "suggested_korean": [
+          "다트"
+        ]
+      },
+      {
+        "formid": "0107BDA7",
+        "record_type": "NPC_",
+        "field": "FULL",
+        "english": "Mister Gutsy",
+        "suggested_korean": [
+          "미스터 것시"
+        ]
+      },
+      {
+        "formid": "0104C67D",
+        "record_type": "NPC_",
+        "field": "FULL",
+        "english": "Failed FEV Subject",
+        "suggested_korean": [
+          "실패한 FEV 피험체"
+        ]
+      },
+      {
+        "formid": "01073E1D",
+        "record_type": "NPC_",
+        "field": "FULL",
+        "english": "Scavenger's Dog",
+        "suggested_korean": [
+          "폐품업자의 개"
+        ]
+      },
+      {
+        "formid": "01073E10",
+        "record_type": "NPC_",
+        "field": "FULL",
+        "english": "Scavenger's Dog",
+        "suggested_korean": [
+          "폐품업자의 개"
+        ]
+      },
+      {
+        "formid": "01073E07",
+        "record_type": "NPC_",
+        "field": "FULL",
+        "english": "Scavenger's Dog",
+        "suggested_korean": [
+          "폐품업자의 개"
+        ]
+      }
+    ],
+    "other_game_different_field_conflict": [
+      {
+        "formid": "01076926",
+        "record_type": "NPC_",
+        "field": "FULL",
+        "english": "Dog",
+        "suggested_korean": [
+          "개",
+          "도그"
+        ]
+      },
+      {
+        "formid": "0101CF9C",
+        "record_type": "NPC_",
+        "field": "FULL",
+        "english": "Dog",
+        "suggested_korean": [
+          "개",
+          "도그"
+        ]
+      },
+      {
+        "formid": "01095964",
+        "record_type": "TERM",
+        "field": "BTXT",
+        "english": "\r\n",
+        "suggested_korean": [
+          "최고경영자의 단말기",
+          "보안 관리 부메뉴"
+        ]
+      },
+      {
+        "formid": "0109595E",
+        "record_type": "TERM",
+        "field": "BTXT",
+        "english": "\r\n",
+        "suggested_korean": [
+          "최고경영자의 단말기",
+          "보안 관리 부메뉴"
+        ]
+      },
+      {
+        "formid": "0105C6E3",
+        "record_type": "TERM",
+        "field": "BTXT",
+        "english": "\r\n",
+        "suggested_korean": [
+          "최고경영자의 단말기",
+          "보안 관리 부메뉴"
+        ]
+      },
+      {
+        "formid": "0105C6C7",
+        "record_type": "TERM",
+        "field": "BTXT",
+        "english": "\r\n",
+        "suggested_korean": [
+          "최고경영자의 단말기",
+          "보안 관리 부메뉴"
+        ]
+      },
+      {
+        "formid": "01080CB1",
+        "record_type": "TERM",
+        "field": "BTXT",
+        "english": "ERROR 0x07F6BAAC\r\n\"Bad Data. Cannot Read.\"",
+        "suggested_korean": [
+          "오류 0x07F6BAAC \r\n\"자료 불량. 읽을 수 없음.\" \r\n.\"",
+          "오류 0x07F6BAAC \n\"자료 불량. 읽을 수 없음.\" \n.\""
+        ]
+      },
+      {
+        "formid": "01080CAE",
+        "record_type": "TERM",
+        "field": "BTXT",
+        "english": "ERROR 0x07F6BAAC\r\n\"Bad Data. Cannot Read.\"",
+        "suggested_korean": [
+          "오류 0x07F6BAAC \r\n\"자료 불량. 읽을 수 없음.\" \r\n.\"",
+          "오류 0x07F6BAAC \n\"자료 불량. 읽을 수 없음.\" \n.\""
+        ]
+      }
+    ],
+    "same_game_different_field_conflict": [
+      {
+        "formid": "010B16D3",
+        "record_type": "TERM",
+        "field": "BTXT",
+        "english": "RobCo Service Terminal\r\nV 6.0.3.2.1.a\r\n\r\n------------------------------------\r\nFor More Top Of The Line \r\nRobCo Products See\r\nYour Local Sho",
+        "suggested_korean": [
+          "롭코 서비스 단말기V \r\n6.0.3.2.1.a-\r\n-------------\r\n------------\r\n--------더 많은 \r\n최상의롭코 상품은가까운\r\n 전시장에서 찾아주세요.",
+          "롭코 서비스 단말기 \r\nV 6. 0. 3. 2. 1. a \r\n---------------------------------- \r\n더 많은 최상의 \r\n롭코 제품은 \r\n가까운 전시장에서 찾아주세요. \r\n."
+        ]
+      },
+      {
+        "formid": "010B16D3",
+        "record_type": "TERM",
+        "field": "UNAM",
+        "english": "<ERROR> Maintenance In Progress",
+        "suggested_korean": [
+          "<오류> 정비 중",
+          "<오류> 유지보수 실시 중"
+        ]
+      },
+      {
+        "formid": "010AB802",
+        "record_type": "TERM",
+        "field": "UNAM",
+        "english": "<ERROR> Maintenance In Progress",
+        "suggested_korean": [
+          "<오류> 정비 중",
+          "<오류> 유지보수 실시 중"
+        ]
+      },
+      {
+        "formid": "01080CB5",
+        "record_type": "TERM",
+        "field": "BTXT",
+        "english": "ERROR 0x03C663A1\r\n\"Network connection not found\"\r\n\"Dummy terminal inactive\"",
+        "suggested_korean": [
+          "오류 0x03C663A1 \r\n\"네트워크 연결을 찾을 수 없습니다\" \r\n\"더미 단말기 비활성화됨\"",
+          "오류 0x03C663A1\r\n\"네트워크 연결을 찾을 수 없습니다\"\r\n더미 단말기 비활성화됨"
+        ]
+      },
+      {
+        "formid": "01080CAA",
+        "record_type": "TERM",
+        "field": "BTXT",
+        "english": "ERROR 0x03C663A1\r\n\"Network connection not found\"\r\n\"Dummy terminal inactive\"",
+        "suggested_korean": [
+          "오류 0x03C663A1 \r\n\"네트워크 연결을 찾을 수 없습니다\" \r\n\"더미 단말기 비활성화됨\"",
+          "오류 0x03C663A1\r\n\"네트워크 연결을 찾을 수 없습니다\"\r\n더미 단말기 비활성화됨"
+        ]
+      },
+      {
+        "formid": "01D40D15",
+        "record_type": "INFO",
+        "field": "NAM1",
+        "english": "It's too dangerous here, Dogmeat. Go wait for me at Vault 101.",
+        "suggested_korean": [
+          "여긴 너무 위험하단다, 강아지야. 볼트 101에 가서 날 기다리고 있으렴.",
+          "여긴 너무 위험하단다, 도그밋. 볼트 101에 가서 날 기다리고 있으렴."
+        ]
+      },
+      {
+        "formid": "0195134E",
+        "record_type": "INFO",
+        "field": "NAM1",
+        "english": "Come on, Dogmeat. Let's go!",
+        "suggested_korean": [
+          "이리 와, 도그밋, 가자!",
+          "이리 와, 강아지야. 가자!"
+        ]
+      },
+      {
+        "formid": "01EBBD17",
+        "record_type": "INFO",
+        "field": "NAM1",
+        "english": "Sorry, Dogmeat. I don't have any Stimpaks for you right now.",
+        "suggested_korean": [
+          "미안, 도그밋. 지금 당장은 너한테 줄 스팀팩이 하나도 없네.",
+          "미안, 강아지야. 지금 당장은 너한테 줄 스팀팩이 하나도 없네."
+        ]
+      }
+    ]
+  },
+  "warning": "This cross-check uses English identity (including optional leading editor stage-direction cues), NOT sufficient to assign a translation to a record. Do not auto-apply without provenance/field context."
+}
