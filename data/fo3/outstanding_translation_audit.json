@@ -1,0 +1,971 @@
+{
+  "total": {
+    "field_missing": 5274,
+    "record_type_changed": 220,
+    "english_changed": 163,
+    "type_mismatch": 184,
+    "english_mismatch": 264,
+    "id_missing": 23,
+    "none": 104
+  },
+  "overall_review_rows": 6232,
+  "groups": {
+    "direct_mapping_review": {
+      "count": 2318,
+      "unique_translation_items": 2294,
+      "reasons": {
+        "field_missing": 1935,
+        "record_type_changed": 220,
+        "english_changed": 163
+      },
+      "types": [
+        [
+          "DIAL",
+          1314
+        ],
+        [
+          "INFO",
+          319
+        ],
+        [
+          "TERM",
+          232
+        ],
+        [
+          "CREA",
+          215
+        ],
+        [
+          "NOTE",
+          143
+        ],
+        [
+          "QUST",
+          59
+        ],
+        [
+          "FACT",
+          20
+        ],
+        [
+          "ARMO",
+          9
+        ],
+        [
+          "MSTT",
+          3
+        ],
+        [
+          "FURN",
+          2
+        ],
+        [
+          "MGEF",
+          1
+        ],
+        [
+          "MESG",
+          1
+        ]
+      ],
+      "fields": [
+        [
+          [
+            "DIAL",
+            "FULL"
+          ],
+          1314
+        ],
+        [
+          [
+            "INFO",
+            "RNAM"
+          ],
+          318
+        ],
+        [
+          [
+            "CREA",
+            "FULL"
+          ],
+          215
+        ],
+        [
+          [
+            "NOTE",
+            "TNAM"
+          ],
+          143
+        ],
+        [
+          [
+            "TERM",
+            "RNAM"
+          ],
+          128
+        ],
+        [
+          [
+            "TERM",
+            "DESC"
+          ],
+          104
+        ],
+        [
+          [
+            "QUST",
+            "FULL"
+          ],
+          58
+        ],
+        [
+          [
+            "FACT",
+            "MNAM"
+          ],
+          10
+        ],
+        [
+          [
+            "FACT",
+            "FNAM"
+          ],
+          10
+        ],
+        [
+          [
+            "ARMO",
+            "FULL"
+          ],
+          9
+        ],
+        [
+          [
+            "MSTT",
+            "FULL"
+          ],
+          3
+        ],
+        [
+          [
+            "FURN",
+            "FULL"
+          ],
+          2
+        ],
+        [
+          [
+            "MGEF",
+            "DESC"
+          ],
+          1
+        ],
+        [
+          [
+            "QUST",
+            "NNAM"
+          ],
+          1
+        ],
+        [
+          [
+            "INFO",
+            "NAM1"
+          ],
+          1
+        ],
+        [
+          [
+            "MESG",
+            "DESC"
+          ],
+          1
+        ]
+      ],
+      "plugins": {
+        "anchorage.esm": 322,
+        "zeta.esm": 330,
+        "pointlookout.esm": 546,
+        "brokensteel.esm": 605,
+        "thepitt.esm": 515
+      },
+      "samples": {
+        "field_missing": [
+          {
+            "source": "anchorage.esm:005003",
+            "type": "FACT",
+            "field": "MNAM",
+            "english": "Strike Team",
+            "korean": "타격대"
+          },
+          {
+            "source": "anchorage.esm:005003",
+            "type": "FACT",
+            "field": "FNAM",
+            "english": "Strike Team",
+            "korean": "타격대"
+          },
+          {
+            "source": "anchorage.esm:005002",
+            "type": "FACT",
+            "field": "MNAM",
+            "english": "Strike Team",
+            "korean": "타격대"
+          },
+          {
+            "source": "anchorage.esm:005002",
+            "type": "FACT",
+            "field": "FNAM",
+            "english": "Strike Team",
+            "korean": "타격대"
+          },
+          {
+            "source": "anchorage.esm:005001",
+            "type": "FACT",
+            "field": "MNAM",
+            "english": "Strike Team",
+            "korean": "타격대"
+          },
+          {
+            "source": "anchorage.esm:005001",
+            "type": "FACT",
+            "field": "FNAM",
+            "english": "Strike Team",
+            "korean": "타격대"
+          },
+          {
+            "source": "anchorage.esm:005000",
+            "type": "FACT",
+            "field": "MNAM",
+            "english": "Strike Team",
+            "korean": "타격대"
+          }
+        ],
+        "record_type_changed": [
+          {
+            "source": "brokensteel.esm:008189",
+            "type": "MSTT",
+            "field": "FULL",
+            "english": "Vertibird",
+            "korean": "버티버드"
+          },
+          {
+            "source": "brokensteel.esm:003070",
+            "type": "MSTT",
+            "field": "FULL",
+            "english": "Radiation Box Emiiter",
+            "korean": "방사능 함정 뇌관"
+          },
+          {
+            "source": "brokensteel.esm:0029a7",
+            "type": "MSTT",
+            "field": "FULL",
+            "english": "Liberty Prime",
+            "korean": "리버티 프라임"
+          },
+          {
+            "source": "pointlookout.esm:010286",
+            "type": "FURN",
+            "field": "FULL",
+            "english": "Loose Pile Of Dirt",
+            "korean": "엉성한 흙더미"
+          },
+          {
+            "source": "pointlookout.esm:00e0b4",
+            "type": "FURN",
+            "field": "FULL",
+            "english": "Rstrained Sit",
+            "korean": "부자연스러운 의자"
+          },
+          {
+            "source": "anchorage.esm:00cf2d",
+            "type": "CREA",
+            "field": "FULL",
+            "english": "Chimera Tank",
+            "korean": "키메라 탱크"
+          },
+          {
+            "source": "anchorage.esm:00c700",
+            "type": "CREA",
+            "field": "FULL",
+            "english": "Guard Dog",
+            "korean": "경비견"
+          }
+        ],
+        "english_changed": [
+          {
+            "source": "anchorage.esm:00c18e",
+            "type": "ARMO",
+            "field": "FULL",
+            "english": "Winterized T-51b Power Helmet",
+            "korean": "(★) 방한 T-51b 파워 헬멧"
+          },
+          {
+            "source": "anchorage.esm:00c18d",
+            "type": "ARMO",
+            "field": "FULL",
+            "english": "Winterized T-51b Power Armor",
+            "korean": "(★) 방한 T-51b 파워 아머"
+          },
+          {
+            "source": "anchorage.esm:001f09",
+            "type": "ARMO",
+            "field": "FULL",
+            "english": "Winterized T-51b Power Armor",
+            "korean": "(★) 방한 T-51b 파워 아머"
+          },
+          {
+            "source": "anchorage.esm:001f08",
+            "type": "ARMO",
+            "field": "FULL",
+            "english": "Winterized T-51b Power Helmet",
+            "korean": "(★) 방한 T-51b 파워 헬멧"
+          },
+          {
+            "source": "thepitt.esm:00b50f",
+            "type": "ARMO",
+            "field": "FULL",
+            "english": "Tribal Power Armor",
+            "korean": "(★) 부족 파워 아머"
+          },
+          {
+            "source": "thepitt.esm:006852",
+            "type": "ARMO",
+            "field": "FULL",
+            "english": "Ashur's Power Armor",
+            "korean": "(★) 에셔의 파워 아머"
+          },
+          {
+            "source": "brokensteel.esm:002480",
+            "type": "ARMO",
+            "field": "FULL",
+            "english": "Tesla Resonance Armor",
+            "korean": "(★) 테슬라 공명 아머"
+          }
+        ]
+      }
+    },
+    "fo3_direct_review": {
+      "count": 3810,
+      "unique_translation_items": 3734,
+      "reasons": {
+        "field_missing": 3339,
+        "type_mismatch": 184,
+        "english_mismatch": 264,
+        "id_missing": 23
+      },
+      "types": [
+        [
+          "INFO",
+          2559
+        ],
+        [
+          "TERM",
+          529
+        ],
+        [
+          "NOTE",
+          386
+        ],
+        [
+          "CREA",
+          185
+        ],
+        [
+          "QUST",
+          102
+        ],
+        [
+          "ARMO",
+          10
+        ],
+        [
+          "CLAS",
+          10
+        ],
+        [
+          "PERK",
+          9
+        ],
+        [
+          "FACT",
+          8
+        ],
+        [
+          "WEAP",
+          5
+        ],
+        [
+          "AMMO",
+          4
+        ],
+        [
+          "ENCH",
+          1
+        ],
+        [
+          "ALCH",
+          1
+        ],
+        [
+          "PROJ",
+          1
+        ]
+      ],
+      "fields": [
+        [
+          [
+            "INFO",
+            "RNAM"
+          ],
+          2491
+        ],
+        [
+          [
+            "NOTE",
+            "TNAM"
+          ],
+          386
+        ],
+        [
+          [
+            "TERM",
+            "RNAM"
+          ],
+          286
+        ],
+        [
+          [
+            "TERM",
+            "DESC"
+          ],
+          243
+        ],
+        [
+          [
+            "CREA",
+            "FULL"
+          ],
+          185
+        ],
+        [
+          [
+            "QUST",
+            "FULL"
+          ],
+          100
+        ],
+        [
+          [
+            "INFO",
+            "NAM1"
+          ],
+          68
+        ],
+        [
+          [
+            "ARMO",
+            "FULL"
+          ],
+          10
+        ],
+        [
+          [
+            "CLAS",
+            "FULL"
+          ],
+          10
+        ],
+        [
+          [
+            "FACT",
+            "MNAM"
+          ],
+          8
+        ],
+        [
+          [
+            "PERK",
+            "FULL"
+          ],
+          8
+        ],
+        [
+          [
+            "WEAP",
+            "FULL"
+          ],
+          5
+        ],
+        [
+          [
+            "AMMO",
+            "FULL"
+          ],
+          2
+        ],
+        [
+          [
+            "AMMO",
+            "ONAM"
+          ],
+          2
+        ],
+        [
+          [
+            "QUST",
+            "CNAM"
+          ],
+          1
+        ],
+        [
+          [
+            "QUST",
+            "NNAM"
+          ],
+          1
+        ],
+        [
+          [
+            "PERK",
+            "DESC"
+          ],
+          1
+        ],
+        [
+          [
+            "ENCH",
+            "FULL"
+          ],
+          1
+        ],
+        [
+          [
+            "ALCH",
+            "FULL"
+          ],
+          1
+        ],
+        [
+          [
+            "PROJ",
+            "FULL"
+          ],
+          1
+        ]
+      ],
+      "plugins": {
+        "fallout3.esm": 3810
+      },
+      "samples": {
+        "field_missing": [
+          {
+            "source": "fallout3.esm:01d3fe",
+            "type": "FACT",
+            "field": "MNAM",
+            "english": "Squire",
+            "korean": "종자"
+          },
+          {
+            "source": "fallout3.esm:01d3fe",
+            "type": "FACT",
+            "field": "MNAM",
+            "english": "Knight",
+            "korean": "기사"
+          },
+          {
+            "source": "fallout3.esm:01d3fe",
+            "type": "FACT",
+            "field": "MNAM",
+            "english": "Knight Sergeant",
+            "korean": "기사부장"
+          },
+          {
+            "source": "fallout3.esm:01d3fe",
+            "type": "FACT",
+            "field": "MNAM",
+            "english": "Knight Captain",
+            "korean": "나이트 캡틴"
+          },
+          {
+            "source": "fallout3.esm:01d3fe",
+            "type": "FACT",
+            "field": "MNAM",
+            "english": "Paladin",
+            "korean": "성기사"
+          },
+          {
+            "source": "fallout3.esm:01d3fe",
+            "type": "FACT",
+            "field": "MNAM",
+            "english": "Star Paladin",
+            "korean": "근위 성기사"
+          },
+          {
+            "source": "fallout3.esm:01d3fe",
+            "type": "FACT",
+            "field": "MNAM",
+            "english": "Sentinel",
+            "korean": "센티널"
+          }
+        ],
+        "type_mismatch": [
+          {
+            "source": "fallout3.esm:003402",
+            "type": "CREA",
+            "field": "FULL",
+            "english": "Eye Intercom",
+            "korean": "아이 인터컴"
+          },
+          {
+            "source": "fallout3.esm:0bc11c",
+            "type": "CREA",
+            "field": "FULL",
+            "english": "Eye Intercom",
+            "korean": "아이 인터컴"
+          },
+          {
+            "source": "fallout3.esm:08f086",
+            "type": "CREA",
+            "field": "FULL",
+            "english": "Eye Intercom",
+            "korean": "아이 인터컴"
+          },
+          {
+            "source": "fallout3.esm:073e25",
+            "type": "CREA",
+            "field": "FULL",
+            "english": "Scavenger's Yao Guai",
+            "korean": "폐품업자의 야오과이"
+          },
+          {
+            "source": "fallout3.esm:073e23",
+            "type": "CREA",
+            "field": "FULL",
+            "english": "Scavenger's Yao Guai",
+            "korean": "폐품업자의 야오과이"
+          },
+          {
+            "source": "fallout3.esm:073e1e",
+            "type": "CREA",
+            "field": "FULL",
+            "english": "Scavenger's Yao Guai",
+            "korean": "폐품업자의 야오과이"
+          },
+          {
+            "source": "fallout3.esm:073e12",
+            "type": "CREA",
+            "field": "FULL",
+            "english": "Scavenger's Yao Guai",
+            "korean": "폐품업자의 야오과이"
+          }
+        ],
+        "english_mismatch": [
+          {
+            "source": "fallout3.esm:070877",
+            "type": "ARMO",
+            "field": "FULL",
+            "english": "Linden's Outcast Power Armor",
+            "korean": "★ 린든의 아웃캐스트 파워 아머"
+          },
+          {
+            "source": "fallout3.esm:0cb5f9",
+            "type": "ARMO",
+            "field": "FULL",
+            "english": "\"Robo-Thor\" Armor",
+            "korean": "★ \"로보-토르\" 아머"
+          },
+          {
+            "source": "fallout3.esm:0cb5f8",
+            "type": "ARMO",
+            "field": "FULL",
+            "english": "\"Robo-Thor\" Helmet",
+            "korean": "★ \"로보-토르\" 헬멧"
+          },
+          {
+            "source": "fallout3.esm:066c73",
+            "type": "ARMO",
+            "field": "FULL",
+            "english": "Power Armor",
+            "korean": "파워 아머"
+          },
+          {
+            "source": "fallout3.esm:0acda4",
+            "type": "ARMO",
+            "field": "FULL",
+            "english": "Three Dog's Sunglasses",
+            "korean": "★ 쓰리 독의 선글라스"
+          },
+          {
+            "source": "fallout3.esm:075203",
+            "type": "ARMO",
+            "field": "FULL",
+            "english": "Brotherhood Power Helmet",
+            "korean": "브라더후드 파워 헬멧"
+          },
+          {
+            "source": "fallout3.esm:061a73",
+            "type": "ARMO",
+            "field": "FULL",
+            "english": "Lyons' Pride Power Armor",
+            "korean": "라이언스 프라이드 파워 아머"
+          }
+        ],
+        "id_missing": [
+          {
+            "source": "fallout3.esm:015673",
+            "type": "CLAS",
+            "field": "FULL",
+            "english": "Brotherhood of Steel Soldier",
+            "korean": "브라더후드 오브 스틸 병사"
+          },
+          {
+            "source": "fallout3.esm:015675",
+            "type": "CLAS",
+            "field": "FULL",
+            "english": "Raider",
+            "korean": "레이더"
+          },
+          {
+            "source": "fallout3.esm:01875d",
+            "type": "CLAS",
+            "field": "FULL",
+            "english": "Soldier",
+            "korean": "군인"
+          },
+          {
+            "source": "fallout3.esm:01945e",
+            "type": "CLAS",
+            "field": "FULL",
+            "english": "Raider",
+            "korean": "레이더"
+          },
+          {
+            "source": "fallout3.esm:025928",
+            "type": "CLAS",
+            "field": "FULL",
+            "english": "Brotherhood of Steel Knight",
+            "korean": "브라더후드 오브 스틸 나이트"
+          },
+          {
+            "source": "fallout3.esm:029628",
+            "type": "CLAS",
+            "field": "FULL",
+            "english": "Enclave",
+            "korean": "엔클레이브"
+          },
+          {
+            "source": "fallout3.esm:02962a",
+            "type": "CLAS",
+            "field": "FULL",
+            "english": "Enclave",
+            "korean": "엔클레이브"
+          }
+        ]
+      }
+    },
+    "dlc_direct_review": {
+      "count": 104,
+      "unique_translation_items": 104,
+      "reasons": {
+        "none": 104
+      },
+      "types": [
+        [
+          "ENCH",
+          31
+        ],
+        [
+          "GMST",
+          28
+        ],
+        [
+          "ARMA",
+          17
+        ],
+        [
+          "RACE",
+          8
+        ],
+        [
+          "WEAP",
+          6
+        ],
+        [
+          "MGEF",
+          5
+        ],
+        [
+          "WATR",
+          4
+        ],
+        [
+          "ACTI",
+          1
+        ],
+        [
+          "FURN",
+          1
+        ],
+        [
+          "PROJ",
+          1
+        ],
+        [
+          "REGN",
+          1
+        ],
+        [
+          "CLAS",
+          1
+        ]
+      ],
+      "fields": [
+        [
+          [
+            "ENCH",
+            "FULL"
+          ],
+          31
+        ],
+        [
+          [
+            "GMST",
+            "DATA"
+          ],
+          28
+        ],
+        [
+          [
+            "ARMA",
+            "FULL"
+          ],
+          17
+        ],
+        [
+          [
+            "RACE",
+            "FULL"
+          ],
+          8
+        ],
+        [
+          [
+            "WEAP",
+            "FULL"
+          ],
+          6
+        ],
+        [
+          [
+            "MGEF",
+            "FULL"
+          ],
+          5
+        ],
+        [
+          [
+            "WATR",
+            "FULL"
+          ],
+          4
+        ],
+        [
+          [
+            "ACTI",
+            "FULL"
+          ],
+          1
+        ],
+        [
+          [
+            "FURN",
+            "FULL"
+          ],
+          1
+        ],
+        [
+          [
+            "PROJ",
+            "FULL"
+          ],
+          1
+        ],
+        [
+          [
+            "REGN",
+            "RDMP"
+          ],
+          1
+        ],
+        [
+          [
+            "CLAS",
+            "FULL"
+          ],
+          1
+        ]
+      ],
+      "plugins": {
+        "anchorage.esm": 23,
+        "thepitt.esm": 14,
+        "brokensteel.esm": 30,
+        "pointlookout.esm": 19,
+        "zeta.esm": 18
+      },
+      "samples": {
+        "none": [
+          {
+            "source": "anchorage.esm:0018d8",
+            "type": "ACTI",
+            "field": "FULL",
+            "english": "Anchorage Simulation Pod",
+            "korean": "앵커리지 시뮬레이션 포드"
+          },
+          {
+            "source": "anchorage.esm:00c38d",
+            "type": "MGEF",
+            "field": "FULL",
+            "english": "Test Phil Shock Damage",
+            "korean": "테스트 필 전기 피해"
+          },
+          {
+            "source": "anchorage.esm:008237",
+            "type": "MGEF",
+            "field": "FULL",
+            "english": "Smoke Grenade",
+            "korean": "연막탄"
+          },
+          {
+            "source": "anchorage.esm:00cc26",
+            "type": "ENCH",
+            "field": "FULL",
+            "english": "Stealth Armor",
+            "korean": "스텔스 아머"
+          },
+          {
+            "source": "anchorage.esm:00bff0",
+            "type": "ENCH",
+            "field": "FULL",
+            "english": "General Chase's Coat",
+            "korean": "체이스 장군의 코트"
+          },
+          {
+            "source": "anchorage.esm:00be39",
+            "type": "ENCH",
+            "field": "FULL",
+            "english": "Electric Sword",
+            "korean": "전기검"
+          },
+          {
+            "source": "anchorage.esm:008238",
+            "type": "ENCH",
+            "field": "FULL",
+            "english": "Smoke Grenade Effect",
+            "korean": "연막탄 효과"
+          }
+        ]
+      }
+    }
+  }
+}

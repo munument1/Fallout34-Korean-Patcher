@@ -1,0 +1,114 @@
+{
+  "total_type_changed": 405,
+  "same_field_exact_count": 401,
+  "by_conversion": [
+    {
+      "original_type": "CREA",
+      "target_type": "NPC_",
+      "field": "FULL",
+      "count": 396,
+      "same_field_exact": 395,
+      "samples": [
+        {
+          "source": "fallout3.esm:073e25",
+          "english": "Scavenger's Yao Guai",
+          "korean": "폐품업자의 야오과이",
+          "target": "01073E25",
+          "same_field_exact": true
+        },
+        {
+          "source": "fallout3.esm:073e23",
+          "english": "Scavenger's Yao Guai",
+          "korean": "폐품업자의 야오과이",
+          "target": "01073E23",
+          "same_field_exact": true
+        }
+      ]
+    },
+    {
+      "original_type": "MSTT",
+      "target_type": "ACTI",
+      "field": "FULL",
+      "count": 3,
+      "same_field_exact": 3,
+      "samples": [
+        {
+          "source": "brokensteel.esm:008189",
+          "english": "Vertibird",
+          "korean": "버티버드",
+          "target": "01188189",
+          "same_field_exact": true
+        },
+        {
+          "source": "brokensteel.esm:003070",
+          "english": "Radiation Box Emiiter",
+          "korean": "방사능 함정 뇌관",
+          "target": "01183070",
+          "same_field_exact": true
+        }
+      ]
+    },
+    {
+      "original_type": "CREA",
+      "target_type": "TACT",
+      "field": "FULL",
+      "count": 3,
+      "same_field_exact": 3,
+      "samples": [
+        {
+          "source": "fallout3.esm:003402",
+          "english": "Eye Intercom",
+          "korean": "아이 인터컴",
+          "target": "01003402",
+          "same_field_exact": true
+        },
+        {
+          "source": "fallout3.esm:0bc11c",
+          "english": "Eye Intercom",
+          "korean": "아이 인터컴",
+          "target": "010BC11C",
+          "same_field_exact": true
+        }
+      ]
+    },
+    {
+      "original_type": "FURN",
+      "target_type": "STAT",
+      "field": "FULL",
+      "count": 2,
+      "same_field_exact": 0,
+      "samples": [
+        {
+          "source": "pointlookout.esm:010286",
+          "english": "Loose Pile Of Dirt",
+          "korean": "엉성한 흙더미",
+          "target": "011D0286",
+          "same_field_exact": false
+        },
+        {
+          "source": "pointlookout.esm:00e0b4",
+          "english": "Rstrained Sit",
+          "korean": "부자연스러운 의자",
+          "target": "011CE0B4",
+          "same_field_exact": false
+        }
+      ]
+    },
+    {
+      "original_type": "ACTI",
+      "target_type": "FURN",
+      "field": "FULL",
+      "count": 1,
+      "same_field_exact": 0,
+      "samples": [
+        {
+          "source": "anchorage.esm:0018d8",
+          "english": "Anchorage Simulation Pod",
+          "korean": "앵커리지 시뮬레이션 포드",
+          "target": "011018D8",
+          "same_field_exact": false
+        }
+      ]
+    }
+  ]
+}

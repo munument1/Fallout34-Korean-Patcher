@@ -60,3 +60,16 @@ python tools/build_mcm.py
 2. FO4 호환 xEdit 기반 ESP 생성기(또는 검증된 동등 구현)를 작성. 원본 `Fallout34.esm`은 보존.
 3. `INFO` 다중 응답, 현지화 STRINGS 키, 마스터·로드 순서, 압축 레코드, 글꼴/한국어 화면 출력을 검증.
 4. 플러그인 적용 결과와 검수 제외 항목을 보고하는 릴리스 전 QA를 실행.
+
+## 2026-11-06 FO3 누락 문자열 검사
+
+- `verified_assignments_all.jsonl.gz`: 레코드/필드/영문 일치에 따른 기존 고유 번역 후보 45,179개. **아직 한국어 ESP/STRINGS 미생성**.
+- `outstanding_translation_audit.json`: 원본 SST 사전 6개에 존재하나 자동 반영에서 제외된 6,232행(원문-대상 구조 변경 및 제거 포함).
+- `field_migration_audit.json`: 위 제외 항목 중 다른 필드에 동일 영문이 존재하는 749행(터미널 중심). 수동 검토 후 필드 변경 대응 가능.
+- `record_type_migration_report.json`: 레코드 종류 변경 405행 중 401행에서 동일 필드·영문 확인. 변환 대상 레코드의 의미 검토 필요.
+- `unmatched_display_text_audit.json`: 알려진 37개 레코드·필드 종류의 ESM 영문 출현 66,760회 중 21,326회는 기존 번역표에 직접 연결되지 않음. 이 수치는 중복·내부 문자열·폴아웃 4 기존 문구를 포함하는 **검토 후보 수**이며 확정 게임 미번역 개수가 아님.
+- `sst_reuse_audit.json`: 직접 매핑 누락 21,326회 중 SST 기반 한국어 재사용 가능성 8,781회, 동일 영문 없는 후보 12,159회, FO4 기본 플러그인 359회, 동문이역 충돌 27회. **동일 영문이라는 이유만으로 자동 적용하지 말 것**.
+- `potential_sst_reuse_*.jsonl.gz`: 번역 재활용 후보 분리. `unmatched_field_entries.jsonl.gz`는 후속 검수용 전체 기록.
+- `StreetLights.esm`, `DCInteriors_ComboEdition.esm`, `Interior Lighting.esp`의 이름에 대응되는 사전 파일은 이 SST 6개에 포함되어 있지 않음. 별도 모드 번역 자료 조사 필요.
+
+기존 6,232행 검수 제외와 ESM 직접 스캔 21,326회는 **관찰 기준이 달라 단순 합산하면 안 됩니다.** 일부는 서로 겹칩니다.
