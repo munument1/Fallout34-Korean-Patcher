@@ -1,0 +1,2370 @@
+﻿<img src='Fallout4logo'>
+가을출타 4
+
+GAME DESIGN
+Bethesda Game Studios
+
+GAME DIRECTOR
+Todd Howard
+
+LEAD PROGRAMMER
+Guy Carver
+
+LEAD ARTIST
+Istvan Pely
+
+LEAD DESIGNER & WRITER
+Emil Pagliarulo
+
+PRODUCTION DIRECTOR
+Ashley Cheng
+
+LEAD PRODUCER
+Jeff Gardiner
+
+AUDIO DIRECTOR
+Mark Lampert
+
+SENIOR PRODUCERS
+Craig Lafferty
+Tim Lamb
+
+PRODUCERS
+Angela Browder
+Kevin Kauffman
+Nathan McDyer
+Phil Nelson
+Andrew Scharf
+
+LEAD GAMEPLAY PROGRAMMER
+Christopher Rodriguez
+
+GAMEPLAY PROGRAMMING
+Ryan Ashford
+Ken Cockerham
+Paul Graber
+Ahn Hopgood
+Steve Meister
+Brian Robb
+Dan Teitel
+Craig Walton
+Jay Woodward
+
+SYSTEMS PROGRAMMING
+Shannon Bailey
+Eric Braun
+Joel Dinolt
+David DiAngelo
+Joseph DiAngelo
+Mike Dulany
+Jason Hammett
+Jason Hasenbuhler
+Ryan Lea
+Mike Lipari
+Jeff Lundin
+Henning Seljenes
+
+LEAD GRAPHICS PROGRAMMER
+Scott Franke
+
+GRAPHICS PROGRAMMING
+Jonathan Bilodeau
+Jeff Sheiman
+Orin Tresnjak
+
+LEAD INTERFACE PROGRAMMER
+Erik Deitrick
+
+INTERFACE PROGRAMMING
+Ricardo Gonzalez
+
+ADDITIONAL PROGRAMMING
+Jonathan Burke
+Brett Douville
+Chris Doyle
+David Fox
+
+CONCEPT ART
+Adam Adamowicz
+John Gravato
+Ray Lederer
+Ilya Nazarov
+
+WORLD ART
+Andy Barron
+Noah Berry
+Matthew Carofano
+Cory Edwards
+Tony Greco
+Josh Jay
+Jason Muck
+Nate Purkeypile
+Ryan Salvatore
+Megan Sawyer
+Ryan Sears
+Clara Struthers
+Rafael Vargas
+Robert Wisnewski
+Christopher Zdana
+
+ADDITIONAL WORLD ART
+Gabrielle Adams
+Nadia Haschart
+Michael Means
+Madeleine Rabil
+Kaela Smith
+John Valenti
+
+SPECIAL EFFECTS
+Daniel T. Lee
+Liz Rapp
+Grant Struthers
+Mark Teare
+
+LEAD ANIMATOR
+Josh Jones
+
+ANIMATION
+Jeremy Bryant
+Jangjoon Cha
+DongJun Kim
+Barry Nardone
+Gary Noonan
+Juan Sanchez
+Mark Thomas
+Rick Vicens
+Alex Utting
+
+ADDITIONAL ANIMATION
+Allen Holbrook
+Eric Webb
+
+TECHNICAL ART
+Felipe "PePe" Nogueira
+Andrew Thomas
+
+CHARACTER ART
+Ben Carnow
+Lucas Hardi
+Charles Kim
+Christiane H.K. Meister
+Dennis Mejillones
+Dane Olds
+Yan Qin
+
+ADDITIONAL CHARACTER ART
+Jonathan Clark
+Jonah Lobe
+Red Hot CG
+
+GRAPHIC DESIGN & VAULT BOYS
+Natalia Smirnova
+
+QUEST DESIGN & WRITING
+Ferret Baudoin
+Brian Chapin
+Matt Daniels
+Jon Paul Duvall
+Kurt Kuhlmann
+Alan Nanes
+Bruce Nesmith
+William Shen
+
+ADDITIONAL QUEST DESIGN & WRITING
+Liam Collins
+Shane Liesegang
+Corrie Treadway
+
+LEAD LEVEL DESIGNER
+Joel Burgess
+
+LEVEL DESIGN
+Daryl Brigner
+Jeff Browne
+Steve Cornett
+Chris Cummings
+Ryan Jenkins
+Andrew Langlois
+Justin Schram
+
+ADDITIONAL LEVEL DESIGN
+Bryan Brigner
+Matthew Campbell
+
+ADDITIONAL SYSTEMS DESIGN
+Josh Hamrick
+
+SOUND DESIGNER
+Dave Schreiber
+
+PRODUCTION ASSISTANT
+Emily Sears
+
+
+BEHAVIOUR INTERACTIVE
+
+ADDITIONAL TECHNICAL DIRECTION
+Patrick Labrie
+ 
+ADDITIONAL LEAD PROGRAMMING
+Julien Soulières
+ 
+ADDITIONAL PRODUCTION
+Charles-William Bibaud
+ 
+ADDITIONAL PROGRAMMING
+Grégoire Astruc
+Vincent Bélanger
+Sylvain Berthomieu
+Ludovic Brière
+Alvaro Castro
+François Cayouette
+Olivier Fleurant
+Bachir Francis
+Michael Fortin 
+Nicolas Gauthier
+Olivier Hoël
+Maxime Jobin
+Alex Larouche
+Florian Luna
+Jacques Monastier
+Olivier Monsonego
+Germain Mazac
+Alexandre Pestana
+Benoit Regrain
+Christian Roy
+Simon Sirois Deschênes
+Simon-Pierre Thibault
+David Vaillancourt
+ 
+ADDITIONAL DESIGN
+Michael Chan
+Jonathan Cournoyer
+Khanh-Long Huynh
+ 
+ADDITIONAL TECHNICAL ART
+Michel Baillargeon
+Kevin Boyer
+Éliane Prégent
+ 
+
+VOICE & MUSIC
+
+CAST
+PLAYER MALE
+Brian T. Delaney
+
+PLAYER FEMALE 
+Courtenay Taylor
+
+NICK VALENTINE / MR. HANDY
+Stephen Russell
+
+PIPER WRIGHT
+Courtney Ford
+
+PALADIN DANSE
+Peter Jessop
+
+PRESTON GARVEY
+Jon Gentry
+
+DESDEMONA / MRS. WHITFIELD / MISTRESS MYSTERIOUS
+Claudia Christian
+
+DEACON / H2-22
+Ryan Alosio 
+
+HANCOCK
+Danny Shorago
+
+CAIT
+Katy Townsend 
+
+MACCREADY / Z1-14
+Matthew Mercer
+
+CURIE / MISS EDNA
+Sophie Cortina 
+
+X6-88
+David Paluck
+
+STRONG / MALE GHOUL
+Sean Schemmel 
+
+TRAVIS MILES / PERRY
+Brendan Hunt
+
+FATHER / COLONEL SMITH / JOSH
+Tony Amendola
+
+ELDER MAXSON / Z2-47
+Derek Phillips 
+
+ANCHORMAN
+Ron Perlman
+
+MAGNOLIA
+Lynda Carter
+
+PROCTOR INGRAM
+Kari Wahlgren
+
+LANCER CAPTAIN KELLS
+Tim Russ
+
+JACK CABOT / DOC WEATHERS / HONEST DAN
+Johnathan Roumie
+
+SCRIBE HAYLEN / ELLIE PERKINS / COLETTE
+Jan Johns
+
+MADISON LI
+Jennifer Massey
+
+VIRGIL
+Matthew Waterson
+
+TINKER TOM 
+Byron Marc Newsome
+
+PROCTOR QUINLAN / SUPERVISOR BROWN
+Nicholas Guy Smith
+
+STURGES / SCOTT EDWARDS
+Philip Anthony-Rodriguez
+
+HENRY COOKE / BERT STRICKLAND
+Jerry Whiddon
+
+KNIGHT RHYS
+Noshir Dalal
+
+RONNIE SHAW / IRMA
+Elisabeth Noone
+
+PAUL PEMBROKE / NEIL FREUND
+T.W. Leshner
+
+BOBBI NO-NOSE / MARIA SUMMERSET
+Roberta Farkas
+
+DOCTOR AMARI
+Meher Tatna
+
+TOMMY LONEGAN
+Clarke Kohler
+
+DOCTOR CARRINGTON
+Sean T. Krishnan
+
+EDWARD DEEGAN / AJ
+Bill Holmes
+
+P.A.M. / ASSAULTRON
+Colleen Delany
+
+GLORY
+Chelsea Tavaras
+
+PROCTOR TEAGAN
+Greg Baldwin
+
+JUSTIN AYO / MALE RAIDERS
+Matthew Yang King
+
+KNIGHT CAPTAIN CADE
+Dwight Schultz
+
+MAMA MURPHY
+Maya Massar
+
+ALANA SECORD / ALLIE FILMORE 
+Ellen Dubin
+
+INITIATE CLARKE
+Christopher Walker
+
+KELLOGG / Y9-15 / X9-27
+Keythe Farley
+
+MINUTEMEN RADIO VOICE / VAULT-TEC SCIENTIST
+Mike Rosson
+
+LIAM BINET
+Finneas O'Connell
+
+MEL / SUPER MUTANTS
+Dave Carter
+
+KENT CONNOLLY / EDDIE WINTER 
+Jay Giannone
+
+VADIM BOBROV
+Dimitri Diatchenko
+
+YEFIM BOBROV
+Emmanuel Todorov
+
+GWEN MCNAMARA / BECKY FALLON
+Cindy Robinson
+
+JUN LONG / DOCTOR SUN
+James Sie
+
+AUSTIN ENGILL / CHRIS ROSA / PETE PEMBROKE
+Jack Riedy
+
+BOBBY DE LUCA
+Brandon Bales
+
+ALAN BINET / VAULT-TEC SCIENTIST 
+Robert Picardo
+
+SCRIBE NERIAH / GENEVA
+Kat Cressida
+
+MANDY STILES / CATHY / PULOWSKI VOICE 
+Elmarie Wendel
+
+ALEXIS COMBES / DARCY PEMBROKE / FEMALE CHILD OF ATOM 
+Audrey Wasilewski
+
+ANN CODMAN / PRISCILLA PENSKE / WILHELMINA CABOT
+Melendy Britt
+
+MAX LOKEN / MALCOLM LATIMER
+Dave Fennoy
+
+PALADIN BRANDIS
+Alan Oppenheimer
+
+VAULT-TEC REP/ ARLEN GLASS 
+Paul Eiding
+
+MAYOR MCDONOUGH
+Charlie Warren 
+
+MOE CRONIN / PROTECTRON / THE SILVER SHROUD
+Wes Johnson
+
+SCRIBE FARIS / CLAYTON HOLDREN
+Caleb Moody
+
+CAPTAIN ZAO / TED HUNTLEY / STAN SLAVIN
+Ping Wu
+
+TALIA MCGOVERN / MOLLY / SETTLER
+Misty Lee
+
+TINA DE LUCA / ROWDY / CRICKET
+Ashly Burch
+
+RICKY DALTON / SOLOMON / LORENZO CABOT
+Richard Cansino
+
+DAISY / CHERYL GLASS / CLAIR HUTCHINS / GIBSON
+Iona Morris
+
+JACOB FORSYTHE / NEWTON OBERLY
+Eric Morgan Stuart
+
+EMOGENE CABOT / PVT HART / AMELIA STOCKTON
+Dani Knights
+
+RACHEL / FEMALE GUNNERS / INSTITUTE SCIENTIST
+Sumalee Montano
+
+PICKMAN / BROTHER ANDREW / BROTHER THOMAS / MAYOR MURPHY
+Kyle Hester
+
+INSTITUTE COURSER / DOC CROCKER / THE FENS PHANTOM
+James Konicek
+
+REX GOODMAN / VAULT-TEC SCIENTIST / ISSAC KARLIN 
+Richard Tatum
+
+KNIGHT LUCIA / KATHERINE PINN
+Carla Tassara
+
+KNIGHT GAVIL / WINLOCK
+Charles Halford
+
+MISTER ZWICKY / OLD MAN STOCKTON / BARNEY ROOK
+Time Winters
+
+FEMALE RAIDERS / ALYSSA PARK / FEMALE SYNTHS
+Salli Saffioti
+
+PROFESSOR SCARA / SMILING KATE / TRADER RYLEE
+Amanda Philipson
+
+MAROWSKI / VAULT-TEC SCIENTIST
+Greg Chun
+
+SKINNY MALONE / EVAN WATSON / CLARENCE CODMAN
+Alan Blumenfeld
+
+LAWRENCE HIGGS / INSTITUTE SCIENTIST
+Roger L. Jackson
+
+BONNIE TOURNQUIST / PHYLLIS DAILY / ROSLYN CHAMBERS
+Joan Van Ark
+
+ARTURO / ENRICO THOMPSON
+Gustavo Rex
+
+NESS / ROSALIND ORMAN
+Jacqueline Grace Lopez
+
+ERIN COMBES / FEMALE BROTHERHOOD OF STEEL SQUIRE
+Rachel Pace
+
+SYNTH CHILD
+Aidan Sussman
+
+SUPERVISOR WHITE / POLLY
+Jessica Straus
+
+DOCTOR DUFF / DOCTOR PATRICIA
+Cissy Jones
+
+WALLACE / JOHN
+Don McManus
+
+PASTOR CLEMENTS
+Big Llou Johnson
+
+NORTHY / BRENDAN VOLKERT / ZEKE
+Max Mittelman
+
+JACOB ORDEN / DEAN VOLKERT 
+Dan Navarro
+
+HAWTHORNE / LOW ROAD FRANKLIN / HORATIO
+Avery Kidd Waddell
+
+SERGEANT LEE / CARETAKER / SWANSON
+Chris Salazar
+
+DANNY SULLIVAN / VAULT-TEC SCIENTIST
+Yuri Lowenthal
+
+HENRI / FRED ALLEN / FAT FAHEY
+Rafael Goldstein
+
+MARCY LONG / MYRNA
+Alejandra Gollas
+
+HOLT COMBES / NELSON LATIMER / PRESTON GARVEY IMPERSONATOR
+Ogie Banks
+
+SCARLETT / ANNE HARGRAVES / KNIGHT ASTLIN
+Brenda Phillips
+
+MARIA / PENNY FITZGERALD
+Julie Nathanson
+
+ABBOT / MARK SUMMERSET
+John Mariano
+
+MANNY / DIAMOND CITY GUARD
+J.P. Giuliotti
+
+SUPERVISOR GREENE / BLAKE ABERNATHY / JOE SAVOLDI 
+Brian Frates
+
+BULLET / CALVIN WHITAKER / SHEFFIELD
+William Salyers
+
+DAVIES / DIAMOND CITY GUARD
+Ike Amadi
+
+THEODORE COLLINS / BLYTHE / KNIGHT VARHAM
+Nick Bennett
+
+DARLA / FAHRENHEIT / KENDRA
+Erica Luttrell
+
+PETE OWENS / MALE GUNNERS / EYE BOT
+Bruce Nozick
+
+F6-33 / X4-18 / Z3-22
+Damian Cecere
+
+K1-98 / MIRANDA SONG / RUNAWAY GIRL
+Stephanie Komure
+
+BOBBY DE LUCA / LUCAS MILLER
+Brandon Bales
+
+ANGIE / ELEANOR / KESSLER 
+Joey Honsa
+
+DANIEL FINCH / NATHAN FILMORE / DRIFTER
+Bruce Thomas
+
+CONNIE ABERNATHY / JUNE WARWICK / SETTLER
+Mandy Kaplan
+
+TRASHCAN CARLA / DOC ANDERSON / PRINCIPAL HUDSON 
+Veronica Cartwright
+
+THE SCRIBE / INSTITUTE SCIENTIST 
+Jim Cummings
+
+MARLENE GLASS / ALICE THOMPSON / CHILD
+Miya Horcher
+
+WALLY WARWICK / GAVIN EVERITTS / CHILD
+Griffin Cleveland
+
+FEMALE BROTHERHOOD OF STEEL 
+Kimberly Brooks
+
+FEMALE BROTHERHOOD OF STEEL / VAULT-TEC SCIENTIST
+Dorothy Elias-Fahn
+
+MALE BROTHERHOOD OF STEEL / TRIGGERMAN
+Leo Marks
+
+MALE BROTHERHOOD OF STEEL
+Mark Engelhardt
+
+SUPER MUTANT / OFFICER
+Popeye V
+
+MALE RAIDER
+Steve Wilcox
+
+FEMALE GHOULS
+Gabrielle Sanalitro
+
+MALE GHOUL / VAULT-TEC SCIENTIST
+Keith Szarabajka
+
+MALE GUNNERS / MR. GUTSY
+David B. Mitchell
+
+MALE CHILD OF ATOM
+Paul Ganus
+
+MALE CHILDREN OF ATOM / VAULT SECURITY
+Joe Ochman
+
+SETTLER / RAILROAD AGENT / INITIATE
+Brandon Keener
+
+VAULT SECURITY
+Fryda Wolff
+
+MALE BROTHERHOOD OF STEEL SQUIRE
+Raymond Ochoa
+
+AIR TRAFFIC CONTROL VOICE
+Kevin Dorman
+
+EUSTACE
+Baadja-Lyne Odums
+
+MR. WASHINGTON
+Eric Lopez
+
+SYLVIA COOPER
+Colleen O’Shaughnessey
+
+GENERAL GAGE / MAYOR
+David Shaughnessy
+
+GERALD / WICKED TIM
+Wayne Frazier
+
+DOGMEAT
+River
+
+SINGERS
+Cindy Richardson-Walker 
+Tania Hancheroff
+Lisa Silver
+
+ADDITIONAL VOICES
+Bumper Robinson
+Billy Ray Gallion
+Caroline Aaron
+James McDonnell
+Patrick FitzSymons
+Ray Chase
+
+
+CELEBRITY ACQUISITION, CASTING AND VOICE PRODUCTION
+Blindlight
+
+DIRECTOR OF CASTING & PRODUCTION
+Timothy Cubbison
+ 
+PRODUCTION MANAGER
+Austin Snyder
+ 
+BUSINESS ASSOCIATES
+Adriana Almanza
+Veronica Brown
+
+VOICE DIRECTORS
+Philip Bache
+Kal-El Bogdanove
+Chris Faiella
+Wes Gleason
+Brenda Marie Phillips
+Bennett Smith
+
+DIALOGUE RECORDISTS
+J. David Atherton
+Nicholai Baxter
+Dustin Buford
+Serge Courtois
+David Davila
+Mark De La Fuente
+Dan Montes
+Giovanni Ortega
+Jeff Sheridan
+Kelly Vockel
+Briana Villarreal
+
+P-CAP PRODUCTION SOUND MIXER
+James Tanenbaum
+
+P-CAP BOOM OPERATORS
+Tom Giordano
+Ken Beauchene
+
+VOICE PRODUCTION COORDINATORS
+Ellen Barry
+Philip Binder
+Samantha Brown
+Harry Buerkle
+Kyle Fischer
+Jake Gaskill
+Lucas Hirl
+Greg Lisi
+Ryan Naylor
+Poppy Orphanides
+Jesse Sheehan
+Josema Roig
+Briana Villarreal
+Kenny Zhao
+
+MANAGING DIALOGUE EDITOR
+J. David Atherton
+ 
+DIALOGUE EDITORS
+David Sais
+Greg Sais
+James Barker
+Aaron Seiden
+Scott Weber
+Michael Patterson
+ 
+PRODUCTION INTERNS
+Jason Cho
+Marty Eischeid
+Chris Bhutani
+Caitlin Capes
+Taylor Brandt
+Margaret Brown
+Jacob Velcoff
+Cathy Jiang
+Matthew Hill
+Luiggiano Galletto
+
+VOICE RECORDING AT
+Bethesda Game Studios, Rockville, MD
+Brian Morris, Falmouth, MA
+Igloo Music, Los Angeles CA
+Margarita Mix - Hollywood, Los Angeles CA
+Marc Graue Voice Over Recording Studios, Los Angeles, CA
+North Hollywood Sound, Los Angeles, CA
+Red Earth Recording Studios, Springdale UT
+Soundworks, Los Angeles, CA
+
+MUSIC COMPOSED & 
+PRODUCED BY
+Inon Zur
+www.inonzur.com
+
+ADDITIONAL MUSIC PROVIDED BY
+Associated Production Music
+
+ADDITIONAL PERFORMANCE CAPTURE
+Just Cause
+
+PERFORMANCE CAPTURE EDITING
+Motion Grinder
+
+FACIAL ANIMATION EDITING
+Cubic Motion
+
+INTRO VIDEO PRODUCED BY
+g-NET
+
+INTRO VIDEO DIRECTED BY
+David Moodie
+
+
+BETHESDA SOFTWORKS
+
+QUALITY ASSURANCE LEAD
+Christopher Krietz
+
+QUALITY ASSURANCE
+Andrew Buscaglio
+Robert Clark
+Shannon Corwin  
+Joseph Graninger 
+Christopher Hayes
+Hal Jenkins
+Jason Little 
+Marisa Lyon
+Hieu Nguyen 
+Louis Riley
+Ian Rogers
+Matthew Stokes
+Philip Wallace 
+Gabriel Caldeira 
+Carlos Camacho 
+Max Cameron 
+Cenk Ersoy 
+Joshua Feranil 
+Joshua Fountain 
+Lawrence Hayes
+Christopher Izzi 
+Hugo Kilvert-Jones 
+Zach Lyon
+Mike Mazzuca
+Mike Merriam 
+Aaron Mitschelen 
+Jennifer Noland 
+William Pegus
+Shanon Schildtknecht
+Nancy Scott
+Josh Seabolt 
+Sarah Tomesky 
+Tihana Tresnjak-Smith 
+Keith Walton 
+Cody Wharton 
+Cody Whiteman 
+
+ADDITIONAL QUALITY ASSURANCE
+James Costantino
+Terry Dunn
+Daniel Silva
+Jennifer Tonon
+Matthew Weil
+Sam Bernstein
+Takayuki Amano
+Suleyman Anadol
+Greg Arcano
+Joshua Bencivenga 
+Joseph Bertoni 
+Robert Boehm
+Keith Bower 
+Katherine Brode
+Wade Brown
+Connor Bryant
+Valentin Cain
+Sabeel Chohan
+George Churchill
+Kyle Coleman
+Marjorie Cooper
+Andre Daniels
+Rahima Dondurur
+Cory Dornbusch
+Gregory Dorvil
+Matthew Farkas
+Jeffrey Feria
+Shane Fernandes
+Beth Garwood 
+Michelle Gibson 
+Marvin Gutierrez
+Adam Hampton
+Kevin Henry
+Nicholas Holmstedt
+Abu Hoque
+Thomas Hughes 
+Christian Humen
+Ramin Izadi
+Jovanny Jadacki
+Ryan Keating
+Jesse Keene
+Mika Lam
+Fitzgerald Lewis
+Scott LoPresti
+Robert MacDonald 
+Brad Martin
+Robert McGowan
+Colin McInerney
+Russell Moynihan
+James Nicholas
+Sam Nowicki
+Romil Patel
+Lewis Pearce
+Duane Powers
+Andrew Protani
+George Raphael
+Amaan Redmond
+Joel Regulski
+Alexandra Rood
+Geron Roper
+Angela Rupinen
+Scott Saggio
+Michael Shearer
+Brian Seo
+Veronika Spiegel
+Patrick Stone
+Carly Sullivan
+Stephen Taguding
+Garrett Therkorn
+Megan Tucker
+Rick Watson 
+ 
+ADDITIONAL QUALITY ASSURANCE (BEHAVIOUR INTERACTIVE)
+Martin Bilodeau
+Francois Lim
+
+VP, PUBLIC RELATIONS & MARKETING
+Pete Hines
+
+SENIOR BRAND MANAGER
+Paris Nourmohammadi
+
+BRAND MANAGER
+Matthew Clinkscales
+
+ASSOCIATE BRAND MANAGER
+Carlos Guice
+
+VP, PRODUCT DEVELOPMENT
+Todd Vaughn
+
+SENIOR PRODUCER, 1ST PARTY
+Tim Beggs
+
+PRESIDENT
+Vlatko Andonov
+
+DIRECTOR OF QUALITY ASSURANCE
+Darren Manes
+
+SENIOR QA MANAGER
+Rob Gray
+
+DIRECTOR OF GLOBAL MARKETING
+Steve Perkins
+
+DIRECTOR OF GLOBAL PUBLIC RELATIONS
+Tracey Thompson
+
+ASSISTANT DIRECTOR OF PR
+Erin Losi
+
+EVENTS MANAGER
+Jenny Whitehead
+
+PUBLIC RELATIONS MANAGER
+Angela Ramsey-Chapman
+
+GLOBAL COMMUNITY LEAD
+Matt Grandstaff
+
+GLOBAL CONTENT LEAD 
+Gary Steinman 
+
+COMMUNITY MANAGER
+Jessica Finster
+
+MARKETING & PR ASSISTANT
+Shana Reed
+
+EVENT TRADE DIRECTOR
+Henry Mobley
+
+DIRECTOR OF LICENSING
+Mike Kochis
+
+VIDEO PRODUCTION
+Salinee Goldenberg
+Matthew Ross
+Keith Shetler
+
+GRAPHIC DESIGN
+Michael Wagner
+Lindsay Westcott
+
+VP, SALES
+Ron Seger
+
+OPERATIONS DIRECTOR, NORTH AMERICA
+Todd Curtis
+
+SALES/OPERATIONS MANAGER
+Jill Bralove
+
+SALES ANALYST
+Jeff Moskowitz
+
+REGIONAL SALES MANAGERS
+Mike Donnellan
+Michelle Ferrara
+
+MANAGER OF CHANNEL MARKETING & DIGITAL SALES
+Josh Deane
+
+CHANNEL MARKETING COORDINATOR
+Jessica Williams
+
+SENIOR SALES ASSISTANT
+Scott Mills
+
+ONLINE CONTENT COORDINATOR
+Jason Snead
+
+SALES ADMINISTRATION COORDINATOR
+Luke Jackson
+
+SALES ASSISTANT
+Ryan Albert
+
+
+ZENIMAX MEDIA
+
+CHAIRMAN & CEO
+Robert Altman
+
+PRESIDENT
+Ernie Del
+
+EVP & COO
+Jamie Leder
+
+EVP & CFO
+Cindy Tallent
+
+EVP Legal & Secretary
+Grif Lesher
+
+SVP FINANCE & CONTROLLER
+Denise Kidd
+
+DEPUTY GENERAL COUNSEL
+Marcia Mitnick
+
+VP, INFORMATION TECHNOLOGY
+Steve Bloom
+
+INFORMATION TECHNOLOGY
+Nicholas Childs
+Rob Havlovick
+Chris La Scola
+Drew McCartney
+Josh Mosby
+Ken Pearson
+Kevin Raminhos
+Bailey Wicker
+Joseph Varkey
+Paul Tuttle
+David Verdin
+Keelian Wardle
+Kevin Watts
+Jesse Wicker
+Joon Ho Yang
+Frank Zecca
+Patrick Raminhos
+
+VP OF GLOBAL HR
+Tammy Boyd-Shumway
+
+HUMAN RESOURCES
+Michelle Cool
+Heather Craig
+Rob Echter
+Andrea Glinski
+Amy Glushakow
+Katrina Lang
+Cathy Montes
+Valery Ridore
+Katie Sosnoskie
+
+ADMINISTRATION
+Melissa Ayala
+Brittany Bezawada-Joseph
+Craig Brown
+Jennifer Calabro
+Rosanna Campanile
+Katherine Edwards
+Douglas Frederick
+Gerard Garnica
+Julia Gutierrez
+Kevin Humphreys
+Jose Ever Iraheta
+Betty Kouatelay
+Jerome Lamboy
+Ho Joong Lee
+Stephane Marquis
+Michael Masciola
+Sandy Mayer
+Tanuja Mistry
+Rissa Rachmadila
+Patrick Nolan
+Ashley Presto
+Patti Pulupa
+Dave Rasmussen
+Nitin Sharma
+Joe Sigmon
+Heather Spurrier
+Claudia Umana
+Patrick Villalobos
+David Walker
+Melissa Washabaugh
+Eric Weis
+
+ADMINISTRATIVE ASSISTANTS
+Bernice Guice
+Paula Kasey
+Jameise Fox
+
+EXECUTIVE CHEF
+Kenny McDonald
+
+
+ZENIMAX EUROPE
+
+PRESIDENT
+Ernie Del
+
+EUROPEAN MANAGING DIRECTOR
+Sean Brennan
+
+DIRECTOR INTERNATIONAL BUSINESS
+Adam Carter
+
+EUROPEAN FINANCE DIRECTOR
+Robert Ford
+
+EUROPEAN MARKETING & PR DIRECTOR
+Sarah Seaby
+
+EUROPEAN SALES DIRECTOR
+Paul Oughton
+
+LOCALIZATION DIRECTOR
+Harald Simon
+
+OPERATIONS DIRECTOR
+Richard Lever
+
+HEAD OF EUROPEAN PR
+Alistair Hatch
+
+CREATIVE SERVICES ARTIST
+Morgan Gibbons
+
+EUROPEAN BRAND MANAGER
+Mark Cook
+Dan Lazarides
+
+EUROPEAN ASSISTANT BRAND MANAGER
+Jack Abbott
+Edward Badcock
+Jo Worrall
+
+UK BRAND MANAGER
+Korina Abbott
+
+SENIOR MARKETING MANAGER, EUROPE
+Marc Berekoven
+
+INTERNATIONAL MARKETING MANAGER
+Rosemarie Dalton
+
+INTERNATIONAL PR MANAGER
+Nicholas Heller
+
+COMMUNITY MANAGER
+Michael Servotte
+
+SALES & BUSINESS DEVELOPMENT DIRECTOR
+Greg Baverstock
+
+UK SALES DIRECTOR
+Gethyn Deakins
+
+EUROPEAN DIGITAL SALES MANAGER
+Charlie Barrett
+
+EUROPEAN TRADE MARKETING MANAGER
+Rikard Norrbin
+
+UK TRADE MARKETING MANAGER
+Joe Bell
+
+SALES ADMINISTRATOR
+Heather Clarke
+
+LOCALIZATION PROJECT MANAGER
+Ruth Granados García
+
+ASSISTANT LOCALIZATION PROJECT MANAGER
+Ramón Goldarazena Ondarra
+
+OPERATIONS MANAGER
+Isabelle Midrouillet
+
+OPERATIONS COORDINATOR
+David Gordon
+
+ASSISTANT GENERAL COUNSEL
+Leonard Bendel
+
+CONTRACTS ADMINISTRATOR/PARALEGAL
+Katie Brooks
+
+IT MANAGER
+Joseph Owens
+
+SENIOR IT SUPPORT SPECIALIST
+Stu Davies
+
+DIRECTOR - FINANCIAL SYSTEMS
+Maeve Cronin
+
+FINANCIAL ANALYST
+Dean Purse
+
+FINANCE MANAGER
+Charlotte Ovens
+
+FINANCE & REVENUE ANALYST
+Alan Nasrat
+
+ACCOUNTS ASSISTANT
+Chai Thushar Dev 
+
+ERP SPECIALIST
+Gary Lythgoe
+
+ACCOUNTS ASSISTANT
+Joanna Nalepa
+
+FINANCIAL ACCOUNTANT
+Simran Kaur
+
+ORACLE ERP SYSTEMS ANALYST
+Gareth Donoghue 
+
+JR. FINANCIAL ANALYST
+Charlotte Pelter 
+
+PA TO PRESIDENT
+Katherine Kidd
+
+OFFICE MANAGER
+Angie Clement
+
+
+ZENIMAX FRANCE
+
+MANAGING DIRECTOR
+Julie Chalmette
+
+SALES MANAGER
+Yvan Rault
+
+KEY ACCOUNT MANAGER
+Gaëlle Gombert
+
+TRADE MARKETING MANAGER
+Laurent Chatain
+
+MARKETING MANAGER
+Géraldine Mazot
+
+COMMUNITY MANAGER
+Axel Olivereau
+
+PR MANAGER
+Jérôme Firon
+
+FINANCE MANAGER
+Cecile De Freitas
+
+FINANCE ASSISTANT
+Adeline Nonis
+
+
+ZENIMAX GERMANY, AUSTRIA, SWITZERLAND
+
+MANAGING DIRECTOR
+Frank Matzke
+
+SALES DIRECTOR
+Thomas Huber
+
+DIRECTOR OF MARKETING & PR
+Marcel Jung
+
+SENIOR PRODUCT MARKETING MANAGER
+Stefan Dettmering
+
+SENIOR PR MANAGER
+Peter Langhofer
+
+JUNIOR PR CONSULTANT 
+Jessica Di Dio
+
+COMMUNITY MANAGER
+Eva Sykora
+
+TRADE MARKETING MANAGER
+Mark Schillberg
+
+KEY ACCOUNT MANAGER
+Jürgen Pahl 
+
+FINANCE MANAGER
+Nadine Scholtysik
+
+ACCOUNTANT 
+Bastian Spanuth
+
+SALES & OFFICE ADMINISTRATOR
+Christiane Jauss
+
+FINANCE & ADMINISTRATION ASSISTANT
+Juliane Heinz
+
+
+ZENIMAX AUSTRALIA
+
+MANAGING DIRECTOR
+Simon Alty
+
+SALES DIRECTOR
+David Hay
+
+MARKETING MANAGER
+Paul Hellmrich
+
+FINANCE MANAGER
+Paul New
+
+PR MANAGER
+Bec Waddy
+
+OFFICE MANAGER / SALES & MARKETING ASSISTANT
+Michelle Alty
+
+COMMUNITY MANAGER
+Eleanor Wolf 
+
+
+ZENIMAX BENELUX
+
+GENERAL MANAGER
+Menno Eijck
+
+SALES MANAGER
+Mark Holleman
+
+SALES ADMIN & MARKETING SUPPORT
+Pam Wesselink
+
+PR MANAGER BENELUX
+Bart Verwijst
+
+
+ZENIMAX ASIA K.K.            
+ 
+GENERAL MANAGER
+Tetsu Takahashi
+ 
+LOCALIZATION PROGRAMMER
+Masayuki Nagahashi
+ 
+BRAND MANAGER
+Tsuyoshi Tanaka
+ 
+PR MANAGER
+Takako Egawa
+
+SENIOR INFRASTRUCTURE SPECIALIST
+Muneaki Miyoshi
+ 
+OFFICE MANAGER
+Myongsuk Rim
+ 
+WEB DIRECTOR
+Kosuke Fujita
+ 
+ADMINISTRATIVE ASSISTANT
+Hiroko Yue
+
+
+LOCALIZED VERSION PRODUCED BY 
+SYNTHESIS
+
+LOCALIZATION PRODUCERS
+Emanuele Scichilone
+Max Reynaud
+
+LANGUAGE COORDINATORS
+Adrian Koch
+Aron Sayed
+Carolin Hillemann
+Emanuele Scichilone
+Gus Díaz
+Jan Werkmeister
+Jonathan Russo
+Mauro Bossetti
+Sohail Daniel
+Camila Groth Ibarra
+Mikhail Zakharov
+Oleg Smagin
+
+FRENCH TRANSLATORS
+Benoît Mergault
+Claire Boudet
+Eric Holweck 
+Guillaume Pelletier
+Pierre Quelquejeu
+Ophelie Colin
+
+ITALIAN TRANSLATORS
+Paolo Caronni
+Daniele Tamagni
+Alessandro Seccafieno
+Davide Solbiati
+Paolo Celso
+Danilo Spatafora
+Claudia Mangione
+Manuela Ceccoli
+Luca Ricci
+
+GERMAN TRANSLATORS
+Roland Austinat
+Christian Meier
+Ulrich Onken
+Gerald Paetsch
+Roland Strube
+Constanze Vogl
+
+SPANISH TRANSLATORS
+Abel Funcia
+Diego Damunt
+Estrella Del Campo
+José Cabezas
+Juan Ramon Acedo
+Marco Fernández 
+Miguel García
+Óscar Díaz
+
+MEXICAN SPANISH TRANSLATORS
+Eugenia Jiménez
+Laura Carrillo
+
+BRAZILIAN PORTUGUESE TRANSLATORS
+Fernando Rodrigues
+João Curzio
+Luciana Rolón
+Marcelo Almeida
+Paula Ianelli
+Sofia Sabbado Aveline
+Tiago Kern
+
+POLISH TRANSLATION
+QLOC S.A.
+
+RUSSIAN TRANSLATORS
+Aleksey Vorobyev
+Isabella Shakhova
+Eugenia Alekseeva
+Anastasia Vasilyeva
+Vasily Firsov
+Roman Nefedov
+Mikhail Golovkin
+Yuliana Carter
+Alexander Strakhov
+Marina Rossieva
+
+TESTING TEAM
+TESTING COORDINATORS
+Adriano James Majocchi
+Antonio E. Mondonico
+Riccardo Fumagalli
+Alessandro Ciurleo
+
+LEAD TESTERS
+Pierre Techoueyres
+Matteo Voltolina
+Danny Münch
+Israel Delgado Miranda
+Rafael Verolla de Moura
+Oleg Eremchuk
+
+TESTERS
+Ana María Benita Martínez
+Andreas Edler
+Andrei Moshkov
+Augustin Truffaut
+Axel Zamora
+Björn Wetz
+Daniel Hernandez
+Ekaterina Kartavenko
+Francesco Menna
+Icaro Polizel
+Iñigo Luzuriaga Bañon
+Jakub Rezmer
+Kaya Daudrix
+Leonardo Oliver Lenares
+Lilla Horváth
+Luis Sánchez
+Márcio de Oliveira Bezerra
+Marta Niespodziewany
+Mateusz Hasiński
+Matteo Bianchini
+Nicolas Jara 
+Óscar Cruz González
+Pablo López Cardona
+Roberto Gomes De Oliveira
+Roman Kosarev
+Thierry Stokman
+Thomas Frers
+Violaine Sauze
+Yannik Raiss
+
+FRENCH AUDIO RECORDED BY
+ASREC
+
+STUDIO CREW
+Florent Collignon
+Julien Deslandes
+Claire Baradat
+Alexandre Gombert
+
+ACTORS
+Franck Monsigny
+Anneliese Fromont
+Manoelle Gaillard
+Laura Zichy
+Régine Blaess
+Laurence Bréheret
+Namakan Koné
+Gérard Darier
+Sylvain Agaesse
+Michel Vigné
+Michel Ruhl
+Jean-François Vlérick
+Julie Badoc
+Béatrice Delphe
+Anne Dolan
+Maïa Michaud
+Fabien Jacquelin
+Jean-François Cros
+Alexandre Nguyen
+Mathias Kozlowski
+Christian Visine
+Jacques Ciron
+Patrick Floersheim
+Jean-Baptiste Anoumon
+Agathe Schumacher
+Frédéric Popovic
+Grégory Kristoforoff
+Bruno Dubernat
+Jean Barney
+Victoria Grosbois
+Jean-Christophe Lebert
+Luc Bernard
+Achille Orsoni
+Jean-Paul Pitolin
+Pierre Forest
+Christian Gonon
+Franck Lorrain
+Guillaume Orsat
+Armelle Gallaud
+Sébastien Desjours
+Marine Tuja
+Hélène Bizot
+Emmanuelle Bondeville
+Jérôme Pauwels
+Emmanuel Gradi
+Donald Reignoux
+Marie Zidi
+Philippe Roullier
+Géraldine Asselin
+Guy Chapellier
+Anne Rochant
+Yumi Fujimori
+Julie Carli
+Patrick Borg
+Damien Ferrette
+Claire Baradat
+Loïc Houdré
+Josiane Pinson
+Jean-Louis Faure
+Alice Taurand
+Jérémy Prévost
+Antoine Tomé
+Stéphane Fourreau
+Michel Voletti
+Marc Bretonnière
+
+ITALIAN AUDIO RECORDED BY
+SYNTHESIS MILAN
+
+STUDIO CREW
+Adriano Dezulian
+Alberto Tosi
+Ambra Ravaglia
+Andrea Peruzzotti
+Elisa Schiroli
+Fabio Pantano
+Federico De Cotto
+Francesca Tretto
+Gianfranco Zorzi
+Laura Vaccarella
+Manuel Auletta
+Maria Rosa  Sanna
+Matteo Ormellese
+Riccardo Riva
+Stefano Lucchelli
+Stefano Santi
+Tebessa Comolli
+
+ACTORS
+Alberto Olivero
+Alessandro Capra
+Alessandro Conte
+Alessandro Germano
+Alessandro Testa
+Alessandro Zurla
+Andrea De Nisco
+Andrea Failla
+Angiolina Gobbi
+Antonio Paiola
+Barbara Federico
+Beatrice Caggiula
+Carlo Decio
+Cesare Rasini
+Chiara Francese
+Claudio Colombo
+Claudio Ridolfo
+Daniela Fava
+Daniele Demma
+Danilo Bruni
+Davide Fumagalli 
+Davide Lorenzo Palla
+Diego Baldoin
+Domenico Brioschi
+Edoardo Lomazzi
+Eleni Molos
+Elisabetta Cesone
+Francesca Perilli
+Francesco Mei
+Gabriele Calindri
+Giovanni Battezzato
+Giuliana Atepi
+Giuliana Nanni
+Greta Bortolotti
+Ilaria Egitto
+Jenny De Cesarei 
+Jolanda Granato
+Katia Sorrentino
+Lorella De Luca
+Luca Appetiti
+Luca Semeraro
+Lucy Matera
+Mario Scarabelli
+Massimo Triggiani
+Mattia Bressan
+Maura Marenghi
+Maurizio Arena
+Mimmo Strati
+Oliviero Corbetta
+Paolo Sesana
+Pietro Ubaldi
+Raffaele Fallica
+Renata Bertolas
+Renzo Ferrini
+Riccardo Rovatti
+Roberto Accornero
+Silvana Fantini 
+Simona Biasetti
+Stefania De Peppe
+Stefania Patruno
+Stefano Albertini
+Valerio Amoruso
+Veronica Rocca
+
+GERMAN AUDIO RECORDED BY
+SYNTHESIS GERMANY
+
+STUDIO CREW
+Andeas Rogge
+David Arnold
+Finn Seliger
+Florian Zauke
+Friedrich Klemme
+Johannes Marguerre
+Johannes Semm
+Malte Maibauer
+Martin Kruse
+Peter Haubenschild
+Ralf Pel
+Robert Chittka
+Siegfried Fischer
+Stefan Weihrauch
+Thilo Wegging
+Wolfgang Christian
+
+ACTORS
+Achim Buch
+Achim Schülke
+André Beyer
+Andreas Otto
+Antje von der Ahe
+Ben Jung
+Bernd Vollbrecht
+Bert Franzke
+Carmen Antoni
+Caroline Kiesewetter
+Carsten Wilhelm
+Celine Fontanges
+Christian Reimer
+Christian Rudolf
+Christine Pappert
+Christos Topoulos
+Cornelia Dörr
+Dagmar Dreke
+Deborah Mock
+Dietmar Wunder
+Dirk Hardegen
+Djuwita Müller
+Eckard Dux
+Elena Wilms
+Erik Schäffler
+Eva Michaelis
+Felix Würgler
+Fjodor Olev
+Florentine Draeger
+Frank Logemann
+Gordon Piedesack
+Gundi Eberhard
+Gundi Eberhardt
+Hanns Jörg Krumpholz
+Hans Bayer
+Hans-Eckart Eckhardt
+Helmut Krauss
+Jennifer Böttcher
+Jens Wendland
+Joey Cordevin
+Johannes Semm
+Joscha Fischer-Antze
+Joshy Peters
+Juan Carlos Lopez
+Jürgen Holdorf
+Jürgen Thormann
+Kai Hendrik Möller
+Kaspar Eichel
+Katja Brügger
+Kerstin Draeger
+Kristina von Weltzien
+Lara Trautmann
+Lars Schmidke
+Leonie Dubuc
+Manuela Bäcker
+Marek Erhardt
+Marianne Bernhardt
+Mario Hassert
+Marion von Stengel
+Mark Bremer
+Martin Sabel
+Meike Schmidt
+Michael Bideller
+Michael Che Koch
+Michael Krüger
+Michael Lott
+Nicholas König
+Nicolas König
+Nicole Engeln
+Ole Jacobsen
+Ozan Ünal
+Peter Weis
+Philip Schwarz
+Robert Kotulla
+Robert Missler
+Sergej Gladkich
+Silke Matthias
+Sonja Szylowicki
+Tanja Dohse
+Theresa Berlage
+Thomas Fitschen
+Tilman Borck
+Tilo Schmitz
+Tim Kreuer
+Tina Eschmann
+Tobias Schmidt
+Ulrike Johannson
+Ursula Sieg 
+Vanida Karun
+Viola Sauer
+Volker Wolf
+Wolf Frass
+Wolfgang Berger
+Wolfgang Riehm
+
+SPANISH AUDIO RECORDED BY
+SYNTHESIS MADRID
+
+STUDIO CREW
+Adrián Barahona
+Alejandro Aparicio
+Andrés Palancar
+Carlos Vega
+David Flores
+David González
+Emilio Gallardo
+Enrique López
+Fernando Urquiza
+Isabel Martínez
+Javier Lebrero
+Jesus Javier Sáiz
+Juan Manuel Rojo
+Manuel Guerra
+Miguel Gascón
+Raúl López
+Ricardo Espinosa
+
+ACTORS
+Abraham Aguilar
+Adolfo Pastor
+Alfonso Laguna
+Alma Naranjo
+Álvaro Navarro
+Álvaro Ramos
+Ana de Castro
+Ana Jiménez
+Ángel Amorós
+Antonio Domínguez
+Anuska Alborg
+Arantxa Franco de Sarabia
+Arturo López
+Beatriz Berciano
+Carlos Kaniowsky
+Chus Gil
+Danai Jiménez
+David Hernán
+Emma Cifuentes
+Héctor Garay
+Javier Gámir
+Javier Lorca
+Javier Martínez
+Jesús Barreda
+Jorge García Ínsua
+José Ángel Fuentes
+José María Gómez
+José Núñez
+Juan Antonio Gálvez
+Juan Antonio Sáinz de la Maza
+Juan Carlos Lozano
+Juan Navarro
+Luis Mas
+Margot Lago
+María Jesús Nieto
+María Jesús Varona
+Marta Sáinz
+Olga Cano
+Óscar Castellanos
+Pedro Tena
+Roberto Cuadrado
+Roberto Cuenca Martínez
+Roberto Encinas
+Roberto González
+Txema Moscoso
+Vicente Gil
+Yolanda Pérez
+
+
+ORIGINAL MUSIC COMPOSED & PERFORMED BY 
+Lynda Carter, John Jarvis and Kerry Marx
+
+“BABY IT’S JUST YOU”
+Written and Performed by Lynda Carter, John Jarvis and Kerry Marx
+©2015 Lynda Carter, John Jarvis and Kerry Marx (BMI)
+
+"GOOD NEIGHBOR"
+Written and Performed by Lynda Carter, John Jarvis and Kerry Marx
+©2015 Lynda Carter, John Jarvis and Kerry Marx (BMI)
+
+"I'M THE ONE YOU'RE LOOKING FOR"
+Written and Performed by Lynda Carter, John Jarvis and Kerry Marx
+©2015 Lynda Carter, John Jarvis and Kerry Marx (BMI)
+
+"MAN ENOUGH"
+Written and Performed by Lynda Carter, John Jarvis and Kerry Marx
+©2015 Lynda Carter, John Jarvis and Kerry Marx (BMI)
+
+"TRAIN TRAIN"
+Written and Performed by Lynda Carter, John Jarvis and Kerry Marx
+©2015 Lynda Carter, John Jarvis and Kerry Marx (BMI)
+
+
+MUSIC SUPERVISION & LICENSING
+Christopher S. Parker and Brandracket, LLC
+
+Music Coordinator for Brandracket, LLC
+Ian M. Anderson
+
+“A WONDERFUL GUY”
+Written by Richard Rodgers & Oscar Hammerstein II
+Performed by Tex Beneke
+© 1949 Williamson Music, An Imagem Company (ASCAP) 
+Courtesy of The Orchard
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“Ac-Cent-Tchu-Ate The Positive”
+Written by Johnny Mercer and Harold Arlen      
+Performed by Bing Crosby 
+© 1944 Harwin Music Co. (ASCAP)
+All Rights Reserved. Used by Permission.
+Courtesy of HLC Properties, Ltd.
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“ANYTHING GOES”
+Written and Performed by Cole Porter
+© 1934 (Renewed) WB Music Corp. (ASCAP)
+Courtesy of RCA Records and Sony Music Entertainment
+By Arrangement with Sony Music Licensing
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“ATOM BOMB BABY”
+Written by J F Young
+Performed by The Five Stars
+© 1957 Published by Benjon Music (BMI)
+Courtesy of Geffen Records under license from Universal Music Enterprises
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“BUTCHER PETE (PART 1)”
+Written by Roy Brown and Henry Glover
+Performed by Roy Brown
+© 1949 Brown Angel Music Publishing (BMI), Fort Knox Music-Trio Music c/o Carlin America, Inc. (BMI), Arc Music Corp. (BMI)
+Courtesy of King Records
+By arrangement with Warner Music Group Video Game Licensing
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“BUTCHER PETE (PART 2)”
+Written by Roy Brown, Henry Glover
+Performed by Roy Brown
+© 1949 Brown Angel Music Publishing (BMI), Fort Knox Music-Trio Music c/o Carlin America, Inc. (BMI), Arc Music Corp. (BMI)
+Courtesy of King Records
+By arrangement with Warner Music Group Video Game Licensing
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“CIVILIZATION (BONGO, BONGO, BONGO)”
+Written by Bob Hilliard and Carl Sigman
+Performed by Andrews Sisters with Danny Kaye
+© 1947 (Renewed) by Better Half Music Co. (a division of Bourne Co.) (ASCAP) and Music Sales Corporation (ASCAP)
+Courtesy of Geffen Records under license from Universal Music Enterprises
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+ 
+“CRAWL OUT THROUGH THE FALLOUT”
+Written and Performed Sheldon Allman
+© 1960 Arvon Music Co. (ASCAP)
+Courtesy of Essential Media Group LLC
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“CRAZY HE CALLS ME”
+Written by Bob Russell and Carl Sigman
+Performed by Billie Holiday
+© 1949 Published by Music Sales Corporation (ASCAP)
+Courtesy of The Verve Music Group under license from Universal Music Enterprises
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“DEAR HEARTS AND GENTLE PEOPLE”
+Words by Bob Hilliard and Music by Sammy Fain
+Performed by Bob Crosby and the Bobcats
+© 1949 by Better Half Music (ASCAP) and Fain Music Company (ASCAP)
+Courtesy of The Orchard
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“EASY LIVING”
+Written by Ralph Rainger and Leo Robin
+Performed by Billie Holiday
+© 1937 Famous Music (ASCAP)
+Courtesy of Columbia Records and Sony Music Entertainment
+By arrangement with Sony Music Licensing
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“GOOD ROCKIN’ TONIGHT”
+Written and Performed by Roy Brown  
+© 1948 Brown Angel Music Publishing (BMI) and Brown Angel Publishing (GEMA)
+Courtesy of Gusto Records, Inc.
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“GRANDMA PLAYS THE NUMBERS”
+Written by Wynonie Harris and John Mason
+Performed by Wynonie Harris
+© 1949 Trio Music Company (BMI)
+Used by permission of Fort Knox Music Inc. c/o Carlin America, Inc.
+Courtesy of Gusto Records, Inc.
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“HAPPY TIMES”    
+Written by Sylvia Fine
+Performed by Bob Crosby and the Bobcats
+© 1949 (Renewed) Warner Bros. Inc. (ASCAP)
+Courtesy of The Orchard
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“HE’S A DEMON, HE’S A DEVIL, HE’S A DOLL”
+Written by Don Raye and Harold Spina
+Performed by Betty Hutton
+© 1951 Big Four Music Company (ASCAP)
+Courtesy of RCA Records and Sony Music Entertainment
+By arrangement with Sony Music Licensing
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“I DON’T WANT TO SET THE WORLD ON FIRE” 
+Written by Eddie Seiler, Sol Marcus, Bennie Benjamin, and Eddie Durham
+Performed by The Ink Spots
+© 1940 Eddie Durham Swing Music Publishing (ASCAP), Ocheri Publishing Corp., administered by 
+Warner/Chappell Music International LTD (ASCAP) and Bienstock Publishing Co. 
+o/b/o Redwood Music Ltd. (ASCAP)
+Courtesy of Geffen Records under license from Universal Music Enterprises
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“INTO EACH LIFE SOME RAIN MUST FALL”
+Written by Doris Fisher and Allan Roberts
+Performed by Ella Fitzgerald & The Ink Spots
+© 1944 Universal Music Corp. (ASCAP) and Music Sales Corporation (ASCAP)
+Courtesy of Geffen Records under license from Universal Music Enterprises
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“IT’S A MAN”
+Written by Cy Coben
+Performed by Betty Hutton
+ © 1951 Delmore Music (ASCAP)
+Courtesy of RCA Records and Sony Music Entertainment
+By arrangement with Sony Music Licensing
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“IT’S ALL OVER BUT THE CRYIN’”
+Written by Seger Ellis and Russ Morgan
+Performed by The Ink Spots
+© 1948 Universal Music Corp. (ASCAP)
+Courtesy of Geffen Records under license from Universal Music Enterprises
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“KEEP A KNOCKIN’ (BUT YOU CAN’T COME IN)”
+Written by Bert Mays and J. Mayo Williams
+Performed by Louis Jordan & His Tympany Five
+© 1939 Universal Music Corp. (ASCAP)
+Courtesy of The Verve Music Group under license from Universal Music Enterprises
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“MAYBE”
+Written by Allan Flynn and Frank Madden
+Performed by The Ink Spots
+© 1935 EMI Robbins Catalog Inc. (administered by Sony/ATV Music Publishing LLC.)
+Courtesy of Geffen Records under license from Universal Music Enterprises
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“MIGHTY MIGHTY MAN”
+Written and Performed by Roy Brown  
+© 1949 Brown Angel Music Publishing (BMI), Arc Music Corp. (BMI), and Fort Knox Music Inc. 
+c/o Carlin America, Inc. (BMI)
+Courtesy of King Records
+By arrangement with Warner Music Group Video Game Licensing
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“ONE MORE TOMORROW”
+Written by Edgar Delange, Ernesto Lecuona, and Josef Myrow
+Performed by Frankie Carle & His Orchestra
+© 1945 (Renewed) WB Music Corp. (ASCAP) and Scarsdale Music Crop. (ASCAP)
+Courtesy of RCA Records
+By arrangement with Sony Music Licensing
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+        
+“ORANGE COLORED SKY”
+Written by Milton Delugg and Willie Stein
+Performed by Nat King Cole
+© 1950 Amy Dee Music Corp. (ASCAP)
+Courtesy of Capitol Records under license from Universal Music Enterprises
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“PERSONALITY”
+Words by Johnny Burke and Music by Jimmy Van Heusen
+Performed by Johnny Mercer & The Pied Pipers, Jo Stafford
+© 1946 (Renewed) by Bourne Co. (ASCAP) and Music Sales Corporation (ASCAP)
+Courtesy of Capitol Records under license from Universal Music Enterprises
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“PISTOL PACKIN’ MAMA”
+Written by Al Dexter
+Performed by Bing Crosby & The Andrews Sisters
+© 1942 Universal - Songs Of PolyGram International, Inc. (BMI)
+Courtesy of Geffen Records under license from Universal Music Enterprises
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“RIGHT BEHIND YOU BABY”
+Written by Charlie Rich
+Performed by Ray Smith
+© 1958 (Renewed) Hi Lo Music, Inc. (BMI)
+Courtesy of Sun Entertainment Corporation
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“ROCKET 69”
+Written by Henry Glover and Sydney Nathan
+Performed Todd Rhodes Orchestra: Vocal by Connie Allen and the Band
+© 1952 Trio Music Company (BMI) and Fort Knox Music Inc. c/o Carlin America, Inc. (BMI)
+Courtesy of Gusto Records, Inc.
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“SIXTY MINUTE MAN”
+Written by William Ward
+Performed by The Dominoes
+© 1951 Trio Music Company (BMI)
+Used by permission of Fort Knox Music Inc. c/o Carlin America, Inc.
+Courtesy of Gusto Records, Inc.
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“THE END OF THE WORLD”
+Written by Sylvia Dee and Arthur Kent
+Performed by Skeeter Davis
+© 1962 Music Sales Corporation (ASCAP)
+Courtesy of Sony Music Nashville
+By arrangement with Sony Music Licensing
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“THE WANDERER”
+Words and Music by Ernie Maresca
+Performed by Dion
+© 1964 Warner-Tamerlane Publishing Corp. (BMI)
+Courtesy of Capitol Records under license from Universal Music Enterprises
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“UNDECIDED”
+Written by Sydney Robin and Charles Shavers
+Performed by Ella Fitzgerald
+© 1938 Universal Music Corp. (ASCAP)
+Courtesy of Geffen Records under license from Universal Music Enterprises
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“URANIUM FEVER”
+Written by Penny Britt
+Performed by Elton Britt
+ © 1955 Trio Music Company (BMI) and Alley Music Corp. c/o Carlin America, Inc. (BMI)
+Courtesy of RCA Records and Sony Music Entertainment
+By arrangement with Sony Music Licensing
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“URANIUM ROCK”
+Written by Alonzo Hopson Jr.
+Performed by Warren Smith
+© 1958 Universal - Cedarwood Publishing (BMI)
+Courtesy of Sun Entertainment Corporation
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“WAY BACK HOME”
+Written by Tom Waring and Al Lewis
+Performed by Bob Crosby and the Bobcats
+© 1935 Warner Bros. Inc. (ASCAP) and Sovereign Music Co. (ASCAP)
+Courtesy of The Orchard
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“WHOLE ‘LOTTA SHAKIN’ GOIN’ ON”
+Written by David Curlee Williams
+Performed by Big Maybelle
+© 1955 Nimani Entertainment/Tyrone A. Wallace (ASCAP)
+Courtesy of Columbia Records
+By arrangement with Sony Music Licensing
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+“WORRY, WORRY, WORRY”
+Written by George Tibbles and Ramez Idriss
+Performed by The Three Suns
+© 1947 Colgems – EMI Music Inc., administered by Sony/ATV Music Publishing LLC. (ASCAP) 
+Courtesy of RCA Records and Sony Music Entertainment
+By arrangement with Sony Music Licensing
+All Rights Reserved. Used by Permission. 
+International Rights Secured.  Not for broadcast transmission.
+DO NOT DUPLICATE.
+
+Additional Music Provided Courtesy of APM Music
+
+WARNING:  It is a violation of Federal Copyright Law to synchronize this Video Game with video tape or film, 
+or to print the Composition(s) embodied on this Video Game in the form of standard music notation without 
+the express written permission of the copyright owner(s).
+
+
+SPECIAL THANKS
+Max Abernethy
+Turkka Äijälä
+Viktor Antonov
+Adam Boyes
+Brian Brockett
+Mark Carlson
+Mark Cerny
+Raphael Colantonio
+David Cook 
+Johnny Costello
+Matt Conway
+Brad Derrick
+Bryan Dudash
+Robert Duffy
+Daniele Giannetti
+Jerk Gustafsson
+Matt Firor
+Blake Fisher
+Tor Frick
+Nathan Hoobler
+Luke Howard
+Maria Jaramillo
+Lars Johansson
+Dane Johnston
+Matt Killmon
+Jim Kjellin
+Mat Krohn
+Yves Lachance
+Jake Leder
+Pete Lewis
+Claude Marais
+Stephan Martiniere
+Jens Matthies
+James Miller
+Shinji Mikami
+Alec Moody
+Bill Mueller
+Alex Nankervis
+Brenna Pagliarulo
+Conall Pagliarulo
+Cormac Pagliarulo
+Cullen Pagliarulo
+Rémi Racine
+Rashad Redic
+Eric Reichly
+Justin Saunders
+Simon Schirm
+Christian Sigg
+Jean Simonet
+Harvey Smith
+Joshua Smith
+Tiago Sousa
+Phil Spencer
+Marty Stratton
+Jeff Sullivan
+Andrei Tatarinov
+Kelly Tofte
+Rich Vogel
+Tim Willits
+The Workshop
+Aron Zoellner
+
+
+A most special thanks to our
+friends and families,
+we'll see you soon.
+
+
+IN LOVING MEMORY OF OUR FRIEND & COLLEAGUE
+Adam Adamowicz
+1968-2012
+
+LEGAL
+Fallout® 4 © 2015 Bethesda Softworks LLC, a ZeniMax Media company. Bethesda, Bethesda Softworks, Bethesda Game Studios, 
+ZeniMax, Pip-Boy, Vault-Tec and related logos are registered trademarks or trademarks of ZeniMax Media Inc. in the U.S. 
+and/or other countries. Fallout, Vault Boy and related logos are trademarks or registered trademarks of Bethesda Softworks LLC
+in the U.S. and/or other countries.  All Rights Reserved.  Uses Havok™: © 1999-2015. Havok.com, Inc. (and its Licensors). 
+All Rights Reserved. See www.havok.com for details.  All rights reserved Uses Bink Video. Copyright 2007 – 2015 by RAD Game Tools, Inc. 
+Uses Autodesk® Scaleform® copyright ©2011, Autodesk, Inc.  All rights reserved.  FaceFX software used for facial
+animation. ©2002-2015, OC3 Entertainment, Inc. and its licensors. All rights reserved.  Uses Umbra 3 Visibility Solution.
+©2015 by Umbra Software Ltd. www.umbrasoftware.com.  NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation.
+Copyright © 2002-2015 NVIDIA Corporation. All Rights Reserved.
+
+
+<img src='MiddlewareLogos'>
+
+<img src='CreationEngineLogo'>
+
+Fallout 4
+fallout.bethsoft.com</font>
