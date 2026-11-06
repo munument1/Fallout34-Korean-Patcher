@@ -105,3 +105,48 @@ python tools/verify_shared_mcm.py
 ## xTranslator 정의 기반 ESM 재검사
 
 최신 [XTRANSLATOR_AUDIT.md](XTRANSLATOR_AUDIT.md)를 확인하세요. 기존의 11,880건은 수동 선정 필드만 분석한 임시 수치로, xTranslator 번역 대상 필드 전체 기준 최종 누락량이 아닙니다. 원본 ESM은 수정하지 않았습니다.
+
+## 2026-11-06 설치 완료된 Fallout34 ESM 두 개 전용 검사
+
+**사용자 지정 범위:** 설치된 `C:\Games\Steam\steamapps\common\Fallout 4\Data\Fallout34.esm`(FO3 및 DLC), `FalloutNV34.esm`(FNV 및 DLC) **2개만 번역**합니다. Fallout34용 ESL 7개(`Fallout34_2~4.esl`, `FalloutNV34_2~5.esl`)는 모두 151바이트이며 실제 레코드가 없는 아카이브 연결용입니다. **`F34Online.esp`, 온라인 스크립트, XDI, Fallout 4 기본 플러그인은 제외하고 수정하지 않습니다.**
+
+관련 BA2 아카이브 20개는 총 약 65.2GB이며 모델·텍스처·음성·립싱크·스크립트가 들어 있습니다. 목록에 별도의 `.strings`/`.swf` 번역 대상은 관찰되지 않았으나, 런타임 스크립트에서 생성되는 화면 문구까지 검증한 것은 아닙니다.
+
+### 원본 ESM 보존형 로컬 복사본
+
+| 게임 | 기존 적용계획 | 이번 출처 검증 복구 | ESM 복사본에 실제 적용한 필드 |
+|---|---:|---:|---:|
+| FO3 + DLC | 68,542 | 6 | **68,548** |
+| FNV + DLC | 161,795 | 729 | **162,524** |
+| **합계** | **230,337** | **735** | **231,072** |
+
+- 원본 ESM·한국어 SST·변환 ESM의 원문/타입/필드/위치/FormID를 비교했습니다. 복구 후보 중 원본이 입증됐더라도 런타임 표시 용도가 불확실한 `QUST/NNAM` 18개는 자동 적용에서 보류했습니다.
+- FNV 신규 729개: `TERM/ITXT` 148개, `TERM/RNAM` 325개, `INFO/NAM1` 238개, `MESG/ITXT` 6개, `QUST/CNAM` 12개. FO3 신규 6개: `TERM/ITXT`.
+- 미리보기 ESM: `work/fo3/localized_v2/Data/Fallout34.esm`, `work/fnv/localized_v2/Data/FalloutNV34.esm`. **설치 경로 원본 ESM은 전혀 교체하지 않았으며 이 로컬 ESM 바이너리는 GitHub에 포함하지 않습니다.**
+- `verify_localized_esm_copy.py`의 독립 비교에서 FO3 **1,244,191**개 레코드, FNV **994,482**개 레코드의 구조 및 모든 계획된 변경 문자열을 확인했고, 계획 밖 레코드/서브레코드 바이트는 동일함을 검증했습니다. GRUP 크기, 압축 레코드 복원, UTF-8 문자열, 필드 인덱스 검사도 통과했습니다.
+- **정적 검증 통과이지 인게임 완역이나 퀘스트·UI 정상 실행 확인이 아닙니다.** 수치는 고유 문장이 아닌 문자열 필드 *출현 횟수*입니다.
+
+### 이번 추가 반영 이후 남은 xTranslator 미연결 출현 수
+
+| 현재 분류 | FO3 + DLC | FNV + DLC |
+|---|---:|---:|
+| 패처 계획에 한국어가 연결되지 않은 출현 | **12,877** | **15,382** |
+| 기존 사전에 번역은 있으나 출처/문맥 추가 검증 필요 | **35,697** | **52,351** |
+
+**미연결 출현 = 실제 인게임 미번역 개수는 아닙니다.** FO3의 `INFO/NAM1` 공백 문자열 2,640회, FNV 6,920회가 위 미연결 수치에 포함됩니다. 내부 편집 정보·조건부 데이터·같은 문장 반복도 아직 남았습니다. 이들을 제외해 실제 표시되는 미번역을 찾는 후속 조사와 플레이 테스트가 필요합니다. 이전 수동 기준 고유 후보 11,880개와 이 출현 수를 혼동하지 마세요.
+
+### 검증·생성 명령
+
+```powershell
+python tools/recover_fo3_xtranslator_provenance.py
+python tools/recover_fo3_xtranslator_edid.py
+python tools/recover_fnv_xtranslator_origin_verified.py
+python tools/build_xtranslator_visible_verified_plan.py
+python tools/build_localized_esm_copy.py fo3 --output work/fo3/localized_v3/Data/Fallout34.esm --extra-plan data/fo3/xtranslator_verified_visible_extra.jsonl.gz
+python tools/build_localized_esm_copy.py fnv --output work/fnv/localized_v3/Data/FalloutNV34.esm --extra-plan data/fnv/xtranslator_verified_visible_extra.jsonl.gz
+python tools/verify_localized_esm_copy.py fo3 --translated work/fo3/localized_v3/Data/Fallout34.esm --extra-plan data/fo3/xtranslator_verified_visible_extra.jsonl.gz
+python tools/verify_localized_esm_copy.py fnv --translated work/fnv/localized_v3/Data/FalloutNV34.esm --extra-plan data/fnv/xtranslator_verified_visible_extra.jsonl.gz
+python -m unittest discover -s tools -p 'test_localized_esm_copy.py' -v
+```
+
+ESM 출력 경로는 **사전에 존재하면 덮어쓰지 않습니다**. 새로운 버전 경로로 생성하세요. `data/{fo3,fnv}/localized_esm_copy*.json`에는 생성본 SHA256·독립 검증 결과가 보존됩니다. GitHub 저장소에는 코드·번역 계획·QA 보고서만 올립니다.

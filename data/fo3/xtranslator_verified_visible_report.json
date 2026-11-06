@@ -1,0 +1,16 @@
+{
+  "game": "fo3",
+  "original_source_file": "xtranslator_fo3_provenance_exact.jsonl.gz",
+  "base_plan_fields": 68542,
+  "source_verified_candidates": 6,
+  "promoted_display_priority": 6,
+  "deferred": 0,
+  "by_reason": {
+    "promoted_verified_visible": 6
+  },
+  "promoted_by_field": {
+    "TERM/ITXT": 6
+  },
+  "scope": "ESM-based FO3/FNV content only; no F34Online, ESL carrier or game file touched",
+  "warning": "FO4 in-game display and text layout still need playtesting. This does not establish completed translation."
+}

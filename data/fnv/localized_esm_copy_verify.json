@@ -1,0 +1,13 @@
+{
+  "game": "fnv",
+  "source_sha256": "caa2d4649c99bfcdd36e8a489f865e55f5ee9fc6087469ba0d1de2e410318897",
+  "translated_sha256": "1df6f165992ebd9d3da8b40b72f49fd32e972fe8d8d7f61d168b7bdd2177d6b0",
+  "verification": "pass",
+  "stats": {
+    "verified_records": 994482,
+    "group_start": 179955,
+    "group_end": 179955,
+    "verified_fields": 162524
+  },
+  "scope": "static byte-level record and subrecord comparison; not FO4 runtime validation"
+}
