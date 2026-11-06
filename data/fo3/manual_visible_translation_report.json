@@ -1,0 +1,16 @@
+{
+  "game": "fo3",
+  "esm_sha256": "be0e7f25d0a28c672de2c12afbbf402bff0bb202037c231930d4649afd138603",
+  "manual_english_phrases": 25,
+  "newly_reconnected_field_occurrences": 254,
+  "already_covered_with_provenance": 4,
+  "by_record_field": {
+    "TERM/ITXT": 25,
+    "TERM/RNAM": 176,
+    "MESG/ITXT": 15,
+    "TERM/FULL": 33,
+    "MESG/DESC": 5
+  },
+  "manual_source": "data\\manual_visible_glossary_ko.json",
+  "warning": "This adds text assignments to the translation backlog. It does NOT create a new ESM, modify game installation, prove actual runtime display, or assert complete translation."
+}

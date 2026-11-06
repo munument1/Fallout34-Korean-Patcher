@@ -150,3 +150,48 @@ python -m unittest discover -s tools -p 'test_localized_esm_copy.py' -v
 ```
 
 ESM 출력 경로는 **사전에 존재하면 덮어쓰지 않습니다**. 새로운 버전 경로로 생성하세요. `data/{fo3,fnv}/localized_esm_copy*.json`에는 생성본 SHA256·독립 검증 결과가 보존됩니다. GitHub 저장소에는 코드·번역 계획·QA 보고서만 올립니다.
+
+## **현재 최우선: 미번역 잔여량 감소 (2026-11-06 최신)**
+
+사용자 지적에 따라 **완역 이전 ESM 사본 추가 생성·설치·릴리스는 중단**했습니다. 직전의 ESM 미리보기 기록은 과거 정적 검증 근거일 뿐, 이 프로젝트의 달성 목표가 아닙니다. 현재 작업은 원본 ESM·SST·변환 결과·변환기 출처 키와 필드 이동을 추적해 **번역 연결을 복구하고 남은 인게임 표시 문자열을 새로 번역하는 것**입니다. 온라인 `F34Online.esp`는 검사·수정 범위 밖입니다.
+
+### 원본 번역 복구와 신규 한국어 대응 (원본 ESM을 수정하지 않은 데이터 계획)
+
+| 구분 | FO3 + DLC | FNV + DLC |
+|---|---:|---:|
+| 이전 번역 계획 필드 출현 | 68,542 | 161,795 |
+| 원본 ESM/SST 및 변환 출처 연결 복구 | 6 | 20,306 |
+| 동일 INFO 레코드의 RNAM↔NAM1 정확한 영문 대조 후 번역 연결 | 1,022 | 18,304 |
+| 화면 문구 직접 번역 (정확히 일치하는 타입/필드/문구 한정) | 254 | 243 |
+| **현재 번역 계획 합계** | **69,824** | **200,648** |
+| **여전히 번역 연결이 없는 필드 출현** | **47,298** | **29,609** |
+
+**추가 복구 40,135개**는 기존 SST 번역의 정확한 출처 재연결 또는 개별 한국어 직접 번역의 *문자열 필드 출현 수*입니다. ESM에 설치 적용한 건수가 아닙니다. 변환된 `INFO/RNAM` 선택지에서 원본 `DIAL/FULL` 주제가 새 필드로 이동하면서 기존 한국어가 누락된 큰 원인을 찾아 원본 `INFO`의 실제 DIAL 부모 관계와 SST까지 추적했습니다. 또 같은 변환 `INFO` FormID 안에서 동일한 영문이 선택지/자막 양쪽에 있을 때, 검증된 한국어 하나를 다른 쪽에 다시 연결했습니다. 다른 FormID의 동일 영문을 무조건 재사용하는 방식은 금지합니다.
+
+원본 ESM은 해시로 고정한 상태에서 `verify_current_esm_translation_plan.py`를 이용해 **전체 270,472개 번역 계획**의 대상 FormID·레코드 타입·필드 인덱스·영문 원본·변수/태그 일치를 독립 검증했습니다. FO3 69,824개, FNV 200,648개 검증 통과. 다만 이것은 **번역 계획 검증**이며, 인게임 완역/작동 보증은 아닙니다.
+
+### 현재 미연결·미번역의 실제 검수 순서
+
+| 기준 | FO3 + DLC | FNV + DLC |
+|---|---:|---:|
+| 현재 자료에서 새 번역이나 추가 출처가 필요한 출현 | 12,623 | 14,769 |
+| 원문과 기존 한국어 후보가 있지만 연결 검수가 더 필요한 출현 | 34,675 | 14,840 |
+| 대사·터미널·메시지·퀘스트 목표 등 **직접 화면 후보 출현** | 40,179 | 20,334 |
+| 그중에서 별도 분리한 빈 문구/공백 출현(모든 필드 합계) | 2,659 | 6,922 |
+| 내부 편집용일 수 있는 특수 필드/제어 필드 출현 | 2,032 | 1,665 |
+
+※ 행마다 **서로 다른 분류축**을 사용하므로 합산하지 마세요. 공백/기호/편집용 정보는 인게임 미번역 문장으로 오인하면 안 됩니다. 화면 후보도 실제 런타임 도달 여부는 미확인입니다. 남은 원문은 `data/{fo3,fnv}/current_unlinked_display_review.csv`에 게임/레코드/필드/영문별로 모았습니다. 같은 영어가 여러 FormID에 있으면 개별 원본 맥락을 추가 확인해야 합니다.
+
+### 누락만 계속 처리하는 명령 (ESM 출력 없음)
+
+```powershell
+python tools/recover_fnv_xtranslator_origin_verified.py
+python tools/build_xtranslator_visible_verified_plan.py
+python tools/build_manual_visible_translation_plan.py
+python tools/recover_sibling_info_field_translation.py
+python tools/report_remaining_esm_translation_gaps.py
+python tools/verify_current_esm_translation_plan.py fo3
+python tools/verify_current_esm_translation_plan.py fnv
+```
+
+직접 작성·검수한 공용 UI 문구는 `data/manual_visible_glossary_ko.json`에 있으며, 번역 문자열은 `data/{fo3,fnv}/manual_visible_translation_verified.jsonl.gz`로 대상별 분리합니다. 현 시점의 **검토 대상은 잔여 76,907개 미연결 필드 출현**, 특히 실제 표시될 수 있는 직접 화면 후보 60,513개입니다. **완역 완료는 아닙니다.**

@@ -16,6 +16,7 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 ALLOWED_FIELDS = {
     ("INFO", "NAM1"),   # NPC subtitle
+    ("INFO", "RNAM"),   # Player-visible dialogue option text; converter remaps source DIAL/FULL
     ("TERM", "ITXT"),   # Terminal choice
     ("TERM", "RNAM"),   # Terminal loading/status text
     ("MESG", "ITXT"),   # Message choice

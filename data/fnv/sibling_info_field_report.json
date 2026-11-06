@@ -1,0 +1,17 @@
+{
+  "game": "fnv",
+  "source_esm_sha256": "caa2d4649c99bfcdd36e8a489f865e55f5ee9fc6087469ba0d1de2e410318897",
+  "restored_unique_field_occurrences": 18304,
+  "restored_by_field_and_original_status": {
+    "NAM1": {
+      "existing_korean_needs_context": 18277,
+      "missing_translation_match": 27
+    }
+  },
+  "rejected": {
+    "no_identical_translated_sibling_in_same_formid": 25300,
+    "already_covered": 19752
+  },
+  "algorithm": "same converted FormID, INFO, exact original English; unique Korean from the already version-validated opposite field RNAM/NAM1",
+  "warning": "Only translation assignments produced. No game ESM changed or copied. In-game QA remains necessary."
+}

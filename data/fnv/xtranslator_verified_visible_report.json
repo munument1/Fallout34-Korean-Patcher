@@ -2,19 +2,20 @@
   "game": "fnv",
   "original_source_file": "xtranslator_fallback_source_verified.jsonl.gz",
   "base_plan_fields": 161795,
-  "source_verified_candidates": 747,
-  "promoted_display_priority": 729,
-  "deferred": 18,
+  "source_verified_candidates": 20340,
+  "promoted_display_priority": 20306,
+  "deferred": 34,
   "by_reason": {
-    "promoted_verified_visible": 729,
-    "display_reachability_not_established": 18
+    "promoted_verified_visible": 20306,
+    "display_reachability_not_established": 34
   },
   "promoted_by_field": {
-    "TERM/ITXT": 148,
-    "TERM/RNAM": 325,
-    "MESG/ITXT": 6,
+    "TERM/ITXT": 258,
+    "TERM/RNAM": 463,
+    "MESG/ITXT": 11,
     "QUST/CNAM": 12,
-    "INFO/NAM1": 238
+    "INFO/NAM1": 2127,
+    "INFO/RNAM": 17435
   },
   "scope": "ESM-based FO3/FNV content only; no F34Online, ESL carrier or game file touched",
   "warning": "FO4 in-game display and text layout still need playtesting. This does not establish completed translation."

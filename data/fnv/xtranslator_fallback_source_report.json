@@ -26,10 +26,11 @@
   "source_origins_in_converter": 33329,
   "implicit_base_origin_ids_considered": 604,
   "original_source_records_loaded": 15359,
+  "source_info_to_parent_dialogue_links": 10060,
   "classification": {
-    "no_proven_source_field_translation": 57967,
+    "no_proven_source_field_translation": 40532,
     "no_converter_origin": 7590,
-    "source_esm_sst_field_verified": 2905
+    "source_esm_sst_field_verified": 20340
   },
   "by_record_field": {
     "ACTI/FULL": {
@@ -80,7 +81,8 @@
       "no_converter_origin": 6577
     },
     "INFO/RNAM": {
-      "no_proven_source_field_translation": 25297,
+      "source_esm_sst_field_verified": 17435,
+      "no_proven_source_field_translation": 7862,
       "no_converter_origin": 8
     },
     "LSCR/DESC": {
@@ -176,14 +178,14 @@
   },
   "by_xtranslator_input_status": {
     "missing_translation_match": {
-      "no_proven_source_field_translation": 7671,
+      "no_proven_source_field_translation": 7474,
       "no_converter_origin": 7531,
-      "source_esm_sst_field_verified": 521
+      "source_esm_sst_field_verified": 718
     },
     "existing_korean_needs_context": {
-      "no_proven_source_field_translation": 50296,
+      "no_proven_source_field_translation": 33058,
       "no_converter_origin": 59,
-      "source_esm_sst_field_verified": 2384
+      "source_esm_sst_field_verified": 19622
     }
   },
   "unresolved_source_failures_by_field": {
@@ -233,9 +235,12 @@
       "original_record_type_different": 23383
     },
     "INFO/RNAM": {
-      "source_esm_field_english_not_matching": 21015,
-      "original_record_type_different": 23489,
-      "original_esm_record_unavailable": 2511,
+      "dialogue_parent_missing": 8526,
+      "original_record_type_different": 7263,
+      "source_esm_field_english_not_matching": 3644,
+      "original_esm_record_unavailable": 1058,
+      "dialogue_parent_placeholder_mismatch": 228,
+      "direct_dial_placeholder_mismatch": 116,
       "placeholder_mismatch": 4
     },
     "LSCR/DESC": {},
@@ -330,10 +335,10 @@
     "WRLD/FULL": {}
   },
   "target_byte_verification": {
-    "target_byte_verified": 2905
+    "target_byte_verified": 20340
   },
-  "verified_new_candidate_occurrences": 2905,
-  "manual_review_occurrences": 65557,
+  "verified_new_candidate_occurrences": 20340,
+  "manual_review_occurrences": 48122,
   "samples": {
     "no_proven_source_field_translation": [
       {

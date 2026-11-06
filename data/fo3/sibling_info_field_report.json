@@ -1,0 +1,15 @@
+{
+  "game": "fo3",
+  "source_esm_sha256": "be0e7f25d0a28c672de2c12afbbf402bff0bb202037c231930d4649afd138603",
+  "restored_unique_field_occurrences": 1022,
+  "restored_by_field_and_original_status": {
+    "RNAM": {
+      "existing_korean_needs_context": 1022
+    }
+  },
+  "rejected": {
+    "no_identical_translated_sibling_in_same_formid": 35782
+  },
+  "algorithm": "same converted FormID, INFO, exact original English; unique Korean from the already version-validated opposite field RNAM/NAM1",
+  "warning": "Only translation assignments produced. No game ESM changed or copied. In-game QA remains necessary."
+}

@@ -151,6 +151,62 @@ def original_owner_index(path: Path) -> int:
     return sum(1 for name, _, _ in fields(data) if name == "MAST")
 
 
+def dialogue_parents(path: Path, selected_info: set[int], owner_index: int):
+    """Prove an INFO belongs to a specific parent DIAL via ESM GRUP type 7.
+
+    Reads only the source game's original ESM. A parent must be an actual DIAL
+    record from the same original plugin, not merely a coincident English line.
+    """
+    parents = {}
+    dialogs = {}
+    stack = []
+    end = path.stat().st_size
+    with path.open("rb") as stream:
+        pos = 0
+        while pos < end:
+            while stack and pos >= stack[-1][0]:
+                stack.pop()
+            stream.seek(pos)
+            hdr = stream.read(24)
+            if len(hdr) != 24:
+                raise ValueError(f"Truncated original dialogue header at {pos}")
+            tag, size, flags, fid, _, _ = struct.unpack("<4sIIIII", hdr)
+            if tag == b"GRUP":
+                if size < 24 or pos + size > end:
+                    raise ValueError(f"Invalid original dialogue group at {pos}")
+                label, group_type = struct.unpack_from("<II", hdr, 8)
+                stack.append((pos + size, group_type, label))
+                pos += 24
+                continue
+            if size > 16 * 1024 * 1024 or pos + 24 + size > end:
+                raise ValueError(f"Invalid original dialogue record at {pos}")
+            if (fid >> 24) == owner_index:
+                local = fid & 0xFFFFFF
+                if tag == b"INFO" and local in selected_info:
+                    dialog_group = next((x for x in reversed(stack) if x[1] == 7), None)
+                    if dialog_group and (dialog_group[2] >> 24) == owner_index:
+                        if local in parents and parents[local] != (dialog_group[2] & 0xFFFFFF):
+                            raise ValueError(f"Original INFO has conflicting DIAL parents: {local:06X}")
+                        parents[local] = dialog_group[2] & 0xFFFFFF
+                elif tag == b"DIAL":
+                    payload = stream.read(size)
+                    if flags & 0x00040000:
+                        expected = struct.unpack_from("<I", payload)[0]
+                        payload = zlib.decompress(payload[4:])
+                        if len(payload) != expected:
+                            raise ValueError("Corrupt original DIAL compressed record")
+                    full = {idx: readable(blob) for name, idx, blob in fields(payload)
+                            if name == "FULL"}
+                    if local in dialogs:
+                        raise ValueError(f"Duplicate original DIAL ID {local:06X}")
+                    dialogs[local] = full
+            pos += 24 + size
+    if pos != end:
+        raise ValueError("Incomplete original dialogue group walk")
+    return {info: (parent, dialogs[parent])
+            for info, parent in parents.items() if parent in dialogs}
+
+
 def origins_from_sst():
     spec = importlib.util.spec_from_file_location("fnv_sst_parser", ROOT / "tools" / "read_xtranslator_sst.py")
     reader = importlib.util.module_from_spec(spec)
@@ -232,6 +288,8 @@ def main():
                 src = (m[1].casefold(), int(m[2], 16))
                 origin_links[fid].add(src)
                 evidence[fid][src].add("converter_generated_key")
+                if rec_type == "INFO" and key.startswith("INFO|dlg|"):
+                    evidence[fid][src].add("converter_dialogue_key")
 
     sst_rows, sst_hashes = origins_from_sst()
     # The converter preserves the source's low 24-bit FormID for base-game
@@ -271,6 +329,24 @@ def main():
             original[k] = (typ, raw_fields)
         source_hashes[plugin] = digest(path)
 
+    dialogue_ids = defaultdict(set)
+    for target_fid, rows in missing_by_id.items():
+        if not any(r["record_type"] == "INFO" and r["field"] == "RNAM" for r in rows):
+            continue
+        for source in origin_links.get(target_fid, ()):
+            if "converter_dialogue_key" in evidence[target_fid][source]:
+                dialogue_ids[source[0]].add(source[1])
+    original_dialogue_parent = {}
+    for plugin, ids in dialogue_ids.items():
+        path = NV_DATA / plugin
+        if not path.is_file():
+            continue
+        parent_map = dialogue_parents(path, ids, original_owner_index(path))
+        for info_id, (dial_id, fields_by_index) in parent_map.items():
+            original_dialogue_parent[(plugin, info_id)] = ((plugin, dial_id), fields_by_index)
+        if plugin not in source_hashes:
+            source_hashes[plugin] = digest(path)
+
     stats = Counter()
     by_field = defaultdict(Counter)
     by_input_status = defaultdict(Counter)
@@ -286,11 +362,61 @@ def main():
         failures = Counter()
         source_evidence = []
         for source in origins:
+            # The source INFO's DIAL-group parent is the exact player
+            # dialogue prompt from which a generated INFO/RNAM option arose.
+            if (target_type, field) == ("INFO", "RNAM") and (
+                    "converter_dialogue_key" in evidence[fid][source]):
+                parent = original_dialogue_parent.get(source)
+                if parent:
+                    parent_source, parent_fields = parent
+                    for original_full in parent_fields.values():
+                        if original_full is None:
+                            continue
+                        if original_full == english:
+                            transform = "original_info_parent_dial_full"
+                        elif EDIT_CUE.match(original_full) and (
+                                EDIT_CUE.sub("", original_full).strip() == english):
+                            transform = "original_info_parent_dial_full_editor_cue_removed"
+                        else:
+                            continue
+                        source_key = (*parent_source, "DIAL", "FULL", original_full)
+                        for korean, sst_name, sst_idx in sst_rows.get(source_key, set()):
+                            if not korean or korean == english:
+                                failures["dialogue_parent_same_text_or_empty"] += 1
+                            elif Counter(TOKEN.findall(english)) != Counter(TOKEN.findall(korean)):
+                                failures["dialogue_parent_placeholder_mismatch"] += 1
+                            elif korean.startswith("{") and transform.endswith("editor_cue_removed"):
+                                failures["dialogue_parent_translation_contains_cue"] += 1
+                            else:
+                                matches[korean].add((source, sst_name, sst_idx, transform, parent_source))
+                else:
+                    failures["dialogue_parent_missing"] += 1
             source_row = original.get(source)
             if source_row is None:
                 failures["original_esm_record_unavailable"] += 1
                 continue
             record_type, source_fields = source_row
+            if (target_type, field) == ("INFO", "RNAM") and record_type == "DIAL" and (
+                    "converter_dialogue_key" in evidence[fid][source]):
+                for (name, _), original_full in source_fields.items():
+                    if name != "FULL" or original_full is None:
+                        continue
+                    if original_full == english:
+                        transform = "generated_info_from_source_dial_full"
+                    elif EDIT_CUE.match(original_full) and EDIT_CUE.sub("", original_full).strip() == english:
+                        transform = "generated_info_from_source_dial_full_editor_cue_removed"
+                    else:
+                        continue
+                    source_key = (*source, "DIAL", "FULL", original_full)
+                    for korean, sst_name, sst_idx in sst_rows.get(source_key, set()):
+                        if not korean or korean == english:
+                            failures["direct_dial_same_text_or_empty"] += 1
+                        elif Counter(TOKEN.findall(english)) != Counter(TOKEN.findall(korean)):
+                            failures["direct_dial_placeholder_mismatch"] += 1
+                        elif korean.startswith("{") and transform.endswith("editor_cue_removed"):
+                            failures["direct_dial_translation_contains_cue"] += 1
+                        else:
+                            matches[korean].add((source, sst_name, sst_idx, transform, source))
             if record_type != target_type:
                 failures["original_record_type_different"] += 1
                 continue
@@ -319,7 +445,7 @@ def main():
                     elif korean.startswith("{") and transform == "converter_removed_leading_editor_cue":
                         failures["translated_text_still_has_editor_cue"] += 1
                     else:
-                        matches[korean].add((source, sst_name, sst_idx, transform))
+                        matches[korean].add((source, sst_name, sst_idx, transform, None))
         if not origins:
             status = "no_converter_origin"
         elif not matches:
@@ -350,8 +476,11 @@ def main():
             output["source_evidence"] = [
                 {"plugin": source[0], "original_local_formid": f"{source[1]:06X}",
                  "source_sst": sst_file, "source_sst_field_index": sst_idx,
-                 "transform": transform, "origin_link": sorted(evidence[fid][source])}
-                for source, sst_file, sst_idx, transform in sorted(proven)
+                 "source_sst_record_type": ("DIAL" if parent else target_type),
+                 "source_sst_field": ("FULL" if parent else field),
+                 "transform": transform, "origin_link": sorted(evidence[fid][source]),
+                 "dialogue_parent_formid": (f"{parent[1]:06X}" if parent else None)}
+                for source, sst_file, sst_idx, transform, parent in sorted(proven)
             ]
             candidates.append(output)
         else:
@@ -412,6 +541,7 @@ def main():
         "source_origins_in_converter": sum(bool(v) for v in origin_links.values()),
         "implicit_base_origin_ids_considered": implicit_base_origins,
         "original_source_records_loaded": len(original),
+        "source_info_to_parent_dialogue_links": len(original_dialogue_parent),
         "classification": dict(stats), "by_record_field": {k: dict(v) for k, v in sorted(by_field.items())},
         "by_xtranslator_input_status": {k: dict(v) for k, v in by_input_status.items()},
         "unresolved_source_failures_by_field": {k: dict(v) for k, v in sorted(failure_by_field.items())},
