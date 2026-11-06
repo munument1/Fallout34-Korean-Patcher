@@ -231,4 +231,39 @@ python tools/verify_current_esm_translation_plan.py fnv
 
 **남은 화면 후보 10,499개 출현도 확정 인게임 미번역량은 아닙니다.** 같은 문장 중복, 조건부·미사용·편집용 데이터가 포함될 수 있습니다. 레코드 유형/필드/영문 기준 고유 문장 후보는 FO3 4,142, FNV 4,039개입니다. 반면 43,651개 출현은 기존 한국어 후보가 있지만 원본 문맥 연결을 더 확인해야 하므로 무시할 수 없습니다. **인게임 완역은 아직 달성하지 않았습니다.**
 
-검사 도구와 증거는 `tools/recover_import_manifest_field_migrations.py`, `tools/recover_fo3_cross_field_text_provenance.py`, `tools/recover_fnv_unique_original_text_migration.py` 및 `data/{fo3,fnv}/current_unlinked_display_review.csv`에 저장했습니다. 전체 **276,123개 번역 지시 필드**는 원본 변환 ESM의 정확한 원문·필드 위치·변수/태그 정적 검증을 통과했습니다. ESM 사본이나 게임 설치본은 새로 생성·교체하지 않았고, 온라인 모드도 건드리지 않았습니다.
+검사 도구와 증거는 `tools/recover_import_manifest_field_migrations.py`, `tools/recover_fo3_cross_field_text_provenance.py`, `tools/recover_fnv_unique_original_text_migration.py` 및 `data/{fo3,fnv}/current_unlinked_display_review.csv`에 저장했습니다. 이 단락은 당시 기준 276,123개 계획의 기록입니다. **아래가 최신 작업·보고 기준입니다.**
+
+## 2026-11-06 — 완역 SST 출처 및 포팅 문자열 변환 복구 (최신)
+
+FO3용 완역 SST는 **TTW 마스터 배열**을 사용해 뉴베가스 및 DLC를 마스터로 참조합니다. 이전의 단순 FO3 FormID 필터는 상당한 한국어 데이터를 활용하지 못했습니다. TTW FNV FormID를 FO3 ID로 오인하지 않도록 실제 FO3 원본 ESM의 영어/레코드 타입/필드를 독립 확인했습니다. 추가로 변환기가 생성한 [Speech 조건 접두부]와 원본 INFO 대사 중간에서 삭제한 {성우 연기·발음 지시문}을 확인해 정확한 문자열 변환을 역추적했습니다. 한국어는 사용자가 제공한 완역 SST에서 가져왔습니다.
+
+| 새 연결 근거 | FO3 + DLC | FNV + DLC |
+|---|---:|---:|
+| 원본 ESM·SST의 동일 원문, 한국어 고유성 확인 | 15,376 | 10,268 |
+| FO3의 TTW 마스터 참조 사전을 원본 FO3 ESM에 교차 대조 | 16,183 | — |
+| 변환기에 추가된 스킬 조건 접두부 + 원본 한국어 복원 | 1,716 | 1,284 |
+| FNV 대사에 남은 {편집 표식}을 유지하며 한국어 연결 | — | 355 |
+| 원본의 대사 중간 {연기 지시문} 삭제를 정확히 재현 | — | 2,946 |
+| **이번 추가 연결** | **33,275** | **14,853** |
+| **최신 전체 번역 연결 계획** | **105,467** | **218,784** |
+
+전체 324,251개 계획은 대상 ESM의 정확한 영문/레코드/필드 인덱스와 보호 변수·태그 정적 검증에 통과했습니다. 단, 출처 FormID가 직접 확인되지 않은 일부 복원은 **문자열·번역 사전 및 원본 ESM 증거로 연결한 후보**이므로 대사 화자/퀘스트 문맥과 인게임 검증은 별개입니다. ESM 복사본을 새로 만들거나 원본 게임 자산을 수정하지 않았습니다.
+
+### 미번역 보고 기준 수정 — 공백·내부 데이터는 번역 작업에서 제외
+
+사용자 요청에 따라 앞으로 **전체 xTranslator 미연결 필드 수를 '미번역 수'로 보고하지 않습니다.** 숫자를 보고해야 할 때는 플레이어에게 노출되는 용도를 가진 필드 중 비어 있지 않은 실문구를 먼저 추립니다. 다음 자료는 **번역·연결 검토 목록**으로만 사용합니다.
+
+| 현재 미번역·재연결 *작업 후보 출현* | FO3 + DLC | FNV + DLC | 합계 |
+|---|---:|---:|---:|
+| 플레이어 표시 용도의 실문구 (공백/명백한 내부 ID 등 제외) | **5,215** | **1,687** | **6,902** |
+| 그중 기존 한국어의 출처 연결을 추가로 찾아야 하는 항목 | 37 | 37 | 74 |
+| 원본 한국어 재연결/번역원문 조사가 필요한 항목 | 5,178 | 1,650 | 6,828 |
+| 레코드 종류·필드·영문별 서로 다른 작업 항목 | 4,107 | 1,080 | 5,187 |
+
+기존에는 퀘스트 목표 필드 **QUST/NNAM**을 편집용으로 취급해 누락시킨 반면, 많은 디버그용 **QUST/CNAM**을 화면 표시 후보로 넣는 분류 오류도 있었습니다. 이를 수정했습니다. 예를 들어 실제 대사, 터미널 본문, 메시지, 아이템·키 이름, 퀘스트 목표는 작업 후보로 남기되, 공백/기호/폴아웃4 기본 마스터/조건부/테스트·에디터 ID/런타임 표시 근거가 부족한 필드는 번역 보고에서 제외하고 별도 QA 대상에 둡니다.
+
+**중요:** 6,902는 *게임 화면에서 미번역으로 출력된 것이 확인된 수량*이 아닙니다. ESM 필드와 텍스트의 성격으로 추린 **우선 처리할 번역 작업 후보**입니다. 실제 표시 여부를 검증해야만 최종 미번역 확정 건수를 알 수 있습니다. 제외한 항목도 편집용으로 보인다는 이유만으로 영구 무시하는 것은 아니며, 실제 표시가 확인되면 작업 대상으로 옮깁니다.
+
+미번역 작업에 사용할 기본 파일은 `data/fo3/current_translation_work_items.csv`, `data/fnv/current_translation_work_items.csv` 및 각각의 `current_translation_work_report.json`입니다. `current_unlinked_display_review.csv`도 이제 동일한 **실문구 작업 목록만** 담도록 변경했습니다. 기술 감사용 전체 데이터는 별도 `current_unlinked_esm_report.json`에 남겼지만, 그 전체 필드 수를 번역 미완료량으로 집계·보고하면 안 됩니다. 규칙은 `tools/translation_work_filter.py`, 재집계는 `tools/report_remaining_esm_translation_gaps.py`입니다.
+
+전체 원본/변환 ESM 및 SST 재연결 근거는 `complete_sst_exact_migration_*`, `ttw_foreign_master_text_*`, `skill_prefix_*`, `editor_marker_*`, `inline_director_cues_*`, `original_native_remaining_screen_audit.json`에 기록했습니다. 정적 필드 검증 및 작업 목록 필터 회귀 테스트는 통과했지만 실제 게임에서의 텍스트 출력·문맥 검사는 미완료입니다.

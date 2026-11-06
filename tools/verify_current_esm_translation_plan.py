@@ -22,8 +22,21 @@ EXTRAS = [
     "sibling_info_field_verified.jsonl.gz",
 ]
 MIGRATED_EXTRAS = {
-    "fo3": ("import_manifest_migrated_verified.jsonl.gz", "cross_field_long_text_verified.jsonl.gz"),
-    "fnv": ("import_manifest_migrated_verified.jsonl.gz", "fnv_cross_field_long_text_verified.jsonl.gz"),
+    "fo3": (
+        "import_manifest_migrated_verified.jsonl.gz",
+        "cross_field_long_text_verified.jsonl.gz",
+        "complete_sst_exact_migration_verified.jsonl.gz",
+        "ttw_foreign_master_text_verified.jsonl.gz",
+        "skill_prefix_verified.jsonl.gz",
+    ),
+    "fnv": (
+        "import_manifest_migrated_verified.jsonl.gz",
+        "fnv_cross_field_long_text_verified.jsonl.gz",
+        "complete_sst_exact_migration_verified.jsonl.gz",
+        "skill_prefix_verified.jsonl.gz",
+        "editor_marker_verified.jsonl.gz",
+        "inline_director_cues_verified.jsonl.gz",
+    ),
 }
 TOKEN = re.compile(
     r"%[A-Za-z_][A-Za-z0-9_]*%|(?<!%)%(?:\d+\$)?[-+.#0-9]*[diufsg]"

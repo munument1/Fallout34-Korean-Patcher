@@ -1,8 +1,10 @@
-"""Recount CURRENT Fallout34 ESM localization gaps after all verified recovery plans.
+"""Report CURRENT Fallout34 *translation work*, never blank/editor field totals.
 
-Do not conflate field occurrences with unique lines or in-game reachable text.
-Categorizes non-content blanks and obvious editor/conditional fields separately.
-Never changes or generates an ESM or ESP. No online-module/FO4 base scanning.
+The only user-facing missing-translation count is an actionable shortlist of
+nonempty text in player-facing fields. It deliberately omits whitespace,
+symbols, Fallout4 master fields, likely editor IDs and uncertain visibility.
+Retain low-level audit detail separately, but do not present it as missing
+translation work. No game asset is changed by this script.
 """
 from collections import defaultdict, Counter
 import csv
@@ -11,6 +13,7 @@ import hashlib
 import json
 from pathlib import Path
 import re
+from translation_work_filter import classify as work_classify
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = Path(r"C:\Games\Steam\steamapps\common\Fallout 4\Data")
@@ -25,10 +28,17 @@ MIGRATED_PLANS = {
     "fo3": (
         "import_manifest_migrated_verified.jsonl.gz",
         "cross_field_long_text_verified.jsonl.gz",
+        "complete_sst_exact_migration_verified.jsonl.gz",
+        "ttw_foreign_master_text_verified.jsonl.gz",
+        "skill_prefix_verified.jsonl.gz",
     ),
     "fnv": (
         "import_manifest_migrated_verified.jsonl.gz",
         "fnv_cross_field_long_text_verified.jsonl.gz",
+        "complete_sst_exact_migration_verified.jsonl.gz",
+        "skill_prefix_verified.jsonl.gz",
+        "editor_marker_verified.jsonl.gz",
+        "inline_director_cues_verified.jsonl.gz",
     ),
 }
 DIRECT = {
@@ -122,6 +132,10 @@ def main():
         states = Counter()
         categories = defaultdict(Counter)
         candidates = defaultdict(lambda: {"count": 0, "ids": [], "state": "", "class": ""})
+        translation_work = defaultdict(lambda: {"count": 0, "ids": []})
+        work_by_field = Counter()
+        work_by_status = Counter()
+        withheld_by_reason = Counter()
         for row in load(d / "xtranslator_residual_candidates.jsonl.gz"):
             k = key(row, from_residual=True)
             if k in planned:
@@ -141,16 +155,56 @@ def main():
             cell["class"] = cls
             if len(cell["ids"]) < 4:
                 cell["ids"].append(row["formid"])
+            work_class, work_reason = work_classify(row)
+            if work_class == "actionable":
+                signature = (state, row["record_type"], row["field"], row["english"])
+                task = translation_work[signature]
+                task["count"] += 1
+                if len(task["ids"]) < 8:
+                    task["ids"].append(row["formid"])
+                work_by_field[row["record_type"] + "/" + row["field"]] += 1
+                work_by_status[state] += 1
+            else:
+                # Forensics only. Never present this in an untranslated count.
+                withheld_by_reason[work_reason] += 1
         dest = d / "current_unlinked_display_review.csv"
-        # Individual type/field/English grouping does not imply all contexts share
-        # one safe Korean translation. This is a *review* shortlist, not a plan.
-        with dest.open("w", encoding="utf-8-sig", newline="") as fp:
-            writer = csv.writer(fp)
-            writer.writerow(["group","status","record_type","field","occurrences","english_json","example_formids"])
-            for (cls, status, typ, field, english), c in sorted(
-                    candidates.items(), key=lambda x:(x[0][0], -x[1]["count"], x[0][2], x[0][3])):
-                writer.writerow([cls, status, typ, field, c["count"],
-                                 json.dumps(english, ensure_ascii=False), ";".join(c["ids"])])
+        # Keep the familiar file name for downstream users, but strictly
+        # exclude blanks, other-game masters and editor/runtime-review data.
+        # No automatic translation is applied from mere English matches.
+        work_dest = d / "current_translation_work_items.csv"
+        for path in (dest, work_dest):
+            with path.open("w", encoding="utf-8-sig", newline="") as fp:
+                writer = csv.writer(fp)
+                writer.writerow(["work","status","record_type","field","occurrences","english_json","example_formids"])
+                for (status, typ, field, english), task in sorted(
+                        translation_work.items(),
+                        key=lambda item:(-item[1]["count"], item[0][1], item[0][2], item[0][3])):
+                    writer.writerow([
+                        "source_translation_lookup" if status == "missing_translation_match"
+                        else "link_existing_korean_with_context",
+                        status, typ, field, task["count"],
+                        json.dumps(english, ensure_ascii=False), ";".join(task["ids"])
+                    ])
+        work_report = {
+            "game": game,
+            "esm_sha256": expected,
+            "translation_work_item_occurrences": sum(work_by_field.values()),
+            "distinct_type_field_english_work_items": len(translation_work),
+            "work_by_type_field": dict(sorted(work_by_field.items(), key=lambda i:-i[1])),
+            "work_by_source_status": dict(work_by_status),
+            "work_csv": work_dest.name,
+            "in_game_visibility_confirmed_for_every_item": False,
+            "note": (
+                "Only nonempty human-readable strings on player-facing field types; "
+                "excludes FO4 master content, empty strings, numeric/symbol content, "
+                "obvious editor IDs and unclear runtime fields. These are prioritized "
+                "translation/linking review items, NOT verified runtime untranslated "
+                "lines. No count of blank/internal fields is a translation task."
+            ),
+        }
+        (d / "current_translation_work_report.json").write_text(
+            json.dumps(work_report, ensure_ascii=False, indent=2) + "\n", encoding="utf8"
+        )
         final = {
             "game": game,
             "esm_sha256": expected,
@@ -163,18 +217,19 @@ def main():
             ),
             "by_type_field_and_current_state": {k: dict(v) for k, v in sorted(categories.items())},
             "review_csv": dest.name,
+            "user_facing_translation_work_report": "current_translation_work_report.json",
+            "user_facing_translation_work_csv": work_dest.name,
+            "user_facing_translation_work_occurrences": work_report["translation_work_item_occurrences"],
             "warning": "Static field inventory only, not precise in-game untranslated count. Editor/special field classification is conservative. Existing Korean needing a context link is NOT regarded as solved. No original or translated ESM was generated or altered.",
         }
         (d / "current_unlinked_esm_report.json").write_text(
             json.dumps(final, ensure_ascii=False, indent=2) + "\n", encoding="utf8"
         )
-        short = {k:v for k,v in states.items() if k.startswith("unlinked_") and (
-            k in ("unlinked_missing_translation_match","unlinked_existing_korean_needs_context")
-            or k in ("unlinked_direct_screen_text_candidate","unlinked_gameplay_name_or_description_candidate",
-                     "unlinked_editor_or_special_field_needs_runtime_check","unlinked_non_content_whitespace",
-                     "unlinked_non_content_symbols"))}
-        print(game, "PLAN", len(planned), "UNLINKED", short,
-              "UNIQUE", final["unlinked_distinct_type_field_english_by_class"], flush=True)
+        print(game, "TRANSLATION_WORK", work_report["translation_work_item_occurrences"],
+              "DISTINCT", len(translation_work),
+              "SOURCE_STATUS", dict(work_by_status),
+              "BY_FIELD", work_by_field.most_common(20),
+              "RUNTIME_CONFIRMATION", "pending", flush=True)
 
 
 if __name__ == "__main__":
