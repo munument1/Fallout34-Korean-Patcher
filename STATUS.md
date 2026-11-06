@@ -267,3 +267,49 @@ FO3용 완역 SST는 **TTW 마스터 배열**을 사용해 뉴베가스 및 DLC�
 미번역 작업에 사용할 기본 파일은 `data/fo3/current_translation_work_items.csv`, `data/fnv/current_translation_work_items.csv` 및 각각의 `current_translation_work_report.json`입니다. `current_unlinked_display_review.csv`도 이제 동일한 **실문구 작업 목록만** 담도록 변경했습니다. 기술 감사용 전체 데이터는 별도 `current_unlinked_esm_report.json`에 남겼지만, 그 전체 필드 수를 번역 미완료량으로 집계·보고하면 안 됩니다. 규칙은 `tools/translation_work_filter.py`, 재집계는 `tools/report_remaining_esm_translation_gaps.py`입니다.
 
 전체 원본/변환 ESM 및 SST 재연결 근거는 `complete_sst_exact_migration_*`, `ttw_foreign_master_text_*`, `skill_prefix_*`, `editor_marker_*`, `inline_director_cues_*`, `original_native_remaining_screen_audit.json`에 기록했습니다. 정적 필드 검증 및 작업 목록 필터 회귀 테스트는 통과했지만 실제 게임에서의 텍스트 출력·문맥 검사는 미완료입니다.
+
+## 2026-11-06 — 남은 화면 문구의 SST·기존 검증 번역 재연결 (최신)
+
+개별 번역 복구를 실제로 실행했다. 이전에 빠진 `QUST/NNAM`을 원본 게임 ESM의 퀘스트 목표와 완역 SST의 *동일 원문·고유 한국어*로 검증해 **FO3 32 / FNV 34 = 총 66개 필드**를 복구했다. FO3용 SST의 TTW 마스터 참조는 FNV의 FormID를 원본 FO3 ID로 오인하지 않고, 원본 FO3 ESM에서 해당 퀘스트 목표 영문을 따로 검증했다.
+
+추가로 **이미 정적 검증을 통과한 번역 계획** 중 동일한 전체 영어 문장에 고유한 한국어가 있는 경우에 한해, 실제 플레이어용 제목·아이템명·특성 설명·터미널 항목처럼 **용도가 호환되는 필드**로만 재연결했다. 정보 부족한 대사의 화자·퀘스트 문맥을 유추하는 식의 퍼지 매칭은 하지 않았다. 이 방법으로 **FO3 182 / FNV 57 = 총 239개 필드**를 연결했다.
+
+별도로 FNV 원본 ESM 및 SST에서 영어가 같은 대사 중 단순 문장부호/공백 변형만 검증된 **FNV 8개**를 추가했다. 이 항목들은 `punctuation_normalized_verified.jsonl.gz`로 구분되어 있으며, 실제 대사 문맥 검증은 여전히 필요하다.
+
+| 최신 정적 집계 | FO3 + DLC | FNV + DLC | 전체 |
+|---|---:|---:|---:|
+| 이번 퀘스트 목표 재연결 | 32 | 34 | **66** |
+| 검증된 번역 계획에서 동일 영어 재사용 | 182 | 57 | **239** |
+| 별도 문장부호 변형 복구 | — | 8 | **8** |
+| **이번에 늘어난 번역 연결 계획** | **214** | **99** | **313** |
+| **현재 번역 연결 계획** | **105,681** | **218,883** | **324,564** |
+| **남은 번역·연결 작업 후보 (출현)** | **5,001** | **1,588** | **6,589** |
+| 남은 레코드 종류·필드·영문별 고유 작업 항목 | 3,994 | 1,006 | **5,000** |
+
+신규 연결 계획: `data/{fo3,fnv}/quest_objective_native_sst_verified.jsonl.gz`, `verified_plan_translation_memory_verified.jsonl.gz`, FNV의 `punctuation_normalized_verified.jsonl.gz`. 검사 도구는 `tools/recover_original_quest_objectives.py`, `tools/recover_verified_plan_translation_memory.py`, `tools/recover_fnv_converter_punctuation.py`이다. 각 소스가 갖고 있는 원문·한국어·형식 토큰과 대상 ESM FormID/필드/인덱스를 독립 검증하며, 새 ESM 사본이나 게임 설치 변경을 하지 않는다.
+
+**주의:** 6,589개는 아직 게임에서 영어로 표시되었다고 증명된 수량이 아니라, 공백·명백한 내부 ID를 제외한 우선 조사 대상이다. 소스 번역이 존재하더라도 현재 변환본의 *실제 화면에서 어떻게 쓰이는지*는 별도 인게임 QA가 필요하다. 최종 완역 완료 선언은 아직 불가능하다.
+
+## 2026-11-06 — 원본 SST 역할 교차 연결 추가 및 xTranslator XML 사전 (최신)
+
+추가로 `tools/recover_native_sst_semantic_copy.py`를 실행했다. 이미 변환 ESM 계획에 남은 실문구 중 같은 영어가 **원본 게임 ESM의 다른 표시용 필드** 및 **완역 SST의 고유 한국어**로 검증되는 경우에만 안전한 변환 역할을 대조했다. FO3 20개(주로 MESG/FULL·MESG/DESC), FNV 19개(주로 MESG/ITXT·MESG/FULL) **총 39개 필드를 추가 연결**했다. 원본 SST의 TTW 마스터 폼 ID와 원본 FO3 폼 ID를 동일한 것으로 가정하지 않는다.
+
+| 최신 총계 | FO3 + DLC | FNV + DLC | 합계 |
+|---|---:|---:|---:|
+| 이번 대화에서 늘어난 한국어 필드 연결 계획 | 234 | 118 | **352** |
+| **전체 정적 검증 완료 한국어 연결 계획** | **105,701** | **218,902** | **324,603** |
+| **남은 화면용 실문구 연결 작업 후보** | **4,981** | **1,569** | **6,550** |
+| 남은 종류·필드·영문 기준 고유 후보 | 3,980 | 987 | 4,967 |
+
+### xTranslator XML
+
+변환 ESM 자체는 수정하지 않은 채 `tools/export_xtranslator_xml.py`로 **xTranslator에서 내보낸 실제 XML 예제 구조와 동일한 `SSTXMLRessources` v2 양식**을 생성했다. 대상 ESM의 정확한 FormID·타입·서브레코드 인덱스·원문을 다시 읽고, 실제 EDID 또는 `[FormID]`, `REC`, `Source`, `Dest`, 복수 필드의 `REC/@id`·`REC/@idMax`를 기록한다. 줄바꿈 및 XML 이스케이프를 보존하고 XML 파싱을 다시 확인한다.
+
+- **배포 ZIP:** `dist/xtranslator/Fallout34_FO3_FNV_xTranslator_Korean_XML.zip`
+- **매니페스트:** `dist/xtranslator/Fallout34_xTranslator_XML_manifest.json`
+- **기본 가져오기 XML:** `Fallout34_en_ko.xml`, `FalloutNV34_en_ko.xml` (ZIP 안에 포함)
+- **문맥별 충돌 검토 XML/TSV:** 각 게임의 `*_CONTEXT_REVIEW.xml`, `*_CONTEXT_REVIEW.tsv`
+
+현재 계획 324,603개 출현 중 **322,832개 필드(FO3 105,495 / FNV 217,337)**를 원문에 고유 한국어가 매칭되는 기본 가져오기 XML로 내보냈다. 동일 영어에 서로 다른 한국어가 사용된 **1,771개 출현(FO3 206 / FNV 1,565)**은 일괄 원문 치환으로 문맥이 잘못 적용될 수 있으므로 **별도 검토 XML과 FormID TSV**로 분리했다. 두 부류를 합하면 **324,603개**이며, 원래 번역 계획을 버리지 않았다.
+
+**중요:** XML 파일은 한글 ESM 패치가 아니며, xTranslator GUI에서 실제 가져오기·인게임 실행 검증은 아직 실시하지 않았다. 기본 XML은 해당 ESM을 먼저 열고 가져오기 미리보기를 검사한 다음 적용할 것. 충돌 검토 XML은 원문만으로 일괄 가져오면 안 된다. 폴아웃 4 본편·DLC·CC와 폰트는 외부 TMR 한글패치 대상이며 이번 XML에 포함하지 않는다. `F34Online.esp` 및 설치 게임 자산은 변경하지 않았다.

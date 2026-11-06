@@ -24,7 +24,6 @@ source_translation_lookup,missing_translation_match,INFO,RNAM,6,"""[Speech 65]  
 link_existing_korean_with_context,existing_korean_needs_context,INFO,NAM1,5,"""[Small Guns 50] You look capable of defending yourself.""",01F09A94;019C9F40;01E8C160;01B5BC6C;0199E81E
 link_existing_korean_with_context,existing_korean_needs_context,INFO,RNAM,5,"""[Small Guns 50] You look capable of defending yourself.""",01F09A94;019C9F40;01E8C160;01B5BC6C;0199E81E
 source_translation_lookup,missing_translation_match,NPC_,FULL,5,"""ED-E""",011694E2;011694E0;011572E2;0110C769;011C4CDA
-source_translation_lookup,missing_translation_match,QUST,NNAM,5,"""Exit the testing area.""",0118DD5C;0118DD5C;0118DD5C;0118DD5C;0118DD5C
 source_translation_lookup,missing_translation_match,INFO,NAM1,4,"""1C 3C R34 M.""",01B95D9E;01E09C30;01A51E2D;01C27A72
 source_translation_lookup,missing_translation_match,INFO,NAM1,4,"""<AUDIO: Signal whirring, as if connecting, a little different than the other companions, because it's Elijah's collar.>""",01110934;0111212A;0111212B;0111212C
 source_translation_lookup,missing_translation_match,INFO,NAM1,4,"""Followers of who?""",01C14642;01C9847F;01B8C1F7;01FF1E21
@@ -80,9 +79,6 @@ source_translation_lookup,missing_translation_match,INFO,RNAM,4,"""[Unarmed 50] 
 source_translation_lookup,missing_translation_match,MESG,DESC,4,"""Each trait has a benefit and a drawback. Pick one to read about it before you take it. Done / Later without a trait asks again in the other wasteland.\n\nTraits chosen: %.0f of %.0f.""",01DB8D36;01A98745;01E31792;01DF004E
 source_translation_lookup,missing_translation_match,MESG,FULL,4,"""Choose your traits""",01DB8D36;01A98745;01E31792;01DF004E
 source_translation_lookup,missing_translation_match,MESG,ITXT,4,"""Done / Later""",01DB8D36;01A98745;01E31792;01DF004E
-source_translation_lookup,missing_translation_match,MESG,ITXT,4,"""More...""",01DB8D36;01A98745;01E31792;01DF004E
-source_translation_lookup,missing_translation_match,QUST,NNAM,4,"""Retrieve the three student records from the desk terminals in the X-8 Institutional Facility.""",0118DD5C;0118DD5C;0118DD5C;0118DD5C
-source_translation_lookup,missing_translation_match,QUST,NNAM,4,"""Talk to Tommy Torini at the Tops.""",01116504;01116504;01116504;01116504
 source_translation_lookup,missing_translation_match,INFO,NAM1,3,"""< Storage Node. Do not translate. >""",011CD2C4;011CD3AB;01DCA5F8
 source_translation_lookup,missing_translation_match,INFO,NAM1,3,"""<AUDIO: Christine's radio freq opener.>""",011108C4;016F96D0;01111363
 source_translation_lookup,missing_translation_match,INFO,NAM1,3,"""<AUDIO: Dean's radio freq opener.>""",011108F6;01112126;01112127
@@ -103,7 +99,6 @@ source_translation_lookup,missing_translation_match,INFO,NAM1,3,"""[Speech 65]  
 link_existing_korean_with_context,existing_korean_needs_context,INFO,RNAM,3,"""[Small Guns 50] I'd rather have a good old-fashioned gun.""",01E495CC;01BBF7E6;01A651ED
 source_translation_lookup,missing_translation_match,MESG,ITXT,3,"""Lower bet""",01B25FF9;01D88BAB;01ADC5E4
 source_translation_lookup,missing_translation_match,MESG,ITXT,3,"""Raise bet""",01B25FF9;01D88BAB;01ADC5E4
-source_translation_lookup,missing_translation_match,QUST,NNAM,3,"""Enter the testing area.""",0118DD5C;0118DD5C;0118DD5C
 source_translation_lookup,missing_translation_match,TERM,UNAM,3,"""[Image: Terminal Entry]""",0109595E;0109595E;01921009
 source_translation_lookup,missing_translation_match,ARMO,FULL,2,"""[PowerArmor] Enclave Power Armor""",01023B62;0104443E
 source_translation_lookup,missing_translation_match,ARMO,FULL,2,"""[PowerArmor] Tesla Armor""",0108F571;0106B464
@@ -284,7 +279,6 @@ source_translation_lookup,missing_translation_match,INFO,RNAM,2,"""{Ulysses Cut-
 source_translation_lookup,missing_translation_match,MESG,DESC,2,"""There does not appear to be any power.""",01402908;015C2E73
 source_translation_lookup,missing_translation_match,MESG,DESC,2,"""Where to?""",01D17165;01BC8913
 source_translation_lookup,missing_translation_match,MESG,FULL,2,"""Fallout 3 Skills""",01BCE937;01C4A7EB
-source_translation_lookup,missing_translation_match,MESG,FULL,2,"""Launch Music""",01D9E594;01E55C87
 source_translation_lookup,missing_translation_match,MESG,ITXT,2,"""Cancel""",01D17165;01BC8913
 source_translation_lookup,missing_translation_match,MESG,ITXT,2,"""Close""",01BCE937;01C4A7EB
 source_translation_lookup,missing_translation_match,MESG,ITXT,2,"""Commonwealth""",01D17165;01BC8913
@@ -293,15 +287,6 @@ source_translation_lookup,missing_translation_match,MESG,ITXT,2,"""Leave the tab
 source_translation_lookup,missing_translation_match,MESG,ITXT,2,"""Mojave Wasteland (Fallout: New Vegas)""",01B4ED98;01F66DEA
 source_translation_lookup,missing_translation_match,MESG,ITXT,2,"""Power off the generator.""",0108D19C;013F23B3
 source_translation_lookup,missing_translation_match,MESG,ITXT,2,"""Power on the generator.""",0108D19C;013F23B3
-source_translation_lookup,missing_translation_match,QUST,NNAM,2,"""Activate Institutional Data Retrieval Test (Advanced) at the X-8 Test Terminal.""",0118DD5C;0118DD5C
-source_translation_lookup,missing_translation_match,QUST,NNAM,2,"""Pick the roots from 3 Sacred Datura plants.""",01431C07;01431C07
-source_translation_lookup,missing_translation_match,QUST,NNAM,2,"""Report back to Samuel Cooke.""",0113E5AF;0113E5AF
-source_translation_lookup,missing_translation_match,QUST,NNAM,2,"""Return to Ambassador Crocker and report that the Kings have been wiped out.""",0111F95B;0111F95B
-source_translation_lookup,missing_translation_match,QUST,NNAM,2,"""Return to Diane for your payment.""",01140C3B;01140C3B
-source_translation_lookup,missing_translation_match,QUST,NNAM,2,"""Return to Eddie.""",0108D0E3;0108D0E3
-source_translation_lookup,missing_translation_match,QUST,NNAM,2,"""Return to Sgt. Reyes.""",0110D229;0110D229
-source_translation_lookup,missing_translation_match,QUST,NNAM,2,"""Talk to Boone.""",011349A7;011349A7
-source_translation_lookup,missing_translation_match,QUST,NNAM,2,"""Talk to Mrs. Hostetler.""",010F2429;010F2429
 source_translation_lookup,missing_translation_match,TERM,UNAM,2,"""By Dorothy Proud\r\n\r\nCapital Post Staff Writer\r\n\r\nIn a move that is being widely viewed as both necessary and overdue, the United States military today declared that they will begin the immediate annexation of the country of Canada.\r\n\r\nThe decision comes after a long and contentious relationship with the Canadian government that began shortly after the Chinese invasion of Anchorage, Alaska in the winter of 2066. The Canadian leadership at that time expressed its opposition to American troops passing through their country or traversing their airspace, but ultimately capitulated.\r\n\r\nTensions with our neighbor to the north have only escalated since then as the United States has found itself relying heavily on Canada’s natural resources - including wood cultivated from the country’s great Timberland forests - to maintain the war effort against China.\r\n\r\nBut it was a recent near-sabotage of the Alaskan pipeline that finally tipped the American military’s hand. \r\n\r\n\""That was the last straw,\"" said Buzz Babcock, commander of U.S. forces in Canada. \""You know what’s been stopping the Reds from pouring into downtown Juneau? American soldiers, that’s what. And now we’ve got to worry about someone - Chinese, Alaskan, or otherwise - taking out the pipeline? I don’t think so. Effectively immediately, United States troops are beginning a complete takeover of all Canadian assets and resources. Little America is ours. But let’s face it - it always has been.\""  \r\n""",01024EA5;01E321F3
 source_translation_lookup,missing_translation_match,TERM,UNAM,2,"""Diary Entry 64D-A3: Mutant Chips\r\n\r\nI have had to alter the chips for the mutants to account for their greater size.  Fortunately, they exhibit a higher intellect than the ghouls and can be controlled to an even greater extent.  The enthralled mutants have mentioned legends of even larger mutants, almost twice as big as the ones I’ve captured.  If only I could get my hands on one of those… the experiments… the fun.""",010CAA35;01925180
 source_translation_lookup,missing_translation_match,TERM,UNAM,2,"""Field Report - Prepared by NCO J.Tuckman by audio dictation on behalf of PFC Matthew Scott.  PFC Scott’s voice is the only source recorded in the following text.\r\n\r\n<<BEGIN FILE>>  Sir, I encountered three Ferals on my patrol.  This was somewhere around 0300 hours, I think, and it was dark, so they saw me first.  I discharged my firearm four times, fatally striking two of the three.  My weapon jammed before I could fire on the third target, and just then I realized it wasn’t engaging.  I knew our orders were to report on anything unusual, and well -- I thought that was pretty strange.  He actually followed me back here on his own.  We put him in the trailer with the other and he's been quiet as you like.  Strangest thing I’ve ever seen.  << END FILE>>\r\n""",01018647;01973DD2
@@ -432,7 +417,6 @@ source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Gonna need mo
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Got anything to make people like me better?""",019A3B2C
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Got tools so I can fix his brain.""",01C26C4D
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Happy you're sorry. What do I need to do next?""",01900FD6
-source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""He crosses me, I'll break him.""",01B3492A
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Hey. You see weird gun? (\""Pardon, but have you seen any pre-war firearm antiquities of late?\"")""",01E17970
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Hnh. Maybe I can shut down these ghosts using the Stage Manager's old termin... dammit! Well, so much for that idea.""",015DE94E
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""How I move shinies?""",01F15380
@@ -441,19 +425,15 @@ source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""I had, did. I
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""I have shiny chips, want money - trade?""",01E691F1
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""I is scientistic.""",01C23E1C
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""I just like you is.""",01AC71DF
-source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""I shouldn't say anything, I know that. But you're not the first person Hildern's sent out to the vault. """,010F1AF8
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""I want to be smarter.""",01BB8991
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""I'd like to have more muscles.""",01FCFCB8
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""I'm the voice of reason. I sleep sometimes... down in the basement, in the cage. Now that I'm awake, Dog goes back in the cage.""",011103C1
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""If you keep hitting metal, you'll hurt your hand.""",01DA1866
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""If you saw House, you didn't see a man. An Old World spirit, perhaps - filthy, diseased. If so, killing him was mercy, not cruelty.""",011CD305
-source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""If you're afraid of Vegas and of Mr. House - you should be.""",01C46C04
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""In a bit of a predicament here... had to duck backstage, take a powder, the audience is a little... murderous tonight.""",0161EBC0
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""It... it was insanity. They could've had it all, it was so close. And... and they kept turning on each other, again and again.""",01111B7A
-link_existing_korean_with_context,existing_korean_needs_context,INFO,NAM1,1,"""Just because I work in entertainment, doesn't mean I'm a moron.""",0110EDA6
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Keep that up, human...""",01152B53
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Leo is a very bad man, pumpkin! Yes you are, Leo, don't try to deny it!""",0115F9A7
-source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Longing makes the heart grow fonder, but I've always been a fan of hog-tying my lovers to make sure they can't escape.""",01129475
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Make me see better.""",0193B5F3
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Maybe Bitter Springs just seemed different. Maybe it's the same as killing legionaries.""",01137643
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Me fix shiny plant.""",01F14289
@@ -487,16 +467,13 @@ source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Sub-what now?
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Sure, since this is the only casino in the whole town, you must make a ton!""",01DDF8F8
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Surprised that Super Mutant didn't eat you... and don't get me started on Dean.""",01111C06
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Tap-tap back.""",01F5ACEF
-source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""That's a mighty fine offer, but I'm gonna need to conserve my strength if I'm to make it all the way to New Vegas.""",0115FFD8
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""The Fruit who?""",01D73F4E
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""The Great Khans were nice. You have to be nice, too.""",01D9E9E8
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""The NCR takes care of its own - so in thanks for your service to the Republic... here's one of our emergency two-way radios.""",0115FF74
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""The machine you brought is mine now, it's coming home. I'll reduce it to parts, just enough to function, to be aware of what's happening.""",011CD6F6
-source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""The only thing I know for certain is that I don't know nothing.""",01129474
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""This place not just shiny juice maker?""",01BB7642
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Thought you'd leave me in that elevator? I haven't forgotten what you did in the Switching Station, not for a second.""",0142960C
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Time for a show. Come on, show, start.""",01BE2081
-source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Time you enjoy wasting isn't wasted time.""",01129473
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Tommy Torini is hiring at the Tops. I don't get your jokes, but maybe you could make money.""",01DCC94A
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Too soon to tell what will happen, let history weigh what you've done, if it gets that far.""",011CD2F9
 source_translation_lookup,missing_translation_match,INFO,NAM1,1,"""Uh huh. Bring fire stick.""",01C2A0B5
@@ -651,53 +628,9 @@ source_translation_lookup,missing_translation_match,MESG,FULL,1,"""372.12Hz ULF"
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""546.14Hz ULF""",0192576C
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""631.08Hz ULF""",01D6A3A2
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""743.00Hz ULF""",01F0D402
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Black Mountain Radio""",01EC95D1
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Bomb Collar Speakers""",01D30004
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Built to Destroy""",01FDBC10
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Camp Guardian Radio""",01E62B88
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Claustrophobia""",01EC4E0C
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Dean Ambient Music""",01A2BFB3
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Early Bird""",01B884E2
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Fast Shot""",01CAC9FA
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Fight the Power!""",01D1DFB5
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Four Eyes""",01F9E5AD
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Gomorrah Lounge Music""",019429FB
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Good Natured""",01B15C20
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Grunt""",01D9BCC5
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Hanlon's Suicide Broadcast""",01D42C5F
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Happy Trails Expedition Broadcast""",01A55408
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Heavy Handed""",01BCE3C5
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Here and Now""",01DA75AE
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Hoarder""",01DA5D29
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Home on the Range""",01F01440
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Hot Blooded""",01DA42AC
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Junk Rounds""",01E4815B
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Kamikaze""",01A84AB7
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Light Touch""",01D14A40
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Lily's Grandkids Recording""",01BB5C18
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Logan's Loophole""",01A9529D
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Loose Cannon""",019A696C
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Mojave Music Radio""",01A44F93
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Mysterious Broadcast""",01CC0F22
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Old World Gourmet""",01F32162
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Radio New Vegas""",01B5BB1F
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Roulette: pick a number""",01DAC171
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Sierra Madre Ambient Music""",01AA7C24
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Sierra Madre Broadcast""",01EFF4F2
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Skilled""",01AD8BBD
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Slot Machine""",01B25FF9
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Small Frame""",01CC7494
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Sneering Imperialist""",01F0A2D0
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Tops Radio""",01A2F3A5
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Tribal Wisdom""",01ABE62C
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Trigger Discipline""",01AEC812
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Ultra Luxe Radio""",01F62B08
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""V.A.T.S.""",0170017D
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""VATS""",01098747
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Wild Wasteland""",01B3B1F6
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""bruce""",01AEF47C
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""drifter""",01FC8F88
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""rad pack""",01FFD68E
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""\""But doctor, wouldn't that cause a parabolic destabilization of the fission singularity?\""""",01038ADF
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Ask granny for a Minigun instead. After all, you don't want to miss.""",01038AE6
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Bet on a number...""",01D88BAB
@@ -705,47 +638,21 @@ source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Bet on black"
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Bet on even""",01D88BAB
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Bet on odd""",01D88BAB
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Bet on red""",01D88BAB
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Built to Destroy""",01DB8D36
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Capital Wasteland""",01BC8913
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Capital Wasteland (Fallout 3)""",01F66DEA
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Claustrophobia""",01E31792
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Deal""",01ADC5E4
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Double down""",01B7DF8A
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Early Bird""",01DF004E
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Fast Shot""",01DB8D36
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Fight the Power!""",01A98745
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Four Eyes""",01A98745
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Good Natured""",01DB8D36
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Grunt""",01E31792
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Heavy Handed""",01DB8D36
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Here and Now""",01A98745
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Hit""",01B7DF8A
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Hoarder""",01E31792
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Home on the Range""",01E31792
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Hot Blooded""",01E31792
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Junk Rounds""",01A98745
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Kamikaze""",01DB8D36
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Light Touch""",01A98745
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Logan's Loophole""",01E31792
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Loose Cannon""",01DB8D36
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Manipulate the power wattage on his razor, so he'll get an electric shock the next time he shaves.""",01038AEB
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Maximum bet""",01B25FF9
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Offer your most prized possession for the resident's life.""",01038AE6
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Old World Gourmet""",01A98745
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Other skills...""",01BCE937
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Pick the boy's pocket to take the stolen property for yourself, and leave him to his fate.""",01038AE2
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Put a firecracker in the toilet. That's sure to cause some chaos.""",01038AEB
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Skilled""",01E31792
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Slip some knock-out drops into the resident's Nuka-Cola, and take the comic book when he's unconscious. """,01038AEA
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Small Frame""",01DB8D36
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Sneak into the resident's quarters, and steal the comic book from his desk.""",01038AEA
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Sneering Imperialist""",01A98745
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Spin""",01B25FF9
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Stand""",01B7DF8A
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Throw your tea in granny's face.""",01038AE6
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Tribal Wisdom""",01E31792
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Trigger Discipline""",01DB8D36
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Wild Wasteland""",01A98745
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""12.7mm Submachine Gun Silencer""",011476B0
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""G.E.C.K.""",0103D34D
 source_translation_lookup,missing_translation_match,NPC_,FULL,1,"""AudioTemplateNVDLC03RobotMrHandy""",01194348

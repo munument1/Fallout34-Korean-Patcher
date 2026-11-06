@@ -31,6 +31,9 @@ MIGRATED_PLANS = {
         "complete_sst_exact_migration_verified.jsonl.gz",
         "ttw_foreign_master_text_verified.jsonl.gz",
         "skill_prefix_verified.jsonl.gz",
+        "quest_objective_native_sst_verified.jsonl.gz",
+        "verified_plan_translation_memory_verified.jsonl.gz",
+        "native_sst_semantic_copy_verified.jsonl.gz",
     ),
     "fnv": (
         "import_manifest_migrated_verified.jsonl.gz",
@@ -39,6 +42,10 @@ MIGRATED_PLANS = {
         "skill_prefix_verified.jsonl.gz",
         "editor_marker_verified.jsonl.gz",
         "inline_director_cues_verified.jsonl.gz",
+        "quest_objective_native_sst_verified.jsonl.gz",
+        "verified_plan_translation_memory_verified.jsonl.gz",
+        "native_sst_semantic_copy_verified.jsonl.gz",
+        "punctuation_normalized_verified.jsonl.gz",
     ),
 }
 DIRECT = {

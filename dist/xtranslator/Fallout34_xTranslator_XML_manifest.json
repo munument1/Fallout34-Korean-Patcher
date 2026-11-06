@@ -1,0 +1,83 @@
+{
+  "format": "xTranslator SSTXMLRessources XML v2",
+  "zip_name": "Fallout34_FO3_FNV_xTranslator_Korean_XML.zip",
+  "zip_size_bytes": 10466331,
+  "zip_sha256": "92d476cc05086a6047fbbfc1321cb4f68a9bd22954fe5667fb983b4102ed2bc2",
+  "files": [
+    "Fallout34_CONTEXT_REVIEW.tsv",
+    "Fallout34_CONTEXT_REVIEW.xml",
+    "Fallout34_en_ko.xml",
+    "Fallout34_XML_report.json",
+    "FalloutNV34_CONTEXT_REVIEW.tsv",
+    "FalloutNV34_CONTEXT_REVIEW.xml",
+    "FalloutNV34_en_ko.xml",
+    "FalloutNV34_XML_report.json",
+    "README_IMPORT.txt"
+  ],
+  "games": [
+    {
+      "game": "fo3",
+      "plugin": "Fallout34.esm",
+      "esm_sha256": "be0e7f25d0a28c672de2c12afbbf402bff0bb202037c231930d4649afd138603",
+      "planned_target_field_occurrences": 105701,
+      "safe_xml_rows": 105495,
+      "context_review_xml_rows": 206,
+      "distinct_english_with_ambiguous_korean": 26,
+      "invalid_xml_rows_excluded": 0,
+      "fallback_formid_edid_records": 70796,
+      "xml_sha256": {
+        "Fallout34_en_ko.xml": "d0f6a98fb7c7fc5f91017ca7a1a9889e24a492d70e372db02ce275bf3aad7e68",
+        "Fallout34_CONTEXT_REVIEW.xml": "7d65f784a4fca16dfc3839a730f874d87b5b97bbfac2f9eaac0b4d56e8e1f51e"
+      },
+      "verified_source_plan_counts": {
+        "indexed_patch_plan_candidates.jsonl.gz": 48241,
+        "indexed_patch_plan_v2_strict_extra.jsonl.gz": 20301,
+        "xtranslator_verified_visible_extra.jsonl.gz": 6,
+        "manual_visible_translation_verified.jsonl.gz": 254,
+        "sibling_info_field_verified.jsonl.gz": 1022,
+        "import_manifest_migrated_verified.jsonl.gz": 2,
+        "cross_field_long_text_verified.jsonl.gz": 2366,
+        "complete_sst_exact_migration_verified.jsonl.gz": 15376,
+        "ttw_foreign_master_text_verified.jsonl.gz": 16183,
+        "skill_prefix_verified.jsonl.gz": 1716,
+        "quest_objective_native_sst_verified.jsonl.gz": 32,
+        "verified_plan_translation_memory_verified.jsonl.gz": 182,
+        "native_sst_semantic_copy_verified.jsonl.gz": 20
+      },
+      "import_note": "Load the matching converted ESM in xTranslator Fallout4 mode. Use Import Translation -> XML; preview matches. Context-review XML MUST NOT be mass-imported by English string only. Data was not in-game QA tested. No installed ESM changed."
+    },
+    {
+      "game": "fnv",
+      "plugin": "FalloutNV34.esm",
+      "esm_sha256": "caa2d4649c99bfcdd36e8a489f865e55f5ee9fc6087469ba0d1de2e410318897",
+      "planned_target_field_occurrences": 218902,
+      "safe_xml_rows": 217337,
+      "context_review_xml_rows": 1565,
+      "distinct_english_with_ambiguous_korean": 75,
+      "invalid_xml_rows_excluded": 0,
+      "fallback_formid_edid_records": 150447,
+      "xml_sha256": {
+        "FalloutNV34_en_ko.xml": "3e6c3cf1e65daab11472e2c57f38f522fb387ce0230ef03367eed7a41f7fa727",
+        "FalloutNV34_CONTEXT_REVIEW.xml": "d4bf32a69f791aacec2a613c155eeff98ab2c30206abcb636daa473c058b887d"
+      },
+      "verified_source_plan_counts": {
+        "indexed_patch_plan_candidates.jsonl.gz": 83480,
+        "indexed_patch_plan_v2_strict_extra.jsonl.gz": 78315,
+        "xtranslator_verified_visible_extra.jsonl.gz": 20306,
+        "manual_visible_translation_verified.jsonl.gz": 243,
+        "sibling_info_field_verified.jsonl.gz": 18304,
+        "fnv_cross_field_long_text_verified.jsonl.gz": 3283,
+        "complete_sst_exact_migration_verified.jsonl.gz": 10268,
+        "skill_prefix_verified.jsonl.gz": 1284,
+        "editor_marker_verified.jsonl.gz": 355,
+        "inline_director_cues_verified.jsonl.gz": 2946,
+        "quest_objective_native_sst_verified.jsonl.gz": 34,
+        "verified_plan_translation_memory_verified.jsonl.gz": 57,
+        "native_sst_semantic_copy_verified.jsonl.gz": 19,
+        "punctuation_normalized_verified.jsonl.gz": 8
+      },
+      "import_note": "Load the matching converted ESM in xTranslator Fallout4 mode. Use Import Translation -> XML; preview matches. Context-review XML MUST NOT be mass-imported by English string only. Data was not in-game QA tested. No installed ESM changed."
+    }
+  ],
+  "warning": "XML syntax round-trip validated, not yet imported in xTranslator GUI or tested in game."
+}

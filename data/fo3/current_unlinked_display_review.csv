@@ -1,7 +1,5 @@
 ﻿work,status,record_type,field,occurrences,english_json,example_formids
 source_translation_lookup,missing_translation_match,MISC,FULL,29,"""Spicy Detective Stories, Jan. 75""",016A5AC6;016D9B60;012B1D27;015E1FA0;014971B3;01360537;0156F846;0161E7FD
-source_translation_lookup,missing_translation_match,TERM,BTXT,22,"""A text note""",01D68814;01BA2D2D;01921D4B;01BD2341;01F4EFEF;01940830;01C7B566;01E3E3B8
-source_translation_lookup,missing_translation_match,TERM,ITXT,22,"""A text note""",01D68814;01BA2D2D;01921D4B;01BD2341;01F4EFEF;01940830;01C7B566;01E3E3B8
 source_translation_lookup,missing_translation_match,FURN,FULL,17,"""Booth""",010960BB;0107DF94;0107DF90;0107DF8D;0107DF8A;0107CBB1;0107CBAF;0107CBA4
 source_translation_lookup,missing_translation_match,NPC_,FULL,15,"""Baby Mole Rat""",0154FAF5;013686E7;016CE800;016CB01D;013DB5C1;015575AC;012CB65E;015921A1
 source_translation_lookup,missing_translation_match,TERM,UNAM,14,"""RobcOS v.85\r\n(C)2076 RobCo \r\n========================\r\n| User Log:\r\n| >> Administrator (RobCoID 2398-H)  \r\n| >> New_Admin: Enclave\r\n| Welcome new user, Enclave\r\n| >> New_Targeting_Param:\r\n| >>> Enclave_userGroup\r\n========================""",01064B80;01064B7E;01064B7C;01064B7A;01064B78;01064B76;01064B72;01064B70
@@ -12,7 +10,6 @@ source_translation_lookup,missing_translation_match,TERM,UNAM,13,"""RobcOS v.85\
 source_translation_lookup,missing_translation_match,FURN,FULL,11,"""Ruined Chair""",0106B561;0106B560;0106B55D;0106B55C;0106B55B;013F73AC;016ABD91;0165B0FC
 source_translation_lookup,missing_translation_match,CELL,FULL,10,"""Apt. Building""",012DFD20;0136793C;0158E2EB;01373F22;012CC7D3;0140E5FD;015B70A9;012729FA
 source_translation_lookup,missing_translation_match,MISC,FULL,10,"""Chem Tubes""",01626BB7;01541EFD;012602AF;0154F2D0;013787A3;016212AC;015A453D;0148EBF9
-source_translation_lookup,missing_translation_match,PERK,DESC,10,"""With the Intense Training perk, you can put a single point into any of your S.P.E.C.I.A.L. attributes.""",01044CB1;01DC2E96;01EAA2E5;019D88CA;01F6DF68;019671AB;01E21291;01A45305
 source_translation_lookup,missing_translation_match,TERM,UNAM,10,"""Updated""",01443524;01443524;01443524;01443524;0160134F;0160134F;0161DD5E;0161DD5E
 source_translation_lookup,missing_translation_match,TERM,BTXT,9,"""CommuneNote01""",01FFE42E;01AA6DE7;01D182F7;01B6BA1D;01D0170D;01A33A25;01C96472;01D1EA97
 source_translation_lookup,missing_translation_match,TERM,FULL,9,"""CommuneNote01""",01FFE42E;01AA6DE7;01D182F7;01B6BA1D;01D0170D;01A33A25;01C96472;01D1EA97
@@ -20,7 +17,6 @@ source_translation_lookup,missing_translation_match,TERM,ITXT,9,"""CommuneNote01
 source_translation_lookup,missing_translation_match,CELL,FULL,8,"""TEMP""",013F2AF7;016AEF34;013A204D;01439F56;014F8DD9;016E6527;014471C4;012E6923
 source_translation_lookup,missing_translation_match,CONT,FULL,8,"""Skeleton""",015AF5E9;0164A008;013AA612;013B3258;0153A091;015352AD;01686C2B;01459F1B
 source_translation_lookup,missing_translation_match,MESG,FULL,8,"""Cannot Create Weapon""",01038E1F;01038DEB;01038DEA;01038DE9;01038DE8;01038DE7;01038DE6;01038DE3
-source_translation_lookup,missing_translation_match,QUST,NNAM,8,"""Return to Moira.""",01014E96;01014E96;01014E96;01014E96;01014E96;01014E96;01014E96;01014E96
 source_translation_lookup,missing_translation_match,TACT,FULL,8,"""Intercom""",010CA77A;010B16D4;0106EC64;0104692A;01037374;01036F5B;01031D47;0101E7B3
 source_translation_lookup,missing_translation_match,TERM,RNAM,8,"""You examine your surroundings...""",01095970;0109596E;0109596E;0109596E;0109596C;01095966;01095966;0101CE94
 source_translation_lookup,missing_translation_match,FURN,FULL,7,"""Queen Sized Bed""",0108D34B;0108D349;0108D345;0108B5E2;0108B5E1;0108B5E0;0160AE49
@@ -31,10 +27,8 @@ source_translation_lookup,missing_translation_match,CONT,FULL,6,"""Corpse""",012
 source_translation_lookup,missing_translation_match,INFO,NAM1,6,"""This won't hurt a bit. Nah, just kidding. It will probably hurt a lot. Hold still.""",010377FC;010377FD;010377F6;010377F7;010377F9;010377FA
 source_translation_lookup,missing_translation_match,MISC,FULL,6,"""Hula Girl""",012B0368;01541E08;0163E165;0156247C;014D5BB6;013B6EAC
 source_translation_lookup,missing_translation_match,MISC,FULL,6,"""TV Set""",0167A2C2;014BAC29;013FF00F;012694BD;01645898;016CF722
-source_translation_lookup,missing_translation_match,TERM,BTXT,6,"""Terminal Entry""",01FF161C;01BB0CD4;01B6B76D;01F62302;01E68CDF;01C06458
 source_translation_lookup,missing_translation_match,TERM,BTXT,6,"""Vault 101 Classroom Lesson Review""",01FF7C5D;01A237B0;01CD0BDE;01D02758;01B27C88;01AB9751
 source_translation_lookup,missing_translation_match,TERM,FULL,6,"""Vault 101 Classroom Lesson Review""",01FF7C5D;01A237B0;01CD0BDE;01D02758;01B27C88;01AB9751
-source_translation_lookup,missing_translation_match,TERM,ITXT,6,"""Terminal Entry""",01FF161C;01BB0CD4;01B6B76D;01F62302;01E68CDF;01C06458
 source_translation_lookup,missing_translation_match,TERM,ITXT,6,"""Vault 101 Classroom Lesson Review""",01FF7C5D;01A237B0;01CD0BDE;01D02758;01B27C88;01AB9751
 source_translation_lookup,missing_translation_match,TERM,UNAM,6,"""<MEMO>\r\nattn: Warehouse/Repair Employees\r\n\r\nPlease make sure the main platform in the Repair Sector is properly raised before releasing the repaired bots from their pods.  All units receive fimware programming to make their way to the main entrance and await pickup.  Let's get them there safely and not repeat last week's accident involving a Protectron falling to the lower level.  That error cost us time, money, and was an embarrassment to the company and our DCTA account client.\r\n\r\n-- Management""",010A4942;010A4619;010A452D;010A452B;010A4523;01AC7F86
 source_translation_lookup,missing_translation_match,TERM,UNAM,6,"""Blah dee blah blah.""",01FF7C5D;01A237B0;01CD0BDE;01D02758;01B27C88;01AB9751
@@ -45,15 +39,12 @@ source_translation_lookup,missing_translation_match,CELL,FULL,5,"""Townhouse""",
 source_translation_lookup,missing_translation_match,CONT,FULL,5,"""Female Skeleton""",0137F06A;0132C5E3;014E960A;0139032F;016BC913
 source_translation_lookup,missing_translation_match,CONT,FULL,5,"""Male Skeleton""",015855E3;01376D9D;0139E2D1;016F0BC8;014C1667
 source_translation_lookup,missing_translation_match,CONT,FULL,5,"""Washer""",015390C7;01478267;016E2F78;01461449;0168BB4C
-source_translation_lookup,missing_translation_match,FURN,FULL,5,"""Desk""",01090CE8;010908F5;01089B23;010874EB;014167CE
 source_translation_lookup,missing_translation_match,MESG,FULL,5,"""Weapon Created""",01038DF4;01038DF3;01038DF2;01038DF0;01038DE0
 source_translation_lookup,missing_translation_match,PERK,FULL,5,"""Junior Survivor""",010331D7;010331D6;010331D5;010331D4;0102D3A2
 source_translation_lookup,missing_translation_match,PERK,FULL,5,"""Survival Expert""",010331DB;010331DA;010331D9;010331D8;0102D3A1
 source_translation_lookup,missing_translation_match,PERK,FULL,5,"""Survival Guru""",010331DF;010331DE;010331DD;010331DC;0102D3A0
-source_translation_lookup,missing_translation_match,TERM,BTXT,5,"""Note""",01F9E509;01D850D1;01DDB4EB;01F3734B;01BEEBA9
 source_translation_lookup,missing_translation_match,TERM,BTXT,5,"""Research Note - Laser Rifle""",019D94F2;01AA64D2;01A43640;01D720BC;01FA38E7
 source_translation_lookup,missing_translation_match,TERM,FULL,5,"""Research Note - Laser Rifle""",019D94F2;01AA64D2;01A43640;01D720BC;01FA38E7
-source_translation_lookup,missing_translation_match,TERM,ITXT,5,"""Note""",01F9E509;01D850D1;01DDB4EB;01F3734B;01BEEBA9
 source_translation_lookup,missing_translation_match,TERM,ITXT,5,"""Research Note - Laser Rifle""",019D94F2;01AA64D2;01A43640;01D720BC;01FA38E7
 source_translation_lookup,missing_translation_match,TERM,UNAM,5,"""Internal Memorandum\r\n\r\nDue to the increased awareness of our upcoming project milestone, you and your fellow employees may be required to initiate Emergency Defensive Procedures, as outlined in the Employee Handbook.  If required, please review policies #H31, #L04, #L05, #P55, #T01.\r\n\r\nYour continued adherence to company policy is appreciated.\r\n\r\n\r\n""",0105C6E3;0104D868;0104D859;0104D858;01EA2AE5
 source_translation_lookup,missing_translation_match,TERM,UNAM,5,"""The Nuka-Cola Corporation is pleased to announce to all it's employees that the first shipments of our Nuka-Cola Quantum® are on their way to retailers in the Washington D.C. area! This flagship test market program is the culmination of a three year research program to bring the refreshing taste of Quantum to market. Congratulations to all employees on a job well done! """,01081160;0108115D;0104DDD3;0103C214;01BE65A8
@@ -70,8 +61,6 @@ source_translation_lookup,missing_translation_match,MISC,FULL,4,"""Tonka Truck""
 source_translation_lookup,missing_translation_match,MISC,FULL,4,"""Vacation Photo""",016F0521;01525100;0169DBE2;014EBC51
 source_translation_lookup,missing_translation_match,NPC_,FULL,4,"""Enclave Sentry Bot""",010AF5E5;010AF5E4;010AEC22;010AEC21
 source_translation_lookup,missing_translation_match,NPC_,FULL,4,"""Giant Ant""",010BF5B8;0102F005;01026135;0101FB34
-source_translation_lookup,missing_translation_match,QUST,NNAM,4,"""Kill the Professor.""",011C584B;011C584B;011C584A;011C584A
-source_translation_lookup,missing_translation_match,QUST,NNAM,4,"""Report back to Betty.""",01014E8A;01014E8A;01014E8A;01014E8A
 source_translation_lookup,missing_translation_match,TERM,BTXT,4,"""Leo Notes""",01ED9A66;01E7E22D;01E0A60B;01D5A803
 source_translation_lookup,missing_translation_match,TERM,FULL,4,"""Leo Notes""",01ED9A66;01E7E22D;01E0A60B;01D5A803
 source_translation_lookup,missing_translation_match,TERM,ITXT,4,"""#000""",010C77E3;010C77DA;010C77D5;010C77D2
@@ -100,9 +89,7 @@ source_translation_lookup,missing_translation_match,INFO,NAM1,3,"""For crying ou
 source_translation_lookup,missing_translation_match,INFO,NAM1,3,"""Gary!""",01070863;01070862;01070846
 source_translation_lookup,missing_translation_match,INFO,NAM1,3,"""Just leave me...""",010C6E76;010C6E6F;010C6E70
 source_translation_lookup,missing_translation_match,MESG,FULL,3,"""Be careful!""",010C8034;010C10FA;010C10F9
-source_translation_lookup,missing_translation_match,MESG,FULL,3,"""Big Trouble in Big Town""",0106D917;0103CF4A;010892B9
 source_translation_lookup,missing_translation_match,MESG,FULL,3,"""Congratulations!""",010C72EC;01078CB7;01078CB5
-source_translation_lookup,missing_translation_match,MESG,FULL,3,"""Head of State""",0104C5FC;0107887A;010BC2F3
 source_translation_lookup,missing_translation_match,MESG,FULL,3,"""The G.E.C.K.""",010BCE97;010BB7CD;010BB7CC
 source_translation_lookup,missing_translation_match,MESG,ITXT,3,"""Do Nothing""",0107F472;0107DD5C;0103889A
 source_translation_lookup,missing_translation_match,MESG,ITXT,3,"""Mojave Wasteland""",01CB74B1;01D89048;01D5EFD5
@@ -112,12 +99,9 @@ source_translation_lookup,missing_translation_match,MISC,FULL,3,"""Book of Sheet
 source_translation_lookup,missing_translation_match,MISC,FULL,3,"""Nuka Cola Novelty Bottle""",01496197;014B7BEA;013388A8
 source_translation_lookup,missing_translation_match,MISC,FULL,3,"""Red Racer Tricycle""",0151E466;01344245;0155C69C
 source_translation_lookup,missing_translation_match,MISC,FULL,3,"""Rocket""",01255DAF;014DF4E6;0128EA7E
-source_translation_lookup,missing_translation_match,PERK,DESC,3,"""With each rank in the Swift Learner perk, you gain an additional 10% to total Experience Points whenever Experience Points are earned.""",01031DD3;01941794;01E8D38D
 source_translation_lookup,missing_translation_match,PERK,DESC,3,"""With each rank of this perk, all of your explosive weapons do an additional 20% damage.  """,01031DAB;01EE5B9C;01ED52F9
 source_translation_lookup,missing_translation_match,PERK,FULL,3,"""Poison""",01B6173A;019AA933;01F83414
 source_translation_lookup,missing_translation_match,PERK,FULL,3,"""Radiation Poison""",01FFA7F0;01BFC73B;01E7B84B
-source_translation_lookup,missing_translation_match,QUST,NNAM,3,"""Enter the Hole.""",0114108B;0114108B;0114108B
-source_translation_lookup,missing_translation_match,QUST,NNAM,3,"""Leave the Hole.""",0114108B;0114108B;0114108B
 source_translation_lookup,missing_translation_match,TERM,BTXT,3,"""-***-------  FIELD OPERATIONS\r\n*-*-*------      ENCLAVE \r\n-***-------\r\n-----------\r\n-----------  GOD BLESS AMERICA\r\n""",010CAA3D;010CAA3C;01018647
 source_translation_lookup,missing_translation_match,TERM,BTXT,3,"""Accessing Memos and Mail""",01443517;012D49C2;016C7012
 source_translation_lookup,missing_translation_match,TERM,BTXT,3,"""Good morning, chief!""",01024EAE;01024EA5;01024EA4
@@ -239,21 +223,17 @@ source_translation_lookup,missing_translation_match,MESG,DESC,2,"""To jump up on
 source_translation_lookup,missing_translation_match,MESG,DESC,2,"""What would you like to do with your Nuka-Cola Machine?""",010C502E;010C502D
 source_translation_lookup,missing_translation_match,MESG,DESC,2,"""You lack the Explosives skill needed to interact with the bomb (Explosives %.0f or higher required).""",01078CB1;010388C8
 source_translation_lookup,missing_translation_match,MESG,DESC,2,"""You should get your stuff from your desk before you leave.""",010ABF9E;010ABF9C
-source_translation_lookup,missing_translation_match,MESG,FULL,2,"""Blood Ties""",01095B63;01095B62
 source_translation_lookup,missing_translation_match,MESG,FULL,2,"""Fallout 3 Skills""",01BCE937;01C4A7EB
 source_translation_lookup,missing_translation_match,MESG,FULL,2,"""Healing Limbs""",01072359;01072358
 source_translation_lookup,missing_translation_match,MESG,FULL,2,"""Hotkeys""",010734EE;0107234C
 source_translation_lookup,missing_translation_match,MESG,FULL,2,"""In-game Help""",010ABF9B;010ABF9A
 source_translation_lookup,missing_translation_match,MESG,FULL,2,"""Jumping""",0106570F;0106439A
 source_translation_lookup,missing_translation_match,MESG,FULL,2,"""Lack Required Skill""",010C72ED;0103D7D8
-source_translation_lookup,missing_translation_match,MESG,FULL,2,"""Leaking Pipe""",01038995;01038993
 source_translation_lookup,missing_translation_match,MESG,FULL,2,"""Megaton Bomb""",01078CB2;01078CB1
 source_translation_lookup,missing_translation_match,MESG,FULL,2,"""Megaton Bomb Armed""",01078CB9;01078CB8
 source_translation_lookup,missing_translation_match,MESG,FULL,2,"""Movement and Combat""",0106D914;010BB215
 source_translation_lookup,missing_translation_match,MESG,FULL,2,"""Radiation""",01072483;0107235B
-source_translation_lookup,missing_translation_match,MESG,FULL,2,"""Recon Craft Theta Beacon""",01AD8B23;01EFC67F
 source_translation_lookup,missing_translation_match,MESG,FULL,2,"""Repairing""",0170016E;0170016D
-source_translation_lookup,missing_translation_match,MESG,FULL,2,"""Strictly Business""",0102A42E;0108C77A
 source_translation_lookup,missing_translation_match,MESG,FULL,2,"""V.A.T.S. -- Advanced""",0106D913;010B5ED1
 source_translation_lookup,missing_translation_match,MESG,FULL,2,"""VATS""",010ABC58;01098747
 source_translation_lookup,missing_translation_match,MESG,FULL,2,"""Warning!""",010A53FC;01078CB6
@@ -268,11 +248,9 @@ source_translation_lookup,missing_translation_match,MESG,ITXT,2,"""Get some Ice 
 source_translation_lookup,missing_translation_match,MESG,ITXT,2,"""Insert the Fusion Pulse Charge.""",010388CC;010388CB
 source_translation_lookup,missing_translation_match,MESG,ITXT,2,"""Leave it Alone""",0109D95F;010506CF
 source_translation_lookup,missing_translation_match,MESG,ITXT,2,"""Leave it unmodified.""",010388CC;010388CB
-source_translation_lookup,missing_translation_match,MESG,ITXT,2,"""Never mind.""",010BB7CD;010BB7CC
 source_translation_lookup,missing_translation_match,MESG,ITXT,2,"""Put him out of his misery.""",01038893;01038892
 source_translation_lookup,missing_translation_match,MESG,ITXT,2,"""Rearm as a Proximity Trap.""",010AFC1B;0103888E
 source_translation_lookup,missing_translation_match,MESG,ITXT,2,"""Rig the Emitter.""",0103FC92;0103FC91
-source_translation_lookup,missing_translation_match,MESG,ITXT,2,"""Yes.""",010BB7CD;010BB7CC
 source_translation_lookup,missing_translation_match,MISC,FULL,2,"""Crime Detective Stories, Jan.77""",014FE31C;015E27F8
 source_translation_lookup,missing_translation_match,MISC,FULL,2,"""Doll""",013DF1DC;013C89A9
 source_translation_lookup,missing_translation_match,MISC,FULL,2,"""Gnome Security""",0161078C;015F350A
@@ -291,11 +269,6 @@ source_translation_lookup,missing_translation_match,MISC,FULL,2,"""Statue""",014
 source_translation_lookup,missing_translation_match,NPC_,FULL,2,"""Dog""",01076926;0101CF9C
 source_translation_lookup,missing_translation_match,NPC_,FULL,2,"""NukaLurk""",010854D7;01037B41
 source_translation_lookup,missing_translation_match,PERK,DESC,2,"""At the first rank of this perk, animals simply won't attack. At the second rank, they will actually come to your aid in combat, but never against another animal. This perk affects the Dog, Yao Guai, Mole Rat, and Brahmin. """,01031DB5;0192CEF0
-source_translation_lookup,missing_translation_match,QUST,NNAM,2,"""Escort Doctor Li through Taft Tunnel to the Citadel.""",01014E8B;01014E8B
-source_translation_lookup,missing_translation_match,QUST,NNAM,2,"""Meet the children southwest of Paradise Falls.""",01014E8D;01014E8D
-source_translation_lookup,missing_translation_match,QUST,NNAM,2,"""Speak to Sally.""",01200803;01200803
-source_translation_lookup,missing_translation_match,QUST,NNAM,2,"""Stop Wernher.""",0114108D;0114108D
-source_translation_lookup,missing_translation_match,QUST,NNAM,2,"""Talk to the Professor.""",011C584A;011C584A
 source_translation_lookup,missing_translation_match,TERM,BTXT,2,"""Angela and Diego""",01DA7289;01CE7FD4
 source_translation_lookup,missing_translation_match,TERM,BTXT,2,"""Council Minutes""",01AB562E;01BAC8DA
 source_translation_lookup,missing_translation_match,TERM,BTXT,2,"""ERROR 0x00B636C6\r\n\""No Input Device Recognized.\""\r\n\""Reconnect Keyboard.\""""",01080CB4;01080CAF
@@ -632,7 +605,6 @@ source_translation_lookup,missing_translation_match,ACTI,FULL,1,"""Last Call""",
 source_translation_lookup,missing_translation_match,ACTI,FULL,1,"""Light Switch""",013DE0A0
 source_translation_lookup,missing_translation_match,ACTI,FULL,1,"""Lone Ranger""",015AD601
 source_translation_lookup,missing_translation_match,ACTI,FULL,1,"""Mad Max""",0150D64E
-source_translation_lookup,missing_translation_match,ACTI,FULL,1,"""Mailbox""",01057F6B
 source_translation_lookup,missing_translation_match,ACTI,FULL,1,"""Major Tom""",012ACAAE
 source_translation_lookup,missing_translation_match,ACTI,FULL,1,"""Mechanist""",0150DF5D
 source_translation_lookup,missing_translation_match,ACTI,FULL,1,"""Minor League""",016417EB
@@ -679,7 +651,6 @@ source_translation_lookup,missing_translation_match,ALCH,FULL,1,"""Miss. Quantum
 source_translation_lookup,missing_translation_match,ALCH,FULL,1,"""Mole Rat Wonder Meat""",010ABD17
 source_translation_lookup,missing_translation_match,ALCH,FULL,1,"""Mr. Lick's Waffle Cones""",0155399C
 source_translation_lookup,missing_translation_match,ALCH,FULL,1,"""Nuka-Cola""",0101519E
-source_translation_lookup,missing_translation_match,ALCH,FULL,1,"""Nuka-Cola Quantum""",010284F9
 source_translation_lookup,missing_translation_match,ALCH,FULL,1,"""NukaLurk Meat""",01095F48
 source_translation_lookup,missing_translation_match,ALCH,FULL,1,"""Pip-Boy: Karma & Skills""",01D17A20
 source_translation_lookup,missing_translation_match,ALCH,FULL,1,"""Strange Meat""",0102E376
@@ -689,7 +660,6 @@ source_translation_lookup,missing_translation_match,AMMO,FULL,1,"""5.56mm Round"
 source_translation_lookup,missing_translation_match,AMMO,FULL,1,"""BB""",0102935B
 source_translation_lookup,missing_translation_match,AMMO,FULL,1,"""Flamer Fuel""",01078CC1
 source_translation_lookup,missing_translation_match,AMMO,FULL,1,"""Mesmetron Power Cell""",0106A80D
-source_translation_lookup,missing_translation_match,AMMO,FULL,1,"""Microfusion Cell""",01078CC3
 source_translation_lookup,missing_translation_match,AMMO,FULL,1,"""Sonic Energy""",01056634
 source_translation_lookup,missing_translation_match,ARMO,FULL,1,"""Advanced Radiation Suit""",0103307A
 source_translation_lookup,missing_translation_match,ARMO,FULL,1,"""All-Purpose Science Suit""",010CB605
@@ -860,7 +830,6 @@ source_translation_lookup,missing_translation_match,BOOK,DESC,1,"""D.C. Journal 
 source_translation_lookup,missing_translation_match,BOOK,DESC,1,"""Dean's Electronics""",0103403D
 source_translation_lookup,missing_translation_match,BOOK,DESC,1,"""Duck and Cover!""",0106A80C
 source_translation_lookup,missing_translation_match,BOOK,DESC,1,"""Grognak the Barbarian""",01034040
-source_translation_lookup,missing_translation_match,BOOK,DESC,1,"""Guns and Bullets""",0103403E
 source_translation_lookup,missing_translation_match,BOOK,DESC,1,"""I am the schematics for the Bottlecap Mine.""",0102D3B2
 source_translation_lookup,missing_translation_match,BOOK,DESC,1,"""Lying, Congressional Style""",01034044
 source_translation_lookup,missing_translation_match,BOOK,DESC,1,"""Nikola Tesla and You""",01034041
@@ -869,13 +838,11 @@ source_translation_lookup,missing_translation_match,BOOK,DESC,1,"""Pugilism Illu
 source_translation_lookup,missing_translation_match,BOOK,DESC,1,"""Tales of a Junktown Jerky Vendor""",01034042
 source_translation_lookup,missing_translation_match,BOOK,DESC,1,"""Tumblers Today""",01034046
 source_translation_lookup,missing_translation_match,BOOK,DESC,1,"""U.S. Army: 30 Handy Flamethrower Recipes""",01034048
-source_translation_lookup,missing_translation_match,BOOK,DESC,1,"""Wasteland Survival Guide""",010C5634
 source_translation_lookup,missing_translation_match,BOOK,FULL,1,"""Chinese Army: Spec. Ops. Training Manual""",01034045
 source_translation_lookup,missing_translation_match,BOOK,FULL,1,"""D.C. Journal of Internal Medicine""",01034043
 source_translation_lookup,missing_translation_match,BOOK,FULL,1,"""Dean's Electronics""",0103403D
 source_translation_lookup,missing_translation_match,BOOK,FULL,1,"""Duck and Cover!""",0106A80C
 source_translation_lookup,missing_translation_match,BOOK,FULL,1,"""Grognak the Barbarian""",01034040
-source_translation_lookup,missing_translation_match,BOOK,FULL,1,"""Guns and Bullets""",0103403E
 source_translation_lookup,missing_translation_match,BOOK,FULL,1,"""Lying, Congressional Style""",01034044
 source_translation_lookup,missing_translation_match,BOOK,FULL,1,"""Motivational Secrets of the Stars""",0102D3A3
 source_translation_lookup,missing_translation_match,BOOK,FULL,1,"""Nikola Tesla and You""",01034041
@@ -885,7 +852,6 @@ source_translation_lookup,missing_translation_match,BOOK,FULL,1,"""Survival Guid
 source_translation_lookup,missing_translation_match,BOOK,FULL,1,"""Tales of a Junktown Jerky Vendor""",01034042
 source_translation_lookup,missing_translation_match,BOOK,FULL,1,"""Tumblers Today""",01034046
 source_translation_lookup,missing_translation_match,BOOK,FULL,1,"""U.S. Army: 30 Handy Flamethrower Recipes""",01034048
-source_translation_lookup,missing_translation_match,BOOK,FULL,1,"""Wasteland Survival Guide""",010C5634
 source_translation_lookup,missing_translation_match,CELL,FULL,1,"""2nd Fl. Apt.""",015C3056
 source_translation_lookup,missing_translation_match,CELL,FULL,1,"""3rd Fl.""",0141206A
 source_translation_lookup,missing_translation_match,CELL,FULL,1,"""4077 Pharmacy""",0155D795
@@ -911,7 +877,6 @@ source_translation_lookup,missing_translation_match,CELL,FULL,1,"""Enable Mrkrs 
 source_translation_lookup,missing_translation_match,CELL,FULL,1,"""Family Classics Video""",015F83DF
 source_translation_lookup,missing_translation_match,CELL,FULL,1,"""Fester's Firearms""",013ADE94
 source_translation_lookup,missing_translation_match,CELL,FULL,1,"""Free Clinic 2nd Fl.""",013334FA
-source_translation_lookup,missing_translation_match,CELL,FULL,1,"""L'Enfant Plaza""",01534BD7
 source_translation_lookup,missing_translation_match,CELL,FULL,1,"""Liberty Loans, Pawn Shop""",013A7046
 source_translation_lookup,missing_translation_match,CELL,FULL,1,"""Lights FXbeams Action!""",015A3C17
 source_translation_lookup,missing_translation_match,CELL,FULL,1,"""Lincoln Savings""",012EA5C5
@@ -1780,9 +1745,6 @@ source_translation_lookup,missing_translation_match,MESG,DESC,1,"""The ammo box 
 source_translation_lookup,missing_translation_match,MESG,DESC,1,"""The ants appear to be using this compost heap to metabolize a food supply. Ant secretions combined with the compost appear to be forming a potent chemical compound.""",0103889F
 source_translation_lookup,missing_translation_match,MESG,DESC,1,"""The assembly line electronics can we wired to overload. However, a higher Repair Skill is needed to set it with a slight delay (Repair Skill of 75%% required). An overload should cause a detonation and provide a way through.""",01209C52
 source_translation_lookup,missing_translation_match,MESG,DESC,1,"""The atomic bomb remains undetonated.""",01038DE5
-source_translation_lookup,missing_translation_match,MESG,DESC,1,"""The bodies of the Wests have bite marks on the neck area that go to the bone.""",010388B6
-source_translation_lookup,missing_translation_match,MESG,DESC,1,"""The bodies of the Wests have bite marks on the neck area that go to the bone. The lack of bloodstains on the sheets is strange, as any bite or wound of that depth should have caused massive bleeding.""",010388B7
-source_translation_lookup,missing_translation_match,MESG,DESC,1,"""The bodies of the Wests have bite marks on the neck area that go to the bone. The lack of bloodstains on the sheets is strange, as any bite or wound of that depth should have caused massive bleeding. The bite marks on the neck appear to be from a human or humans with sharpened incisors or canines.""",010388B8
 source_translation_lookup,missing_translation_match,MESG,DESC,1,"""The bodies of the Wests have bite marks on the neck area that go to the bone. The lack of bloodstains on the sheets is strange, as any bite or wound of that depth should have caused massive bleeding. The bite marks on the neck appear to be from a human or humans with sharpened incisors or canines. The bodies seem to have a blackish powdery residue present not unlike that found in old trainyards.""",010388B9
 source_translation_lookup,missing_translation_match,MESG,DESC,1,"""The bomb appears inert, but further examination reveals that it is still operational, and still quite dangerous.\r\n\r\nWith the right gear it would be trivial to rig it to explode. To disarm the bomb, however, would take a highly skilled explosives expert.""",01078CB2
 source_translation_lookup,missing_translation_match,MESG,DESC,1,"""The bomb has been rigged to explode. Once detonated, it will surely destroy the entire town of Megaton.""",010388C7
@@ -2085,19 +2047,16 @@ source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Ant Might Per
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Ant Sight Perk Added""",010C7756
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Barkskin Perk Added""",0104C549
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Barter""",0170017F
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Chinese Radio Beacon""",01A73D92
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Choose sex""",0105AD5C
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Compass""",01072346
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Computers""",01700180
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Containers""",0170017E
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Contract Killer""",01B9EB57
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Crime""",0107234D
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Crippling""",010BE8D4
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Dialogue""",01700179
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Disarm Grenade Failure""",010458A0
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Dream Crusher Perk Added""",0104C597
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Drugs and Addiction""",01072357
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Enclave Radio""",01A46EE3
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Fast Travel""",01064FF9
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Fire Weapon""",01098748
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""G.O.A.T. Question 1""",01038ADF
@@ -2110,7 +2069,6 @@ source_translation_lookup,missing_translation_match,MESG,FULL,1,"""G.O.A.T. Ques
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""G.O.A.T. Question 7""",01038AE8
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""G.O.A.T. Question 8""",01038AEA
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""G.O.A.T. Question 9""",01038AEB
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Galaxy News Radio""",01BAD860
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Glossary""",01072351
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Hacking""",0170017B
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Harold""",0109A1E7
@@ -2119,50 +2077,28 @@ source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Hematophage P
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""House Radio for Jukebox""",0196A920
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Intercom in use.""",010AFE42
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Item Condition""",0106C5EB
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Janet Rockwell's Diary""",01079241
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Karma""",0106B250
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Lawbringer""",01DDDB7C
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Lockpicking""",0170017C
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""MQ04 Radio Quest""",01D41901
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Maps""",01700182
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Megaton Bomb -- Disarmed""",01078CB4
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""My Megaton House""",0109A1E6
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""My Tenpenny Suite""",0109A1E5
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Need Fusion Pulse Charge""",01078CBA
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Oasis""",010C24F8
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Outcast Distress Signal""",01AB9E99
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Oven""",010C10FB
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""People's Republic of America Radio""",01B446D5
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Pip-Boy""",0109871A
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Pitt Broadcast""",01E46488
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Quests""",01072348
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Rad Regeneration Perk Added""",0104C596
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Radio Signal Alfa Lima""",01AB8864
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Radio Signal Echo Foxtrot""",01E4C0FF
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Radio Signal Kilo Bravo""",01A59F10
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Radio Signal Oscar Tango""",01F9001D
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Radio Signal Oscar Zulu""",01F2C9FE
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Radio Signal Papa November""",01AAD13B
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Radio Signal Sierra Romeo""",01D24EE3
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Radio Signal Sierra Victor""",01CA32E1
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Radio Signal Yankee Bravo""",01CA9DBF
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Radio Signals""",0107235C
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Ranger Emergency Frequency""",01990DB5
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Reilly's Rangers""",010A35FE
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Shoot 'em in the Head""",010C01A4
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Slaver""",0109A4C6
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Stealth""",010ABC5A
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Suite Temporarily Inaccessible""",01071F54
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Survival Perk Added""",0106BBBE
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Tag Skills""",01700176
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Terminal Locked""",010ACD93
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""The Nuka-Cola Challenge""",010C76A7
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""The Wasteland Survival Guide""",0106D91E
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Trouble on the Homefront""",010C20C7
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""V.A.T.S.""",0170017D
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Vault 101 Emergency Frequency""",01F14410
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Vault 101 PA system""",01CF974B
-source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Wernher's Distress Signal""",01D58531
 source_translation_lookup,missing_translation_match,MESG,FULL,1,"""Wired Reflexes Perk Added""",0104C5C6
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""\""But doctor, wouldn't that cause a parabolic destabilization of the fission singularity?\""""",01038ADF
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""\""Yeah? Up yours too, buddy!\""""",01038ADF
@@ -2188,7 +2124,6 @@ source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Catcher.""",0
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Close eyes, pick a wire, and pull.""",01078CB6
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Confiscate the stolen property by force, and leave the boy there as punishment.""",01038AE2
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Create a New Compound""",0107DD5C
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Dart Gun""",01038DED
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""De-Toxify Yourself""",0107DD5C
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Deathclaw Gauntlet""",01038DED
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Designated Hitter.""",01038AE3
@@ -2260,7 +2195,6 @@ source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Prayer. Maybe
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Pulse.""",01038881
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Push the skate.""",010C8033
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Put a firecracker in the toilet. That's sure to cause some chaos.""",01038AEB
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Railway Rifle""",01038DED
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Re-arm trap.""",0103887E
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Rearm as a proximity trap.""",0104693D
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Rearm the trap.""",01038886
@@ -2277,7 +2211,6 @@ source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Restrain the 
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Revive Reilly.""",010388AB
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Rewire the diagnostic system.""",0105A235
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Rig the bomb to explode.""",01078CB2
-source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Rock-It Launcher""",01038DED
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Say nothing, but grab a nearby pipe and hit the scientist in the head to knock him out. For all you knew, he was planning on blowing up the vault.""",01038ADF
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Say nothing, but slip away before the scientist can continue his rant.""",01038ADF
 source_translation_lookup,missing_translation_match,MESG,ITXT,1,"""Scream for help.""",01038AE0
@@ -2330,30 +2263,22 @@ source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bed Time Stor
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bed Time Stories Mag, Nov. 76""",01694A5F
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bed Time Stories Mag, Oct. 76""",013BC776
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bed Time Stories Mag, Sep. 76""",015033CA
-source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bill of Rights""",01003A82
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Billy the Boomer""",015FCADB
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Birch's Sap""",010504DA
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Blind Willie's Bathtub Gin""",015E041D
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Blue Pass Card""",01028706
-source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Agility""",010388E5
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Barter""",010388F3
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Big Guns""",01038906
-source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Charisma""",01038850
-source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Endurance""",01038834
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Energy Weapons""",0103892F
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Explosives""",01038930
-source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Intelligence""",0103885C
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Lockpick""",01038931
-source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Luck""",010388E6
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Medicine""",01038950
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Melee Weapons""",01038951
-source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Perception""",01038833
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Repair""",01038952
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Science""",01038953
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Small Guns""",01038954
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Sneak""",01038955
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Speech""",01038956
-source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Strength""",01038832
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Bobblehead - Unarmed""",01038958
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Boozo the Clown""",01524312
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Box of Detergent""",0103406F
@@ -2373,7 +2298,6 @@ source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Coffee Mug"""
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Coffee Urn""",012D3411
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Colonel Klink""",014D5D75
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Conductor""",01022102
-source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Constitution of the United States""",0108C214
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Control Collar""",0106C55A
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Cookie""",01582207
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Corpral Punishment""",015E691B
@@ -2402,7 +2326,6 @@ source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Custom Ephiph
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""DR. Smith""",0161EAB1
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Damaged Garden Gnome""",0105B635
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Danielle's Book""",010C9403
-source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Dart""",015C17E4
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Deck of Cards""",0159B1CD
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Defcon""",0141EC45
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Desk Lamp""",016F4900
@@ -2474,12 +2397,10 @@ source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Gang World, M
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Gang World, May. 77""",0131D5FE
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Gang World, Oct. 77""",01409F3A
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Gang World, Sep. 77""",01612998
-source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Garden Gnome""",0103407A
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Geomapper Module""",01040D4D
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Gettysburg Address""",0108C216
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Gomer""",01469BF7
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Green Plate""",0105B63F
-source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Ham Radio""",01372849
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Happy Hour""",012EE80E
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Harmonica""",0105B638
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Hot Rod, Apr. 77""",012C5B82
@@ -2519,7 +2440,6 @@ source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Lone Ranger""
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Lucy's Sealed Envelope""",0101890A
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Lunar Lander Toy""",014615CC
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Lunchbox""",01022107
-source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Magna Carta""",01003A80
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Major Tom""",0167F094
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Mammoth toy""",015A2845
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Mechanist""",015AFC38
@@ -2654,7 +2574,6 @@ source_translation_lookup,missing_translation_match,MISC,FULL,1,"""RobCo Process
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Robobrain Toy""",016E38E8
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Rocket Toy""",015B87E6
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Rocket kelly, Dec. 44""",0152E60F
-source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Rollerskate""",010285F8
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Sammy Six Pack""",0152F4DD
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Saturday Evening Post, Apr. 75""",012EC8FF
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Saturday Evening Post, Apr. 76""",0127C166
@@ -2773,7 +2692,6 @@ source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Tales of Susp
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Tales of Suspense, Jan. 77""",014D667D
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Tales of Suspense, Mar. 77""",01668870
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Tanto""",013A9103
-source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Tesla Coil""",01185687
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""The National Geographic, Apr. 77""",014595A4
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""The National Geographic, Aug. 77""",01666202
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""The National Geographic, Feb.. 77""",01636FFC
@@ -2782,7 +2700,6 @@ source_translation_lookup,missing_translation_match,MISC,FULL,1,"""The National 
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""The National Geographic, Jun. 77""",013513D6
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""The National Geographic, Mar. 77""",012C7B37
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""The National Geographic, May. 77""",01483A07
-source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Three Dog""",01524698
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Tin Plate""",0102541C
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Titter Mag, Apr. 76""",013B5237
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Titter Mag, Apr.77""",016689C3
@@ -2831,7 +2748,6 @@ source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Violin""",012
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Violin Case""",015C97AA
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Virgo II Dish""",0102393C
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Virtabird Toy""",013DE234
-source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Wasteland Survival Guide""",0105A795
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Whet Stone""",0105B6CB
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Whiskey Dick""",0134ED3B
 source_translation_lookup,missing_translation_match,MISC,FULL,1,"""Willy the Wineo""",0127998D
@@ -2880,50 +2796,40 @@ source_translation_lookup,missing_translation_match,NPC_,FULL,1,"""baby Mole Rat
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""Advanced technology from the Commonwealth has increased your reaction speed, giving you a higher chance to hit in V.A.T.S.""",01024D5C
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""After an experimental treatment, intense radiation keeps your body operating at peak performance regardless of crippling injuries... right up until death. When you suffer from Advanced Radiation Poisoning, crippled limbs automatically regenerate.""",0103066B
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""After sleeping in a safe bed, you will wake well rested. You earn 10% more experience points for several hours.""",01061822
-source_translation_lookup,missing_translation_match,PERK,DESC,1,"""Fail a hack attempt and get locked out of a computer? Not if you're a Computer Whiz! With this perk, you can attempt to re-hack any computer you were previously locked out of.""",01031DC4
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""Having the Chem Resistant perk means you're 50% less likely to develop an addiction to chems, like Psycho or Jet.""",01099827
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""If you kill a target in V.A.T.S., all your Action Points are restored upon exiting V.A.T.S.""",01099834
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""In combat, you do +10% damage against female opponents. Outside of combat, you'll sometimes have access to unique dialogue options when dealing with the opposite sex. """,01094EB9
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""In combat, you do +10% damage against male opponents. Outside of combat, you'll sometimes have access to unique dialogue options when dealing with the opposite sex. """,01094EB8
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""Rad Resistance allows you to -- what else? -- resist radiation. This perk grants an additional 25% to Radiation Resistance.""",01031DA9
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""Something about your presence dampens others' desires to exceed. Any enemy's chance of getting critical hits on you is reduced by 50%.  """,01030FEB
-source_translation_lookup,missing_translation_match,PERK,DESC,1,"""The Here and Now perk immediately grants an additional experience level, complete with all the advantages that brings.""",01031DAC
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""The Ninja perk grants you the power of the fabled shadow warriors. When attacking with either Melee or Unarmed, you gain a +15% critical chance on every strike. Sneak attack criticals do 25% more damage than normal.""",01031DCC
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""The Tag! perk allows you to select a fourth Skill to be a Tag skill, which instantly raises it by 15 points.""",01031DBD
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""This perk allows you to regain health by consuming Bloodpacks.""",01003131
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""When the sun is down, a Night Person gains +2 to both Intelligence and Perception (up to a maximum of 10). This perk directly affects your \""internal clock,\"" and remains active both inside and outside.""",01094EBD
-source_translation_lookup,missing_translation_match,PERK,DESC,1,"""When you choose the Explorer perk, every location in the world is revealed on your map. So get out there and explore!""",01031DE5
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""While using a pistol (or similar one-handed weapon), your accuracy in V.A.T.S. is significantly increased.""",01094EBB
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""While using a rifle (or similar two-handed weapon), your accuracy in V.A.T.S. is significantly increased.""",01099828
-source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With Concentrated Fire, your accuracy to hit any body part in V.A.T.S. increases slightly with each subsequent hit on that body part.""",01044CAF
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With Infiltrator, if a lock is broken, and can't normally be picked again, you can attempt to pick it again one more time. This includes locks previously broken by a \""Force Lock\"" attempt.""",01044CB0
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With Paralyzing Palm, your unarmed attacks have a 15% chance to paralyze the target for 30 seconds.""",01044CAA
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Action Boy perk, you gain an additional 25 Action Points to use in V.A.T.S.""",01031DBA
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Action Girl perk, you gain an additional 25 Action Points to use in V.A.T.S.""",0107B202
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Adamantium Skeleton perk, your limbs only receive 50% of the damage they normally would.""",01094EC4
-source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Better Criticals perk, you gain a 50% damage bonus every time a critical hit is scored on an opponent.""",01031DBB
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Bloody Mess perk, characters and creatures you kill will often explode into a red, gut-ridden, eyeball-strewn paste. Fun! Oh, and you'll do 5% extra damage with all weapons.""",01094EBA
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Cannibal perk, when you're in Sneak mode, you gain the option to eat a corpse to regain Health. But every time you feed, you lose Karma, and if the act is witnessed, it is considered a crime against nature.""",01094EBC
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Chemist perk, any chems you take last twice as long.""",0109982D
-source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Comprehension perk, you gain one additional skill point whenever a skill book is read.""",01031DE1
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Educated perk, you gain three more skill points every time you advance in level. This perk is best taken early on, to maximize its effectiveness.""",01031DD8
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Entomologist perk, you do an additional +50% damage every time you attack a mutated insect, like the Radroach, Giant Ant, or Radscorpion.""",01031DD9
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Fast Metabolism perk, you gain a 20% Health bonus when using Stimpaks.""",01094EBF
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Finesse perk, you have a higher chance to score a critical hit on an opponent in combat, equivalent to 5 extra points of Luck.""",01094EC1
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Fortune Finder perk, you'll find considerably more Nuka-Cola caps in containers than you normally would. """,01031DE3
-source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Lead Belly perk, you take 50% less radiation every time you drink from an irradiated water source.""",01044CA9
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Life Giver perk, you gain an additional 30 Hit Points.""",01031DB1
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Light Step perk, you'll never set off an enemy's mines or floor-based traps.""",01031DB7
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Mister Sandman perk, when you're in Sneak mode, you gain the option to silently kill any human or Ghoul while they're sleeping. And, all Mister Sandman kills earn bonus XP.""",01031DAD
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Nerves of Steel perk, your Action Points regenerate 20% faster.""",011811C2
-source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Pyromaniac perk, you do +50% damage with fire-based weapons, like the Flamer and Shishkebab.""",01031DB2
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Rad Absorption perk, your radiation level slowly decreases on its own over time.""",011811BD
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Robotics perk, you do an additional 25% damage to any robot. But, even better, sneaking up on a hostile robot undetected and activating it will put that robot into a permanent shutdown state.""",01031DC2
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Scrounger perk, you'll find considerably more ammunition in containers than you normally would.  """,01031DAA
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Silent Running perk, you gain an additional 10 points to Sneak, and running no longer factors into a successful sneak attempt.""",01031DB3
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Sniper perk, your chance to hit an opponent's head in V.A.T.S. is significantly increased.""",01031DB4
-source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Solar Powered perk, you gain an additional 2 points to Strength when in direct sunlight, and slowly regenerate lost Health.""",01031DC5
-source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Strong Back perk, you can carry 50 more pounds of equipment.""",01031DDE
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""With the Toughness perk, you gain +10% to overall Damage Resistance, up to the maximum of 85%.  """,01031DE0
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""You have received the specialized training needed to move in any form of Power Armor.""",01058FDF
 source_translation_lookup,missing_translation_match,PERK,DESC,1,"""You wrote the book on how to survive in the Wasteland, and have shared your secrets with humanity. You've gained +6% bonus to Poison Resistance & Radiation Resistance, and +3% bonus to Critical Chance.""",010331DF
@@ -2989,7 +2895,6 @@ source_translation_lookup,missing_translation_match,PERK,FULL,1,"""Gun Nut (3)""
 source_translation_lookup,missing_translation_match,PERK,FULL,1,"""Gunslinger""",01094EBB
 source_translation_lookup,missing_translation_match,PERK,FULL,1,"""Hematophage""",01003131
 source_translation_lookup,missing_translation_match,PERK,FULL,1,"""Here and Now""",01031DAC
-source_translation_lookup,missing_translation_match,PERK,FULL,1,"""Infiltrator""",01044CB0
 source_translation_lookup,missing_translation_match,PERK,FULL,1,"""Intense Training (1)""",01044CB1
 source_translation_lookup,missing_translation_match,PERK,FULL,1,"""Intense Training (10)""",01B1E718
 source_translation_lookup,missing_translation_match,PERK,FULL,1,"""Intense Training (2)""",01DC2E96
@@ -3034,7 +2939,6 @@ source_translation_lookup,missing_translation_match,PERK,FULL,1,"""Silent Runnin
 source_translation_lookup,missing_translation_match,PERK,FULL,1,"""Size Matters (1)""",0109982E
 source_translation_lookup,missing_translation_match,PERK,FULL,1,"""Size Matters (2)""",01E17CEB
 source_translation_lookup,missing_translation_match,PERK,FULL,1,"""Size Matters (3)""",01D3012B
-source_translation_lookup,missing_translation_match,PERK,FULL,1,"""Sniper""",01031DB4
 source_translation_lookup,missing_translation_match,PERK,FULL,1,"""Solar Powered""",01031DC5
 source_translation_lookup,missing_translation_match,PERK,FULL,1,"""Strong Back""",01031DDE
 source_translation_lookup,missing_translation_match,PERK,FULL,1,"""Swift Learner (1)""",01031DD3
@@ -3062,19 +2966,8 @@ source_translation_lookup,missing_translation_match,QUST,NNAM,1,"""Use the BB Gu
 source_translation_lookup,missing_translation_match,QUST,NNAM,1,"""[Move this into WQ03] Discover what's happened to Megaton's water shipment. (Capital Wasteland)""",01183853
 source_translation_lookup,missing_translation_match,TACT,FULL,1,"""Agatha's Station""",0108A6DA
 source_translation_lookup,missing_translation_match,TACT,FULL,1,"""Enclave Public Address System""",01066FE5
-source_translation_lookup,missing_translation_match,TACT,FULL,1,"""Enclave Radio""",01018774
-source_translation_lookup,missing_translation_match,TACT,FULL,1,"""Galaxy News Radio""",01022487
 source_translation_lookup,missing_translation_match,TACT,FULL,1,"""House Radio for Jukebox""",010C4991
-source_translation_lookup,missing_translation_match,TACT,FULL,1,"""Radio Signal Alfa Lima""",0101FE3F
-source_translation_lookup,missing_translation_match,TACT,FULL,1,"""Radio Signal Echo Foxtrot""",01023963
 source_translation_lookup,missing_translation_match,TACT,FULL,1,"""Radio Signal Kilo Bravo""",0106F6A5
-source_translation_lookup,missing_translation_match,TACT,FULL,1,"""Radio Signal Oscar Tango""",0102A3F5
-source_translation_lookup,missing_translation_match,TACT,FULL,1,"""Radio Signal Oscar Zulu""",01093BA9
-source_translation_lookup,missing_translation_match,TACT,FULL,1,"""Radio Signal Papa November""",0103E930
-source_translation_lookup,missing_translation_match,TACT,FULL,1,"""Radio Signal Sierra Romeo""",0103926E
-source_translation_lookup,missing_translation_match,TACT,FULL,1,"""Radio Signal Sierra Victor""",0103D758
-source_translation_lookup,missing_translation_match,TACT,FULL,1,"""Radio Signal Yankee Bravo""",0102DF15
-source_translation_lookup,missing_translation_match,TACT,FULL,1,"""Ranger Emergency Frequency""",0108A3BB
 source_translation_lookup,missing_translation_match,TACT,FULL,1,"""Tenpenny Tower Radio""",0101E5DF
 source_translation_lookup,missing_translation_match,TACT,FULL,1,"""Vault 101 Emergency Frequency""",01083511
 source_translation_lookup,missing_translation_match,TACT,FULL,1,"""Vault 101 PA system""",0107161E
@@ -3089,7 +2982,6 @@ source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""12.1c""",01C6
 source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""A Birthday Poem""",01BC6E98
 source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""Access Codes""",019B2B5C
 source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""Anchorage War Memorial Stash""",019B1C22
-source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""Arlington READS!""",01F0E314
 source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""As Requested""",01FCF118
 source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""Autonomic Nervous System""",01A3E1E1
 source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""Bannon's Request""",01CDFA2A
@@ -3196,7 +3088,6 @@ source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""MaxsonDossier
 source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""MaxsonDossier2""",01B5B684
 source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""MaxsonDossier3""",01BBC1DB
 source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""MaxsonDossier4""",01AFBA87
-source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""Mei Wong""",01D57E30
 source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""Memo to All Personnel: Emergency Protocols""",01CA3A64
 source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""Memo: Company Policy: Caps in Emails""",0197A920
 source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""Memo: Emergency Procedures""",01D0E259
@@ -3205,7 +3096,6 @@ source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""Memo: How to 
 source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""Memo: Weapon Practice Tonight?""",01A465D3
 source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""Merc's Orders""",019CADF4
 source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""Metro Computer Password""",01CFA2ED
-source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""Mister Lopez""",01A03172
 source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""Moira's Terminal Password""",01E128B8
 source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""Neighborly Letter""",01CE330C
 source_translation_lookup,missing_translation_match,TERM,BTXT,1,"""Note For Ted""",01C4CE94
@@ -3317,7 +3207,6 @@ source_translation_lookup,missing_translation_match,TERM,FULL,1,"""A Birthday Po
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Access Codes""",019B2B5C
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Anchorage War Memorial Stash""",019B1C22
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Archive Security Terminal""",01095966
-source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Arlington READS!""",01F0E314
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""As Requested""",01FCF118
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Autonomic Nervous System""",01A3E1E1
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Bannon's Request""",01CDFA2A
@@ -3426,7 +3315,6 @@ source_translation_lookup,missing_translation_match,TERM,FULL,1,"""MaxsonDossier
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""MaxsonDossier2""",01B5B684
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""MaxsonDossier3""",01BBC1DB
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""MaxsonDossier4""",01AFBA87
-source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Mei Wong""",01D57E30
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Memo to All Personnel: Emergency Protocols""",01CA3A64
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Memo: Company Policy: Caps in Emails""",0197A920
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Memo: Emergency Procedures""",01D0E259
@@ -3436,7 +3324,6 @@ source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Memo: Weapon 
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Merc's Orders""",019CADF4
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Metro Computer Password""",01CFA2ED
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Metro Map Terminal""",010C0C7F
-source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Mister Lopez""",01A03172
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Moira's Terminal Password""",01E128B8
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Neighborly Letter""",01CE330C
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Note For Ted""",01C4CE94
@@ -3514,7 +3401,6 @@ source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Tulip's Termi
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""UnderworldTulipTerminalPL1""",01BA17AC
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Vault 101 Lesson Review - History""",01F6A776
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Vault 101 Medical Data System""",01089B4D
-source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Vault-Tec Mainframe""",01096381
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Vote for Bob""",01EFCEC4
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Vote for Dave""",01F71431
 source_translation_lookup,missing_translation_match,TERM,FULL,1,"""Vote for Rosie""",01C25DBC
@@ -3578,8 +3464,6 @@ source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""All Personnel
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Anchorage War Memorial Stash""",019B1C22
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Archived Entries""",010ACD1F
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Archived Journal Entries""",010ABF5D
-source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Argyle""",010BD69D
-link_existing_korean_with_context,existing_korean_needs_context,TERM,ITXT,1,"""Arlington READS!""",01F0E314
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""As Requested""",01FCF118
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Autonomic Nervous System""",01A3E1E1
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Bannon's Request""",01CDFA2A
@@ -3669,7 +3553,6 @@ source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""ForgeNote01""
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Fort Constantine CO Keycard""",01F63F12
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Fort Constantine Launch Codes""",01DD9BEB
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Fort Ind. Terminal Access Password""",01F775AC
-source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Freddie Gomez""",0104D847
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Game Over""",0101CE94
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Gibson's Scrap of Paper""",01EC7428
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Harmon Jurley""",010BD69D
@@ -3739,7 +3622,6 @@ source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""MaxsonDossier
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""MaxsonDossier2""",01B5B684
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""MaxsonDossier3""",01BBC1DB
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""MaxsonDossier4""",01AFBA87
-source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Mei Wong""",01D57E30
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Memo: Caps in Emails""",0104D859
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Memo: Company Policy: Caps in Emails""",0197A920
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Memo: Hostile Workplace""",01F6C48E
@@ -3750,7 +3632,6 @@ source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Merc's Orders
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Metro Computer Password""",01CFA2ED
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Mirelurks""",010BD69F
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Miss Penelope Chase""",010BD69D
-source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Mister Lopez""",01A03172
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Moira's Terminal Password""",01E128B8
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Neighborly Letter""",01CE330C
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Neurology of Luminous Necrotic Post-Humans""",0105A5AB
@@ -3762,7 +3643,6 @@ source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Openings""",0
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Orders (CO eyes only)""",01018647
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Overseer's Terminal Password""",01F6EAE9
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""PFallsEulogyPassword""",019C05D5
-source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Paradise Falls""",010BD69E
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Paradise Lost: Book I""",0105A47B
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Paradise Lost: Book II""",0105A47B
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Paradise Lost: Book IV""",0105A47B
@@ -3797,7 +3677,6 @@ source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Research Note
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Resource Levels""",019FE99E
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Review personal information.""",010573A3
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Robobrains""",010BD69F
-source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Rockopolis""",010BD69E
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Rollings -- We're Done""",01AD3EFC
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Rusty Sword""",0109596A
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Satcom Array NN-03d Coordinates""",01BBC7CD
@@ -3842,7 +3721,6 @@ source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Sexual Harass
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Shocker Glove""",01DF1B0F
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Song of the Lightman""",01E6F9A2
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Sophie's Note""",01E9C348
-source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Stanley""",0104D847
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Study Of Ferocious Post-Necrotic Dystrophy""",0105A5AB
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Submit time sheet.""",010573A3
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Tattered Letter""",01C19446
@@ -3854,7 +3732,6 @@ source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Torn Out Jour
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Transient Census""",01031259
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Transient Census Data""",01A641DB
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""U.S. to Annex Canada!""",01024EA5
-source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Underworld""",010BD69E
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""UnderworldTulipTerminalPL1""",01BA17AC
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""United Nations Disbanded!""",01024EAE
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Use Magical Sword Grelok""",01095966
@@ -3873,7 +3750,6 @@ source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Wasteland Mer
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Wastelander Map""",01DE2168
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Wastelander Note""",01D72447
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Weapons Policy #H31""",0105C6E3
-source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Yao Guai""",010BD69F
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Yao Guai Den Note""",01DCE1A8
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""Zombie Head""",0109596A
 source_translation_lookup,missing_translation_match,TERM,ITXT,1,"""disconnect user: N Kroydon""",010CB4E6
@@ -3976,14 +3852,12 @@ source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""At a workbenc
 source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""Bannon has asked me to search Seagrave Holmes' room to see if I can find anything incriminating about him. Then Bannon can stop him from taking over his council seat.""",01CDFA2A
 source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""Billy,\r\n\r\nI'm sorry I stole it. You deserve to have it back. Remember the old scrapyard, north of the Bethesda ruins? Look in the burned out bus in the northwest corner. Near an old red boxcar.\r\n\r\nTell Loreen I still love her, and I'm sorry for everything. I hope somebody finds this before the buzzards tear it to pieces.\r\n\r\nYour loving brother,\r\n\r\nJohn\r\n""",01D72447
 source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""Blah blah blah blah blah.""",01F6A776
-source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""Bob""",01EFCEC4
 source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""Boys and Girls, we've got ourselves another holier-than-thou white knight needs putting down. Here are the details:\r\n\r\nName: &PCName; \r\nRace: &PCRace;\r\nSex: &PCSex;\r\n\r\nThe bounty is 1000 caps this time around. And, for a change of pace, they want the head this time.\r\n\r\nGood hunting!""",01DF99B6
 source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""By now, your handler's given you the location of the job and your basic orders.  Here are the details.\r\n\r\nTraders have been making a killing with Mirelurk meat, and we've been losing business because of it.  One of our people got involved with a caravan supplier, and we finally know where it's all been coming from.\r\n\r\nThe meat's mostly coming from one group holed up along the river smack in the middle of the ruins.  There's a huge old facility under some war memorial where they've herded up a nest of Mirelurks and have been breeding and butchering them.  They've been in business for months and are sure to be sitting on a pile of caps.  Take what you can carry -- we just want them out of the meat market.  The rest is up to you.\r\n\r\nThis isn't the biggest job, but pull it off clean and there's plenty more work for a man with your skills.  Get back to your handler as soon as the job is done and we'll be in touch.""",019CADF4
 source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""C.J. Young is missing. This might have something to do with my taunting James Hargrave.""",01939C1E
 source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""Congratulations on receiving your new DCTA Standard-Issue Laser Pistol!\r\n\r\nPlease take a few minutes to go over the guidelines posted in the DCTA Employee Handbook; Section 28.1.1.b, and reprinted below for your convenience.\r\n\r\nSection 28.1.1.b - Proper Laser Pistol Usage\r\n\r\nIt should be noted that all DCTA property should be handled with the utmost care, and used only when necessary. Maintaining personal safety during a Communist attack is a good example of proper usage of your standard issue laser pistol. However, rodent population control is an inappropriate use and subject to disciplinary action, as noted in Section 11.3.5.c\r\n\r\nSection 28.1.1.b.1 - Maintaining Safe Conditions With the Laser Pistol\r\n\r\nUsing this laser pistol in the DCTA Metro facility can be beneficial in many ways, but the operator must observe his or her surroundings before deciding to fire. The subway utility pipes often serve as conduit to transport highly flammable gasses. Firing the laser pistol in the presence of a gas leak could cause an undesired explosion and/or severe personal injury.\r\n\r\nSection 28.1.1.b.2 - Operating the Laser Pistol Within Proper Specifications\r\n\r\nIt is required that all DCTA Employees keep the laser pistol pulse energy, length and repetition rate within the specifications diagrammed in the Laser Pistol User's Manual. Failure to do so could result in severe reprimands from the DCTA Regulatory Committee as well as serious personal injury.""",0190CDDE
 source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""Contract: \r\n\r\nKill that Slaver! No one takes our friends and family without getting some Wasteland justice in return!""",01D2ED9C
 source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""Dad just won't listen to a word I say. \r\n\r\nHe keeps leaving the bunker to salvage supplies from the rest of the base. In understand he's bored, cooped up in here, but so are the rest of us. \r\n\r\nAnd the bunker is secure! Every time he leaves, he exposes all of us to that damned radiation. \r\n\r\nAfter all the effort it took to get us all in here, dad's willing to throw it all away just because he's a bit ansty.\r\n\r\nI really hate him sometimes.""",019ABF32
-source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""Dave""",01F71431
 source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""Dear Consumer:\r\n\r\nThank you for your participation in the exciting Shocker Glove pilot program.  You're receiving a prototype FSGv118-b model of the Shocker Glove.  Please reference this prototype number in any future correspondence.  We encourage you to make this prototype a part of your daily life, and look forward to your valuable feedback.\r\n\r\nThanks from all of us at the Shocker Glove R&D Team!\r\n\r\nPS: Shocker Glove prototypes are not for use in water, public, near small children or domesticated animals.  This is not a kitchen appliance and should not be used near uncooked food.  Use of Shocker Glove prototype constitutes a binding agreement to hold manufacturer harmless for any and all legal purposes.  During prolonged use, severe electrical burns may occur.  Do not look directly at Shocker Glove while operating.  Some prototype models have proven sensitive to certain radio frequencies during use.  If you suspect radio interference, please submit a malfunction report listing FCC broadcast frequencies in operation at the time, and report to nearest emergency medical facility in your area.""",01DF1B0F
 source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""Dear Friend,\r\n\r\nYour are cordially invited, to my Doomsday Blowout party, \r\n\r\nFriday August 12, 2077\r\n\r\nFor those of us who couldn't get into a Vault, the bar is fully stocked and will be open from 9.00 am until the bombs fall. \r\n\r\n\r\nPlease RSVP as soon as possible. \r\n\r\nIt's the end of the world as we know it but, I feel fine. \r\n\r\nHarry""",019085DB
 source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""Dear Mr & Mrs Gomez: \r\n\r\nCongratulations on your family's recent inclusion in the Vault 101 community!\r\n\r\nYou will find outlined in your application materials a full review of rules and procedures related to preparing for shelter in a Vault-Tec facility, but we will outline a few key points here:\r\n\r\n* Vault-Tec provides all clothing, bedding, and accommodations for residents.  Personal belongings must be reviewed and approved of by an authorized Vault-Tec hermetics technician before such belongings can be delivered to your reserved quarters within the Vault.  In the event of an emergency entrance to the Vault, no personal belongings will be permitted beyond the main door of the facility.\r\n* All Vault residents must attend an orientation seminar.  If you did not attend such a seminar as part of the application process, you must make an appointment with your Vault-Tec representative.\r\n* In the event of a Vault activation, whether actual or drill, Vault-Tec will sound a siren audible in the immediate vicinity of the Vault facility entrance, and residents will be contacted via holotape message at the phone number provided in their resident profile records.  Please report promptly to Vault 101 to await admittance and processing upon such a notification.\r\n\r\nVault-Tec looks forward to having you and your family as valued residents!  Be sure to present this letter to your Vault-Tec representative to receive your special, commemorative Vault Boy bobble-head toy!  Sincerely;\r\n\r\nVault-Tec \r\nDept of Public Relations\r\nWashington, DC""",01DC2B49
@@ -4028,7 +3902,6 @@ source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""Raul finally 
 source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""Restoring power to this broadcast station has amplified a faint signal being transmitted from somewhere in the nearby area.""",0199F712
 source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""RobcOS v.85\r\n(C)2076 RobCo \r\n========================\r\n| User Log:\r\n| >> Administrator (RobCoID 2398-H)  \r\n| >> New_Admin: Li, Madison               \r\n| Welcome new user, Li, Madison\r\n| >> New_Targeting_Param:\r\n| >>> PurityResearchers_userGroup\r\n========================""",0194BE79
 source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""Rollings,\r\n\r\nThat's the last of these fucking hole dwellers. Jurley wants to shop them around up north. Not sure if they'll make good slaves, since their eyesight is so shitty, but that's not our problem.  \r\n\r\nSo gather the boys and saddle up. \r\n\r\nNext stop, the Pitt!""",01AD3EFC
-source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""Rosie""",01C25DBC
 source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""S,\r\n\r\nHere's that stuff you wanted. If anyone asks where you got it -- say it was a gift from your grandma.\r\n\r\nHappy hunting!\r\n\r\nE\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n \r\n\r\n\r\n\r\n\r\n\r\n""",01FCF118
 source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""Samantha - \r\nI would never want to be known as a killjoy, and I realize your family is very much anticipating this year's Halloween, but if I see your little hooligan running and hollering across my yard in that Chinese Commando costume of his again, I swear I'm reporting him to the Vigilant Citizen's Hotline. \r\nYou may find his cheekiness adorable, but perhaps you'll think differently when they haul your boy off to an internment camp with all the real Chinamen he's so keen to give me a heart attack by impersonating. \r\nYours most dearly; \r\nGabriella""",01CE330C
 source_translation_lookup,missing_translation_match,TERM,UNAM,1,"""SatCom Array NN-03d\r\n\r\n1864.483dLNdeg\r\n7682.328dLGdeg""",01BBC7CD

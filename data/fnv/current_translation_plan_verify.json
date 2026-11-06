@@ -1,7 +1,7 @@
 {
   "game": "fnv",
   "esm_sha256": "caa2d4649c99bfcdd36e8a489f865e55f5ee9fc6087469ba0d1de2e410318897",
-  "source_record_field_matches": 218784,
+  "source_record_field_matches": 218902,
   "source_plan_rows": {
     "indexed_patch_plan_candidates.jsonl.gz": 83480,
     "indexed_patch_plan_v2_strict_extra.jsonl.gz": 78315,
@@ -12,7 +12,11 @@
     "complete_sst_exact_migration_verified.jsonl.gz": 10268,
     "skill_prefix_verified.jsonl.gz": 1284,
     "editor_marker_verified.jsonl.gz": 355,
-    "inline_director_cues_verified.jsonl.gz": 2946
+    "inline_director_cues_verified.jsonl.gz": 2946,
+    "quest_objective_native_sst_verified.jsonl.gz": 34,
+    "verified_plan_translation_memory_verified.jsonl.gz": 57,
+    "native_sst_semantic_copy_verified.jsonl.gz": 19,
+    "punctuation_normalized_verified.jsonl.gz": 8
   },
   "field_match_counts": {
     "FACT/FULL": 428,
@@ -44,17 +48,17 @@
     "CELL/FULL": 483,
     "WRLD/FULL": 31,
     "REFR/FULL": 320,
-    "QUST/NNAM": 1427,
+    "QUST/NNAM": 1461,
     "QUST/CNAM": 544,
-    "INFO/NAM1": 63994,
+    "INFO/NAM1": 64002,
     "INFO/RNAM": 122009,
     "LSCR/DESC": 283,
     "EXPL/FULL": 160,
     "PERK/FULL": 1407,
     "PERK/DESC": 1372,
     "MESG/DESC": 1522,
-    "MESG/FULL": 542,
-    "MESG/ITXT": 918
+    "MESG/FULL": 588,
+    "MESG/ITXT": 948
   },
   "verification": "PASS static source ESM assignment and placeholder invariants",
   "warning": "NO ESM copied, installed, overwritten, or generated. Many in-game English strings remain unlinked or untranslated."

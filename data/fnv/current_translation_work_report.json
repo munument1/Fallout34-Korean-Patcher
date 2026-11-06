@@ -1,21 +1,20 @@
 {
   "game": "fnv",
   "esm_sha256": "caa2d4649c99bfcdd36e8a489f865e55f5ee9fc6087469ba0d1de2e410318897",
-  "translation_work_item_occurrences": 1687,
-  "distinct_type_field_english_work_items": 1080,
+  "translation_work_item_occurrences": 1569,
+  "distinct_type_field_english_work_items": 987,
   "work_by_type_field": {
     "INFO/RNAM": 566,
-    "INFO/NAM1": 446,
+    "INFO/NAM1": 438,
     "TERM/ITXT": 91,
     "TERM/BTXT": 90,
     "TERM/FULL": 86,
     "TERM/UNAM": 83,
-    "MESG/ITXT": 78,
-    "MESG/FULL": 59,
     "MESG/DESC": 52,
+    "MESG/ITXT": 48,
     "ARMO/FULL": 37,
-    "QUST/NNAM": 37,
     "PERK/DESC": 18,
+    "MESG/FULL": 13,
     "NPC_/FULL": 7,
     "ACTI/FULL": 6,
     "TACT/FULL": 6,
@@ -24,12 +23,13 @@
     "CELL/FULL": 4,
     "PERK/FULL": 4,
     "CONT/FULL": 3,
+    "QUST/NNAM": 3,
     "MISC/FULL": 2,
     "AMMO/FULL": 1
   },
   "work_by_source_status": {
-    "missing_translation_match": 1650,
-    "existing_korean_needs_context": 37
+    "missing_translation_match": 1533,
+    "existing_korean_needs_context": 36
   },
   "work_csv": "current_translation_work_items.csv",
   "in_game_visibility_confirmed_for_every_item": false,

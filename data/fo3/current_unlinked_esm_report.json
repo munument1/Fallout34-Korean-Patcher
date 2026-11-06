@@ -1,7 +1,7 @@
 {
   "game": "fo3",
   "esm_sha256": "be0e7f25d0a28c672de2c12afbbf402bff0bb202037c231930d4649afd138603",
-  "translation_plan_rows_total": 105467,
+  "translation_plan_rows_total": 105701,
   "rows_by_plan": {
     "indexed_patch_plan_candidates.jsonl.gz": 48241,
     "indexed_patch_plan_v2_strict_extra.jsonl.gz": 20301,
@@ -12,15 +12,18 @@
     "cross_field_long_text_verified.jsonl.gz": 2366,
     "complete_sst_exact_migration_verified.jsonl.gz": 15376,
     "ttw_foreign_master_text_verified.jsonl.gz": 16183,
-    "skill_prefix_verified.jsonl.gz": 1716
+    "skill_prefix_verified.jsonl.gz": 1716,
+    "quest_objective_native_sst_verified.jsonl.gz": 32,
+    "verified_plan_translation_memory_verified.jsonl.gz": 182,
+    "native_sst_semantic_copy_verified.jsonl.gz": 20
   },
   "xtranslator_current_unlinked_occurrence_states": {
-    "unlinked_missing_translation_match": 11563,
-    "unlinked_gameplay_name_or_description_candidate": 2028,
-    "unlinked_existing_korean_needs_context": 92,
-    "unlinked_editor_or_special_field_needs_runtime_check": 2032,
-    "resolved_by_new_plan": 36925,
-    "unlinked_direct_screen_text_candidate": 4490,
+    "unlinked_missing_translation_match": 11330,
+    "unlinked_gameplay_name_or_description_candidate": 1966,
+    "unlinked_existing_korean_needs_context": 91,
+    "unlinked_editor_or_special_field_needs_runtime_check": 2000,
+    "resolved_by_new_plan": 37159,
+    "unlinked_direct_screen_text_candidate": 4350,
     "unlinked_other_field_needs_runtime_check": 59,
     "unlinked_non_content_whitespace": 2659,
     "unlinked_external_fallout4_master_record": 355,
@@ -28,27 +31,27 @@
     "unlinked_conditional_field_needs_procedure_review": 14
   },
   "unlinked_distinct_type_field_english_by_class": {
-    "direct_screen_text_candidate": 3616,
-    "other_field_needs_runtime_check": 53,
-    "editor_or_special_field_needs_runtime_check": 1090,
-    "non_content_whitespace": 4,
     "non_content_symbols": 1,
+    "editor_or_special_field_needs_runtime_check": 1080,
+    "other_field_needs_runtime_check": 53,
     "conditional_field_needs_procedure_review": 6,
-    "gameplay_name_or_description_candidate": 1715,
-    "external_fallout4_master_record": 355
+    "direct_screen_text_candidate": 3546,
+    "gameplay_name_or_description_candidate": 1668,
+    "external_fallout4_master_record": 355,
+    "non_content_whitespace": 4
   },
   "by_type_field_and_current_state": {
     "ACTI/FULL": {
-      "missing_translation_match:gameplay_name_or_description_candidate": 63
+      "missing_translation_match:gameplay_name_or_description_candidate": 62
     },
     "ALCH/DESC": {
       "missing_translation_match:other_field_needs_runtime_check": 1
     },
     "ALCH/FULL": {
-      "missing_translation_match:gameplay_name_or_description_candidate": 31
+      "missing_translation_match:gameplay_name_or_description_candidate": 30
     },
     "AMMO/FULL": {
-      "missing_translation_match:gameplay_name_or_description_candidate": 10
+      "missing_translation_match:gameplay_name_or_description_candidate": 9
     },
     "AMMO/ONAM": {
       "missing_translation_match:other_field_needs_runtime_check": 11
@@ -60,13 +63,13 @@
       "missing_translation_match:other_field_needs_runtime_check": 22
     },
     "BOOK/DESC": {
-      "missing_translation_match:direct_screen_text_candidate": 16
+      "missing_translation_match:direct_screen_text_candidate": 14
     },
     "BOOK/FULL": {
-      "missing_translation_match:direct_screen_text_candidate": 18
+      "missing_translation_match:direct_screen_text_candidate": 16
     },
     "CELL/FULL": {
-      "missing_translation_match:gameplay_name_or_description_candidate": 113
+      "missing_translation_match:gameplay_name_or_description_candidate": 112
     },
     "CONT/FULL": {
       "missing_translation_match:gameplay_name_or_description_candidate": 135
@@ -85,7 +88,7 @@
       "existing_korean_needs_context:gameplay_name_or_description_candidate": 15
     },
     "FURN/FULL": {
-      "missing_translation_match:gameplay_name_or_description_candidate": 54
+      "missing_translation_match:gameplay_name_or_description_candidate": 49
     },
     "HAZD/FULL": {
       "missing_translation_match:editor_or_special_field_needs_runtime_check": 219
@@ -108,20 +111,20 @@
       "missing_translation_match:external_fallout4_master_record": 354
     },
     "MESG/DESC": {
-      "missing_translation_match:direct_screen_text_candidate": 545
+      "missing_translation_match:direct_screen_text_candidate": 542
     },
     "MESG/FULL": {
-      "missing_translation_match:direct_screen_text_candidate": 168
+      "missing_translation_match:direct_screen_text_candidate": 128
     },
     "MESG/ITXT": {
-      "missing_translation_match:direct_screen_text_candidate": 179
+      "missing_translation_match:direct_screen_text_candidate": 172
     },
     "MGEF/FULL": {
       "existing_korean_needs_context:editor_or_special_field_needs_runtime_check": 14,
       "missing_translation_match:editor_or_special_field_needs_runtime_check": 82
     },
     "MISC/FULL": {
-      "missing_translation_match:gameplay_name_or_description_candidate": 663
+      "missing_translation_match:gameplay_name_or_description_candidate": 646
     },
     "MSTT/FULL": {
       "missing_translation_match:other_field_needs_runtime_check": 8
@@ -134,13 +137,13 @@
       "missing_translation_match:gameplay_name_or_description_candidate": 96
     },
     "PERK/DESC": {
-      "missing_translation_match:gameplay_name_or_description_candidate": 88
+      "missing_translation_match:gameplay_name_or_description_candidate": 65
     },
     "PERK/EPFD": {
       "missing_translation_match:conditional_field_needs_procedure_review": 14
     },
     "PERK/FULL": {
-      "missing_translation_match:gameplay_name_or_description_candidate": 123
+      "missing_translation_match:gameplay_name_or_description_candidate": 121
     },
     "PROJ/FULL": {
       "missing_translation_match:other_field_needs_runtime_check": 17
@@ -153,7 +156,7 @@
       "missing_translation_match:editor_or_special_field_needs_runtime_check": 194
     },
     "QUST/NNAM": {
-      "missing_translation_match:editor_or_special_field_needs_runtime_check": 45
+      "missing_translation_match:editor_or_special_field_needs_runtime_check": 13
     },
     "REFR/FULL": {
       "missing_translation_match:editor_or_special_field_needs_runtime_check": 44
@@ -163,25 +166,24 @@
       "existing_korean_needs_context:editor_or_special_field_needs_runtime_check": 2
     },
     "TACT/FULL": {
-      "missing_translation_match:gameplay_name_or_description_candidate": 26
+      "missing_translation_match:gameplay_name_or_description_candidate": 15
     },
     "TERM/BTXT": {
-      "missing_translation_match:direct_screen_text_candidate": 615,
+      "missing_translation_match:direct_screen_text_candidate": 579,
       "missing_translation_match:non_content_whitespace": 4
     },
     "TERM/FULL": {
-      "missing_translation_match:direct_screen_text_candidate": 563
+      "missing_translation_match:direct_screen_text_candidate": 559
     },
     "TERM/ITXT": {
-      "missing_translation_match:direct_screen_text_candidate": 809,
-      "existing_korean_needs_context:direct_screen_text_candidate": 1
+      "missing_translation_match:direct_screen_text_candidate": 767
     },
     "TERM/RNAM": {
       "missing_translation_match:direct_screen_text_candidate": 77,
       "missing_translation_match:non_content_whitespace": 1
     },
     "TERM/UNAM": {
-      "missing_translation_match:direct_screen_text_candidate": 826
+      "missing_translation_match:direct_screen_text_candidate": 823
     },
     "TERM/WNAM": {
       "missing_translation_match:editor_or_special_field_needs_runtime_check": 458
@@ -197,6 +199,6 @@
   "review_csv": "current_unlinked_display_review.csv",
   "user_facing_translation_work_report": "current_translation_work_report.json",
   "user_facing_translation_work_csv": "current_translation_work_items.csv",
-  "user_facing_translation_work_occurrences": 5215,
+  "user_facing_translation_work_occurrences": 4981,
   "warning": "Static field inventory only, not precise in-game untranslated count. Editor/special field classification is conservative. Existing Korean needing a context link is NOT regarded as solved. No original or translated ESM was generated or altered."
 }

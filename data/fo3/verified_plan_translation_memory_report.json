@@ -1,0 +1,32 @@
+{
+  "game": "fo3",
+  "target_esm_sha256": "be0e7f25d0a28c672de2c12afbbf402bff0bb202037c231930d4649afd138603",
+  "source_verified_plan_fields": 105499,
+  "newly_linked": 182,
+  "review": 47,
+  "by_field": {
+    "ACTI/FULL": 1,
+    "TACT/FULL": 10,
+    "BOOK/FULL": 2,
+    "BOOK/DESC": 2,
+    "MISC/FULL": 17,
+    "FURN/FULL": 5,
+    "AMMO/FULL": 1,
+    "ALCH/FULL": 1,
+    "TERM/ITXT": 42,
+    "TERM/FULL": 4,
+    "TERM/BTXT": 36,
+    "TERM/UNAM": 3,
+    "CELL/FULL": 1,
+    "PERK/DESC": 23,
+    "PERK/FULL": 2,
+    "MESG/FULL": 25,
+    "MESG/ITXT": 7
+  },
+  "classification": {
+    "verified_existing_translation_reused": 182,
+    "other_verified_plan_has_conflicting_korean": 23,
+    "no_verified_source_with_semantic_field_compatibility": 24
+  },
+  "note": "Verified plan memory only. Whole-English exact, unique Korean, whitelisted display roles. ESM and online assets untouched; real runtime contexts still need QA."
+}
