@@ -1,0 +1,209 @@
+{
+  "esm_records_scanned": 1244191,
+  "target_unique_ids": 10403,
+  "target_records_seen": 10403,
+  "candidate_rows": 14406,
+  "fields_present_rows": 12469,
+  "english_exact_field_matches": 12306,
+  "record_type_distribution": {
+    "INFO": 8629,
+    "DIAL": 1314,
+    "TERM": 920,
+    "NPC_": 844,
+    "QUST": 414,
+    "MESG": 329,
+    "NOTE": 320,
+    "ACTI": 306,
+    "CREA": 215,
+    "CONT": 194,
+    "CELL": 153,
+    "WEAP": 128,
+    "DOOR": 97,
+    "ARMO": 77,
+    "REFR": 62,
+    "MISC": 52,
+    "PERK": 50,
+    "EXPL": 40,
+    "PROJ": 32,
+    "FACT": 31,
+    "TACT": 29,
+    "SPEL": 28,
+    "MGEF": 24,
+    "FURN": 23,
+    "KEYM": 22,
+    "LSCR": 21,
+    "WRLD": 17,
+    "MSTT": 13,
+    "ALCH": 12,
+    "AMMO": 6,
+    "BOOK": 4
+  },
+  "samples": [
+    {
+      "target": "01105003",
+      "type": "FACT",
+      "field": "MNAM",
+      "english": "Strike Team",
+      "available_fields": [
+        "EDID",
+        "FULL"
+      ],
+      "match": "missing_field"
+    },
+    {
+      "target": "01105003",
+      "type": "FACT",
+      "field": "FNAM",
+      "english": "Strike Team",
+      "available_fields": [
+        "EDID",
+        "FULL"
+      ],
+      "match": "missing_field"
+    },
+    {
+      "target": "01105002",
+      "type": "FACT",
+      "field": "MNAM",
+      "english": "Strike Team",
+      "available_fields": [
+        "EDID",
+        "FULL"
+      ],
+      "match": "missing_field"
+    },
+    {
+      "target": "01105002",
+      "type": "FACT",
+      "field": "FNAM",
+      "english": "Strike Team",
+      "available_fields": [
+        "EDID",
+        "FULL"
+      ],
+      "match": "missing_field"
+    },
+    {
+      "target": "01105001",
+      "type": "FACT",
+      "field": "MNAM",
+      "english": "Strike Team",
+      "available_fields": [
+        "EDID",
+        "FULL"
+      ],
+      "match": "missing_field"
+    },
+    {
+      "target": "01105001",
+      "type": "FACT",
+      "field": "FNAM",
+      "english": "Strike Team",
+      "available_fields": [
+        "EDID",
+        "FULL"
+      ],
+      "match": "missing_field"
+    },
+    {
+      "target": "01105000",
+      "type": "FACT",
+      "field": "MNAM",
+      "english": "Strike Team",
+      "available_fields": [
+        "EDID",
+        "FULL"
+      ],
+      "match": "missing_field"
+    },
+    {
+      "target": "01105000",
+      "type": "FACT",
+      "field": "FNAM",
+      "english": "Strike Team",
+      "available_fields": [
+        "EDID",
+        "FULL"
+      ],
+      "match": "missing_field"
+    },
+    {
+      "target": "01102D09",
+      "type": "FACT",
+      "field": "MNAM",
+      "english": "Soldier",
+      "available_fields": [
+        "EDID",
+        "FULL"
+      ],
+      "match": "missing_field"
+    },
+    {
+      "target": "01102D09",
+      "type": "FACT",
+      "field": "FNAM",
+      "english": "Soldier",
+      "available_fields": [
+        "EDID",
+        "FULL"
+      ],
+      "match": "missing_field"
+    },
+    {
+      "target": "01203C46",
+      "type": "FACT",
+      "field": "MNAM",
+      "english": "Civilian",
+      "available_fields": [
+        "EDID",
+        "FULL"
+      ],
+      "match": "missing_field"
+    },
+    {
+      "target": "01203C46",
+      "type": "FACT",
+      "field": "FNAM",
+      "english": "Civilian",
+      "available_fields": [
+        "EDID",
+        "FULL"
+      ],
+      "match": "missing_field"
+    },
+    {
+      "target": "01203C46",
+      "type": "FACT",
+      "field": "MNAM",
+      "english": "Engineer",
+      "available_fields": [
+        "EDID",
+        "FULL"
+      ],
+      "match": "missing_field"
+    },
+    {
+      "target": "01203C46",
+      "type": "FACT",
+      "field": "FNAM",
+      "english": "Engineer",
+      "available_fields": [
+        "EDID",
+        "FULL"
+      ],
+      "match": "missing_field"
+    },
+    {
+      "target": "01203C46",
+      "type": "FACT",
+      "field": "MNAM",
+      "english": "Soldier",
+      "available_fields": [
+        "EDID",
+        "FULL"
+      ],
+      "match": "missing_field"
+    }
+  ],
+  "note": "Field matching is not a complete parser for text encodings; any mismatch needs separate QA."
+}

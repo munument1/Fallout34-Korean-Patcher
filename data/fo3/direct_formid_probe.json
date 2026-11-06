@@ -1,0 +1,502 @@
+{
+  "bounds": {
+    "id_below_100000": 37362
+  },
+  "candidate_unique_ids": 25263,
+  "results": {
+    "exact": 33552,
+    "field_missing": 3339,
+    "type_mismatch": 184,
+    "english_mismatch": 264,
+    "id_missing": 23
+  },
+  "types": [
+    [
+      [
+        "exact",
+        "INFO"
+      ],
+      28403
+    ],
+    [
+      [
+        "field_missing",
+        "INFO"
+      ],
+      2491
+    ],
+    [
+      [
+        "exact",
+        "TERM"
+      ],
+      1429
+    ],
+    [
+      [
+        "exact",
+        "NPC_"
+      ],
+      1382
+    ],
+    [
+      [
+        "field_missing",
+        "TERM"
+      ],
+      454
+    ],
+    [
+      [
+        "exact",
+        "CELL"
+      ],
+      438
+    ],
+    [
+      [
+        "exact",
+        "QUST"
+      ],
+      436
+    ],
+    [
+      [
+        "field_missing",
+        "NOTE"
+      ],
+      386
+    ],
+    [
+      [
+        "exact",
+        "NOTE"
+      ],
+      307
+    ],
+    [
+      [
+        "exact",
+        "ACTI"
+      ],
+      230
+    ],
+    [
+      [
+        "exact",
+        "DOOR"
+      ],
+      230
+    ],
+    [
+      [
+        "type_mismatch",
+        "CREA"
+      ],
+      184
+    ],
+    [
+      [
+        "exact",
+        "REFR"
+      ],
+      166
+    ],
+    [
+      [
+        "exact",
+        "LSCR"
+      ],
+      149
+    ],
+    [
+      [
+        "exact",
+        "CONT"
+      ],
+      130
+    ],
+    [
+      [
+        "english_mismatch",
+        "QUST"
+      ],
+      102
+    ],
+    [
+      [
+        "exact",
+        "WEAP"
+      ],
+      84
+    ],
+    [
+      [
+        "english_mismatch",
+        "TERM"
+      ],
+      75
+    ],
+    [
+      [
+        "english_mismatch",
+        "INFO"
+      ],
+      68
+    ],
+    [
+      [
+        "exact",
+        "ARMO"
+      ],
+      48
+    ],
+    [
+      [
+        "exact",
+        "WRLD"
+      ],
+      34
+    ],
+    [
+      [
+        "exact",
+        "FURN"
+      ],
+      22
+    ],
+    [
+      [
+        "exact",
+        "PERK"
+      ],
+      17
+    ],
+    [
+      [
+        "exact",
+        "PROJ"
+      ],
+      14
+    ],
+    [
+      [
+        "english_mismatch",
+        "ARMO"
+      ],
+      10
+    ],
+    [
+      [
+        "id_missing",
+        "CLAS"
+      ],
+      10
+    ],
+    [
+      [
+        "english_mismatch",
+        "PERK"
+      ],
+      9
+    ],
+    [
+      [
+        "exact",
+        "MESG"
+      ],
+      9
+    ],
+    [
+      [
+        "field_missing",
+        "FACT"
+      ],
+      8
+    ],
+    [
+      [
+        "exact",
+        "SPEL"
+      ],
+      8
+    ],
+    [
+      [
+        "exact",
+        "MSTT"
+      ],
+      5
+    ],
+    [
+      [
+        "exact",
+        "AMMO"
+      ],
+      5
+    ],
+    [
+      [
+        "id_missing",
+        "WEAP"
+      ],
+      5
+    ],
+    [
+      [
+        "id_missing",
+        "AMMO"
+      ],
+      4
+    ],
+    [
+      [
+        "exact",
+        "FACT"
+      ],
+      2
+    ],
+    [
+      [
+        "exact",
+        "TACT"
+      ],
+      2
+    ],
+    [
+      [
+        "exact",
+        "MISC"
+      ],
+      2
+    ],
+    [
+      [
+        "id_missing",
+        "ENCH"
+      ],
+      1
+    ],
+    [
+      [
+        "id_missing",
+        "CREA"
+      ],
+      1
+    ],
+    [
+      [
+        "id_missing",
+        "ALCH"
+      ],
+      1
+    ]
+  ],
+  "examples": {
+    "exact": [
+      {
+        "orig": "fallout3.esm:02fcd1",
+        "target": "0102FCD1",
+        "type": "FACT",
+        "field": "FULL",
+        "en": "Ants",
+        "ko": "개미"
+      },
+      {
+        "orig": "fallout3.esm:01d3fe",
+        "target": "0101D3FE",
+        "type": "FACT",
+        "field": "FULL",
+        "en": "Brotherhood of Steel",
+        "ko": "브라더후드 오브 스틸"
+      },
+      {
+        "orig": "fallout3.esm:0630f4",
+        "target": "010630F4",
+        "type": "SPEL",
+        "field": "FULL",
+        "en": "Big Guns Boost",
+        "ko": "빅 건 부스트"
+      },
+      {
+        "orig": "fallout3.esm:099831",
+        "target": "01099831",
+        "type": "SPEL",
+        "field": "FULL",
+        "en": "Size Matters (3)",
+        "ko": "크기가 중요하지 (3)"
+      },
+      {
+        "orig": "fallout3.esm:099830",
+        "target": "01099830",
+        "type": "SPEL",
+        "field": "FULL",
+        "en": "Size Matters (2)",
+        "ko": "크기가 중요하지 (2)"
+      }
+    ],
+    "field_missing": [
+      {
+        "orig": "fallout3.esm:01d3fe",
+        "target": "0101D3FE",
+        "type": "FACT",
+        "field": "MNAM",
+        "en": "Squire",
+        "ko": "종자"
+      },
+      {
+        "orig": "fallout3.esm:01d3fe",
+        "target": "0101D3FE",
+        "type": "FACT",
+        "field": "MNAM",
+        "en": "Knight",
+        "ko": "기사"
+      },
+      {
+        "orig": "fallout3.esm:01d3fe",
+        "target": "0101D3FE",
+        "type": "FACT",
+        "field": "MNAM",
+        "en": "Knight Sergeant",
+        "ko": "기사부장"
+      },
+      {
+        "orig": "fallout3.esm:01d3fe",
+        "target": "0101D3FE",
+        "type": "FACT",
+        "field": "MNAM",
+        "en": "Knight Captain",
+        "ko": "나이트 캡틴"
+      },
+      {
+        "orig": "fallout3.esm:01d3fe",
+        "target": "0101D3FE",
+        "type": "FACT",
+        "field": "MNAM",
+        "en": "Paladin",
+        "ko": "성기사"
+      }
+    ],
+    "type_mismatch": [
+      {
+        "orig": "fallout3.esm:003402",
+        "target": "01003402",
+        "type": "CREA",
+        "field": "FULL",
+        "en": "Eye Intercom",
+        "ko": "아이 인터컴"
+      },
+      {
+        "orig": "fallout3.esm:0bc11c",
+        "target": "010BC11C",
+        "type": "CREA",
+        "field": "FULL",
+        "en": "Eye Intercom",
+        "ko": "아이 인터컴"
+      },
+      {
+        "orig": "fallout3.esm:08f086",
+        "target": "0108F086",
+        "type": "CREA",
+        "field": "FULL",
+        "en": "Eye Intercom",
+        "ko": "아이 인터컴"
+      },
+      {
+        "orig": "fallout3.esm:073e25",
+        "target": "01073E25",
+        "type": "CREA",
+        "field": "FULL",
+        "en": "Scavenger's Yao Guai",
+        "ko": "폐품업자의 야오과이"
+      },
+      {
+        "orig": "fallout3.esm:073e23",
+        "target": "01073E23",
+        "type": "CREA",
+        "field": "FULL",
+        "en": "Scavenger's Yao Guai",
+        "ko": "폐품업자의 야오과이"
+      }
+    ],
+    "english_mismatch": [
+      {
+        "orig": "fallout3.esm:070877",
+        "target": "01070877",
+        "type": "ARMO",
+        "field": "FULL",
+        "en": "Linden's Outcast Power Armor",
+        "ko": "★ 린든의 아웃캐스트 파워 아머"
+      },
+      {
+        "orig": "fallout3.esm:0cb5f9",
+        "target": "010CB5F9",
+        "type": "ARMO",
+        "field": "FULL",
+        "en": "\"Robo-Thor\" Armor",
+        "ko": "★ \"로보-토르\" 아머"
+      },
+      {
+        "orig": "fallout3.esm:0cb5f8",
+        "target": "010CB5F8",
+        "type": "ARMO",
+        "field": "FULL",
+        "en": "\"Robo-Thor\" Helmet",
+        "ko": "★ \"로보-토르\" 헬멧"
+      },
+      {
+        "orig": "fallout3.esm:066c73",
+        "target": "01066C73",
+        "type": "ARMO",
+        "field": "FULL",
+        "en": "Power Armor",
+        "ko": "파워 아머"
+      },
+      {
+        "orig": "fallout3.esm:0acda4",
+        "target": "010ACDA4",
+        "type": "ARMO",
+        "field": "FULL",
+        "en": "Three Dog's Sunglasses",
+        "ko": "★ 쓰리 독의 선글라스"
+      }
+    ],
+    "id_missing": [
+      {
+        "orig": "fallout3.esm:015673",
+        "target": "01015673",
+        "type": "CLAS",
+        "field": "FULL",
+        "en": "Brotherhood of Steel Soldier"
+      },
+      {
+        "orig": "fallout3.esm:015675",
+        "target": "01015675",
+        "type": "CLAS",
+        "field": "FULL",
+        "en": "Raider"
+      },
+      {
+        "orig": "fallout3.esm:01875d",
+        "target": "0101875D",
+        "type": "CLAS",
+        "field": "FULL",
+        "en": "Soldier"
+      },
+      {
+        "orig": "fallout3.esm:01945e",
+        "target": "0101945E",
+        "type": "CLAS",
+        "field": "FULL",
+        "en": "Raider"
+      },
+      {
+        "orig": "fallout3.esm:025928",
+        "target": "01025928",
+        "type": "CLAS",
+        "field": "FULL",
+        "en": "Brotherhood of Steel Knight"
+      }
+    ]
+  }
+}

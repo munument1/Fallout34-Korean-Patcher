@@ -1,0 +1,20 @@
+{
+  "modal_offsets": {
+    "anchorage.esm": "0x1100000",
+    "thepitt.esm": "0x1140000",
+    "brokensteel.esm": "0x1180000",
+    "pointlookout.esm": "0x11c0000",
+    "zeta.esm": "0x1200000"
+  },
+  "modal_counts": {
+    "anchorage.esm": 39934,
+    "thepitt.esm": 32264,
+    "brokensteel.esm": 39013,
+    "pointlookout.esm": 61353,
+    "zeta.esm": 35630
+  },
+  "results": {
+    "type_mismatch": 1,
+    "id_missing": 103
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "sst_files": [
+    {
+      "filename": "fallout3_en_ko.sst",
+      "count": 41944,
+      "fo3_eligible": 37135,
+      "sha256": "79b5a65b6e6236a03a9b603923a014f3b4b8d54244ccc7de1d5e3c71b8b57c1c",
+      "masters": [
+        "FalloutNV.esm",
+        "DeadMoney.esm",
+        "HonestHearts.esm",
+        "OldWorldBlues.esm",
+        "LonesomeRoad.esm",
+        "GunRunnersArsenal.esm",
+        "Fallout3.esm"
+      ]
+    },
+    {
+      "filename": "anchorage_en_ko.sst",
+      "count": 2095,
+      "fo3_eligible": 2078,
+      "sha256": "2cd6dd8eb20a33445f081b40e4dd979293657d1b399e28c22ea5f079ea6a3305",
+      "masters": [
+        "FalloutNV.esm",
+        "DeadMoney.esm",
+        "HonestHearts.esm",
+        "OldWorldBlues.esm",
+        "LonesomeRoad.esm",
+        "GunRunnersArsenal.esm",
+        "Fallout3.esm",
+        "Anchorage.esm"
+      ]
+    },
+    {
+      "filename": "thepitt_en_ko.sst",
+      "count": 3290,
+      "fo3_eligible": 3271,
+      "sha256": "7c4cecd3082f28f6f2bf7fcde6134239d565b0799e46de77dd9521e99c0faad6",
+      "masters": [
+        "FalloutNV.esm",
+        "DeadMoney.esm",
+        "HonestHearts.esm",
+        "OldWorldBlues.esm",
+        "LonesomeRoad.esm",
+        "GunRunnersArsenal.esm",
+        "Fallout3.esm",
+        "Anchorage.esm",
+        "ThePitt.esm"
+      ]
+    },
+    {
+      "filename": "brokensteel_en_ko.sst",
+      "count": 3864,
+      "fo3_eligible": 3807,
+      "sha256": "3772604863b5b2354a28e0ee3d504e9f6d068bb2ddaee1dd4c83396d3f2d0a71",
+      "masters": [
+        "FalloutNV.esm",
+        "DeadMoney.esm",
+        "HonestHearts.esm",
+        "OldWorldBlues.esm",
+        "LonesomeRoad.esm",
+        "GunRunnersArsenal.esm",
+        "Fallout3.esm",
+        "Anchorage.esm",
+        "ThePitt.esm",
+        "BrokenSteel.esm"
+      ]
+    },
+    {
+      "filename": "pointlookout_en_ko.sst",
+      "count": 3364,
+      "fo3_eligible": 3343,
+      "sha256": "a82f075536f45cea75ba247cea315803d4e096da814952cf9319802210f18af7",
+      "masters": [
+        "FalloutNV.esm",
+        "DeadMoney.esm",
+        "HonestHearts.esm",
+        "OldWorldBlues.esm",
+        "LonesomeRoad.esm",
+        "GunRunnersArsenal.esm",
+        "Fallout3.esm",
+        "Anchorage.esm",
+        "ThePitt.esm",
+        "BrokenSteel.esm",
+        "PointLookout.esm"
+      ]
+    },
+    {
+      "filename": "zeta_en_ko.sst",
+      "count": 2253,
+      "fo3_eligible": 2238,
+      "sha256": "842c042f9b530401b39e3e0f5b8b51c4f850523e79b94a15e29d2b4bd6c681c5",
+      "masters": [
+        "FalloutNV.esm",
+        "DeadMoney.esm",
+        "HonestHearts.esm",
+        "OldWorldBlues.esm",
+        "LonesomeRoad.esm",
+        "GunRunnersArsenal.esm",
+        "Fallout3.esm",
+        "Anchorage.esm",
+        "ThePitt.esm",
+        "BrokenSteel.esm",
+        "PointLookout.esm",
+        "Zeta.esm"
+      ]
+    }
+  ],
+  "sst_records": 56810,
+  "eligible_fo3_records": 51872,
+  "matching_mapped_records": 0,
+  "mapped_candidate_rows": 14406,
+  "unmapped_candidate_rows": 37466,
+  "mapped_target_record_pairs": 10403,
+  "total_formid_map_rows": 321102,
+  "mapped_record_types": {
+    "INFO": 6106,
+    "DIAL": 1314,
+    "NPC_": 844,
+    "ACTI": 306,
+    "NOTE": 222,
+    "CREA": 215,
+    "CONT": 194,
+    "CELL": 153,
+    "MESG": 153,
+    "WEAP": 128,
+    "TERM": 106,
+    "DOOR": 97,
+    "ARMO": 77,
+    "QUST": 67,
+    "REFR": 62,
+    "MISC": 52,
+    "EXPL": 40,
+    "PROJ": 32,
+    "TACT": 29,
+    "SPEL": 28,
+    "PERK": 25,
+    "MGEF": 23,
+    "FURN": 23,
+    "KEYM": 22,
+    "LSCR": 21,
+    "WRLD": 17,
+    "FACT": 17,
+    "MSTT": 13,
+    "ALCH": 12,
+    "AMMO": 3,
+    "BOOK": 2
+  },
+  "important_caution": "Mappings are candidate identifiers, not validated translated ESM output. Verify record field/source English, compression, and variants before patch generation."
+}

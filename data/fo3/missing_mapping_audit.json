@@ -1,0 +1,492 @@
+{
+  "map_rows": 321102,
+  "unique_source_keys": 321102,
+  "unmapped_types": [
+    [
+      "INFO",
+      30962
+    ],
+    [
+      "TERM",
+      1958
+    ],
+    [
+      "NPC_",
+      1382
+    ],
+    [
+      "NOTE",
+      693
+    ],
+    [
+      "QUST",
+      538
+    ],
+    [
+      "CELL",
+      438
+    ],
+    [
+      "ACTI",
+      231
+    ],
+    [
+      "DOOR",
+      230
+    ],
+    [
+      "CREA",
+      185
+    ],
+    [
+      "REFR",
+      166
+    ],
+    [
+      "LSCR",
+      149
+    ],
+    [
+      "CONT",
+      130
+    ],
+    [
+      "WEAP",
+      95
+    ],
+    [
+      "ARMO",
+      58
+    ],
+    [
+      "WRLD",
+      34
+    ],
+    [
+      "ENCH",
+      32
+    ],
+    [
+      "GMST",
+      28
+    ],
+    [
+      "PERK",
+      26
+    ],
+    [
+      "FURN",
+      23
+    ],
+    [
+      "ARMA",
+      17
+    ],
+    [
+      "PROJ",
+      16
+    ],
+    [
+      "CLAS",
+      11
+    ],
+    [
+      "FACT",
+      10
+    ],
+    [
+      "AMMO",
+      9
+    ],
+    [
+      "MESG",
+      9
+    ],
+    [
+      "SPEL",
+      8
+    ],
+    [
+      "RACE",
+      8
+    ],
+    [
+      "MSTT",
+      5
+    ],
+    [
+      "MGEF",
+      5
+    ],
+    [
+      "WATR",
+      4
+    ],
+    [
+      "TACT",
+      2
+    ],
+    [
+      "MISC",
+      2
+    ],
+    [
+      "ALCH",
+      1
+    ],
+    [
+      "REGN",
+      1
+    ]
+  ],
+  "unmapped_plugins": [
+    [
+      "fallout3.esm",
+      37362
+    ],
+    [
+      "brokensteel.esm",
+      30
+    ],
+    [
+      "anchorage.esm",
+      23
+    ],
+    [
+      "pointlookout.esm",
+      19
+    ],
+    [
+      "zeta.esm",
+      18
+    ],
+    [
+      "thepitt.esm",
+      14
+    ]
+  ],
+  "reasons": {
+    "source_not_in_map": 37465,
+    "source_present_type_changed": 1
+  },
+  "deltas": {
+    "anchorage.esm": [
+      [
+        17825792,
+        39934
+      ],
+      [
+        31425804,
+        1
+      ],
+      [
+        29725490,
+        1
+      ],
+      [
+        26820906,
+        1
+      ],
+      [
+        31190244,
+        1
+      ],
+      [
+        28800346,
+        1
+      ],
+      [
+        31453460,
+        1
+      ],
+      [
+        28239192,
+        1
+      ]
+    ],
+    "thepitt.esm": [
+      [
+        18087936,
+        32264
+      ],
+      [
+        31846614,
+        1
+      ],
+      [
+        31869851,
+        1
+      ],
+      [
+        30550059,
+        1
+      ],
+      [
+        29221057,
+        1
+      ],
+      [
+        30313906,
+        1
+      ],
+      [
+        30840714,
+        1
+      ],
+      [
+        30682870,
+        1
+      ]
+    ],
+    "brokensteel.esm": [
+      [
+        18350080,
+        39013
+      ],
+      [
+        29113287,
+        1
+      ],
+      [
+        33118471,
+        1
+      ],
+      [
+        33091347,
+        1
+      ],
+      [
+        28515309,
+        1
+      ],
+      [
+        26491257,
+        1
+      ],
+      [
+        29021565,
+        1
+      ],
+      [
+        28891013,
+        1
+      ]
+    ],
+    "pointlookout.esm": [
+      [
+        18612224,
+        61353
+      ],
+      [
+        30137752,
+        1
+      ],
+      [
+        30120798,
+        1
+      ],
+      [
+        29509136,
+        1
+      ],
+      [
+        27265578,
+        1
+      ],
+      [
+        27722767,
+        1
+      ],
+      [
+        29257302,
+        1
+      ],
+      [
+        33145118,
+        1
+      ]
+    ],
+    "zeta.esm": [
+      [
+        18874368,
+        35630
+      ],
+      [
+        27138578,
+        1
+      ]
+    ],
+    "dcinteriors_comboedition.esm": [
+      [
+        20603423,
+        3
+      ],
+      [
+        20700296,
+        3
+      ],
+      [
+        21794193,
+        3
+      ],
+      [
+        22147179,
+        3
+      ],
+      [
+        23885172,
+        3
+      ],
+      [
+        19070515,
+        2
+      ],
+      [
+        19123977,
+        2
+      ],
+      [
+        18930949,
+        2
+      ]
+    ],
+    "streetlights.esm": [
+      [
+        19317151,
+        2
+      ],
+      [
+        21797865,
+        2
+      ],
+      [
+        22229625,
+        2
+      ],
+      [
+        22999131,
+        2
+      ],
+      [
+        24034669,
+        2
+      ],
+      [
+        19084994,
+        1
+      ],
+      [
+        19131071,
+        1
+      ],
+      [
+        19125313,
+        1
+      ]
+    ],
+    "interior lighting.esp": [
+      [
+        19294233,
+        2
+      ],
+      [
+        20922537,
+        2
+      ],
+      [
+        21043243,
+        2
+      ],
+      [
+        22878680,
+        2
+      ],
+      [
+        18951171,
+        1
+      ],
+      [
+        19092878,
+        1
+      ],
+      [
+        18701696,
+        1
+      ],
+      [
+        19070088,
+        1
+      ]
+    ],
+    "fallout3.esm": [
+      [
+        16777216,
+        19
+      ]
+    ]
+  },
+  "samples": {
+    "source_not_in_map": [
+      {
+        "sst_source": "fallout3.esm:015673",
+        "type": "CLAS",
+        "field": "FULL",
+        "eng": "Brotherhood of Steel Soldier"
+      },
+      {
+        "sst_source": "fallout3.esm:015675",
+        "type": "CLAS",
+        "field": "FULL",
+        "eng": "Raider"
+      },
+      {
+        "sst_source": "fallout3.esm:01875d",
+        "type": "CLAS",
+        "field": "FULL",
+        "eng": "Soldier"
+      },
+      {
+        "sst_source": "fallout3.esm:01945e",
+        "type": "CLAS",
+        "field": "FULL",
+        "eng": "Raider"
+      },
+      {
+        "sst_source": "fallout3.esm:025928",
+        "type": "CLAS",
+        "field": "FULL",
+        "eng": "Brotherhood of Steel Knight"
+      },
+      {
+        "sst_source": "fallout3.esm:029628",
+        "type": "CLAS",
+        "field": "FULL",
+        "eng": "Enclave"
+      },
+      {
+        "sst_source": "fallout3.esm:02962a",
+        "type": "CLAS",
+        "field": "FULL",
+        "eng": "Enclave"
+      },
+      {
+        "sst_source": "fallout3.esm:033dda",
+        "type": "CLAS",
+        "field": "FULL",
+        "eng": "Mercenary"
+      }
+    ],
+    "source_present_type_changed": [
+      {
+        "sst_source": "anchorage.esm:0018d8",
+        "sst_type": "ACTI",
+        "map": [
+          [
+            "011018D8",
+            "FURN"
+          ]
+        ]
+      }
+    ]
+  }
+}

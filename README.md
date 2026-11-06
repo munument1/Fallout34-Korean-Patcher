@@ -1,0 +1,62 @@
+# Fallout34 Korean Patcher — FO3 번역 데이터 작업
+
+Fallout34 v0.9.33의 폴아웃 3 본편 및 DLC 변환 결과물을 대상으로 기존 xTranslator 한국어 SST 데이터를 매핑한 독립 작업 공간입니다.
+
+> **미리보기 데이터:** 현재 번역 후보 데이터와 MCM 한국어 파일만 생성했습니다. **실제 게임에 적용할 ESP/STRINGS 생성기 및 실게임 검증은 아직 완료되지 않았습니다.** Fallout 4 원본, 변환 중인 `Fallout34_Work`, F드라이브 원본 사전 파일을 수정하지 않습니다.
+
+## 원문 자료
+
+- Fallout34 변환 ESM: `C:\Games\Steam\steamapps\common\Fallout 4\Fallout34_Work\fo3\staging\Data\Fallout34.esm`
+- ESM SHA256: `be0e7f25d0a28c672de2c12afbbf402bff0bb202037c231930d4649afd138603`
+- 변환 원본 ID 매핑: `Fallout34_Work\fo3\work\reports\formid_map.tsv` (321,102행)
+- 번역 원본: `F:\번역\프로그램\xTranslator\UserDictionaries\FalloutNV\`
+- 대상 SST: `fallout3_en_ko.sst`, `anchorage_en_ko.sst`, `thepitt_en_ko.sst`, `brokensteel_en_ko.sst`, `pointlookout_en_ko.sst`, `zeta_en_ko.sst`.
+
+## 중요: 폴아웃 3 본편 FormID 특성
+
+`formid_map.tsv`에는 폴아웃 3 본편의 직접 매핑이 19건밖에 없었습니다. 대부분 본편 FormID는 기존 하위 24비트에 `0x01000000`을 더하는 구조였습니다. 이 규칙을 가정하기만 하지 않고 **Fallout34.esm에서 FormID·레코드 종류·필드·영문 원문을 모두 일치 확인한 항목만** 복구했습니다. DLC는 `formid_map.tsv`의 명시적 매핑을 우선했습니다.
+
+| 집계 | 건수 |
+|---|---:|
+| 기존 FO3+5 DLC SST 중 FO3 원문과 연결된 항목 | 51,872 |
+| 초기 직접 매핑 후보 | 14,406 |
+| 초기 중복 제거·검증 통과 | 11,946 |
+| 신규 FO3 본편 자동 연결 중 원문까지 정확히 일치 | 33,552 |
+| 추가 복구 후 중복 제거·검증 통과 | **45,179** |
+| 기존 대비 순증 | **33,233** |
+| 직접 복구 원문이 아닌 항목(필드 누락 등) | 3,810 |
+| DLC에서 직접 매핑 누락된 항목 | 104 |
+| 초기 직접 매핑 원문 검증에서 제외된 항목 | 2,318 |
+
+같은 번역 항목의 중복 319행은 통합했고, 한국어 충돌 키는 없었습니다. **45,179는 실제 플러그인에 적용된 수가 아니라 패처에서 사용할 수 있는 우선 검증 후보 수입니다.** `INFO` 응답 인덱스와 반복 서브레코드, 전용 UI·스크립트 문자열 등은 별도 검증이 필요합니다.
+
+## 작업 파일
+
+- `data/fo3/verified_assignments_all.jsonl.gz` — 최종 통합된 45,179개 고유 한국어 매핑 후보
+- `data/fo3/combined_plan_report.json` — ESM 해시, 매핑 경로, 중복·검증 결과
+- `data/fo3/verified_assignments.jsonl.gz` — 기존 직접 매핑 검증본
+- `data/fo3/direct_formid_exact.jsonl.gz` — 추가 확인된 폴아웃 3 본편 번역
+- `data/fo3/direct_formid_review.jsonl.gz` — 본편 자동 매핑에서 제외한 항목
+- `data/fo3/review_needed.jsonl.gz` — 초기 매핑에서 제외한 항목
+- `data/fo3/unmatched_sst.jsonl.gz` — 초기 ID 매핑이 없었던 SST 항목
+- `data/mcm/translations_ko.json` — MCM 한국어 번역 데이터
+- `work/fo3/Data/MCM/Config/Fallout34/config.json` — MCM UI 문구 42개 번역본(동작 설정값 불변)
+
+## 다시 검사
+
+```powershell
+python tools/build_fo3_translation_catalog.py
+python tools/build_verified_plan.py
+python tools/audit_missing_mapping.py
+python tools/probe_fo3_direct_ids.py
+python tools/probe_dlc_missing_ids.py
+python tools/merge_verified_plans.py
+python tools/build_mcm.py
+```
+
+## 다음 단계
+
+1. Fallout34 설치가 최종 완료되면 ESM SHA256을 재확인하고, 현재 생성물과 비교.
+2. FO4 호환 xEdit 기반 ESP 생성기(또는 검증된 동등 구현)를 작성. 원본 `Fallout34.esm`은 보존.
+3. `INFO` 다중 응답, 현지화 STRINGS 키, 마스터·로드 순서, 압축 레코드, 글꼴/한국어 화면 출력을 검증.
+4. 플러그인 적용 결과와 검수 제외 항목을 보고하는 릴리스 전 QA를 실행.
