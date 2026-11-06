@@ -1,0 +1,109 @@
+{
+  "original_candidates": 31313,
+  "qa_pass": 31191,
+  "needs_review": 122,
+  "target_occurrence_conflict_keys": 0,
+  "qa_classes": {
+    "pass": 31191,
+    "placeholder_mismatch": 122
+  },
+  "examples": [
+    {
+      "formid": "01F1501A",
+      "type": "INFO",
+      "field": "RNAM",
+      "en": "{Cannibal}People have a rather unique taste, I've discovered.",
+      "ko": "인간은 좀 독특한 맛이 나더라고.",
+      "reason": "placeholder_mismatch"
+    },
+    {
+      "formid": "01DEBE40",
+      "type": "INFO",
+      "field": "NAM1",
+      "en": "{DUPE}I'll remember that.",
+      "ko": "기억해 두지.",
+      "reason": "placeholder_mismatch"
+    },
+    {
+      "formid": "01DEBE40",
+      "type": "INFO",
+      "field": "RNAM",
+      "en": "{DUPE}I'll remember that.",
+      "ko": "기억해 두지.",
+      "reason": "placeholder_mismatch"
+    },
+    {
+      "formid": "01CAB937",
+      "type": "INFO",
+      "field": "NAM1",
+      "en": "{DUPE}We'll leave it to history, then.",
+      "ko": "그건 역사에 맡기도록 하지.",
+      "reason": "placeholder_mismatch"
+    },
+    {
+      "formid": "01CAB937",
+      "type": "INFO",
+      "field": "RNAM",
+      "en": "{DUPE}We'll leave it to history, then.",
+      "ko": "그건 역사에 맡기도록 하지.",
+      "reason": "placeholder_mismatch"
+    },
+    {
+      "formid": "01F852CB",
+      "type": "INFO",
+      "field": "RNAM",
+      "en": "{DUPE}I'll remember that.",
+      "ko": "기억해 두지.",
+      "reason": "placeholder_mismatch"
+    },
+    {
+      "formid": "01E5566E",
+      "type": "INFO",
+      "field": "RNAM",
+      "en": "{DUPE}We'll leave it to history, then.",
+      "ko": "그건 역사에 맡기도록 하지.",
+      "reason": "placeholder_mismatch"
+    },
+    {
+      "formid": "01C70C7C",
+      "type": "INFO",
+      "field": "RNAM",
+      "en": "Tell me about Benny.{alive}",
+      "ko": "베니에 대해 말해줘.",
+      "reason": "placeholder_mismatch"
+    },
+    {
+      "formid": "019DC965",
+      "type": "INFO",
+      "field": "RNAM",
+      "en": "Tell me about Benny.{alive}",
+      "ko": "베니에 대해 말해줘.",
+      "reason": "placeholder_mismatch"
+    },
+    {
+      "formid": "01DE6845",
+      "type": "INFO",
+      "field": "RNAM",
+      "en": "{Dog}That's enough for now.",
+      "ko": "일단 충분한 것 같군.",
+      "reason": "placeholder_mismatch"
+    },
+    {
+      "formid": "01E866AE",
+      "type": "INFO",
+      "field": "RNAM",
+      "en": "{God}That's enough for now.",
+      "ko": "일단 충분한 것 같군.",
+      "reason": "placeholder_mismatch"
+    },
+    {
+      "formid": "01BE22B2",
+      "type": "INFO",
+      "field": "RNAM",
+      "en": "{Global}Where is your collar?",
+      "ko": "네 목걸이는 어디 있는 거야?",
+      "reason": "placeholder_mismatch"
+    }
+  ],
+  "note": "Only source IDs and English/KO exact match and placeholder validation; not actual game runtime evaluation."
+}

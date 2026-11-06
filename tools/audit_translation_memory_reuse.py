@@ -4,7 +4,7 @@ from pathlib import Path
 import json,gzip,importlib.util
 root=Path(r'D:\Codex_Trans\Fallout34-KR-Patcher')
 out=root/'data'/'fo3'
-mod=Path(r'D:\Codex_Trans\BGS_Translation_Archive\tools\read_xtranslator_sst.py')
+mod=Path(r'D:\Codex_Trans\Fallout34-KR-Patcher\tools\read_xtranslator_sst.py')
 spec=importlib.util.spec_from_file_location('sst_reader',mod)
 m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
 folder=Path('F:/\ubc88\uc5ed/\ud504\ub85c\uadf8\ub7a8/xTranslator/UserDictionaries/FalloutNV')

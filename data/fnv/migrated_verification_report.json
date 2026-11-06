@@ -1,0 +1,430 @@
+{
+  "game": "fnv",
+  "esm_sha256": "caa2d4649c99bfcdd36e8a489f865e55f5ee9fc6087469ba0d1de2e410318897",
+  "reviewed_source_rows": 35501,
+  "source_without_target_id": 0,
+  "statuses": {
+    "no_exact_english_in_record": 31030,
+    "field_migration_exact_unique": 643,
+    "type_migration_exact_unique": 2123,
+    "ambiguous_duplicate_text": 27,
+    "missing_record": 1678
+  },
+  "migration_candidates_unique": 2765,
+  "translation_conflicts": 0,
+  "type_conversions": [
+    [
+      [
+        "CREA",
+        "NPC_"
+      ],
+      1649
+    ],
+    [
+      [
+        "CCRD",
+        "MISC"
+      ],
+      324
+    ],
+    [
+      [
+        "IMOD",
+        "MISC"
+      ],
+      111
+    ],
+    [
+      [
+        "ACTI",
+        "FURN"
+      ],
+      14
+    ],
+    [
+      [
+        "CDCK",
+        "MISC"
+      ],
+      13
+    ],
+    [
+      [
+        "CHIP",
+        "MISC"
+      ],
+      6
+    ],
+    [
+      [
+        "CMNY",
+        "MISC"
+      ],
+      6
+    ]
+  ],
+  "field_conversions": [
+    [
+      [
+        "TERM",
+        "DESC",
+        "BTXT"
+      ],
+      471
+    ],
+    [
+      [
+        "TERM",
+        "RNAM",
+        "UNAM"
+      ],
+      169
+    ],
+    [
+      [
+        "ACTI",
+        "XATO",
+        "FULL"
+      ],
+      1
+    ],
+    [
+      [
+        "INFO",
+        "RNAM",
+        "NAM1"
+      ],
+      1
+    ],
+    [
+      [
+        "PERK",
+        "EPF2",
+        "FULL"
+      ],
+      1
+    ]
+  ],
+  "samples": {
+    "no_exact_english_in_record": [
+      {
+        "source": "falloutnv.esm:154307",
+        "target": "01154307",
+        "old_type": "FACT",
+        "old_field": "MNAM",
+        "new_type": "FACT",
+        "new_field": null,
+        "english": "Initiate",
+        "matches": []
+      },
+      {
+        "source": "falloutnv.esm:154307",
+        "target": "01154307",
+        "old_type": "FACT",
+        "old_field": "FNAM",
+        "new_type": "FACT",
+        "new_field": null,
+        "english": "Initiate",
+        "matches": []
+      },
+      {
+        "source": "falloutnv.esm:154307",
+        "target": "01154307",
+        "old_type": "FACT",
+        "old_field": "MNAM",
+        "new_type": "FACT",
+        "new_field": null,
+        "english": "Senior Initiate",
+        "matches": []
+      },
+      {
+        "source": "falloutnv.esm:154307",
+        "target": "01154307",
+        "old_type": "FACT",
+        "old_field": "FNAM",
+        "new_type": "FACT",
+        "new_field": null,
+        "english": "Senior Initiate",
+        "matches": []
+      },
+      {
+        "source": "falloutnv.esm:154307",
+        "target": "01154307",
+        "old_type": "FACT",
+        "old_field": "MNAM",
+        "new_type": "FACT",
+        "new_field": null,
+        "english": "Apprentice",
+        "matches": []
+      }
+    ],
+    "field_migration_exact_unique": [
+      {
+        "source": "oldworldblues.esm:015104",
+        "target": "01195104",
+        "old_type": "ACTI",
+        "old_field": "XATO",
+        "new_type": "ACTI",
+        "new_field": "FULL",
+        "english": "Damaged Prototype",
+        "matches": [
+          [
+            "FULL",
+            0
+          ]
+        ]
+      },
+      {
+        "source": "falloutnv.esm:17b7a0",
+        "target": "0117B7A0",
+        "old_type": "TERM",
+        "old_field": "DESC",
+        "new_type": "TERM",
+        "new_field": "BTXT",
+        "english": "Welcome, Courier.",
+        "matches": [
+          [
+            "BTXT",
+            0
+          ]
+        ]
+      },
+      {
+        "source": "falloutnv.esm:17b79f",
+        "target": "0117B79F",
+        "old_type": "TERM",
+        "old_field": "DESC",
+        "new_type": "TERM",
+        "new_field": "BTXT",
+        "english": "A message will be delivered to all current companions, wherever they happen to be, th",
+        "matches": [
+          [
+            "BTXT",
+            0
+          ]
+        ]
+      },
+      {
+        "source": "falloutnv.esm:16a228",
+        "target": "0116A228",
+        "old_type": "TERM",
+        "old_field": "DESC",
+        "new_type": "TERM",
+        "new_field": "BTXT",
+        "english": "Trent Meyer",
+        "matches": [
+          [
+            "BTXT",
+            0
+          ]
+        ]
+      },
+      {
+        "source": "falloutnv.esm:1672c6",
+        "target": "011672C6",
+        "old_type": "TERM",
+        "old_field": "DESC",
+        "new_type": "TERM",
+        "new_field": "BTXT",
+        "english": "Array optimized.",
+        "matches": [
+          [
+            "BTXT",
+            0
+          ]
+        ]
+      }
+    ],
+    "type_migration_exact_unique": [
+      {
+        "source": "falloutnv.esm:147620",
+        "target": "01147620",
+        "old_type": "IMOD",
+        "old_field": "FULL",
+        "new_type": "MISC",
+        "new_field": "FULL",
+        "english": "12.7mm Pistol Silencer",
+        "matches": [
+          [
+            "FULL",
+            0
+          ]
+        ]
+      },
+      {
+        "source": "falloutnv.esm:129878",
+        "target": "01129878",
+        "old_type": "IMOD",
+        "old_field": "FULL",
+        "new_type": "MISC",
+        "new_field": "FULL",
+        "english": "10mm Pistol Silencer",
+        "matches": [
+          [
+            "FULL",
+            0
+          ]
+        ]
+      },
+      {
+        "source": "falloutnv.esm:10c86f",
+        "target": "0110C86F",
+        "old_type": "IMOD",
+        "old_field": "FULL",
+        "new_type": "MISC",
+        "new_field": "FULL",
+        "english": "Sil. .22 SMG Exp. Drums",
+        "matches": [
+          [
+            "FULL",
+            0
+          ]
+        ]
+      },
+      {
+        "source": "falloutnv.esm:10c86e",
+        "target": "0110C86E",
+        "old_type": "IMOD",
+        "old_field": "FULL",
+        "new_type": "MISC",
+        "new_field": "FULL",
+        "english": "Miss. Launcher Guidance Sys.",
+        "matches": [
+          [
+            "FULL",
+            0
+          ]
+        ]
+      },
+      {
+        "source": "falloutnv.esm:10c86d",
+        "target": "0110C86D",
+        "old_type": "IMOD",
+        "old_field": "FULL",
+        "new_type": "MISC",
+        "new_field": "FULL",
+        "english": "Gat. Laser CF Frame",
+        "matches": [
+          [
+            "FULL",
+            0
+          ]
+        ]
+      }
+    ],
+    "ambiguous_duplicate_text": [
+      {
+        "source": "falloutnv.esm:166b32",
+        "target": "01166B32",
+        "old_type": "TERM",
+        "old_field": "DESC",
+        "new_type": "TERM",
+        "new_field": null,
+        "english": "Chief Fire Officer Terminal",
+        "matches": [
+          [
+            "FULL",
+            0
+          ],
+          [
+            "BTXT",
+            0
+          ]
+        ]
+      },
+      {
+        "source": "falloutnv.esm:15a157",
+        "target": "0115A157",
+        "old_type": "TERM",
+        "old_field": "RNAM",
+        "new_type": "TERM",
+        "new_field": null,
+        "english": "Isolation confirmed.",
+        "matches": [
+          [
+            "UNAM",
+            0
+          ],
+          [
+            "UNAM",
+            2
+          ],
+          [
+            "UNAM",
+            4
+          ]
+        ]
+      },
+      {
+        "source": "falloutnv.esm:15a157",
+        "target": "0115A157",
+        "old_type": "TERM",
+        "old_field": "RNAM",
+        "new_type": "TERM",
+        "new_field": null,
+        "english": "Partition confirmed.",
+        "matches": [
+          [
+            "UNAM",
+            1
+          ],
+          [
+            "UNAM",
+            3
+          ],
+          [
+            "UNAM",
+            5
+          ]
+        ]
+      },
+      {
+        "source": "falloutnv.esm:15a157",
+        "target": "0115A157",
+        "old_type": "TERM",
+        "old_field": "RNAM",
+        "new_type": "TERM",
+        "new_field": null,
+        "english": "Isolation confirmed.",
+        "matches": [
+          [
+            "UNAM",
+            0
+          ],
+          [
+            "UNAM",
+            2
+          ],
+          [
+            "UNAM",
+            4
+          ]
+        ]
+      },
+      {
+        "source": "falloutnv.esm:15a157",
+        "target": "0115A157",
+        "old_type": "TERM",
+        "old_field": "RNAM",
+        "new_type": "TERM",
+        "new_field": null,
+        "english": "Partition confirmed.",
+        "matches": [
+          [
+            "UNAM",
+            1
+          ],
+          [
+            "UNAM",
+            3
+          ],
+          [
+            "UNAM",
+            5
+          ]
+        ]
+      }
+    ]
+  },
+  "warning": "Exact text and target field occurrence verified; contextual source connection, native FO4 plugin writer and ingame testing are still needed."
+}

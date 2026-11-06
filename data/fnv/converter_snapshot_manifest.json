@@ -1,0 +1,15 @@
+{
+  "source_formid_map": "C:\\Games\\Steam\\steamapps\\common\\Fallout 4\\Fallout34_Work\\fnv\\work\\reports\\formid_map.tsv",
+  "source_formid_keys": "C:\\Games\\Steam\\steamapps\\common\\Fallout 4\\Fallout34_Work\\fnv\\work\\reports\\formid_keys.tsv",
+  "full_map_rows": 482533,
+  "full_keys_rows": 373800,
+  "selected_key_rows": 125243,
+  "unlinked_target_ids": 134934,
+  "source_map_sha256": "2500b09946b22cb1158622c3ecb273b03c9cc8ea60d2dd4e503f46d73cf4ea52",
+  "source_keys_sha256": "ca70f3528a9f42e7a16ad19c0b6b561a282a78992b4d607587cb1b26d26f9222",
+  "compressed_map_bytes": 2834180,
+  "compressed_selected_keys_bytes": 3244269,
+  "output_map": "D:\\Codex_Trans\\Fallout34-KR-Patcher\\data\\fnv\\converter_formid_map.tsv.gz",
+  "output_selected_keys": "D:\\Codex_Trans\\Fallout34-KR-Patcher\\data\\fnv\\converter_origin_keys_selected.tsv.gz",
+  "note": "All map rows retained; generated keys only for currently unlinked target IDs. Other keys can be regenerated from converter. No original ESM/ESP data is included."
+}

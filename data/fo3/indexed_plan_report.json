@@ -1,0 +1,22 @@
+{
+  "game": "fo3",
+  "esm_sha256": "be0e7f25d0a28c672de2c12afbbf402bff0bb202037c231930d4649afd138603",
+  "esm_path": "C:\\Games\\Steam\\steamapps\\common\\Fallout 4\\Data\\Fallout34.esm",
+  "input_direct_rows": 45179,
+  "supplement_rows": {
+    "migrated_verified_candidates": 1007,
+    "source_anchored_supplements": 2208
+  },
+  "direct_occurence_indexed": 45028,
+  "direct_index_issue_counts": {
+    "ambiguous_repeated_english": 151
+  },
+  "target_occurrence_conflict_keys": 0,
+  "qa_summary": {
+    "qa_pass_unique": 48241
+  },
+  "indexed_unique_candidate_rows": 48241,
+  "review_rows": 151,
+  "status": "DEVELOPMENT CANDIDATES ONLY; not a generated ESP or a tested FO4 patch",
+  "warning": "Exact ESM record/text/index proof, provenance and placeholders are checked; runtime story context, scripts and other field types still require validation. No original game files were modified."
+}

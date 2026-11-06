@@ -1,0 +1,802 @@
+{
+  "total_unlinked_occurrences": 169175,
+  "target_ids_from_keys": 125243,
+  "key_rows": 125243,
+  "class_counts": {
+    "key_no_original_id": 11893,
+    "one_matching_origin_unique_korean": 31274,
+    "key_origin_no_matching_SST_english": 125969,
+    "multiple_matching_origins_same_korean": 39
+  },
+  "per_type_field": {
+    "INFO/RNAM": {
+      "key_origin_no_matching_SST_english": 98500,
+      "one_matching_origin_unique_korean": 24030,
+      "multiple_matching_origins_same_korean": 39
+    },
+    "INFO/NAM1": {
+      "key_no_original_id": 9114,
+      "key_origin_no_matching_SST_english": 25648,
+      "one_matching_origin_unique_korean": 1878
+    },
+    "TERM/UNAM": {
+      "key_no_original_id": 797,
+      "one_matching_origin_unique_korean": 1122,
+      "key_origin_no_matching_SST_english": 66
+    },
+    "TERM/BTXT": {
+      "key_no_original_id": 5,
+      "one_matching_origin_unique_korean": 1001,
+      "key_origin_no_matching_SST_english": 200
+    },
+    "TERM/ITXT": {
+      "key_no_original_id": 5,
+      "one_matching_origin_unique_korean": 1001,
+      "key_origin_no_matching_SST_english": 200
+    },
+    "PERK/FULL": {
+      "key_no_original_id": 42,
+      "key_origin_no_matching_SST_english": 1149,
+      "one_matching_origin_unique_korean": 13
+    },
+    "TERM/FULL": {
+      "one_matching_origin_unique_korean": 1001,
+      "key_origin_no_matching_SST_english": 200
+    },
+    "PERK/DESC": {
+      "key_no_original_id": 18,
+      "one_matching_origin_unique_korean": 1142
+    },
+    "QUST/FULL": {
+      "key_no_original_id": 514
+    },
+    "LSCR/DESC": {
+      "key_no_original_id": 358
+    },
+    "NOTE/FULL": {
+      "key_no_original_id": 200
+    },
+    "SPEL/FULL": {
+      "key_no_original_id": 85,
+      "one_matching_origin_unique_korean": 76,
+      "key_origin_no_matching_SST_english": 6
+    },
+    "MESG/ITXT": {
+      "key_no_original_id": 133
+    },
+    "MGEF/FULL": {
+      "key_no_original_id": 113
+    },
+    "MESG/FULL": {
+      "key_no_original_id": 85
+    },
+    "MESG/DESC": {
+      "key_no_original_id": 84
+    },
+    "NPC_/FULL": {
+      "key_no_original_id": 73
+    },
+    "FACT/FULL": {
+      "key_no_original_id": 59
+    },
+    "ARMO/FULL": {
+      "key_no_original_id": 41
+    },
+    "ACTI/FULL": {
+      "key_no_original_id": 37
+    },
+    "EXPL/FULL": {
+      "key_no_original_id": 34
+    },
+    "QUST/CNAM": {
+      "key_no_original_id": 23
+    },
+    "WEAP/FULL": {
+      "key_no_original_id": 20
+    },
+    "TACT/FULL": {
+      "one_matching_origin_unique_korean": 10,
+      "key_no_original_id": 6
+    },
+    "AMMO/ONAM": {
+      "key_no_original_id": 15
+    },
+    "CONT/FULL": {
+      "key_no_original_id": 6
+    },
+    "ALCH/FULL": {
+      "key_no_original_id": 6
+    },
+    "CELL/FULL": {
+      "key_no_original_id": 6
+    },
+    "TERM/RNAM": {
+      "key_no_original_id": 5
+    },
+    "QUST/NNAM": {
+      "key_no_original_id": 3
+    },
+    "PROJ/FULL": {
+      "key_no_original_id": 2
+    },
+    "MISC/FULL": {
+      "key_no_original_id": 1
+    },
+    "AMMO/FULL": {
+      "key_no_original_id": 1
+    },
+    "WRLD/FULL": {
+      "key_no_original_id": 1
+    },
+    "REFR/FULL": {
+      "key_no_original_id": 1
+    }
+  },
+  "generated_key_categories": [
+    [
+      [
+        "INFO",
+        "dlg"
+      ],
+      122569
+    ],
+    [
+      [
+        "TERM",
+        "note"
+      ],
+      1201
+    ],
+    [
+      [
+        "PERK",
+        "rank"
+      ],
+      1142
+    ],
+    [
+      [
+        "SPEL",
+        "ability"
+      ],
+      67
+    ],
+    [
+      [
+        "PERK",
+        "creature_hit"
+      ],
+      20
+    ],
+    [
+      [
+        "SPEL",
+        "creature_hit"
+      ],
+      15
+    ],
+    [
+      [
+        "SPEL",
+        "epability"
+      ],
+      14
+    ],
+    [
+      [
+        "TACT",
+        "voice"
+      ],
+      10
+    ],
+    [
+      [
+        "SPEL",
+        "prk3ability"
+      ],
+      9
+    ],
+    [
+      [
+        "SPEL",
+        "prk2"
+      ],
+      3
+    ],
+    [
+      [
+        "ACTI",
+        "F34_VertibirdHub2"
+      ],
+      1
+    ],
+    [
+      [
+        "ALCH",
+        "F34_SkillsReadout"
+      ],
+      1
+    ],
+    [
+      [
+        "CONT",
+        "F34_VendorBox_01129557"
+      ],
+      1
+    ],
+    [
+      [
+        "CONT",
+        "F34_VendorBox_011298B7"
+      ],
+      1
+    ],
+    [
+      [
+        "CONT",
+        "F34_VendorBox_0119543B"
+      ],
+      1
+    ],
+    [
+      [
+        "MESG",
+        "F34_AltStartMessage"
+      ],
+      1
+    ],
+    [
+      [
+        "MESG",
+        "F34_AltStartMessageBoth"
+      ],
+      1
+    ],
+    [
+      [
+        "MESG",
+        "F34_Casino_BlackjackBetMenu"
+      ],
+      1
+    ],
+    [
+      [
+        "MESG",
+        "F34_Casino_BlackjackPlayMenu"
+      ],
+      1
+    ],
+    [
+      [
+        "MESG",
+        "F34_Casino_RouletteMenu"
+      ],
+      1
+    ],
+    [
+      [
+        "MESG",
+        "F34_Casino_RouletteNumberMenu"
+      ],
+      1
+    ],
+    [
+      [
+        "MESG",
+        "F34_Casino_SlotsMenu"
+      ],
+      1
+    ],
+    [
+      [
+        "MESG",
+        "F34_CharTraitInfo_BuiltToDestroy"
+      ],
+      1
+    ],
+    [
+      [
+        "MESG",
+        "F34_CharTraitInfo_FastShot"
+      ],
+      1
+    ],
+    [
+      [
+        "MESG",
+        "F34_CharTraitInfo_FourEyes"
+      ],
+      1
+    ],
+    [
+      [
+        "MESG",
+        "F34_CharTraitInfo_GoodNatured"
+      ],
+      1
+    ],
+    [
+      [
+        "MESG",
+        "F34_CharTraitInfo_HeavyHanded"
+      ],
+      1
+    ],
+    [
+      [
+        "MESG",
+        "F34_CharTraitInfo_HereandNow"
+      ],
+      1
+    ],
+    [
+      [
+        "MESG",
+        "F34_CharTraitInfo_Kamikaze"
+      ],
+      1
+    ],
+    [
+      [
+        "MESG",
+        "F34_CharTraitInfo_LooseCannon"
+      ],
+      1
+    ]
+  ],
+  "source_origins_count_histogram": {
+    "0": 11893,
+    "1": 85872,
+    "2": 46743,
+    "3": 24415,
+    "4": 252
+  },
+  "sample_keys": [
+    {
+      "id": "01F8A551",
+      "key": "ACTI|F34_VertibirdHub2",
+      "origins": []
+    },
+    {
+      "id": "01D17A20",
+      "key": "ALCH|F34_SkillsReadout",
+      "origins": []
+    },
+    {
+      "id": "019851FA",
+      "key": "CONT|F34_VendorBox_01129557",
+      "origins": []
+    },
+    {
+      "id": "01E35133",
+      "key": "CONT|F34_VendorBox_011298B7",
+      "origins": []
+    },
+    {
+      "id": "01DF22B1",
+      "key": "CONT|F34_VendorBox_0119543B",
+      "origins": []
+    },
+    {
+      "id": "01DDE037",
+      "key": "INFO|dlg|deadmoney.esm:0012FE|back|p",
+      "origins": [
+        "deadmoney.esm:0012fe"
+      ]
+    },
+    {
+      "id": "01FDBAAB",
+      "key": "INFO|dlg|deadmoney.esm:0012FE|exit|p|deadmoney.esm:0012CB",
+      "origins": [
+        "deadmoney.esm:0012fe",
+        "deadmoney.esm:0012cb"
+      ]
+    },
+    {
+      "id": "01E42278",
+      "key": "INFO|dlg|deadmoney.esm:0012FE|l|Cdeadmoney.esm:00ED64_deadmoney.esm:00ED63|p|deadmoney.esm:00ED91",
+      "origins": [
+        "deadmoney.esm:0012fe",
+        "deadmoney.esm:00ed91"
+      ]
+    },
+    {
+      "id": "01E2E913",
+      "key": "INFO|dlg|deadmoney.esm:0012FE|l|Cdeadmoney.esm:00ED64_deadmoney.esm:00ED63|p|deadmoney.esm:00EDA1",
+      "origins": [
+        "deadmoney.esm:0012fe",
+        "deadmoney.esm:00eda1"
+      ]
+    },
+    {
+      "id": "01F91A31",
+      "key": "INFO|dlg|deadmoney.esm:0012FE|l|Cdeadmoney.esm:00ED68_deadmoney.esm:00ED65_deadmoney.esm:00ED67|p|deadmoney.esm:00ED8F",
+      "origins": [
+        "deadmoney.esm:0012fe",
+        "deadmoney.esm:00ed8f"
+      ]
+    }
+  ],
+  "examples": {
+    "key_no_original_id": [
+      {
+        "target": "01173507",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Vault19PowderGangerFaction",
+        "origins": [],
+        "matching_origins": [],
+        "korean": []
+      },
+      {
+        "target": "0115F16E",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Vipers Faction",
+        "origins": [],
+        "matching_origins": [],
+        "korean": []
+      },
+      {
+        "target": "0115E9E1",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Vault 34 Dwellers",
+        "origins": [],
+        "matching_origins": [],
+        "korean": []
+      },
+      {
+        "target": "0112677F",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Caesars Legion Nelson Faction",
+        "origins": [],
+        "matching_origins": [],
+        "korean": []
+      },
+      {
+        "target": "01104C7E",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Goodsprings Powder Gang Faction",
+        "origins": [],
+        "matching_origins": [],
+        "korean": []
+      },
+      {
+        "target": "01101F42",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "PowderGangerFactionNV",
+        "origins": [],
+        "matching_origins": [],
+        "korean": []
+      },
+      {
+        "target": "010EE68A",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Caesar's Legion Faction",
+        "origins": [],
+        "matching_origins": [],
+        "korean": []
+      }
+    ],
+    "one_matching_origin_unique_korean": [
+      {
+        "target": "01A4075C",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "Radiation Burst",
+        "origins": [
+          "falloutnv.esm:06191a"
+        ],
+        "matching_origins": [
+          "falloutnv.esm:06191a"
+        ],
+        "korean": [
+          "방사능 폭발"
+        ]
+      },
+      {
+        "target": "01A12D38",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "Poison",
+        "origins": [
+          "falloutnv.esm:147d25"
+        ],
+        "matching_origins": [
+          "falloutnv.esm:147d25"
+        ],
+        "korean": [
+          "독"
+        ]
+      },
+      {
+        "target": "01C7D6BC",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "Radiation Poison",
+        "origins": [
+          "falloutnv.esm:0e29d1"
+        ],
+        "matching_origins": [
+          "falloutnv.esm:0e29d1"
+        ],
+        "korean": [
+          "방사능 중독"
+        ]
+      },
+      {
+        "target": "01F7A5F7",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "Poison",
+        "origins": [
+          "falloutnv.esm:0eb402"
+        ],
+        "matching_origins": [
+          "falloutnv.esm:0eb402"
+        ],
+        "korean": [
+          "독"
+        ]
+      },
+      {
+        "target": "01B460DE",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "Poison",
+        "origins": [
+          "falloutnv.esm:12a22e"
+        ],
+        "matching_origins": [
+          "falloutnv.esm:12a22e"
+        ],
+        "korean": [
+          "독"
+        ]
+      },
+      {
+        "target": "019AD761",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "Golden Gecko Radiation",
+        "origins": [
+          "falloutnv.esm:133056"
+        ],
+        "matching_origins": [
+          "falloutnv.esm:133056"
+        ],
+        "korean": [
+          "황금 겍코 방사능"
+        ]
+      },
+      {
+        "target": "01BAFCE4",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "Poison",
+        "origins": [
+          "falloutnv.esm:04d844"
+        ],
+        "matching_origins": [
+          "falloutnv.esm:04d844"
+        ],
+        "korean": [
+          "독"
+        ]
+      }
+    ],
+    "key_origin_no_matching_SST_english": [
+      {
+        "target": "01A9D7BC",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "Legion Mongrel Hamstring",
+        "origins": [
+          "falloutnv.esm:11d9ed"
+        ],
+        "matching_origins": [],
+        "korean": []
+      },
+      {
+        "target": "0199A3CA",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "Deathclaw Knockback",
+        "origins": [
+          "falloutnv.esm:0eb40e"
+        ],
+        "matching_origins": [],
+        "korean": []
+      },
+      {
+        "target": "01EEE004",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "Small Frame Agility Boost",
+        "origins": [
+          "falloutnv.esm:135ec2"
+        ],
+        "matching_origins": [],
+        "korean": []
+      },
+      {
+        "target": "01BA5A4D",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "PerkStrongBack",
+        "origins": [
+          "falloutnv.esm:06aa60"
+        ],
+        "matching_origins": [],
+        "korean": []
+      },
+      {
+        "target": "01F3DA3A",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "NVDLC03PoisonResistance",
+        "origins": [
+          "oldworldblues.esm:014b24"
+        ],
+        "matching_origins": [],
+        "korean": []
+      },
+      {
+        "target": "01B0767A",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "NVDLC04PerkBurdenToBear",
+        "origins": [
+          "lonesomeroad.esm:00dc71"
+        ],
+        "matching_origins": [],
+        "korean": []
+      },
+      {
+        "target": "01C0971E",
+        "type": "TERM",
+        "field": "FULL",
+        "english": "V03TrentEmail",
+        "origins": [
+          "falloutnv.esm:16a22b"
+        ],
+        "matching_origins": [],
+        "korean": []
+      }
+    ],
+    "multiple_matching_origins_same_korean": [
+      {
+        "target": "01B2A6DB",
+        "type": "INFO",
+        "field": "RNAM",
+        "english": "What did you say before about the Fiends?",
+        "origins": [
+          "falloutnv.esm:13e307",
+          "falloutnv.esm:13e2c4",
+          "falloutnv.esm:13e2f9"
+        ],
+        "matching_origins": [
+          "falloutnv.esm:13e2c4",
+          "falloutnv.esm:13e2f9"
+        ],
+        "korean": [
+          "핀드에 대해 뭐라고 했었지?"
+        ]
+      },
+      {
+        "target": "01C3E6D5",
+        "type": "INFO",
+        "field": "RNAM",
+        "english": "What did you say before about the Fiends?",
+        "origins": [
+          "falloutnv.esm:13e307",
+          "falloutnv.esm:13e2d8",
+          "falloutnv.esm:13e2f9"
+        ],
+        "matching_origins": [
+          "falloutnv.esm:13e2d8",
+          "falloutnv.esm:13e2f9"
+        ],
+        "korean": [
+          "핀드에 대해 뭐라고 했었지?"
+        ]
+      },
+      {
+        "target": "019968D8",
+        "type": "INFO",
+        "field": "RNAM",
+        "english": "Papa Khan has named me his successor. We might be able to arrange an alliance with NCR.",
+        "origins": [
+          "falloutnv.esm:1206fc",
+          "falloutnv.esm:15a79e",
+          "falloutnv.esm:15a7a9"
+        ],
+        "matching_origins": [
+          "falloutnv.esm:15a79e",
+          "falloutnv.esm:15a7a9"
+        ],
+        "korean": [
+          "파파 칸은 날 후계자로 지명했어. 칸과 NCR 사이의 동맹을 성사시킬 수도 있겠는데."
+        ]
+      },
+      {
+        "target": "01C929E1",
+        "type": "INFO",
+        "field": "RNAM",
+        "english": "Papa Khan has named me his successor. We might be able to arrange an alliance with NCR.",
+        "origins": [
+          "falloutnv.esm:1206fc",
+          "falloutnv.esm:15a79e",
+          "falloutnv.esm:15a7a9"
+        ],
+        "matching_origins": [
+          "falloutnv.esm:15a79e",
+          "falloutnv.esm:15a7a9"
+        ],
+        "korean": [
+          "파파 칸은 날 후계자로 지명했어. 칸과 NCR 사이의 동맹을 성사시킬 수도 있겠는데."
+        ]
+      },
+      {
+        "target": "01F60A97",
+        "type": "INFO",
+        "field": "RNAM",
+        "english": "Tell me what happened with the prostitute.",
+        "origins": [
+          "falloutnv.esm:10c6f7",
+          "falloutnv.esm:116eff",
+          "falloutnv.esm:116f02"
+        ],
+        "matching_origins": [
+          "falloutnv.esm:116eff",
+          "falloutnv.esm:116f02"
+        ],
+        "korean": [
+          "매춘부에게 무슨 일이 있었던 거지?"
+        ]
+      },
+      {
+        "target": "01BCE36F",
+        "type": "INFO",
+        "field": "RNAM",
+        "english": "What's the next step in breaking up the bosses plans?",
+        "origins": [
+          "falloutnv.esm:10c6f5",
+          "falloutnv.esm:11bc65",
+          "falloutnv.esm:11bc69"
+        ],
+        "matching_origins": [
+          "falloutnv.esm:11bc65",
+          "falloutnv.esm:11bc69"
+        ],
+        "korean": [
+          "보스들의 계획을 막으려면 이제 뭘 해야 하지?"
+        ]
+      },
+      {
+        "target": "01C4A6DF",
+        "type": "INFO",
+        "field": "RNAM",
+        "english": "What's the next step in breaking up the bosses plans?",
+        "origins": [
+          "falloutnv.esm:10c6f5",
+          "falloutnv.esm:11bc65",
+          "falloutnv.esm:11bc69"
+        ],
+        "matching_origins": [
+          "falloutnv.esm:11bc65",
+          "falloutnv.esm:11bc69"
+        ],
+        "korean": [
+          "보스들의 계획을 막으려면 이제 뭘 해야 하지?"
+        ]
+      }
+    ]
+  },
+  "warning": "Source provenance from converter key and exact SST English; still requires ambiguity and runtime response-index validation. Do not auto-install."
+}

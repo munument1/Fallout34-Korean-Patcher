@@ -1,3 +1,5 @@
+> **최근 현황:** [STATUS.md](STATUS.md) — FO3/FNV 패처용 번역 대응 데이터, MCM, 버전별 FormID 자료의 최신 검증 결과를 참조하세요. 이 README 아래에는 작업 이력이 포함돼 있습니다.
+
 # Fallout34 Korean Patcher — FO3 번역 데이터 작업
 
 Fallout34 v0.9.33의 폴아웃 3 본편 및 DLC 변환 결과물을 대상으로 기존 xTranslator 한국어 SST 데이터를 매핑한 독립 작업 공간입니다.

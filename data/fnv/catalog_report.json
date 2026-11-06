@@ -1,0 +1,22 @@
+{
+  "source_sst_records": 86339,
+  "source_sst_file_counts": {
+    "falloutnv": 67764,
+    "deadmoney": 6435,
+    "honesthearts": 3558,
+    "oldworldblues": 4930,
+    "lonesomeroad": 3284,
+    "gunrunnersarsenal": 349,
+    "caravanpack": 4,
+    "classicpack": 7,
+    "mercenarypack": 4,
+    "tribalpack": 4
+  },
+  "total_formid_map_rows": 482533,
+  "explicit_mapped_sst_rows": 65307,
+  "explicit_mapped_source_pairs": 51297,
+  "base_direct_id_probe": 20626,
+  "map_duplicate_source_type_pairs": 0,
+  "conflicting_map_ids": {},
+  "remaining_no_id": 406
+}

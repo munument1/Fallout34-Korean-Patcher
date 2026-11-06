@@ -1,0 +1,23 @@
+{
+  "game": "fnv",
+  "esm_sha256": "caa2d4649c99bfcdd36e8a489f865e55f5ee9fc6087469ba0d1de2e410318897",
+  "esm_path": "C:\\Games\\Steam\\steamapps\\common\\Fallout 4\\Fallout34_Work\\fnv\\staging\\Data\\FalloutNV34.esm",
+  "input_direct_rows": 49788,
+  "supplement_rows": {
+    "migrated_verified_candidates": 2765,
+    "provenance_qa_pass": 31191
+  },
+  "direct_occurence_indexed": 49530,
+  "direct_index_issue_counts": {
+    "ambiguous_repeated_english": 258
+  },
+  "target_occurrence_conflict_keys": 0,
+  "qa_summary": {
+    "qa_pass_unique": 83480,
+    "placeholder_mismatch": 3
+  },
+  "indexed_unique_candidate_rows": 83480,
+  "review_rows": 261,
+  "status": "DEVELOPMENT CANDIDATES ONLY; not a generated ESP or a tested FO4 patch",
+  "warning": "Exact ESM record/text/index proof, provenance and placeholders are checked; runtime story context, scripts and other field types still require validation. No original game files were modified."
+}

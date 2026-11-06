@@ -1,0 +1,406 @@
+{
+  "game": "fo3",
+  "esm_sha256": "be0e7f25d0a28c672de2c12afbbf402bff0bb202037c231930d4649afd138603",
+  "reviewed_source_rows": 6232,
+  "source_without_target_id": 23,
+  "statuses": {
+    "no_exact_english_in_record": 4956,
+    "type_migration_exact_unique": 401,
+    "field_migration_exact_unique": 615,
+    "ambiguous_duplicate_text": 134,
+    "missing_record": 103
+  },
+  "migration_candidates_unique": 1007,
+  "translation_conflicts": 0,
+  "type_conversions": [
+    [
+      [
+        "CREA",
+        "NPC_"
+      ],
+      395
+    ],
+    [
+      [
+        "MSTT",
+        "ACTI"
+      ],
+      3
+    ],
+    [
+      [
+        "CREA",
+        "TACT"
+      ],
+      3
+    ]
+  ],
+  "field_conversions": [
+    [
+      [
+        "TERM",
+        "DESC",
+        "BTXT"
+      ],
+      318
+    ],
+    [
+      [
+        "TERM",
+        "RNAM",
+        "UNAM"
+      ],
+      297
+    ]
+  ],
+  "samples": {
+    "no_exact_english_in_record": [
+      {
+        "source": "fallout3.esm:01d3fe",
+        "target": "0101D3FE",
+        "old_type": "FACT",
+        "old_field": "MNAM",
+        "new_type": "FACT",
+        "new_field": null,
+        "english": "Squire",
+        "matches": []
+      },
+      {
+        "source": "fallout3.esm:01d3fe",
+        "target": "0101D3FE",
+        "old_type": "FACT",
+        "old_field": "MNAM",
+        "new_type": "FACT",
+        "new_field": null,
+        "english": "Knight",
+        "matches": []
+      },
+      {
+        "source": "fallout3.esm:01d3fe",
+        "target": "0101D3FE",
+        "old_type": "FACT",
+        "old_field": "MNAM",
+        "new_type": "FACT",
+        "new_field": null,
+        "english": "Knight Sergeant",
+        "matches": []
+      },
+      {
+        "source": "fallout3.esm:01d3fe",
+        "target": "0101D3FE",
+        "old_type": "FACT",
+        "old_field": "MNAM",
+        "new_type": "FACT",
+        "new_field": null,
+        "english": "Knight Captain",
+        "matches": []
+      },
+      {
+        "source": "fallout3.esm:01d3fe",
+        "target": "0101D3FE",
+        "old_type": "FACT",
+        "old_field": "MNAM",
+        "new_type": "FACT",
+        "new_field": null,
+        "english": "Paladin",
+        "matches": []
+      }
+    ],
+    "type_migration_exact_unique": [
+      {
+        "source": "brokensteel.esm:008189",
+        "target": "01188189",
+        "old_type": "MSTT",
+        "old_field": "FULL",
+        "new_type": "ACTI",
+        "new_field": "FULL",
+        "english": "Vertibird",
+        "matches": [
+          [
+            "FULL",
+            0
+          ]
+        ]
+      },
+      {
+        "source": "brokensteel.esm:003070",
+        "target": "01183070",
+        "old_type": "MSTT",
+        "old_field": "FULL",
+        "new_type": "ACTI",
+        "new_field": "FULL",
+        "english": "Radiation Box Emiiter",
+        "matches": [
+          [
+            "FULL",
+            0
+          ]
+        ]
+      },
+      {
+        "source": "brokensteel.esm:0029a7",
+        "target": "011829A7",
+        "old_type": "MSTT",
+        "old_field": "FULL",
+        "new_type": "ACTI",
+        "new_field": "FULL",
+        "english": "Liberty Prime",
+        "matches": [
+          [
+            "FULL",
+            0
+          ]
+        ]
+      },
+      {
+        "source": "fallout3.esm:003402",
+        "target": "01003402",
+        "old_type": "CREA",
+        "old_field": "FULL",
+        "new_type": "TACT",
+        "new_field": "FULL",
+        "english": "Eye Intercom",
+        "matches": [
+          [
+            "FULL",
+            0
+          ]
+        ]
+      },
+      {
+        "source": "fallout3.esm:0bc11c",
+        "target": "010BC11C",
+        "old_type": "CREA",
+        "old_field": "FULL",
+        "new_type": "TACT",
+        "new_field": "FULL",
+        "english": "Eye Intercom",
+        "matches": [
+          [
+            "FULL",
+            0
+          ]
+        ]
+      }
+    ],
+    "field_migration_exact_unique": [
+      {
+        "source": "fallout3.esm:067110",
+        "target": "01067110",
+        "old_type": "TERM",
+        "old_field": "DESC",
+        "new_type": "TERM",
+        "new_field": "BTXT",
+        "english": "Vault 101 Security Cell Terminal",
+        "matches": [
+          [
+            "BTXT",
+            0
+          ]
+        ]
+      },
+      {
+        "source": "fallout3.esm:067110",
+        "target": "01067110",
+        "old_type": "TERM",
+        "old_field": "RNAM",
+        "new_type": "TERM",
+        "new_field": "UNAM",
+        "english": "Error Locking Cell Door...",
+        "matches": [
+          [
+            "UNAM",
+            0
+          ]
+        ]
+      },
+      {
+        "source": "fallout3.esm:0cb595",
+        "target": "010CB595",
+        "old_type": "TERM",
+        "old_field": "DESC",
+        "new_type": "TERM",
+        "new_field": "BTXT",
+        "english": "Nurse's Station 03\r\nHospital Use Only",
+        "matches": [
+          [
+            "BTXT",
+            0
+          ]
+        ]
+      },
+      {
+        "source": "fallout3.esm:0cb595",
+        "target": "010CB595",
+        "old_type": "TERM",
+        "old_field": "RNAM",
+        "new_type": "TERM",
+        "new_field": "UNAM",
+        "english": "Unlocked",
+        "matches": [
+          [
+            "UNAM",
+            0
+          ]
+        ]
+      },
+      {
+        "source": "fallout3.esm:0cb594",
+        "target": "010CB594",
+        "old_type": "TERM",
+        "old_field": "DESC",
+        "new_type": "TERM",
+        "new_field": "BTXT",
+        "english": "Nurse's Station 02\r\nHospital Use Only",
+        "matches": [
+          [
+            "BTXT",
+            0
+          ]
+        ]
+      }
+    ],
+    "ambiguous_duplicate_text": [
+      {
+        "source": "fallout3.esm:0cb588",
+        "target": "010CB588",
+        "old_type": "TERM",
+        "old_field": "RNAM",
+        "new_type": "TERM",
+        "new_field": null,
+        "english": "Reservation Server Unavailable",
+        "matches": [
+          [
+            "UNAM",
+            0
+          ],
+          [
+            "UNAM",
+            1
+          ],
+          [
+            "UNAM",
+            2
+          ]
+        ]
+      },
+      {
+        "source": "fallout3.esm:0cb588",
+        "target": "010CB588",
+        "old_type": "TERM",
+        "old_field": "RNAM",
+        "new_type": "TERM",
+        "new_field": null,
+        "english": "Reservation Server Unavailable",
+        "matches": [
+          [
+            "UNAM",
+            0
+          ],
+          [
+            "UNAM",
+            1
+          ],
+          [
+            "UNAM",
+            2
+          ]
+        ]
+      },
+      {
+        "source": "fallout3.esm:0cb588",
+        "target": "010CB588",
+        "old_type": "TERM",
+        "old_field": "RNAM",
+        "new_type": "TERM",
+        "new_field": null,
+        "english": "Reservation Server Unavailable",
+        "matches": [
+          [
+            "UNAM",
+            0
+          ],
+          [
+            "UNAM",
+            1
+          ],
+          [
+            "UNAM",
+            2
+          ]
+        ]
+      },
+      {
+        "source": "fallout3.esm:0c0538",
+        "target": "010C0538",
+        "old_type": "TERM",
+        "old_field": "RNAM",
+        "new_type": "TERM",
+        "new_field": null,
+        "english": "Unit Not Present",
+        "matches": [
+          [
+            "UNAM",
+            0
+          ],
+          [
+            "UNAM",
+            1
+          ],
+          [
+            "UNAM",
+            2
+          ],
+          [
+            "UNAM",
+            3
+          ],
+          [
+            "UNAM",
+            4
+          ],
+          [
+            "UNAM",
+            5
+          ]
+        ]
+      },
+      {
+        "source": "fallout3.esm:0c0538",
+        "target": "010C0538",
+        "old_type": "TERM",
+        "old_field": "RNAM",
+        "new_type": "TERM",
+        "new_field": null,
+        "english": "Unit Not Present",
+        "matches": [
+          [
+            "UNAM",
+            0
+          ],
+          [
+            "UNAM",
+            1
+          ],
+          [
+            "UNAM",
+            2
+          ],
+          [
+            "UNAM",
+            3
+          ],
+          [
+            "UNAM",
+            4
+          ],
+          [
+            "UNAM",
+            5
+          ]
+        ]
+      }
+    ]
+  },
+  "warning": "Exact text and target field occurrence verified; contextual source connection, native FO4 plugin writer and ingame testing are still needed."
+}

@@ -4,7 +4,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 root=Path(r'D:\Codex_Trans\Fallout34-KR-Patcher')
 src=Path(r'C:\Games\Steam\steamapps\common\Fallout 4\Fallout34_Work\fo3')
-sst_reader=Path(r'D:\Codex_Trans\BGS_Translation_Archive\tools\read_xtranslator_sst.py')
+sst_reader=Path(r'D:\Codex_Trans\Fallout34-KR-Patcher\tools\read_xtranslator_sst.py')
 folder=Path('F:/\ubc88\uc5ed/\ud504\ub85c\uadf8\ub7a8/xTranslator/UserDictionaries/FalloutNV')
 spec=importlib.util.spec_from_file_location('sst_reader',sst_reader)
 module=importlib.util.module_from_spec(spec)

@@ -1,0 +1,37 @@
+{
+  "source_esm_hashes_match": true,
+  "translated_mcm_non_ui_data_unchanged": true,
+  "mcm_korean_path": "D:\\Codex_Trans\\Fallout34-KR-Patcher\\work\\common\\Data\\MCM\\Config\\Fallout34\\config.json",
+  "checks": [
+    {
+      "game": "fo3",
+      "esm_path": "C:\\Games\\Steam\\steamapps\\common\\Fallout 4\\Data\\Fallout34.esm",
+      "esm_hash_verified": true,
+      "expected_sha256": "be0e7f25d0a28c672de2c12afbbf402bff0bb202037c231930d4649afd138603",
+      "indexed_assignments": 48241,
+      "unique_target_occurrences": 48241,
+      "plan_sources": {
+        "source_anchored_supplements": 2206,
+        "direct_sst_formid_english_match": 45028,
+        "migrated_verified_candidates": 1007
+      },
+      "ready_for_ingame_test": false
+    },
+    {
+      "game": "fnv",
+      "esm_path": "C:\\Games\\Steam\\steamapps\\common\\Fallout 4\\Fallout34_Work\\fnv\\staging\\Data\\FalloutNV34.esm",
+      "esm_hash_verified": true,
+      "expected_sha256": "caa2d4649c99bfcdd36e8a489f865e55f5ee9fc6087469ba0d1de2e410318897",
+      "indexed_assignments": 83480,
+      "unique_target_occurrences": 83480,
+      "plan_sources": {
+        "direct_sst_formid_english_match": 49527,
+        "migrated_verified_candidates": 2762,
+        "provenance_qa_pass": 31191
+      },
+      "ready_for_ingame_test": false
+    }
+  ],
+  "count_total": 131721,
+  "status": "All static checks passed; this does not constitute an installed or runtime-tested ESP."
+}
