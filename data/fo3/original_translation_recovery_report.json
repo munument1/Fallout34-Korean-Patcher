@@ -1,0 +1,1392 @@
+{
+  "source_indexed_candidates": 19149,
+  "classes": {
+    "no_fo3_sst_translation_found": 10337,
+    "english_only_ko_unique": 302,
+    "multiple_original_records_same_korean": 2063,
+    "single_original_record_and_translated": 160,
+    "some_original_field_translation_same_korean": 6260,
+    "different_translations_for_source": 27
+  },
+  "by_target_type": {
+    "FACT": {
+      "no_fo3_sst_translation_found": 185,
+      "english_only_ko_unique": 12,
+      "multiple_original_records_same_korean": 3
+    },
+    "MGEF": {
+      "no_fo3_sst_translation_found": 47,
+      "multiple_original_records_same_korean": 1,
+      "single_original_record_and_translated": 1
+    },
+    "SPEL": {
+      "no_fo3_sst_translation_found": 243,
+      "multiple_original_records_same_korean": 5,
+      "english_only_ko_unique": 7,
+      "single_original_record_and_translated": 12
+    },
+    "ACTI": {
+      "multiple_original_records_same_korean": 27,
+      "no_fo3_sst_translation_found": 15,
+      "english_only_ko_unique": 1,
+      "some_original_field_translation_same_korean": 2,
+      "single_original_record_and_translated": 2
+    },
+    "TACT": {
+      "english_only_ko_unique": 18,
+      "different_translations_for_source": 8,
+      "no_fo3_sst_translation_found": 13,
+      "multiple_original_records_same_korean": 2,
+      "single_original_record_and_translated": 1,
+      "some_original_field_translation_same_korean": 3
+    },
+    "ARMO": {
+      "no_fo3_sst_translation_found": 156,
+      "multiple_original_records_same_korean": 11
+    },
+    "BOOK": {
+      "english_only_ko_unique": 5,
+      "no_fo3_sst_translation_found": 30,
+      "multiple_original_records_same_korean": 9
+    },
+    "CONT": {
+      "multiple_original_records_same_korean": 279,
+      "no_fo3_sst_translation_found": 124,
+      "english_only_ko_unique": 6,
+      "single_original_record_and_translated": 5
+    },
+    "DOOR": {
+      "multiple_original_records_same_korean": 80,
+      "no_fo3_sst_translation_found": 5
+    },
+    "MISC": {
+      "english_only_ko_unique": 17,
+      "no_fo3_sst_translation_found": 151,
+      "some_original_field_translation_same_korean": 3
+    },
+    "MSTT": {
+      "no_fo3_sst_translation_found": 6,
+      "english_only_ko_unique": 2,
+      "multiple_original_records_same_korean": 1
+    },
+    "FURN": {
+      "multiple_original_records_same_korean": 131,
+      "no_fo3_sst_translation_found": 41,
+      "english_only_ko_unique": 5,
+      "different_translations_for_source": 7
+    },
+    "WEAP": {
+      "no_fo3_sst_translation_found": 20,
+      "multiple_original_records_same_korean": 28,
+      "english_only_ko_unique": 1
+    },
+    "AMMO": {
+      "no_fo3_sst_translation_found": 17,
+      "multiple_original_records_same_korean": 7,
+      "english_only_ko_unique": 1,
+      "single_original_record_and_translated": 1
+    },
+    "NPC_": {
+      "no_fo3_sst_translation_found": 121,
+      "multiple_original_records_same_korean": 29,
+      "different_translations_for_source": 1,
+      "single_original_record_and_translated": 4,
+      "some_original_field_translation_same_korean": 546,
+      "english_only_ko_unique": 1
+    },
+    "KEYM": {
+      "no_fo3_sst_translation_found": 159,
+      "multiple_original_records_same_korean": 1
+    },
+    "ALCH": {
+      "no_fo3_sst_translation_found": 21,
+      "english_only_ko_unique": 1
+    },
+    "NOTE": {
+      "no_fo3_sst_translation_found": 561,
+      "english_only_ko_unique": 16,
+      "multiple_original_records_same_korean": 2
+    },
+    "PROJ": {
+      "no_fo3_sst_translation_found": 16,
+      "multiple_original_records_same_korean": 16,
+      "english_only_ko_unique": 1
+    },
+    "TERM": {
+      "multiple_original_records_same_korean": 190,
+      "english_only_ko_unique": 141,
+      "no_fo3_sst_translation_found": 1389,
+      "different_translations_for_source": 6,
+      "some_original_field_translation_same_korean": 740,
+      "single_original_record_and_translated": 42
+    },
+    "CELL": {
+      "multiple_original_records_same_korean": 15,
+      "no_fo3_sst_translation_found": 15,
+      "single_original_record_and_translated": 26,
+      "some_original_field_translation_same_korean": 1
+    },
+    "WRLD": {
+      "no_fo3_sst_translation_found": 8,
+      "multiple_original_records_same_korean": 1
+    },
+    "REFR": {
+      "no_fo3_sst_translation_found": 42
+    },
+    "QUST": {
+      "multiple_original_records_same_korean": 14,
+      "no_fo3_sst_translation_found": 221
+    },
+    "INFO": {
+      "multiple_original_records_same_korean": 1083,
+      "no_fo3_sst_translation_found": 5771,
+      "some_original_field_translation_same_korean": 4926,
+      "single_original_record_and_translated": 50,
+      "english_only_ko_unique": 8,
+      "different_translations_for_source": 5
+    },
+    "LSCR": {
+      "single_original_record_and_translated": 4
+    },
+    "EXPL": {
+      "multiple_original_records_same_korean": 49,
+      "no_fo3_sst_translation_found": 40
+    },
+    "PERK": {
+      "no_fo3_sst_translation_found": 155,
+      "some_original_field_translation_same_korean": 10,
+      "single_original_record_and_translated": 12,
+      "multiple_original_records_same_korean": 4,
+      "english_only_ko_unique": 26
+    },
+    "MESG": {
+      "no_fo3_sst_translation_found": 765,
+      "english_only_ko_unique": 33,
+      "multiple_original_records_same_korean": 75,
+      "some_original_field_translation_same_korean": 29
+    }
+  },
+  "original_source_type_field_samples": [
+    [
+      [
+        "source_type",
+        "INFO",
+        "DIAL",
+        "FULL"
+      ],
+      7683
+    ],
+    [
+      [
+        "INFO",
+        "different_type_in_original"
+      ],
+      6708
+    ],
+    [
+      [
+        "source_type",
+        "INFO",
+        "INFO",
+        "RNAM"
+      ],
+      4774
+    ],
+    [
+      [
+        "INFO",
+        "same_type_other_field_in_original"
+      ],
+      3455
+    ],
+    [
+      [
+        "TERM",
+        "different_type_in_original"
+      ],
+      1726
+    ],
+    [
+      [
+        "source_type",
+        "TERM",
+        "NOTE",
+        "FULL"
+      ],
+      1712
+    ],
+    [
+      [
+        "INFO",
+        "same_type_field_in_original"
+      ],
+      1680
+    ],
+    [
+      [
+        "MESG",
+        "same_type_field_in_original"
+      ],
+      866
+    ],
+    [
+      [
+        "TERM",
+        "same_type_field_in_original"
+      ],
+      697
+    ],
+    [
+      [
+        "source_type",
+        "TERM",
+        "NOTE",
+        "EDID"
+      ],
+      658
+    ],
+    [
+      [
+        "NPC_",
+        "different_type_in_original"
+      ],
+      634
+    ],
+    [
+      [
+        "CONT",
+        "same_type_field_in_original"
+      ],
+      408
+    ],
+    [
+      [
+        "NOTE",
+        "same_type_field_in_original"
+      ],
+      309
+    ],
+    [
+      [
+        "NOTE",
+        "same_type_other_field_in_original"
+      ],
+      270
+    ],
+    [
+      [
+        "QUST",
+        "same_type_field_in_original"
+      ],
+      235
+    ],
+    [
+      [
+        "SPEL",
+        "same_type_field_in_original"
+      ],
+      212
+    ],
+    [
+      [
+        "FACT",
+        "same_type_field_in_original"
+      ],
+      200
+    ],
+    [
+      [
+        "FURN",
+        "same_type_field_in_original"
+      ],
+      184
+    ],
+    [
+      [
+        "PERK",
+        "same_type_field_in_original"
+      ],
+      173
+    ],
+    [
+      [
+        "MISC",
+        "same_type_field_in_original"
+      ],
+      167
+    ],
+    [
+      [
+        "ARMO",
+        "same_type_field_in_original"
+      ],
+      164
+    ],
+    [
+      [
+        "KEYM",
+        "same_type_field_in_original"
+      ],
+      160
+    ],
+    [
+      [
+        "EXPL",
+        "same_type_field_in_original"
+      ],
+      89
+    ],
+    [
+      [
+        "DOOR",
+        "same_type_field_in_original"
+      ],
+      85
+    ],
+    [
+      [
+        "TERM",
+        "same_type_other_field_in_original"
+      ],
+      85
+    ],
+    [
+      [
+        "source_type",
+        "TERM",
+        "ACTI",
+        "FULL"
+      ],
+      82
+    ],
+    [
+      [
+        "source_type",
+        "TERM",
+        "BOOK",
+        "FULL"
+      ],
+      80
+    ],
+    [
+      [
+        "source_type",
+        "TERM",
+        "BOOK",
+        "DESC"
+      ],
+      80
+    ],
+    [
+      [
+        "source_type",
+        "TERM",
+        "TERM",
+        "ITXT"
+      ],
+      78
+    ],
+    [
+      [
+        "NPC_",
+        "same_type_field_in_original"
+      ],
+      68
+    ],
+    [
+      [
+        "SPEL",
+        "different_type_in_original"
+      ],
+      54
+    ],
+    [
+      [
+        "MGEF",
+        "same_type_field_in_original"
+      ],
+      48
+    ],
+    [
+      [
+        "CELL",
+        "same_type_field_in_original"
+      ],
+      48
+    ],
+    [
+      [
+        "WEAP",
+        "same_type_field_in_original"
+      ],
+      46
+    ],
+    [
+      [
+        "BOOK",
+        "same_type_field_in_original"
+      ],
+      44
+    ]
+  ],
+  "samples": {
+    "no_fo3_sst_translation_found": [
+      {
+        "target": "0107E635",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "MQ07 Captured Lamplighter Faction",
+        "source_count": 1,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "07e635",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": []
+      },
+      {
+        "target": "0107E0B5",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Enemy faction to Vault 101 Security",
+        "source_count": 2,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "07e0b5",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "02ae26",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": []
+      },
+      {
+        "target": "0107C722",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Vance and Holly's Faction",
+        "source_count": 1,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "07c722",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": []
+      },
+      {
+        "target": "0107B81A",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Capital Building Talon Company",
+        "source_count": 1,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "07b81a",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": []
+      },
+      {
+        "target": "01078C9F",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "TenpennyTowerResidentFaction",
+        "source_count": 2,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "078c9f",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0179ea",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": []
+      },
+      {
+        "target": "01071F5B",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Lamplight Dog Faction",
+        "source_count": 2,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "071f5b",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "07dcf6",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": []
+      },
+      {
+        "target": "010711A6",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Faction for NPCs that play general idles",
+        "source_count": 1,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0711a6",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": []
+      }
+    ],
+    "english_only_ko_unique": [
+      {
+        "target": "010A5EE6",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Brotherhood Outcast",
+        "source_count": 3,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0a5ee6",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "030520",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": []
+      },
+      {
+        "target": "01030520",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Brotherhood Outcast",
+        "source_count": 3,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0a5ee6",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "030520",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": []
+      },
+      {
+        "target": "0102B895",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Republic of Dave",
+        "source_count": 1,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "02b895",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": []
+      },
+      {
+        "target": "010295A3",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Reilly's Rangers",
+        "source_count": 1,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0295a3",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": []
+      },
+      {
+        "target": "01027FA5",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Temple of the Union",
+        "source_count": 1,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "027fa5",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": []
+      },
+      {
+        "target": "0102147C",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Yao Guai",
+        "source_count": 1,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "02147c",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": []
+      },
+      {
+        "target": "01021472",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Brahmin",
+        "source_count": 1,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "021472",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": []
+      }
+    ],
+    "multiple_original_records_same_korean": [
+      {
+        "target": "01030512",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Brotherhood of Steel",
+        "source_count": 3,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "030512",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "088b0d",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "브라더후드 오브 스틸"
+        ]
+      },
+      {
+        "target": "01088B0D",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Brotherhood of Steel",
+        "source_count": 3,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "030512",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "088b0d",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "브라더후드 오브 스틸"
+        ]
+      },
+      {
+        "target": "01021471",
+        "type": "FACT",
+        "field": "FULL",
+        "english": "Ants",
+        "source_count": 2,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "02fcd1",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "021471",
+            "record_type": "FACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "개미"
+        ]
+      },
+      {
+        "target": "011875E9",
+        "type": "MGEF",
+        "field": "FULL",
+        "english": "Radioactive Burning",
+        "source_count": 2,
+        "original_example": [
+          {
+            "plugin": "brokensteel.esm",
+            "local_id": "0075e9",
+            "record_type": "MGEF",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "pointlookout.esm",
+            "local_id": "0106b3",
+            "record_type": "MGEF",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "방사능 화상"
+        ]
+      },
+      {
+        "target": "0103E616",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "Enclave Eyebot Broadcast",
+        "source_count": 2,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "03e616",
+            "record_type": "SPEL",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "brokensteel.esm",
+            "local_id": "0068b9",
+            "record_type": "SPEL",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "엔클레이브 아이봇 방송"
+        ]
+      },
+      {
+        "target": "0118107F",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "Radiation Poison",
+        "source_count": 3,
+        "original_example": [
+          {
+            "plugin": "brokensteel.esm",
+            "local_id": "00107f",
+            "record_type": "SPEL",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "pointlookout.esm",
+            "local_id": "00f390",
+            "record_type": "SPEL",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "방사능 중독"
+        ]
+      },
+      {
+        "target": "01FA01A0",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "Radiation Poison",
+        "source_count": 3,
+        "original_example": [
+          {
+            "plugin": "brokensteel.esm",
+            "local_id": "00107f",
+            "record_type": "SPEL",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "pointlookout.esm",
+            "local_id": "00f390",
+            "record_type": "SPEL",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "방사능 중독"
+        ]
+      }
+    ],
+    "single_original_record_and_translated": [
+      {
+        "target": "01C59382",
+        "type": "MGEF",
+        "field": "FULL",
+        "english": "FaceSmashedEffect",
+        "source_count": 1,
+        "original_example": [
+          {
+            "plugin": "zeta.esm",
+            "local_id": "003c57",
+            "record_type": "MGEF",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "안면 함몰 효과"
+        ]
+      },
+      {
+        "target": "01D12209",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "Pitt Rot",
+        "source_count": 1,
+        "original_example": [
+          {
+            "plugin": "thepitt.esm",
+            "local_id": "00ab89",
+            "record_type": "SPEL",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "핏 부패"
+        ]
+      },
+      {
+        "target": "01B8580A",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "Size Matters (1)",
+        "source_count": 1,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "09982f",
+            "record_type": "SPEL",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "크기가 중요하지 (1)"
+        ]
+      },
+      {
+        "target": "01AC672B",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "Size Matters (2)",
+        "source_count": 1,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "099830",
+            "record_type": "SPEL",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "크기가 중요하지 (2)"
+        ]
+      },
+      {
+        "target": "01914ADD",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "Size Matters (3)",
+        "source_count": 1,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "099831",
+            "record_type": "SPEL",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "크기가 중요하지 (3)"
+        ]
+      },
+      {
+        "target": "01F4342F",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "Thief (1)",
+        "source_count": 1,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "031d92",
+            "record_type": "SPEL",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "도둑 (1)"
+        ]
+      },
+      {
+        "target": "01C94839",
+        "type": "SPEL",
+        "field": "FULL",
+        "english": "Thief (2)",
+        "source_count": 1,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "031d95",
+            "record_type": "SPEL",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "도둑 (2)"
+        ]
+      }
+    ],
+    "some_original_field_translation_same_korean": [
+      {
+        "target": "01183070",
+        "type": "ACTI",
+        "field": "FULL",
+        "english": "Radiation Box Emiiter",
+        "source_count": 1,
+        "original_example": [
+          {
+            "plugin": "brokensteel.esm",
+            "local_id": "003070",
+            "record_type": "MSTT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "방사능 함정 뇌관"
+        ]
+      },
+      {
+        "target": "011829A7",
+        "type": "ACTI",
+        "field": "FULL",
+        "english": "Liberty Prime",
+        "source_count": 4,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "05fd26",
+            "record_type": "CREA",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "brokensteel.esm",
+            "local_id": "002dc6",
+            "record_type": "TACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "리버티 프라임"
+        ]
+      },
+      {
+        "target": "01003402",
+        "type": "TACT",
+        "field": "FULL",
+        "english": "Eye Intercom",
+        "source_count": 3,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "003402",
+            "record_type": "CREA",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0bc11c",
+            "record_type": "CREA",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "아이 인터컴"
+        ]
+      },
+      {
+        "target": "010BC11C",
+        "type": "TACT",
+        "field": "FULL",
+        "english": "Eye Intercom",
+        "source_count": 3,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "003402",
+            "record_type": "CREA",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0bc11c",
+            "record_type": "CREA",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "아이 인터컴"
+        ]
+      },
+      {
+        "target": "0108F086",
+        "type": "TACT",
+        "field": "FULL",
+        "english": "Eye Intercom",
+        "source_count": 3,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "003402",
+            "record_type": "CREA",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0bc11c",
+            "record_type": "CREA",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "아이 인터컴"
+        ]
+      },
+      {
+        "target": "01524698",
+        "type": "MISC",
+        "field": "FULL",
+        "english": "Three Dog",
+        "source_count": 1,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "02248b",
+            "record_type": "NPC_",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "쓰리 독"
+        ]
+      },
+      {
+        "target": "01372849",
+        "type": "MISC",
+        "field": "FULL",
+        "english": "Ham Radio",
+        "source_count": 2,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "02942e",
+            "record_type": "ACTI",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "anchorage.esm",
+            "local_id": "0013fb",
+            "record_type": "ACTI",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "햄 라디오"
+        ]
+      }
+    ],
+    "different_translations_for_source": [
+      {
+        "target": "010CA77A",
+        "type": "TACT",
+        "field": "FULL",
+        "english": "Intercom",
+        "source_count": 19,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0ca77a",
+            "record_type": "TACT",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0b16d4",
+            "record_type": "TACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "인터컴",
+          "인터콤"
+        ]
+      },
+      {
+        "target": "010B16D4",
+        "type": "TACT",
+        "field": "FULL",
+        "english": "Intercom",
+        "source_count": 19,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0ca77a",
+            "record_type": "TACT",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0b16d4",
+            "record_type": "TACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "인터컴",
+          "인터콤"
+        ]
+      },
+      {
+        "target": "0106EC64",
+        "type": "TACT",
+        "field": "FULL",
+        "english": "Intercom",
+        "source_count": 19,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0ca77a",
+            "record_type": "TACT",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0b16d4",
+            "record_type": "TACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "인터컴",
+          "인터콤"
+        ]
+      },
+      {
+        "target": "0104692A",
+        "type": "TACT",
+        "field": "FULL",
+        "english": "Intercom",
+        "source_count": 19,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0ca77a",
+            "record_type": "TACT",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0b16d4",
+            "record_type": "TACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "인터컴",
+          "인터콤"
+        ]
+      },
+      {
+        "target": "01037374",
+        "type": "TACT",
+        "field": "FULL",
+        "english": "Intercom",
+        "source_count": 19,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0ca77a",
+            "record_type": "TACT",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0b16d4",
+            "record_type": "TACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "인터컴",
+          "인터콤"
+        ]
+      },
+      {
+        "target": "01036F5B",
+        "type": "TACT",
+        "field": "FULL",
+        "english": "Intercom",
+        "source_count": 19,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0ca77a",
+            "record_type": "TACT",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0b16d4",
+            "record_type": "TACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "인터컴",
+          "인터콤"
+        ]
+      },
+      {
+        "target": "01031D47",
+        "type": "TACT",
+        "field": "FULL",
+        "english": "Intercom",
+        "source_count": 19,
+        "original_example": [
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0ca77a",
+            "record_type": "TACT",
+            "field": "FULL",
+            "sub_index": 0
+          },
+          {
+            "plugin": "fallout3.esm",
+            "local_id": "0b16d4",
+            "record_type": "TACT",
+            "field": "FULL",
+            "sub_index": 0
+          }
+        ],
+        "korean": [
+          "인터컴",
+          "인터콤"
+        ]
+      }
+    ]
+  },
+  "warning": "Even unique original+SST match is a PATCH CANDIDATE, not proof of running in-game context. Generated IDs must use correct FO4 record and response index."
+}
