@@ -37,5 +37,8 @@ Thumbs.db
 .cache/
 build/
 dist/
+work/
+data/unified_installer/
+*.full-hangul-staging
 work/fo3/staging/
 work/xtranslator/

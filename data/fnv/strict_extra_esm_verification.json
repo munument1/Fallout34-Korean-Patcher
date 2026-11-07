@@ -1,8 +1,0 @@
-{
-  "game": "fnv",
-  "source_esm_sha256": "caa2d4649c99bfcdd36e8a489f865e55f5ee9fc6087469ba0d1de2e410318897",
-  "strict_extra_assignments": 78315,
-  "verified_exact_record_type_field_occurrence_english": 78315,
-  "issues": {},
-  "status": "pass; not installed or tested in-game"
-}

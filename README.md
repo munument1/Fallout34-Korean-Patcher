@@ -1,102 +1,77 @@
-> **최신 번역 작업 현황 (2026-11-06):** [STATUS.md](STATUS.md) — 사용자 완역 SST와 포팅 문자열을 근거로, **퀘스트 목표 66개**, **검증된 동일 원문 한국어 재사용 239개**, **뉴베가스 문장부호 변형 8개**, **원본 ESM·SST의 화면 표시 역할 간 복원 39개**, 합계 **352개 필드 출현**을 추가 연결했습니다. 정적 검증 통과 계획: **FO3 105,701 / FNV 218,902**, 합계 **324,603개 필드**. 플레이어 표시형 *미연결 실문구 후보*는 **FO3 4,981 / FNV 1,569, 합계 6,550개 필드 출현**입니다. 공백·기호·편집 ID·폴아웃 4 기본 파일·표시 불확실 필드는 포함하지 않습니다. **후보 수는 런타임 실제 미번역 확정 수가 아니며**, 게임 설치본 ESM/ESP와 온라인 기능은 수정하지 않았습니다. **xTranslator XML 패키지**: [dist/xtranslator](dist/xtranslator).
+# Fallout34 통합 한국어 패처
 
-# Fallout34 Korean Patcher — FO3 번역 데이터 작업
+**Fallout 34 (Fallout 3 + Fallout: New Vegas inside Fallout 4)**를 한국어로 플레이하기 위한 로컬 패처입니다.
 
-Fallout34 v0.9.33의 폴아웃 3 본편 및 DLC 변환 결과물을 대상으로 기존 xTranslator 한국어 SST 데이터를 매핑한 독립 작업 공간입니다.
+사용자가 이미 보유·설치한 **정상 Fallout34.esm / FalloutNV34.esm**을 지정하면, 기존 게임 파일을 변경하지 않고 각각 한국어화한 **복사본 ESM**과 **폴아웃 4 본편·DLC·Creation Club 한국어 리소스**, **Noto Sans KR 전체 한글 폰트**를 함께 묶어 **MO2에서 바로 등록할 수 있는 모드 폴더**를 생성합니다.
 
-> **검증된 로컬 ESM 미리보기:** FO3와 FNV의 한국어 ESM 복사본을 별도로 생성해 모든 레코드·필드에 대한 독립 정적 검증을 통과했습니다. 그러나 **실제 게임에서 실행해 본 것은 아니므로 완역·정상 실행은 미확정**입니다. 설치된 원본 ESM 및 F드라이브 원본 사전은 수정하지 않습니다. ESM 바이너리는 게임 자산이므로 GitHub에 올리거나 재배포하지 않습니다.
+## 다운로드·실행
 
-> **xTranslator XML 주의 (2026-11-06):** 생성한 XML은 실제 xTranslator 내보내기 파일의 고유 `sID`가 없으므로 프로그램에서 **영문 원문 기준의 문자열 매칭으로 처리될 수 있는 시험용 파일**입니다. FormID/EDID/REC를 기록했어도 실제 가져오기 시 그 정보로 안전하게 결합된다는 뜻이 아닙니다. **FalloutNV.esm / Fallout3.esm 같은 원본 게임 ESM에 가져오지 마세요.** 포팅된 `Fallout34.esm`, `FalloutNV34.esm`을 **Fallout4 작업 공간**에서 열어야 하며, 가져온 결과는 반드시 문맥 검수가 필요합니다. 이 XML에 대해서는 아직 xTranslator GUI에서 가져오기 성공 여부를 검증하지 못했습니다.
+1. [저장소](https://github.com/munument1/Fallout34-Korean-Patcher)를 ZIP으로 내려받아 압축 해제하거나 `git clone` 합니다.
+2. **Python 3.10 이상**이 필요합니다. 기본 빌드와 GUI는 Python 표준 라이브러리만 사용합니다.
+3. `Install_Korean_Patch.bat`를 실행합니다. 별도 설치 프로그램이 아니라 Python GUI 파일 선택창입니다.
+4. Fallout 34 변환기에서 생성한 원본 `Fallout34.esm`을 선택합니다. 같은 폴더의 `FalloutNV34.esm`을 자동으로 찾고, 다른 폴더에 있으면 직접 지정할 수 있습니다.
+5. 원본 게임 폴더와 겹치지 않는 **새 출력 폴더**를 지정하고 **한국어 MO2 모드 생성**을 누릅니다.
+6. 결과 `Fallout34 Unified Korean` 폴더를 MO2의 `mods` 폴더에 놓거나 MO2에서 해당 폴더를 새 모드로 등록하고 활성화합니다.
 
-## 원문 자료
+이미 별도의 FO4 한글 패치 모드를 쓰고 있다면 동일한 `Interface`, `Programs`, `Strings` 파일이 중복될 수 있으므로 **통합 모드를 사용할 때 기존 FO4 한글 패치와 기존 KR 중복 ESM 모드를 비활성화하거나 우선순위를 확인**해 주세요.
 
-- Fallout34 변환 ESM: `C:\Games\Steam\steamapps\common\Fallout 4\Fallout34_Work\fo3\staging\Data\Fallout34.esm`
-- ESM SHA256: `be0e7f25d0a28c672de2c12afbbf402bff0bb202037c231930d4649afd138603`
-- 변환 원본 ID 매핑: `Fallout34_Work\fo3\work\reports\formid_map.tsv` (321,102행)
-- 번역 원본: `F:\번역\프로그램\xTranslator\UserDictionaries\FalloutNV\`
-- 대상 SST: `fallout3_en_ko.sst`, `anchorage_en_ko.sst`, `thepitt_en_ko.sst`, `brokensteel_en_ko.sst`, `pointlookout_en_ko.sst`, `zeta_en_ko.sst`.
-
-## 중요: 폴아웃 3 본편 FormID 특성
-
-`formid_map.tsv`에는 폴아웃 3 본편의 직접 매핑이 19건밖에 없었습니다. 대부분 본편 FormID는 기존 하위 24비트에 `0x01000000`을 더하는 구조였습니다. 이 규칙을 가정하기만 하지 않고 **Fallout34.esm에서 FormID·레코드 종류·필드·영문 원문을 모두 일치 확인한 항목만** 복구했습니다. DLC는 `formid_map.tsv`의 명시적 매핑을 우선했습니다.
-
-| 집계 | 건수 |
-|---|---:|
-| 기존 FO3+5 DLC SST 중 FO3 원문과 연결된 항목 | 51,872 |
-| 초기 직접 매핑 후보 | 14,406 |
-| 초기 중복 제거·검증 통과 | 11,946 |
-| 신규 FO3 본편 자동 연결 중 원문까지 정확히 일치 | 33,552 |
-| 추가 복구 후 중복 제거·검증 통과 | **45,179** |
-| 기존 대비 순증 | **33,233** |
-| 직접 복구 원문이 아닌 항목(필드 누락 등) | 3,810 |
-| DLC에서 직접 매핑 누락된 항목 | 104 |
-| 초기 직접 매핑 원문 검증에서 제외된 항목 | 2,318 |
-
-같은 번역 항목의 중복 319행은 통합했고, 한국어 충돌 키는 없었습니다. **45,179는 실제 플러그인에 적용된 수가 아니라 패처에서 사용할 수 있는 우선 검증 후보 수입니다.** `INFO` 응답 인덱스와 반복 서브레코드, 전용 UI·스크립트 문자열 등은 별도 검증이 필요합니다.
-
-## 작업 파일
-
-- `data/fo3/verified_assignments_all.jsonl.gz` — 최종 통합된 45,179개 고유 한국어 매핑 후보
-- `data/fo3/combined_plan_report.json` — ESM 해시, 매핑 경로, 중복·검증 결과
-- `data/fo3/verified_assignments.jsonl.gz` — 기존 직접 매핑 검증본
-- `data/fo3/direct_formid_exact.jsonl.gz` — 추가 확인된 폴아웃 3 본편 번역
-- `data/fo3/direct_formid_review.jsonl.gz` — 본편 자동 매핑에서 제외한 항목
-- `data/fo3/review_needed.jsonl.gz` — 초기 매핑에서 제외한 항목
-- `data/fo3/unmatched_sst.jsonl.gz` — 초기 ID 매핑이 없었던 SST 항목
-- `data/mcm/translations_ko.json` — MCM 한국어 번역 데이터
-- `work/fo3/Data/MCM/Config/Fallout34/config.json` — MCM UI 문구 42개 번역본(동작 설정값 불변)
-
-## 다시 검사
+CLI 사용법:
 
 ```powershell
-python tools/build_fo3_translation_catalog.py
-python tools/build_verified_plan.py
-python tools/audit_missing_mapping.py
-python tools/probe_fo3_direct_ids.py
-python tools/probe_dlc_missing_ids.py
-python tools/merge_verified_plans.py
-python tools/build_mcm.py
+python tools/build_mo2_korean_mod.py `
+    --fo3 "C:\Games\Steam\steamapps\common\Fallout 4\Data\Fallout34.esm" `
+    --output "D:\Fallout34-Korean-Output"
 ```
 
-## 다음 단계
+`FalloutNV34.esm`이 다른 위치에 있다면 `--fnv "D:\...\FalloutNV34.esm"`을 추가합니다. 출력 경로는 **새로 만들어질 폴더**여야 합니다. 기존 폴더를 덮어쓰지 않습니다.
 
-1. Fallout34 설치가 최종 완료되면 ESM SHA256을 재확인하고, 현재 생성물과 비교.
-2. FO4 호환 xEdit 기반 ESP 생성기(또는 검증된 동등 구현)를 작성. 원본 `Fallout34.esm`은 보존.
-3. `INFO` 다중 응답, 현지화 STRINGS 키, 마스터·로드 순서, 압축 레코드, 글꼴/한국어 화면 출력을 검증.
-4. 플러그인 적용 결과와 검수 제외 항목을 보고하는 릴리스 전 QA를 실행.
+## 결과물 구조
 
-## 2026-11-06 FO3 누락 문자열 검사
+```text
+Fallout34-Korean-Output/
+├── build-report.json
+└── Fallout34 Unified Korean/
+    ├── Fallout34.esm                 # 새로 생성한 한국어 복사본
+    ├── FalloutNV34.esm               # 새로 생성한 한국어 복사본
+    ├── FALLOUT34_KOREAN_README.txt
+    ├── Interface/                    # FO4 한글 UI + 새 폰트 SWF
+    ├── Programs/                     # 폴아웃 4 프로그램 및 한글 폰트
+    └── Strings/                      # FO4 본편·공식 DLC·지원 CC 문자열
+```
 
-- `verified_assignments_all.jsonl.gz`: 레코드/필드/영문 일치에 따른 기존 고유 번역 후보 45,179개. **아직 한국어 ESP/STRINGS 미생성**.
-- `outstanding_translation_audit.json`: 원본 SST 사전 6개에 존재하나 자동 반영에서 제외된 6,232행(원문-대상 구조 변경 및 제거 포함).
-- `field_migration_audit.json`: 위 제외 항목 중 다른 필드에 동일 영문이 존재하는 749행(터미널 중심). 수동 검토 후 필드 변경 대응 가능.
-- `record_type_migration_report.json`: 레코드 종류 변경 405행 중 401행에서 동일 필드·영문 확인. 변환 대상 레코드의 의미 검토 필요.
-- `unmatched_display_text_audit.json`: 알려진 37개 레코드·필드 종류의 ESM 영문 출현 66,760회 중 21,326회는 기존 번역표에 직접 연결되지 않음. 이 수치는 중복·내부 문자열·폴아웃 4 기존 문구를 포함하는 **검토 후보 수**이며 확정 게임 미번역 개수가 아님.
-- `sst_reuse_audit.json`: 직접 매핑 누락 21,326회 중 SST 기반 한국어 재사용 가능성 8,781회, 동일 영문 없는 후보 12,159회, FO4 기본 플러그인 359회, 동문이역 충돌 27회. **동일 영문이라는 이유만으로 자동 적용하지 말 것**.
-- `potential_sst_reuse_*.jsonl.gz`: 번역 재활용 후보 분리. `unmatched_field_entries.jsonl.gz`는 후속 검수용 전체 기록.
-- `StreetLights.esm`, `DCInteriors_ComboEdition.esm`, `Interior Lighting.esp`의 이름에 대응되는 사전 파일은 이 SST 6개에 포함되어 있지 않음. 별도 모드 번역 자료 조사 필요.
+이 패처는 FO3/FNV **ESM 게임 자산을 저장소에 배포하지 않습니다.** 사용자가 자신의 게임에서 만든 ESM을 로컬에서 읽고, 저장소의 한국어 텍스트 데이터만 덮어쓴 별도 복사본을 만듭니다. 기존 `Data`의 ESM, BA2, ESL 및 원본 게임 폴더를 수정하지 않습니다.
 
-기존 6,232행 검수 제외와 ESM 직접 스캔 21,326회는 **관찰 기준이 달라 단순 합산하면 안 됩니다.** 일부는 서로 겹칩니다.
-## 폴아웃 3 원본 ESM 6종 직접 역검색 — 누락 원인 정정
+## 현재 검증 범위
 
-앞선 분석에서 Fallout34의 미연결 영문 21,326회가 모두 추가 문구일 가능성을 과대평가함. 원본 Fallout3.esm 및 DLC 5종의 실제 ESM 레코드를 전수 역검색한 결과:
-- 원본 ESM 6개에서 동일 영문 발견: **19,149회** (약 89.8%). 단, 사용 맥락 동일성까지 입증된 것은 아님.
-- 원본 6개에서 동일 영문 미발견: **2,177회**. 추가 모드·변환기 자체 문구·FO4 텍스트 가능성 분리 필요.
-- 원본과 레코드 타입·문자열 필드까지 동일한 영문: 6,113회.
-- 원본과 레코드 타입은 같으나 필드가 다름: 3,820회.
-- 다른 타입의 원본 레코드에서 영문 발견: 9,216회.
+| 대상 | 원본 구조 보존 | 한국어 필드 이식 | 원본 SHA-256 |
+|---|---:|---:|---|
+| Fallout34.esm (FO3) | `LAND` 47,507건 | 111,543건 | `be0e7f25…` |
+| FalloutNV34.esm (FNV) | `LAND` 42,467건 | 209,785건 | `caa2d464…` |
 
-특히 변환 후 `INFO/NAM1`에는 원본 `DIAL/FULL`과 `INFO/RNAM`이 재배치됨. 문자열 출처의 레코드 종류/필드 변경을 고려하는 번역 재연결이 필요함.
+**총 321,328개**의 한국어 필드를 이식합니다. 양쪽 ESM 모두 독립적인 비텍스트 바이트·GRUP·레코드 구조 검증을 통과했고, 패처 빌드의 출력 SHA-256이 이전에 사용자의 PC에서 지형이 정상 출력된 검증본과 동일하다는 것을 실제로 확인했습니다.
 
-원본 ESM 위치와 기존 FO3·DLC 한국어 SST 6종 교차 분석:
-- 원본 위치 유일·타입/필드 일치·한국어 유일: 160회 (우선 검수할 강력한 후보)
-- 원본 복수 위치에서 한국어 일치: 2,063회
-- 다른 필드나 타입에 원본 한국어: 6,260회
-- 동일 영문만으로 한국어 하나 확인: 302회
-- 번역이 서로 다른 충돌: 27회
-- 사용한 SST 6종에서 대응 한국어 미발견: 10,337회
+**중요: 현재는 위 두 원본 파일의 정확한 SHA-256을 가진 포팅 빌드만 지원합니다.** 업데이트된 변환기에서 ESM이 변경됐을 때는 지형/레코드/번역 매핑을 다시 검증한 패처 업데이트가 필요합니다. 입력 파일 해시가 다르면 패처가 오류를 알리고 중단하는 것이 정상입니다. 예전 약 301MB/305MB짜리 한국어 ESM을 입력으로 사용하면 안 됩니다.
 
-관련 보고서: `generated_original_source_audit.json`, `original_translation_recovery_report.json` 및 원본 연결 후보 JSONL.GZ.
-재현 스크립트: `audit_against_original_fo3.py`, `audit_generated_strings_vs_sources.py`, `audit_original_translation_links.py`.
+FO4 한국어 리소스는 기존에 저장소에 포함된 `FO4_AE_1.11.191.Kor` 자료를 사용하며, 최종 출력은 중복 언어 변형을 정리한 **505개** 파일입니다. 이 중 지원되는 CC의 일부 `_en`/`_ko` 충돌 33건은 `_en` 버전을 보수적으로 유지합니다. CC의 모든 비로컬라이즈 문구가 번역됐다는 뜻은 아닙니다.
 
-수치는 중복을 포함한 **문자열 출현 횟수**임. 게임 내 실제 미번역 표시 횟수나 고유 문자열 수가 아니며 원본 한국어의 문맥·응답 인덱스 검수 전 자동 적용하지 않음. ESP/STRINGS 출력 미생성.
+## 폰트 변경
+
+FO4의 기존 한글 SWF 폰트는 대다수가 한글 **2,350자**만 지원해 드문 글자가 네모로 출력됐습니다. **Noto Sans KR Regular/Bold**를 임베딩해 메뉴·콘솔·프로그램용 13개 내장 폰트가 **현대 한글 11,172자 전체**를 지원하게 교체했습니다. 원래 폰트 ID와 별칭은 유지했습니다.
+
+재생성 방법, 테스트, 폰트 출처와 OFL 라이선스는 [FONT_REPLACEMENT.md](FONT_REPLACEMENT.md) 및 [licenses/NotoSansKR-OFL.txt](licenses/NotoSansKR-OFL.txt)를 참조하세요. 새 폰트의 전체 인게임 시각 검증은 별도로 필요합니다.
+
+## 기록 및 이전 자료
+
+- [UTF8_CONVERSION_HISTORY.md](UTF8_CONVERSION_HISTORY.md): CP1252/UTF-8 손상, 원본 대조 복구, xTranslator와 `NPC_:FULL` 바이너리 문제, 누락 지형의 원인, 최종 이식 검증
+- [UNIFIED_INSTALLER.md](UNIFIED_INSTALLER.md): 파일 입력·출력 및 설치 안전장치 상세
+- `data/canonical/manifest.json`: 사용자 소유 원본 ESM의 정확한 SHA-256, 번역 적용 필드 수, 출력 검증 해시
+- `data/canonical/*.utf8.text-fields.jsonl.gz`: **한국어 번역문, 레코드 좌표 및 원본 필드 해시만** 포함하는 배포 데이터
+- [`archive/legacy-translation-work-20261108`](https://github.com/munument1/Fallout34-Korean-Patcher/tree/archive/legacy-translation-work-20261108): 이전 번역 작업 중 생성한 검수 계획·중간 후보·기존 도구를 보관한 브랜치
+
+## 출처와 주의
+
+FO4 한국어 리소스는 사용자 보유의 `FO4_AE_1.11.191.Kor` 폴더와 [The Midnight Ride KR Patcher](https://github.com/munument1/The-Midnight-Ride-KR-Patcher)에 연계된 파일을 기반으로 구성했습니다. 원본 자료 기여자들의 크레딧·배포 조건을 존중해야 합니다. 폰트는 Noto Sans KR (SIL Open Font License 1.1)을 사용합니다.
+
+게임 본편·DLC·컨버터·포팅 ESM·BA2는 포함하지 않습니다. 폴아웃 3, 뉴베가스, 폴아웃 4의 정품 설치 및 Fallout34 변환 결과가 필요합니다. 패처는 **게임 자산을 복사한 ESM 자체를 온라인에 배포하는 도구가 아닙니다.**
+
+이번 빌드는 실사용 환경에서 지형 표시가 확인된 ESM과 바이트 일치를 검증했지만, 새 UI 글꼴로 모든 상황의 표시·줄바꿈·게임 안정성을 검증한 것은 아닙니다. 문제가 발생하면 원본 ESM 대신 **생성된 MO2 모드만 비활성화**해 되돌릴 수 있습니다.

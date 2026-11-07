@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "font_license": "SIL Open Font License 1.1 (Noto Sans KR)",
+  "font_source": "Google Fonts / Noto Sans KR, local full-syllable TTF",
+  "source_ttf_sha256": {
+    "regular": "9db318b65ee9c575a43e7efd273dbdd1afef26e467eea3e1073a50e1a6595f6d",
+    "bold": "a76c8dabfcfae31d67c86207373155718979ddcfcc1ce62d3129dd36530a5bdf"
+  },
+  "files": {
+    "Interface/fonts_en.swf": {
+      "source_sha256": "2a9499eef3ee02282625805579293e6d5b8a11be678476994e685e5bd013f099",
+      "result_sha256": "f5a6150d95b3f6991f6489aec3c3fdee1cd2bc915144f4a78554a0f0b91873ce",
+      "source_bytes": 2849542,
+      "result_bytes": 43330683,
+      "replaced_font_ids": {
+        "3": "bold",
+        "6": "regular",
+        "7": "regular",
+        "8": "bold",
+        "9": "regular",
+        "10": "regular",
+        "14": "regular"
+      },
+      "embedded_korean_syllables_per_replaced_font": 11172
+    },
+    "Interface/fonts_console.swf": {
+      "source_sha256": "340acd228bda100466a564215c58aa7234694ff429dbe68731e12e16cbdb8f53",
+      "result_sha256": "290341a0a8aeab138f6773de74c258e8ccc171cc9188b48127c51268e26a452c",
+      "source_bytes": 973933,
+      "result_bytes": 12170060,
+      "replaced_font_ids": {
+        "1": "regular",
+        "2": "regular"
+      },
+      "embedded_korean_syllables_per_replaced_font": 11172
+    },
+    "Programs/fonts_programs.swf": {
+      "source_sha256": "d82bd9a9a213dd77ad222552c811cbd1e7135ef2c406f2fc057cd6d9f806b929",
+      "result_sha256": "d4311622490997d1f642885471c4e80b95e2c6b9ef2ea01d43bab8b6f39ef944",
+      "source_bytes": 141396,
+      "result_bytes": 24456629,
+      "replaced_font_ids": {
+        "1": "bold",
+        "2": "regular",
+        "3": "regular",
+        "4": "regular"
+      },
+      "embedded_korean_syllables_per_replaced_font": 11172
+    }
+  }
+}

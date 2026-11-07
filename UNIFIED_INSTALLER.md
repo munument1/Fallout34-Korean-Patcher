@@ -1,34 +1,33 @@
-# Fallout34 통합 한국어 패처 — FO4 번역 포함
+# MO2용 통합 한국어 패처: 기술 설계
 
-## 실제 포함된 리소스
-GitHub 저장소 assets/fo4_korean/에는 사용자가 지정한 D:\Uh-huh ex\mods\FO4_AE_1.11.191.Kor의 Interface, Programs, Strings 총 565개 파일이 들어 있습니다. MO2 관리용 meta.ini는 제외했습니다. SHA256 인덱스는 assets/fo4_korean_sources.json입니다.
+최신 사용자 문서는 [README.md](README.md), UTF-8·지형 오류의 기술 기록은 [UTF8_CONVERSION_HISTORY.md](UTF8_CONVERSION_HISTORY.md)를 참고하세요.
 
-이 리소스 565개는 TMR 한국어 패처 v1.0.5에 포함된 FO4_AE_1.11.191.Kor와 바이트가 일치합니다. 실행 시 TMR ZIP이나 사용자 원본 경로가 필요하지 않습니다.
+## 입력 및 출력
 
-FO4 본편, 공식 DLC, CC의 문자열 테이블과 한글 폰트·인터페이스 파일을 포함합니다. CC 비-localized 플러그인 문구·런타임 문구·모든 글꼴 출력이 완역 검증됐다는 뜻은 아닙니다.
+입력은 포팅기에서 생성된 `Fallout34.esm`과 `FalloutNV34.esm` **원본**입니다. 두 파일은 동일한 `Data` 폴더에 있어도 되고 개별 경로를 지정해도 됩니다.
 
-## 언어 파일 정책
-FO4 영문 실행 환경은 _en 문자열 테이블을 읽습니다. 이미 _en 파일이 있으면 그것을 유지합니다. _ko 파일만 있으면 출력 때 _en 이름으로 복사합니다. _en과 _ko가 함께 있으나 서로 다르면 _en을 선택하고 내용은 검수합니다(현재 33개). 원본은 변경하지 않습니다.
+- 사용자 인터페이스: `Install_Korean_Patch.bat` → `install_gui.py` (Tkinter)
+- CLI: `tools/build_mo2_korean_mod.py`
+- 독립 데이터: `data/canonical/manifest.json`, `data/canonical/*.utf8.text-fields.jsonl.gz`
+- ESM 엔진: `tools/runtime_esm_writer.py`
+- FO4 리소스 선택: `tools/fo4_korean_assets.py`, `assets/fo4_korean/`, `assets/fo4_korean_sources.json`
 
-565개 소스 파일에서 MO2용 FO4 실제 출력 대상은 중복 언어 변형을 제외한 505개입니다.
+출력은 새로운 `Fallout34 Unified Korean` MO2 폴더입니다. 두 ESM은 **원본의 게임 자산을 로컬에서 복사하고 텍스트 필드만 수정한 파일**입니다. GitHub의 배포 데이터에는 ESM/BA2를 넣지 않습니다.
 
-## 상태 확인
-실제 게임 PC의 저장소 루트에서 다음 명령을 실행합니다.
+## 안전장치
 
-    python tools/build_unified_install_output.py --inspect
+1. 입력 폴아웃 3·뉴베가스 ESM의 전체 SHA-256을 canonical manifest와 비교합니다. 현재 확인된 버전이 아니면 **시작하지 않습니다**.
+2. 각 번역 적용 위치는 FormID·record type·EditorID·field tag·subrecord occurrence로 지정합니다. 원본 필드 값은 공개되지 않는 **SHA-256으로 일치성 검증**합니다.
+3. `LAND`·`CELL`·`WRLD` 등 모든 비텍스트 필드를 그대로 보존합니다. 필요 시 번역 레코드만 재압축하고 상위 GRUP 크기를 갱신합니다.
+4. 모든 계획된 필드가 실제로 수정되어야 성공입니다. 그 수는 FO3 111,543개 + FNV 209,785개 = 321,328개입니다.
+5. 최종 결과 ESM이 이미 독립 검증을 통과한 로컬 복구본의 SHA-256과 **완전히 일치**해야 합니다. 일치하지 않으면 출력 작업을 중단합니다.
+6. 사용자 게임 `Data`, 기존 번역 모드, 저장소 내부 파일을 덮어쓰지 않습니다. 출력 디렉터리는 새로 생성되는 경로만 허용합니다.
+7. FO4 한국어 리소스 565개 원본을 SHA-256으로 검사하고 중복 CC 언어 변형을 505개 출력 대상으로 정규화합니다. 한 `_ko` 변형만 존재할 때 영어 실행 환경의 `_en` 파일명으로 이동합니다. `_en`과 `_ko` 내용이 다를 때는 기존 `_en`을 유지합니다.
+8. 실패하면 생성 중인 임시 출력 디렉터리를 정리하고 실제 원본 ESM은 수정하지 않습니다.
 
-번역 완료되지 않은 FO3/FNV가 있으면 ready_to_build=false로 출력되며 설치 결과물을 생성하지 않습니다.
+## 주의사항
 
-## 최종 완역 후 MO2 출력
-검증 완료된 한국어 ESM 2개가 사용자의 로컬 PC에 만들어진 뒤 다음 명령으로 묶을 수 있습니다.
-
-    python tools/build_unified_install_output.py --game-data "C:\Games\Steam\steamapps\common\Fallout 4\Data" --fo3-translated "D:\verified\Fallout34.esm" --fnv-translated "D:\verified\FalloutNV34.esm" --output "D:\Fallout34-Korean-Output"
-
-도구는 ESM 번역 계획과 원본 게임의 비번역 필드를 바이트/레코드 단위로 대조한 후 Output/mods/Fallout34 Unified Korean 모드 아래에 FO4 Interface/Programs/Strings와 폴아웃 3·뉴베가스 번역 ESM을 출력합니다. 완료 전에는 작동을 차단합니다.
-
-원본 설치 Fallout4.esm, 공식 DLC/CC, Fallout34.esm, FalloutNV34.esm, F34Online.esp, BA2, 리소스 전용 ESL은 수정하지 않습니다. GitHub에 FO3/FNV 번역된 ESM을 배포하지 않습니다.
-
-## 출처와 진행 단계
-FO4 번역 리소스: 사용자 제공 FO4_AE_1.11.191.Kor. 동일 리소스 대조: https://github.com/munument1/The-Midnight-Ride-KR-Patcher
-
-FO3·FNV: 사용자 완역 SST에서 복구한 한국어 적용 계획. 통합 CLI 출력 도구와 번역 리소스는 저장소에 추가했지만 GUI 설치기와 실게임 QA는 아직 완료되지 않았습니다.
+- 패처는 모든 버전의 Fallout34 변환 ESM을 자동 인식해 번역하는 범용 도구가 아닙니다. 원본 포팅 빌드가 달라지면 별도의 구조 검증과 새 manifest가 필요합니다.
+- 현재 자료는 **실제 사용자 PC에서 검증된 출력**을 기준으로 고정됐습니다. 향후 번역 수정 시 `data/canonical`과 결과 검증 해시를 새로 생성·재검사해야 합니다.
+- SWF 폰트의 정적 전체 글리프 검증은 완료됐으나 실게임 표시 폭·줄바꿈·오버레이는 별도 확인이 필요합니다.
+- 레거시 번역 데이터/검수 스크립트는 기본 브랜치에서 제거했으며 `archive/legacy-translation-work-20261108`에서 추적할 수 있습니다.

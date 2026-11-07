@@ -1,8 +1,0 @@
-{
-  "game": "fo3",
-  "source_esm_sha256": "be0e7f25d0a28c672de2c12afbbf402bff0bb202037c231930d4649afd138603",
-  "strict_extra_assignments": 20301,
-  "verified_exact_record_type_field_occurrence_english": 20301,
-  "issues": {},
-  "status": "pass; not installed or tested in-game"
-}

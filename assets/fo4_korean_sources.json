@@ -5,10 +5,10 @@
   "files": {
     "Interface/Credits.txt": "524e1b5512769d2749a5634bb625ad6752b4b8cab5910c4eae09fdd9c50d0e3c",
     "Interface/FontConfig.txt": "3980b211839115dcf91e4a82c42220833332dc30d7bad4260391aa1befbe2817",
-    "Interface/fonts_console.swf": "340acd228bda100466a564215c58aa7234694ff429dbe68731e12e16cbdb8f53",
-    "Interface/fonts_en.swf": "2a9499eef3ee02282625805579293e6d5b8a11be678476994e685e5bd013f099",
+    "Interface/fonts_console.swf": "290341a0a8aeab138f6773de74c258e8ccc171cc9188b48127c51268e26a452c",
+    "Interface/fonts_en.swf": "f5a6150d95b3f6991f6489aec3c3fdee1cd2bc915144f4a78554a0f0b91873ce",
     "Interface/Translate_en.txt": "7aa4d0647d4c37c514026bdd41b6907de25e0526a939dcfb825a5e155a4bbd36",
-    "Programs/fonts_programs.swf": "d82bd9a9a213dd77ad222552c811cbd1e7135ef2c406f2fc057cd6d9f806b929",
+    "Programs/fonts_programs.swf": "d4311622490997d1f642885471c4e80b95e2c6b9ef2ea01d43bab8b6f39ef944",
     "Programs/Grognak.swf": "f732c244ecaee284c8f8ae4bac427602e6061bc51f22d3402cfe90f99c8c9d4d",
     "Strings/ccacxfo4001-vsuit_en.DLSTRINGS": "f872592ba4f4045441b9aaa1f1f8951df71f799c07b82efc582f3de342011597",
     "Strings/ccacxfo4001-vsuit_en.ILSTRINGS": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
