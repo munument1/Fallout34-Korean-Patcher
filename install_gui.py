@@ -14,6 +14,31 @@ sys.path.insert(0,str(ROOT/'tools'))
 from build_mo2_korean_mod import build
 
 
+def resolve_esm_folder(raw:str)->tuple[Path,Path]:
+    """Resolve BOTH converter originals from a single user-selected folder."""
+    selected=raw.strip().strip('"').strip("'")
+    if not selected:
+        raise ValueError('원본 ESM 폴더를 선택해 주세요.')
+    folder=Path(selected).expanduser()
+    if not folder.is_dir():
+        if folder.is_file():
+            raise ValueError(
+                'ESM 파일이 아닌, Fallout34.esm과 FalloutNV34.esm이 들어 있는 폴더를 선택해 주세요.\n'
+                f'선택한 파일: {folder}')
+        raise ValueError(f'선택한 폴더가 존재하지 않습니다:\n{folder}')
+    # Windows names are case-insensitive, including on a few case-sensitive mounts.
+    files={item.name.casefold():item for item in folder.iterdir() if item.is_file()}
+    required=('fallout34.esm','falloutnv34.esm')
+    missing=[name for name in required if name not in files]
+    if missing:
+        raise ValueError(
+            '선택한 폴더에서 다음 원본 ESM 파일을 찾지 못했습니다:\n'
+            + '\n'.join(missing)
+            + f'\n\n선택한 폴더: {folder}'
+            + '\n\nFallout34 변환기가 생성한 두 ESM이 함께 있는 Fallout 4\\Data 폴더를 선택해 주세요.')
+    return files[required[0]],files[required[1]]
+
+
 def choose_output_root(selected:Path)->Path:
     """Treat an existing user-selected folder as a parent, never overwrite it.
 
@@ -43,10 +68,10 @@ class UI:
         self.app.title('Fallout 34 한국어 패처 — MO2용 복사본 생성')
         self.app.geometry('760x355')
         self.app.minsize(690,320)
-        self.fo3=tk.StringVar(value='')
+        self.source_folder=tk.StringVar(value='')
         self.dest=tk.StringVar(value='')
         self.allow_updated=tk.BooleanVar(value=False)
-        self.info=tk.StringVar(value='Fallout34.esm만 선택하면 같은 폴더의 FalloutNV34.esm도 자동으로 불러옵니다.')
+        self.info=tk.StringVar(value='Fallout34.esm과 FalloutNV34.esm이 함께 들어 있는 폴더를 선택해 주세요.')
         self.events=queue.Queue()
         self.building=False
 
@@ -60,7 +85,7 @@ class UI:
             ttk.Entry(line,textvariable=var).pack(side=tk.LEFT,fill=tk.X,expand=True)
             ttk.Button(line,text='찾기',command=lambda:self.pick(var,mode),width=8).pack(side=tk.LEFT,padx=(8,0))
 
-        row('① Fallout34.esm 위치 (같은 폴더의 FalloutNV34.esm 자동 선택)',self.fo3,'fo3')
+        row('① 원본 포팅 ESM 폴더 (Fallout34.esm + FalloutNV34.esm)',self.source_folder,'source')
         row('② 결과물을 저장할 폴더 (기존 폴더 선택 가능)',self.dest,'output')
         ttk.Checkbutton(frame,variable=self.allow_updated,
                         text='업데이트된 Fallout34 ESM 호환 시도 (기존 번역만 안전하게 재적용)').pack(anchor='w',pady=(0,5))
@@ -71,29 +96,24 @@ class UI:
         self.app.after(150,self.poll)
 
     def pick(self,var,mode):
-        if mode=='output':
-            folder=filedialog.askdirectory(title='결과물을 저장할 폴더 선택')
-            if folder:var.set(folder)
-            return
-        name='Fallout34.esm'
-        chosen=filedialog.askopenfilename(title=f'{name} 선택',filetypes=[('ESM 플러그인','*.esm'),('모든 파일','*.*')])
-        if chosen:
-            var.set(chosen)
-            candidate=Path(chosen).with_name('FalloutNV34.esm')
-            if candidate.is_file():
-                self.info.set('두 ESM 확인: Fallout34.esm + FalloutNV34.esm')
-            else:
-                self.info.set('FalloutNV34.esm이 같은 폴더에 없습니다. 변환기 출력을 확인하세요.')
+        folder=filedialog.askdirectory(
+            title=('원본 Fallout34.esm + FalloutNV34.esm 폴더 선택'
+                   if mode=='source' else '결과물을 저장할 폴더 선택'))
+        if not folder:return
+        var.set(folder)
+        if mode=='source':
+            try:
+                fo3,nv=resolve_esm_folder(folder)
+                self.info.set(f'원본 ESM 2개 확인: {fo3.name} + {nv.name}')
+            except ValueError as exc:
+                self.info.set(str(exc).replace('\n',' '))
 
     def start(self):
         if self.building:return
-        file=Path(self.fo3.get().strip())
-        if not file.is_file() or file.name.casefold()!='fallout34.esm':
-            messagebox.showerror('원본 ESM 선택 오류','올바른 Fallout34.esm 파일을 선택해 주세요.')
-            return
-        nv=file.with_name('FalloutNV34.esm')
-        if not nv.is_file():
-            messagebox.showerror('뉴베가스 ESM 누락','선택한 Fallout34.esm과 같은 폴더에서 FalloutNV34.esm을 찾지 못했습니다.')
+        try:
+            file,nv=resolve_esm_folder(self.source_folder.get())
+        except ValueError as exc:
+            messagebox.showerror('원본 ESM 폴더 확인 오류',str(exc))
             return
         if not self.dest.get().strip():
             messagebox.showerror('출력 경로 누락','결과물을 저장할 폴더를 선택해 주세요.')

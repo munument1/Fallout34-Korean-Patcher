@@ -8,10 +8,41 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
-from install_gui import choose_output_root
+from install_gui import choose_output_root,resolve_esm_folder
 
 
 class GuiOutputSelection(unittest.TestCase):
+    def test_esm_source_folder_resolves_both_files(self):
+        with tempfile.TemporaryDirectory() as td:
+            source=Path(td)/'Fallout 4'/'Data'
+            source.mkdir(parents=True)
+            fo3=source/'Fallout34.esm'
+            nv=source/'FalloutNV34.esm'
+            fo3.write_bytes(b'source only')
+            nv.write_bytes(b'source only')
+            self.assertEqual(resolve_esm_folder(str(source)),(fo3,nv))
+            self.assertEqual(resolve_esm_folder('"'+str(source)+'"'),(fo3,nv))
+
+    def test_single_file_selected_instead_of_folder_is_rejected_with_hint(self):
+        with tempfile.TemporaryDirectory() as td:
+            file=Path(td)/'Fallout34.esm'
+            file.write_bytes(b'example')
+            with self.assertRaisesRegex(ValueError,'폴더를 선택'):
+                resolve_esm_folder(str(file))
+
+    def test_missing_companion_esm_reports_folder_and_file(self):
+        with tempfile.TemporaryDirectory() as td:
+            source=Path(td)
+            (source/'Fallout34.esm').write_bytes(b'example')
+            with self.assertRaises(ValueError) as caught:
+                resolve_esm_folder(str(source))
+            self.assertIn('falloutnv34.esm',str(caught.exception))
+            self.assertIn(str(source),str(caught.exception))
+
+    def test_empty_source_input_is_rejected(self):
+        with self.assertRaisesRegex(ValueError,'폴더를 선택'):
+            resolve_esm_folder('  ')
+
     def test_existing_folder_gets_new_child(self):
         with tempfile.TemporaryDirectory() as td:
             existing=Path(td)/'새 폴더 (3)'
