@@ -5,9 +5,11 @@ import threading
 import tkinter as tk
 from tkinter import filedialog,messagebox,ttk
 from pathlib import Path
+import os
 import sys
 
-ROOT=Path(__file__).resolve().parent
+ROOT=(Path(sys.executable).resolve().parent if getattr(sys,'frozen',False)
+      else Path(__file__).resolve().parent)
 sys.path.insert(0,str(ROOT/'tools'))
 from build_mo2_korean_mod import build
 
@@ -16,13 +18,12 @@ class UI:
     def __init__(self):
         self.app=tk.Tk()
         self.app.title('Fallout 34 한국어 패처 — MO2용 복사본 생성')
-        self.app.geometry('760x400')
-        self.app.minsize(690,340)
+        self.app.geometry('760x355')
+        self.app.minsize(690,320)
         self.fo3=tk.StringVar(value='')
-        self.fnv=tk.StringVar(value='')
-        self.dest=tk.StringVar(value=str(Path.home()/'Documents'/'Fallout34-Korean-Output'))
+        self.dest=tk.StringVar(value='')
         self.allow_updated=tk.BooleanVar(value=False)
-        self.info=tk.StringVar(value='Fallout34.esm을 선택해 주세요. FalloutNV34.esm은 같은 폴더에서 자동으로 찾습니다.')
+        self.info=tk.StringVar(value='Fallout34.esm만 선택하면 같은 폴더의 FalloutNV34.esm도 자동으로 불러옵니다.')
         self.events=queue.Queue()
         self.building=False
 
@@ -36,9 +37,8 @@ class UI:
             ttk.Entry(line,textvariable=var).pack(side=tk.LEFT,fill=tk.X,expand=True)
             ttk.Button(line,text='찾기',command=lambda:self.pick(var,mode),width=8).pack(side=tk.LEFT,padx=(8,0))
 
-        row('① Fallout34.esm 위치 (필수)',self.fo3,'fo3')
-        row('② FalloutNV34.esm 위치 (같은 폴더면 비워두기)',self.fnv,'fnv')
-        row('③ MO2용 결과물을 생성할 새 폴더',self.dest,'output')
+        row('① Fallout34.esm 위치 (같은 폴더의 FalloutNV34.esm 자동 선택)',self.fo3,'fo3')
+        row('② MO2용 결과물을 생성할 새 폴더 (직접 지정)',self.dest,'output')
         ttk.Checkbutton(frame,variable=self.allow_updated,
                         text='업데이트된 Fallout34 ESM 호환 시도 (기존 번역만 안전하게 재적용)').pack(anchor='w',pady=(0,5))
         self.button=ttk.Button(frame,text='한국어 MO2 모드 생성',command=self.start)
@@ -52,13 +52,15 @@ class UI:
             folder=filedialog.askdirectory(title='출력 폴더를 만들 부모 경로 선택')
             if folder:var.set(str(Path(folder)/'Fallout34-Korean-Output'))
             return
-        name='Fallout34.esm' if mode=='fo3' else 'FalloutNV34.esm'
+        name='Fallout34.esm'
         chosen=filedialog.askopenfilename(title=f'{name} 선택',filetypes=[('ESM 플러그인','*.esm'),('모든 파일','*.*')])
         if chosen:
             var.set(chosen)
-            if mode=='fo3' and not self.fnv.get():
-                candidate=Path(chosen).with_name('FalloutNV34.esm')
-                if candidate.is_file():self.fnv.set(str(candidate))
+            candidate=Path(chosen).with_name('FalloutNV34.esm')
+            if candidate.is_file():
+                self.info.set('두 ESM 확인: Fallout34.esm + FalloutNV34.esm')
+            else:
+                self.info.set('FalloutNV34.esm이 같은 폴더에 없습니다. 변환기 출력을 확인하세요.')
 
     def start(self):
         if self.building:return
@@ -66,14 +68,14 @@ class UI:
         if not file.is_file() or file.name.casefold()!='fallout34.esm':
             messagebox.showerror('원본 ESM 선택 오류','올바른 Fallout34.esm 파일을 선택해 주세요.')
             return
-        nv=Path(self.fnv.get().strip()) if self.fnv.get().strip() else file.with_name('FalloutNV34.esm')
-        output=Path(self.dest.get().strip())
+        nv=file.with_name('FalloutNV34.esm')
         if not nv.is_file():
-            messagebox.showerror('뉴베가스 ESM 누락','FalloutNV34.esm을 찾지 못했습니다. 파일을 선택해 주세요.')
+            messagebox.showerror('뉴베가스 ESM 누락','선택한 Fallout34.esm과 같은 폴더에서 FalloutNV34.esm을 찾지 못했습니다.')
             return
         if not self.dest.get().strip():
             messagebox.showerror('출력 경로 누락','새 출력 폴더 경로를 선택해 주세요.')
             return
+        output=Path(self.dest.get().strip())
         allow_updated=self.allow_updated.get()
         self.building=True;self.button.configure(state=tk.DISABLED)
         self.info.set('원본 ESM의 지형·번역 데이터 호환성을 확인하고 있습니다.')
@@ -112,4 +114,29 @@ class UI:
     def run(self):self.app.mainloop()
 
 
-if __name__=='__main__':UI().run()
+if __name__=='__main__':
+    if len(sys.argv)>1 and sys.argv[1]=='--cli':
+        # Also allows a headless end-to-end test of the *frozen* EXE using a
+        # real user-owned converter ESM, without opening any game UI.
+        if sys.stdout is None:sys.stdout=open(os.devnull,'w',encoding='utf-8')
+        if sys.stderr is None:sys.stderr=open(os.devnull,'w',encoding='utf-8')
+        sys.argv.pop(1)
+        from build_mo2_korean_mod import main
+        main()
+    elif len(sys.argv)>1 and sys.argv[1]=='--verify-bundle':
+        if sys.stdout is None:sys.stdout=open(os.devnull,'w',encoding='utf-8')
+        if sys.stderr is None:sys.stderr=open(os.devnull,'w',encoding='utf-8')
+        from build_mo2_korean_mod import load_canonical,source_preflight,MANIFEST
+        from fo4_korean_assets import select_assets
+        import json
+        manifest=json.loads(MANIFEST.read_text('utf-8'))
+        if manifest['schema']!=2:raise ValueError('Unsupported manifest')
+        for game,meta in manifest['games'].items():
+            plan,_=load_canonical(game,meta)
+            print(game, 'translations',len(plan),flush=True)
+        assets=select_assets()
+        print('bundle PASS',assets['asset_count'],flush=True)
+    elif len(sys.argv)>1:
+        raise SystemExit('Unknown argument; run without arguments for GUI, or use --verify-bundle / --cli')
+    else:
+        UI().run()

@@ -7,6 +7,8 @@
 입력은 포팅기에서 생성된 `Fallout34.esm`과 `FalloutNV34.esm` **원본**입니다. 두 파일은 동일한 `Data` 폴더에 있어도 되고 개별 경로를 지정해도 됩니다.
 
 - 사용자 인터페이스: `Install_Korean_Patch.bat` → `install_gui.py` (Tkinter)
+- Windows 배포본: `Fallout34-Korean-Patcher.exe` (PyInstaller onedir, `assets/`·`data/`가 같은 폴더에 위치). 이 배포본은 사용자 PC의 Python 설치가 필요 없습니다.
+- GUI 입력: `Fallout34.esm` 단일 선택, 동일 디렉터리의 `FalloutNV34.esm` 자동 탐색. 출력 경로 기본값은 빈칸이며 사용자가 새 폴더를 직접 지정합니다.
 - CLI: `tools/build_mo2_korean_mod.py`
 - 독립 데이터: `data/canonical/manifest.json`, `data/canonical/*.utf8.text-fields.jsonl.gz`
 - ESM 엔진: `tools/runtime_esm_writer.py`

@@ -8,8 +8,10 @@ because Fallout 4 runs with sLanguage=en in the tested English environment.
 from pathlib import Path
 from collections import defaultdict,Counter
 import hashlib,json,re
+import sys
 
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=(Path(sys.executable).resolve().parent if getattr(sys,'frozen',False)
+      else Path(__file__).resolve().parents[1])
 BUNDLED=ROOT/'assets'/'fo4_korean'
 INDEX=ROOT/'assets'/'fo4_korean_sources.json'
 STRINGS=re.compile(r'(?i)^(?P<stem>.+)_(?P<lang>en|ko)\.(?P<kind>STRINGS|DLSTRINGS|ILSTRINGS)$')

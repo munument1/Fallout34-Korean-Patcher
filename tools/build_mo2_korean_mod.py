@@ -18,12 +18,16 @@ import hashlib
 import json
 from pathlib import Path
 import shutil
+import sys
 import tempfile
 
 from runtime_esm_writer import sha256,write_copy,inspect_structure
 from fo4_korean_assets import BUNDLED,select_assets
 
-ROOT=Path(__file__).resolve().parents[1]
+# In a PyInstaller executable code lives under its temporary extraction path,
+# while the canonical data and FO4 resources are shipped BESIDE the EXE.
+ROOT=(Path(sys.executable).resolve().parent if getattr(sys,'frozen',False)
+      else Path(__file__).resolve().parents[1])
 MANIFEST=ROOT/'data'/'canonical'/'manifest.json'
 MOD_NAME='Fallout34 Unified Korean'
 MINIMUM_MATCH_FRACTION=0.99
