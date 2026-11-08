@@ -42,19 +42,32 @@ MINIMUM_RECORDS={
 def verify_directory_safety(source_esms:dict[str,Path],output_root:Path):
     resolved=output_root.resolve()
     repo=ROOT.resolve()
-    if resolved==repo or resolved in repo.parents or repo in resolved.parents:
-        raise ValueError('Output must be outside repository and its parents')
+    # The source checkout must remain clean, but a standalone EXE may safely
+    # create a NEW output folder alongside its own assets. In particular,
+    # Desktop and other ancestors of the EXE are not dangerous destinations.
+    # The check used to reject every ancestor/descendant of the EXE directory,
+    # causing normal choices in the GUI to fail.
+    if resolved==repo:
+        raise ValueError('Output cannot replace the patcher folder')
+    if getattr(sys,'frozen',False):
+        # Never stage output inside bundled runtime/data folders.
+        for protected in ('_internal','assets','data','licenses'):
+            resource=repo/protected
+            if resolved==resource or resource in resolved.parents:
+                raise ValueError(f'Output cannot be inside bundled resources: {resource}')
+    elif repo in resolved.parents:
+        raise ValueError('Source checkout is not an output destination; choose another folder')
     for path in source_esms.values():
         src=path.resolve()
         base=src.parent
         # Never place new MO2 assets in the installed FO4/Data directory.
-        if resolved==base or resolved in base.parents or base in resolved.parents:
+        if resolved==base or base in resolved.parents:
             raise ValueError(f'Output cannot overlap source ESM directory: {base}')
         if base.name.casefold()=='data':
             # The game executable is typically in Data's parent. A new mod
             # should never be staged inside the actual game installation.
             game_root=base.parent
-            if resolved==game_root or resolved in game_root.parents or game_root in resolved.parents:
+            if resolved==game_root or game_root in resolved.parents:
                 raise ValueError(f'Output cannot overlap installed game directory: {game_root}')
     if output_root.exists():raise FileExistsError(f'Output already exists: {output_root}')
 
