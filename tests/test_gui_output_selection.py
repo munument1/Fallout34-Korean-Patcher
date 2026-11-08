@@ -8,10 +8,26 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
-from install_gui import choose_output_root,resolve_esm_folder
+from install_gui import choose_output_root,resolve_esm_folder,normalize_pasted_path
 
 
 class GuiOutputSelection(unittest.TestCase):
+    def test_quoted_windows_explorer_path_is_cleaned(self):
+        with tempfile.TemporaryDirectory() as td:
+            parent=Path(td)/'Desktop'/'새 폴더 (3)'
+            parent.mkdir(parents=True)
+            self.assertEqual(normalize_pasted_path(f'  "{parent}"  ','출력 폴더'),parent)
+            self.assertEqual(choose_output_root(normalize_pasted_path(f'"{parent}"','출력 폴더')),
+                             parent/'Fallout34-Korean-Output')
+
+    def test_invalid_embedded_quotes_report_helpful_error(self):
+        with self.assertRaisesRegex(ValueError,'큰따옴표'):
+            normalize_pasted_path('"C:\\Example"\\bad"','출력 폴더')
+
+    def test_single_quotes_around_path_are_also_accepted(self):
+        with tempfile.TemporaryDirectory() as td:
+            self.assertEqual(normalize_pasted_path(f"'{td}'",'출력 폴더'),Path(td))
+
     def test_esm_source_folder_resolves_both_files(self):
         with tempfile.TemporaryDirectory() as td:
             source=Path(td)/'Fallout 4'/'Data'

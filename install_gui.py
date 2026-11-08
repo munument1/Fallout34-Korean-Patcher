@@ -14,12 +14,23 @@ sys.path.insert(0,str(ROOT/'tools'))
 from build_mo2_korean_mod import build
 
 
+def normalize_pasted_path(raw:str,label:str)->Path:
+    """Accept Windows Explorer's Copy as path: \"C:\\...\\Folder\"."""
+    value=raw.strip()
+    while len(value)>=2 and value[0]==value[-1] and value[0] in ('"',"'"):
+        value=value[1:-1].strip()
+    if not value:
+        raise ValueError(f'{label}를 선택해 주세요.')
+    if '"' in value:
+        raise ValueError(
+            f'{label} 경로에 잘못된 큰따옴표가 포함되어 있습니다. '
+            '경로 양끝의 따옴표만 제거하고 다시 입력해 주세요.')
+    return Path(value).expanduser()
+
+
 def resolve_esm_folder(raw:str)->tuple[Path,Path]:
     """Resolve BOTH converter originals from a single user-selected folder."""
-    selected=raw.strip().strip('"').strip("'")
-    if not selected:
-        raise ValueError('원본 ESM 폴더를 선택해 주세요.')
-    folder=Path(selected).expanduser()
+    folder=normalize_pasted_path(raw,'원본 ESM 폴더')
     if not folder.is_dir():
         if folder.is_file():
             raise ValueError(
@@ -112,13 +123,16 @@ class UI:
         if self.building:return
         try:
             file,nv=resolve_esm_folder(self.source_folder.get())
+            self.source_folder.set(str(file.parent))
         except ValueError as exc:
             messagebox.showerror('원본 ESM 폴더 확인 오류',str(exc))
             return
-        if not self.dest.get().strip():
-            messagebox.showerror('출력 경로 누락','결과물을 저장할 폴더를 선택해 주세요.')
+        try:
+            selected_output=normalize_pasted_path(self.dest.get(),'출력 폴더')
+            self.dest.set(str(selected_output))
+        except ValueError as exc:
+            messagebox.showerror('출력 경로 오류',str(exc))
             return
-        selected_output=Path(self.dest.get().strip())
         allow_updated=self.allow_updated.get()
         self.building=True;self.button.configure(state=tk.DISABLED)
         self.info.set('원본 ESM의 지형·번역 데이터 호환성을 확인하고 있습니다.')
