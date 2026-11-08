@@ -9,11 +9,11 @@
 1. [GitHub Releases](https://github.com/munument1/Fallout34-Korean-Patcher/releases)에서 **`Windows-x64.zip`** 첨부 파일을 내려받아 통째로 압축 해제합니다. **이 Windows 실행 파일 배포본은 Python 설치가 필요 없습니다.** 소스 코드 ZIP은 실행 파일 배포본과 다릅니다.
 2. 압축을 푼 폴더에서 `Fallout34-Korean-Patcher.exe`를 실행합니다. **EXE만 따로 꺼내지 말고 `assets`, `data`, `_internal` 폴더와 함께 사용**합니다.
 3. Fallout34 변환기에서 생성한 원본 `Fallout34.esm` **한 파일만 선택**합니다. 같은 폴더의 `FalloutNV34.esm`을 자동으로 찾습니다. 두 ESM은 같은 폴더에 있어야 합니다.
-4. **처음에 비어 있는 출력 경로 칸**에서 저장할 위치를 직접 지정하고 **한국어 MO2 모드 생성**을 누릅니다. 지정한 출력 경로는 새 폴더여야 하며, 기존 폴더를 덮어쓰지 않습니다.
+4. **처음에 비어 있는 출력 경로 칸**에서 저장할 위치를 직접 지정하고 **한국어 MO2 모드 생성**을 누릅니다. 이미 존재하는 폴더를 선택해도 괜찮습니다. 선택한 폴더 안에 `Fallout34-Korean-Output`을 새로 만들며, 이름이 이미 있으면 `Fallout34-Korean-Output (2)`처럼 번호를 붙입니다. 기존 폴더와 파일을 덮어쓰지 않습니다. 존재하지 않는 새 경로를 직접 입력한 경우 해당 이름으로 생성합니다.
    - 변환기를 업데이트한 경우 **업데이트된 Fallout34 ESM 호환 시도**를 체크하세요. 새 포팅 원본에서 기존 번역의 FormID·종류·EDID·원문 SHA-256이 일치하는 항목만 재적용합니다.
 5. 결과 `Fallout34 Unified Korean` 폴더를 MO2의 `mods` 폴더에 놓거나 MO2에서 해당 폴더를 새 모드로 등록하고 활성화합니다.
 
-Python 3.10 이상이 설치된 개발자용 **소스 코드 실행 방법**: 저장소 ZIP을 압축 해제하거나 `git clone`한 뒤 `Install_Korean_Patch.bat`를 실행합니다. 일반 사용자는 위 Windows 실행 파일 ZIP을 이용하세요.
+Python 3.10 이상이 설치된 개발자용 **소스 코드 실행 방법**: 저장소 ZIP을 압축 해제하거나 `git clone`한 뒤 `Install_Korean_Patch.bat`를 실행합니다. 일반 사용자는 위 Windows 실행 파일 ZIP을 이용하세요. CLI의 `--output`은 기존대로 아직 존재하지 않는 새 경로만 받습니다.
 
 이미 별도의 FO4 한글 패치 모드를 쓰고 있다면 동일한 `Interface`, `Programs`, `Strings` 파일이 중복될 수 있으므로 **통합 모드를 사용할 때 기존 FO4 한글 패치와 기존 KR 중복 ESM 모드를 비활성화하거나 우선순위를 확인**해 주세요.
 

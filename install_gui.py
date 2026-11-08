@@ -14,6 +14,29 @@ sys.path.insert(0,str(ROOT/'tools'))
 from build_mo2_korean_mod import build
 
 
+def choose_output_root(selected:Path)->Path:
+    """Treat an existing user-selected folder as a parent, never overwrite it.
+
+    A manually entered non-existing path is used as-is. If the folder exists,
+    create a uniquely named child for the build, keeping any earlier results.
+    """
+    selected=selected.expanduser()
+    if selected.is_symlink():
+        raise ValueError('출력 위치에 바로가기/심볼릭 링크를 지정할 수 없습니다.')
+    if not selected.exists():
+        return selected
+    if not selected.is_dir():
+        raise ValueError('출력 위치가 폴더가 아닙니다. 폴더를 선택해 주세요.')
+    base=selected/'Fallout34-Korean-Output'
+    if not base.exists() and not base.is_symlink():
+        return base
+    for n in range(2,1001):
+        candidate=selected/f'Fallout34-Korean-Output ({n})'
+        if not candidate.exists() and not candidate.is_symlink():
+            return candidate
+    raise ValueError('출력 폴더 이름이 이미 너무 많이 사용되었습니다. 다른 폴더를 지정하세요.')
+
+
 class UI:
     def __init__(self):
         self.app=tk.Tk()
@@ -38,7 +61,7 @@ class UI:
             ttk.Button(line,text='찾기',command=lambda:self.pick(var,mode),width=8).pack(side=tk.LEFT,padx=(8,0))
 
         row('① Fallout34.esm 위치 (같은 폴더의 FalloutNV34.esm 자동 선택)',self.fo3,'fo3')
-        row('② MO2용 결과물을 생성할 새 폴더 (직접 지정)',self.dest,'output')
+        row('② 결과물을 저장할 폴더 (기존 폴더 선택 가능)',self.dest,'output')
         ttk.Checkbutton(frame,variable=self.allow_updated,
                         text='업데이트된 Fallout34 ESM 호환 시도 (기존 번역만 안전하게 재적용)').pack(anchor='w',pady=(0,5))
         self.button=ttk.Button(frame,text='한국어 MO2 모드 생성',command=self.start)
@@ -49,8 +72,8 @@ class UI:
 
     def pick(self,var,mode):
         if mode=='output':
-            folder=filedialog.askdirectory(title='출력 폴더를 만들 부모 경로 선택')
-            if folder:var.set(str(Path(folder)/'Fallout34-Korean-Output'))
+            folder=filedialog.askdirectory(title='결과물을 저장할 폴더 선택')
+            if folder:var.set(folder)
             return
         name='Fallout34.esm'
         chosen=filedialog.askopenfilename(title=f'{name} 선택',filetypes=[('ESM 플러그인','*.esm'),('모든 파일','*.*')])
@@ -73,14 +96,15 @@ class UI:
             messagebox.showerror('뉴베가스 ESM 누락','선택한 Fallout34.esm과 같은 폴더에서 FalloutNV34.esm을 찾지 못했습니다.')
             return
         if not self.dest.get().strip():
-            messagebox.showerror('출력 경로 누락','새 출력 폴더 경로를 선택해 주세요.')
+            messagebox.showerror('출력 경로 누락','결과물을 저장할 폴더를 선택해 주세요.')
             return
-        output=Path(self.dest.get().strip())
+        selected_output=Path(self.dest.get().strip())
         allow_updated=self.allow_updated.get()
         self.building=True;self.button.configure(state=tk.DISABLED)
         self.info.set('원본 ESM의 지형·번역 데이터 호환성을 확인하고 있습니다.')
         def job():
             try:
+                output=choose_output_root(selected_output)
                 result=build(fo3_path=file,fnv_path=nv,output_root=output,
                     allow_updated_esms=allow_updated,
                     progress=lambda msg:self.events.put(('progress',msg)))
