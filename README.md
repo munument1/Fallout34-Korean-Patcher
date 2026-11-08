@@ -11,6 +11,7 @@
 3. `Install_Korean_Patch.bat`를 실행합니다. 별도 설치 프로그램이 아니라 Python GUI 파일 선택창입니다.
 4. Fallout 34 변환기에서 생성한 원본 `Fallout34.esm`을 선택합니다. 같은 폴더의 `FalloutNV34.esm`을 자동으로 찾고, 다른 폴더에 있으면 직접 지정할 수 있습니다.
 5. 원본 게임 폴더와 겹치지 않는 **새 출력 폴더**를 지정하고 **한국어 MO2 모드 생성**을 누릅니다.
+   - 변환기를 업데이트한 경우 **업데이트된 Fallout34 ESM 호환 시도**를 체크하세요. 새 포팅 원본에서 기존 번역의 FormID·종류·EDID·원문 SHA-256이 일치하는 항목만 재적용합니다.
 6. 결과 `Fallout34 Unified Korean` 폴더를 MO2의 `mods` 폴더에 놓거나 MO2에서 해당 폴더를 새 모드로 등록하고 활성화합니다.
 
 이미 별도의 FO4 한글 패치 모드를 쓰고 있다면 동일한 `Interface`, `Programs`, `Strings` 파일이 중복될 수 있으므로 **통합 모드를 사용할 때 기존 FO4 한글 패치와 기존 KR 중복 ESM 모드를 비활성화하거나 우선순위를 확인**해 주세요.
@@ -24,6 +25,8 @@ python tools/build_mo2_korean_mod.py `
 ```
 
 `FalloutNV34.esm`이 다른 위치에 있다면 `--fnv "D:\...\FalloutNV34.esm"`을 추가합니다. 출력 경로는 **새로 만들어질 폴더**여야 합니다. 기존 폴더를 덮어쓰지 않습니다.
+
+**새 Fallout34 컨버터 빌드**의 원본 ESM을 사용할 때만 CLI에 `--allow-updated-esms`를 추가할 수 있습니다. 기본값은 기존처럼 SHA-256이 확인된 빌드만 허용합니다. 호환 옵션은 기존 번역 99% 이상 일치, 지형 레코드 최소 수량, 출력 GRUP 구조를 검사합니다. 새로 추가된 문구는 자동 번역하지 않고, 변경되거나 누락된 기존 텍스트는 건너뛰어 `build-report.json`에 기록합니다. `REVIEW_REQUIRED` 결과물은 인게임 검증이 필요합니다.
 
 ## 결과물 구조
 
@@ -50,7 +53,7 @@ Fallout34-Korean-Output/
 
 **총 321,328개**의 한국어 필드를 이식합니다. 양쪽 ESM 모두 독립적인 비텍스트 바이트·GRUP·레코드 구조 검증을 통과했고, 패처 빌드의 출력 SHA-256이 이전에 사용자의 PC에서 지형이 정상 출력된 검증본과 동일하다는 것을 실제로 확인했습니다.
 
-**중요: 현재는 위 두 원본 파일의 정확한 SHA-256을 가진 포팅 빌드만 지원합니다.** 업데이트된 변환기에서 ESM이 변경됐을 때는 지형/레코드/번역 매핑을 다시 검증한 패처 업데이트가 필요합니다. 입력 파일 해시가 다르면 패처가 오류를 알리고 중단하는 것이 정상입니다. 예전 약 301MB/305MB짜리 한국어 ESM을 입력으로 사용하면 안 됩니다.
+**중요: 기본 모드는 위 두 원본 파일의 정확한 SHA-256을 가진 포팅 빌드만 지원합니다.** 새 ESM에는 선택적 호환 모드를 쓸 수 있지만, FormID 재배치나 기존 원문 변경이 많으면 중단하고 별도 매핑 검증이 필요합니다. 이 옵션은 모든 최신 버전의 안전성을 보장하지 않습니다. 예전 약 301MB/305MB짜리 한국어 ESM을 입력으로 사용하면 안 됩니다. [업데이트된 ESM 호환 안내](UPDATED_ESM_COMPATIBILITY.md)를 참조하세요.
 
 FO4 한국어 리소스는 기존에 저장소에 포함된 `FO4_AE_1.11.191.Kor` 자료를 사용하며, 최종 출력은 중복 언어 변형을 정리한 **505개** 파일입니다. 이 중 지원되는 CC의 일부 `_en`/`_ko` 충돌 33건은 `_en` 버전을 보수적으로 유지합니다. CC의 모든 비로컬라이즈 문구가 번역됐다는 뜻은 아닙니다.
 
@@ -64,6 +67,7 @@ FO4의 기존 한글 SWF 폰트는 대다수가 한글 **2,350자**만 지원해
 
 - [UTF8_CONVERSION_HISTORY.md](UTF8_CONVERSION_HISTORY.md): CP1252/UTF-8 손상, 원본 대조 복구, xTranslator와 `NPC_:FULL` 바이너리 문제, 누락 지형의 원인, 최종 이식 검증
 - [UNIFIED_INSTALLER.md](UNIFIED_INSTALLER.md): 파일 입력·출력 및 설치 안전장치 상세
+- [UPDATED_ESM_COMPATIBILITY.md](UPDATED_ESM_COMPATIBILITY.md): 신규 변환기 ESM에 기존 번역 재사용, 검증과 검토 절차
 - `data/canonical/manifest.json`: 사용자 소유 원본 ESM의 정확한 SHA-256, 번역 적용 필드 수, 출력 검증 해시
 - `data/canonical/*.utf8.text-fields.jsonl.gz`: **한국어 번역문, 레코드 좌표 및 원본 필드 해시만** 포함하는 배포 데이터
 - [`archive/legacy-translation-work-20261108`](https://github.com/munument1/Fallout34-Korean-Patcher/tree/archive/legacy-translation-work-20261108): 이전 번역 작업 중 생성한 검수 계획·중간 후보·기존 도구를 보관한 브랜치

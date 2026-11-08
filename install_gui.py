@@ -21,6 +21,7 @@ class UI:
         self.fo3=tk.StringVar(value='')
         self.fnv=tk.StringVar(value='')
         self.dest=tk.StringVar(value=str(Path.home()/'Documents'/'Fallout34-Korean-Output'))
+        self.allow_updated=tk.BooleanVar(value=False)
         self.info=tk.StringVar(value='Fallout34.esm을 선택해 주세요. FalloutNV34.esm은 같은 폴더에서 자동으로 찾습니다.')
         self.events=queue.Queue()
         self.building=False
@@ -38,10 +39,12 @@ class UI:
         row('① Fallout34.esm 위치 (필수)',self.fo3,'fo3')
         row('② FalloutNV34.esm 위치 (같은 폴더면 비워두기)',self.fnv,'fnv')
         row('③ MO2용 결과물을 생성할 새 폴더',self.dest,'output')
+        ttk.Checkbutton(frame,variable=self.allow_updated,
+                        text='업데이트된 Fallout34 ESM 호환 시도 (기존 번역만 안전하게 재적용)').pack(anchor='w',pady=(0,5))
         self.button=ttk.Button(frame,text='한국어 MO2 모드 생성',command=self.start)
         self.button.pack(anchor='w',pady=4)
         ttk.Label(frame,textvariable=self.info,wraplength=700,foreground='#1f5668').pack(anchor='w',pady=(10,0))
-        ttk.Label(frame,text='지원하는 원본 포팅 빌드만 허용합니다. ESM 버전이 다르면 지형 보호를 위해 안전하게 중단합니다.',wraplength=700).pack(anchor='w',pady=(8,0))
+        ttk.Label(frame,text='새 포팅 빌드는 원문 해시와 지형 레코드를 검사합니다. 신규/수정 문구는 미번역일 수 있으며 검토 보고서를 생성합니다.',wraplength=700).pack(anchor='w',pady=(8,0))
         self.app.after(150,self.poll)
 
     def pick(self,var,mode):
@@ -71,11 +74,13 @@ class UI:
         if not self.dest.get().strip():
             messagebox.showerror('출력 경로 누락','새 출력 폴더 경로를 선택해 주세요.')
             return
+        allow_updated=self.allow_updated.get()
         self.building=True;self.button.configure(state=tk.DISABLED)
         self.info.set('원본 ESM의 지형·번역 데이터 호환성을 확인하고 있습니다.')
         def job():
             try:
                 result=build(fo3_path=file,fnv_path=nv,output_root=output,
+                    allow_updated_esms=allow_updated,
                     progress=lambda msg:self.events.put(('progress',msg)))
                 self.events.put(('done',(str(output/'Fallout34 Unified Korean'),result)))
             except Exception as e:self.events.put(('error',str(e)))
@@ -89,9 +94,14 @@ class UI:
                 elif kind=='done':
                     self.building=False;self.button.configure(state=tk.NORMAL)
                     self.info.set('성공: '+data[0])
-                    messagebox.showinfo('한국어 패치 생성 완료',
-                      'MO2에서 새 모드로 등록할 폴더를 만들었습니다.\n\n'+data[0]+
-                      '\n\n원본 게임 및 Data 파일은 변경되지 않았습니다.')
+                    updated=any(x['updated_converter_input'] for x in data[1]['translations'].values())
+                    text='MO2에서 새 모드로 등록할 폴더를 만들었습니다.\n\n'+data[0]+(
+                      '\n\n업데이트된 ESM은 새로운 문구의 번역과 인게임 검증이 별도로 필요합니다.'
+                      if updated else '')+'\n\n원본 게임 및 Data 파일은 변경되지 않았습니다.'
+                    if data[1]['status']=='REVIEW_REQUIRED':
+                        messagebox.showwarning('한국어 패치 생성: 검토 필요',
+                            text+'\n\nbuild-report.json의 unmatched_fields를 확인하세요.')
+                    else:messagebox.showinfo('한국어 패치 생성 완료',text)
                 elif kind=='error':
                     self.building=False;self.button.configure(state=tk.NORMAL)
                     self.info.set('안전 검증 실패 — 결과물을 설치하지 않았습니다.')
