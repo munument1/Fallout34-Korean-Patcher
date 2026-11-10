@@ -4,30 +4,21 @@
 
 사용자가 이미 보유·설치한 **정상 Fallout34.esm / FalloutNV34.esm**을 지정하면, 기존 게임 파일을 변경하지 않고 각각 한국어화한 **복사본 ESM**과 **폴아웃 4 본편·DLC·Creation Club 한국어 리소스**, **Noto Sans KR 전체 한글 폰트**를 함께 묶어 **MO2에서 바로 등록할 수 있는 모드 폴더**를 생성합니다.
 
-## 다운로드·실행
+## 설치 방법
 
-1. [GitHub Releases](https://github.com/munument1/Fallout34-Korean-Patcher/releases)에서 **`Windows-x64.zip`** 첨부 파일을 내려받아 통째로 압축 해제합니다. **이 Windows 실행 파일 배포본은 Python 설치가 필요 없습니다.** 소스 코드 ZIP은 실행 파일 배포본과 다릅니다.
-2. 압축을 푼 폴더에서 `Fallout34-Korean-Patcher.exe`를 실행합니다. **EXE만 따로 꺼내지 말고 `assets`, `data`, `_internal` 폴더와 함께 사용**합니다.
-3. **1번에서 Fallout34 변환기의 원본 ESM 두 개가 들어 있는 폴더를 선택**합니다. `Fallout34.esm`과 `FalloutNV34.esm`을 같은 폴더에서 자동 인식합니다. 파일 자체를 선택할 필요가 없습니다. 예: `Fallout 4\\Data`. 이미 한국어화된 ESM이 들어 있는 MO2 모드 폴더가 아니라 **변환기에서 생성한 포팅 원본 ESM 폴더**여야 합니다.
-4. **처음에 비어 있는 출력 경로 칸**에서 저장할 위치를 직접 지정하고 **한국어 MO2 모드 생성**을 누릅니다. 이미 존재하는 폴더를 선택해도 괜찮습니다. 선택한 폴더 안에 `Fallout34-Korean-Output`을 새로 만들며, 이름이 이미 있으면 `Fallout34-Korean-Output (2)`처럼 번호를 붙입니다. 기존 폴더와 파일을 덮어쓰지 않습니다. 존재하지 않는 새 경로를 직접 입력한 경우 해당 이름으로 생성합니다. 탐색기의 **경로 복사**로 양끝에 큰따옴표가 붙어 있어도 자동 제거합니다. 바탕화면이나 압축을 푼 패처 폴더를 선택해도 새 하위 결과 폴더를 생성할 수 있습니다. 단, 패처의 `assets`/`data`/`_internal` 등 번들 리소스 폴더나 게임 설치 폴더 안에는 출력할 수 없습니다.
-   - ESM 버전은 자동으로 확인합니다. 업데이트된 원본에도 FormID·종류·EDID·필드 위치·원문이 일치하는 번역만 적용하고, 다른 문구는 원문으로 보존합니다. 별도 체크박스는 없습니다.
-5. 결과 `Fallout34 Unified Korean` 폴더를 MO2의 `mods` 폴더에 놓거나 MO2에서 해당 폴더를 새 모드로 등록하고 활성화합니다.
+**사전 준비:** Fallout 3, Fallout: New Vegas, Fallout 4 정품 설치 및 Fallout34 변환 완료, Mod Organizer 2(MO2) 설치
 
-Python 3.10 이상이 설치된 개발자용 **소스 코드 실행 방법**: 저장소 ZIP을 압축 해제하거나 `git clone`한 뒤 `Install_Korean_Patch.bat`를 실행합니다. 일반 사용자는 위 Windows 실행 파일 ZIP을 이용하세요. CLI의 `--output`은 기존대로 아직 존재하지 않는 새 경로만 받습니다.
+1. [Releases](https://github.com/munument1/Fallout34-Korean-Patcher/releases)에서 최신 **`Windows-x64.zip`**을 다운로드하고 압축을 해제합니다.
+2. 압축을 푼 폴더에서 **`Fallout34-Korean-Patcher.exe`**를 실행합니다. (동봉된 폴더와 파일은 그대로 유지)
+3. **`Fallout34.esm`**과 **`FalloutNV34.esm`**이 있는 폴더를 선택합니다. (일반적으로 `Fallout 4\Data`, 이미 한국어 패치된 ESM이 아닌 **변환 원본**)
+4. 한국어 패치를 저장할 경로를 지정하고 **한국어 MO2 모드 생성** 버튼을 누릅니다.
+5. 생성된 **`Fallout34 Unified Korean`** 폴더를 MO2의 `mods` 폴더에 넣고 활성화하면 완료됩니다.
 
-이미 별도의 FO4 한글 패치 모드를 쓰고 있다면 동일한 `Interface`, `Programs`, `Strings` 파일이 중복될 수 있으므로 **통합 모드를 사용할 때 기존 FO4 한글 패치와 기존 KR 중복 ESM 모드를 비활성화하거나 우선순위를 확인**해 주세요.
+### 주의사항
 
-CLI 사용법:
-
-```powershell
-python tools/build_mo2_korean_mod.py `
-    --fo3 "C:\Games\Steam\steamapps\common\Fallout 4\Data\Fallout34.esm" `
-    --output "D:\Fallout34-Korean-Output"
-```
-
-`FalloutNV34.esm`이 다른 위치에 있다면 `--fnv "D:\...\FalloutNV34.esm"`을 추가합니다. 출력 경로는 **새로 만들어질 폴더**여야 합니다. 기존 폴더를 덮어쓰지 않습니다.
-
-GUI와 CLI 모두 새 ESM을 자동 검사합니다. 기존 번역과 레코드 정보·원문이 일치하는 필드만 번역하며, 파일 전체 해시 차이·기존 빌드와 다른 지형 개수·번역 일치율만으로 차단하지 않습니다. 입력과 출력의 레코드·그룹 수량 및 종류, LAND 원본 바이트가 보존됐는지 확인합니다. 불일치 문구는 원문으로 남겨 `build-report.json`에 기록합니다. 업데이트된 ESM은 `REVIEW_REQUIRED`로 표시됩니다. 기존 CLI의 `--allow-updated-esms`는 호환용으로 계속 허용하지만 생략해도 됩니다.
+- 기존 Fallout 4 한국어 패치 및 중복 ESM 한국어 모드는 충돌 방지를 위해 비활성화하거나 우선순위를 확인해 주세요.
+- 원본 ESM은 수정하지 않으며, 한국어가 적용된 복사본을 별도로 생성합니다.
+- 일부 미번역 문구가 남아 있을 수 있습니다.
 
 ## 결과물 구조
 
