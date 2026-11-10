@@ -1,6 +1,6 @@
 """Regression tests for new terrain-preserving, canonical-only MO2 patcher."""
 from __future__ import annotations
-import hashlib,json,sys,tempfile,unittest
+import hashlib,json,struct,sys,tempfile,unittest,zlib
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -16,7 +16,7 @@ class SafeRuntimePatcher(unittest.TestCase):
     def test_canonical_manifest_only_hashes_no_english_original(self):
         manifest=json.loads((ROOT/'data'/'canonical'/'manifest.json').read_text('utf-8'))
         self.assertEqual(manifest['schema'],2)
-        self.assertEqual(sum(item['text_field_count'] for item in manifest['games'].values()),321328)
+        self.assertEqual(sum(item['text_field_count'] for item in manifest['games'].values()),333534)
         for game,meta in manifest['games'].items():
             plan,editor_ids=load_canonical(game,meta)
             self.assertEqual(len(plan),meta['text_field_count'])
@@ -24,6 +24,57 @@ class SafeRuntimePatcher(unittest.TestCase):
             one=next(iter(plan.values()))
             self.assertEqual(len(one[0]),64)
             self.assertTrue(any(ord(x)>127 for x in one[1].decode('utf-8')))
+
+    def test_canonical_includes_exterior_map_marker_names(self):
+        manifest=json.loads((ROOT/'data'/'canonical'/'manifest.json').read_text('utf-8'))
+        for game,count in (('fo3',228),('fnv',321)):
+            plan,editor_ids=load_canonical(game,manifest['games'][game])
+            markers={key:value for key,value in plan.items() if key[1]=='REFR'}
+            self.assertEqual(len(markers),count)
+            self.assertTrue(all(key[2:]==('FULL',0) for key in markers))
+            self.assertTrue(any(editor_ids[key[:2]] is None for key in markers))
+            self.assertIn((0x01DD0891,'REFR','FULL',0),markers)
+
+    def test_residual_ui_dialogue_and_radio_translations_are_bundled(self):
+        manifest=json.loads((ROOT/'data'/'canonical'/'manifest.json').read_text('utf-8'))
+        for game in ('fo3','fnv'):
+            plan,_=load_canonical(game,manifest['games'][game])
+            radio=(0x0107E1DF,'TACT','FULL',0) if game=='fo3' else (0x0116B46F,'TACT','FULL',0)
+            self.assertIn(radio,plan)
+            combat=plan[(0x01BCE937,'MESG','DESC',0)][1].decode('utf-8')
+            self.assertIn('카르마',combat)
+            self.assertEqual(combat.count('%.0f'),8)
+            self.assertIn('수도 황무지',plan[(0x01A058FB,'QUST','NNAM',1)][1].decode('utf-8'))
+            if game=='fnv':
+                self.assertEqual(plan[(0x01B37EB4,'INFO','RNAM',0)][1],
+                                 '더 보기...\0'.encode('utf-8'))
+                self.assertEqual(plan[(0x01B25FF9,'MESG','DESC',0)][1].count(b'%.0f'),7)
+            else:
+                controls=plan[(0x010BB215,'MESG','DESC',0)][1]
+                self.assertIn(b'&-sUActnGrab;',controls)
+
+    def test_writer_translates_compressed_marker_without_edid_in_nested_groups(self):
+        with tempfile.TemporaryDirectory() as td:
+            src=Path(td)/'source.esm';dest=Path(td)/'translated.esm'
+            before=b'Flooded Metro\0';after='침수된 지하철역'.encode('utf-8')+b'\0'
+            marker=FIELD.pack(b'XMRK',0)+FIELD.pack(b'FNAM',1)+b'\x01'
+            name=FIELD.pack(b'FULL',len(before))+before
+            tail=FIELD.pack(b'TNAM',2)+b'\x05\x00'+FIELD.pack(b'DATA',24)+bytes(range(24))
+            data=marker+name+tail
+            packed=struct.pack('<I',len(data))+zlib.compress(data)
+            record=HEADER.pack(b'REFR',len(packed),0x40000,0x0104C613,123,456)+packed
+            inner=HEADER.pack(b'GRUP',24+len(record),0x0170003C,6,0,0)+record
+            src.write_bytes(HEADER.pack(b'GRUP',24+len(inner),0,0,0,0)+inner)
+            key=(0x0104C613,'REFR','FULL',0)
+            report=write_copy(src,dest,{key:(hashlib.sha256(before).hexdigest(),after)},
+                              {key[:2]:None})
+            output=dest.read_bytes()
+            self.assertEqual(report['changed_fields'],1)
+            self.assertEqual(int.from_bytes(output[4:8],'little'),len(output))
+            self.assertEqual(int.from_bytes(output[28:32],'little'),len(output)-24)
+            self.assertEqual(HEADER.unpack_from(output,48)[2:],(0x40000,0x0104C613,123,456))
+            self.assertEqual(zlib.decompress(output[76:]),
+                             marker+FIELD.pack(b'FULL',len(after))+after+tail)
 
     def test_fo4_assets_and_font_glyphs(self):
         chosen=select_assets()

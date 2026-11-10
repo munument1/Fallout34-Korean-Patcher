@@ -1,0 +1,240 @@
+{
+  "date": "2026-11-10",
+  "scope": "Readable NUL-terminated FULL fields (except terrain/navmesh) and record-specific dialogue, terminal, message, quest, perk and loading-screen text slots in Fallout34.esm and FalloutNV34.esm. English-letter candidates without Hangul are reviewed, not treated as a translation completion percentage.",
+  "limitations": [
+    "English inside scripts, BA2 assets, textures, voice audio and third-party plugins is outside this ESM audit.",
+    "Developer identifiers, acronyms, deliberate corruption/ciphers and non-speaking storage/audio-direction nodes remain for context-sensitive review.",
+    "Runtime display, clipping and every dialogue branch still require in-game QA."
+  ],
+  "games": {
+    "fo3": {
+      "added_fields": 719,
+      "added_by_record_field": {
+        "ALCH:FULL": 1,
+        "EXPL:FULL": 129,
+        "HAZD:FULL": 219,
+        "INFO:NAM1": 13,
+        "INFO:RNAM": 50,
+        "LSCR:DESC": 10,
+        "MESG:DESC": 6,
+        "MESG:FULL": 3,
+        "MESG:ITXT": 6,
+        "MISC:FULL": 2,
+        "MSTT:FULL": 24,
+        "PERK:DESC": 2,
+        "PERK:FULL": 3,
+        "PROJ:FULL": 77,
+        "QUST:NNAM": 3,
+        "TACT:FULL": 76,
+        "TERM:BTXT": 17,
+        "TERM:FULL": 6,
+        "TERM:ITXT": 11,
+        "TERM:RNAM": 2,
+        "TERM:UNAM": 56,
+        "WEAP:FULL": 3
+      },
+      "methods": {
+        "exact_sst": 308,
+        "reviewed_crossfield_sst": 318,
+        "existing_canonical_exact_hash": 30,
+        "manual_reviewed": 63
+      },
+      "english_letter_candidates_before": 2088,
+      "remaining_candidates_for_context_review": 1369,
+      "remaining_by_record_field": {
+        "AMMO:FULL": 1,
+        "ARMO:FULL": 3,
+        "AVIF:FULL": 8,
+        "CELL:FULL": 2,
+        "ENCH:FULL": 1,
+        "FACT:FULL": 2,
+        "INFO:NAM1": 4,
+        "INFO:RNAM": 6,
+        "MESG:DESC": 1,
+        "MESG:FULL": 6,
+        "MGEF:FULL": 42,
+        "MISC:FULL": 2,
+        "NOTE:FULL": 283,
+        "NPC_:FULL": 35,
+        "PERK:FULL": 4,
+        "PROJ:FULL": 2,
+        "QUST:CNAM": 45,
+        "QUST:FULL": 7,
+        "REFR:FULL": 42,
+        "SPEL:FULL": 2,
+        "TERM:BTXT": 283,
+        "TERM:FULL": 283,
+        "TERM:ITXT": 287,
+        "TERM:UNAM": 12,
+        "WEAP:FULL": 3,
+        "WRLD:FULL": 3
+      },
+      "output_sha256": "1b9900c20ea898bac564da5c1137151635b7c43746951d29ad411f4ec15412b4",
+      "previous_fields_preserved": 111771,
+      "total_translation_fields": 112490,
+      "independent_validation": {
+        "status": "PASS",
+        "changed_fields": 719,
+        "changed_records": 645,
+        "total_records": 1244191,
+        "LAND_records_byte_identical": 47507,
+        "all_other_records_and_fields": "byte-identical",
+        "existing_canonical_translation_rows": "unchanged"
+      },
+      "dictionary_sources": [
+        {
+          "filename": "fallout3_en_ko.sst",
+          "sha256": "157c026de4527ed0f3836ee49c29345f35b1439d7869eab406ee400fffce7244"
+        },
+        {
+          "filename": "anchorage_en_ko.sst",
+          "sha256": "b05dadd3a78e93da9255f3ee42314714110dba249919b51b4629dcec4d80439b"
+        },
+        {
+          "filename": "thepitt_en_ko.sst",
+          "sha256": "947a9a9d471f102fd621f84bed3336536aa8d69006ff8ca5011a69a0471b9f28"
+        },
+        {
+          "filename": "brokensteel_en_ko.sst",
+          "sha256": "1ca5acfbf40cb6a701c745f45fbb74492e065ae2a50d0bf963ee0726de2caad5"
+        },
+        {
+          "filename": "pointlookout_en_ko.sst",
+          "sha256": "978841e655fbe5b23e9a4e46214372a3a7fae2e1ff4a7eb2049502053799115d"
+        },
+        {
+          "filename": "zeta_en_ko.sst",
+          "sha256": "2148c0adb33f0e19a77eca2aae7ec6bb309c9e5c1ecb0381be79e7763e036cff"
+        },
+        {
+          "filename": "dcinteriors_comboedition_en_ko.sst",
+          "sha256": "6eaeb31dc20e3e0afee2244f268f578a90310d900057c011f8156b3082983f05"
+        }
+      ],
+      "baseline_map_marker_output_sha256": "c23ef83db9ba44a20723bc55d1f5965f2109caf66a636b16031c5ba03346d7e7"
+    },
+    "fnv": {
+      "added_fields": 10938,
+      "added_by_record_field": {
+        "ACTI:FULL": 2,
+        "ALCH:FULL": 1,
+        "ENCH:FULL": 5,
+        "EXPL:FULL": 189,
+        "HAZD:FULL": 77,
+        "INFO:NAM1": 437,
+        "INFO:RNAM": 9772,
+        "KEYM:FULL": 20,
+        "LSCR:DESC": 10,
+        "MESG:DESC": 16,
+        "MESG:FULL": 7,
+        "MESG:ITXT": 51,
+        "MSTT:FULL": 30,
+        "NOTE:FULL": 1,
+        "PERK:DESC": 18,
+        "PERK:FULL": 7,
+        "PROJ:FULL": 130,
+        "QUST:CNAM": 1,
+        "QUST:NNAM": 3,
+        "TACT:FULL": 121,
+        "TERM:BTXT": 3,
+        "TERM:FULL": 2,
+        "TERM:ITXT": 2,
+        "TERM:UNAM": 31,
+        "WEAP:FULL": 2
+      },
+      "methods": {
+        "exact_sst": 737,
+        "reviewed_crossfield_sst": 287,
+        "existing_canonical_exact_hash": 25,
+        "manual_reviewed": 9889
+      },
+      "english_letter_candidates_before": 12286,
+      "remaining_candidates_for_context_review": 1348,
+      "remaining_by_record_field": {
+        "ACTI:FULL": 10,
+        "ALCH:FULL": 1,
+        "AMMO:FULL": 5,
+        "ARMO:FULL": 11,
+        "AVIF:FULL": 9,
+        "CELL:FULL": 7,
+        "ENCH:FULL": 4,
+        "EXPL:FULL": 5,
+        "FACT:FULL": 56,
+        "INFO:NAM1": 90,
+        "INFO:RNAM": 116,
+        "MESG:DESC": 2,
+        "MESG:FULL": 9,
+        "MGEF:FULL": 85,
+        "MISC:FULL": 1,
+        "NOTE:FULL": 185,
+        "NPC_:FULL": 71,
+        "PERK:FULL": 11,
+        "PROJ:FULL": 4,
+        "QUST:CNAM": 8,
+        "QUST:FULL": 14,
+        "SPEL:FULL": 55,
+        "TACT:FULL": 4,
+        "TERM:BTXT": 185,
+        "TERM:FULL": 184,
+        "TERM:ITXT": 189,
+        "TERM:UNAM": 8,
+        "WEAP:FULL": 19
+      },
+      "output_sha256": "223ead8fccd6de2ac813d9702dcb221b1acad4cffea91c9867ee8736e4126fbe",
+      "previous_fields_preserved": 210106,
+      "total_translation_fields": 221044,
+      "independent_validation": {
+        "status": "PASS",
+        "changed_fields": 10938,
+        "changed_records": 10546,
+        "total_records": 994482,
+        "LAND_records_byte_identical": 42467,
+        "all_other_records_and_fields": "byte-identical",
+        "existing_canonical_translation_rows": "unchanged"
+      },
+      "dictionary_sources": [
+        {
+          "filename": "falloutnv_en_ko.sst",
+          "sha256": "63c857338a966737281accfbb2c1dc4b220925c44d9ea47c0b850a9305a9daa9"
+        },
+        {
+          "filename": "deadmoney_en_ko.sst",
+          "sha256": "d1be41725115335f60295d2db7f6247fa792d4e1a59a7c59b56705ac4507d98d"
+        },
+        {
+          "filename": "honesthearts_en_ko.sst",
+          "sha256": "d2189a954c5126ac43cdb024b459d4ff7a6decd50d45ca60572b895957390ab8"
+        },
+        {
+          "filename": "oldworldblues_en_ko.sst",
+          "sha256": "130b63e38a29f24bd771dd55f5b4d2d2f799838f08afa81a0b920552222545ee"
+        },
+        {
+          "filename": "lonesomeroad_en_ko.sst",
+          "sha256": "ba620b224d76e2f3147d9b29d9583fea4abc14506004d6019729befa784e170b"
+        },
+        {
+          "filename": "gunrunnersarsenal_en_ko.sst",
+          "sha256": "9c6d96b5f796ecddecadec80d3d2628aae4428d0ff18aa1966d1064e332fc7b4"
+        },
+        {
+          "filename": "caravanpack_en_ko.sst",
+          "sha256": "fc0de748402a76c2669bb8788f1402e8b6bc25b7f6b58b23fd3522b117107b40"
+        },
+        {
+          "filename": "classicpack_en_ko.sst",
+          "sha256": "2c42d553459d9ba8d052ea5f36d26a9c699d6eb07efcb3b1222b2970233668c5"
+        },
+        {
+          "filename": "mercenarypack_en_ko.sst",
+          "sha256": "f9f2952eddf179a19659fa192ec07719d1ce461bb55a0bc95a0e3223462c31d0"
+        },
+        {
+          "filename": "tribalpack_en_ko.sst",
+          "sha256": "0d78e62fd7be56f86d9895d825971a6dc2ce7b522c92e8e7b3eee2edfdeeb59c"
+        }
+      ],
+      "baseline_map_marker_output_sha256": "705a5b27bf5d13419f857cae63d15b6dd1066a5cfc520155d61d0ceaf140dd35"
+    }
+  }
+}
