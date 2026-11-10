@@ -9,9 +9,9 @@
   "files": {
     "Interface/fonts_en.swf": {
       "source_sha256": "2a9499eef3ee02282625805579293e6d5b8a11be678476994e685e5bd013f099",
-      "result_sha256": "f5a6150d95b3f6991f6489aec3c3fdee1cd2bc915144f4a78554a0f0b91873ce",
+      "result_sha256": "1fbfdc07dae159eea28409ac809ccf2153bff7541649fbb45ced4b6dfd486df5",
       "source_bytes": 2849542,
-      "result_bytes": 43330683,
+      "result_bytes": 42937600,
       "replaced_font_ids": {
         "3": "bold",
         "6": "regular",
@@ -21,7 +21,18 @@
         "10": "regular",
         "14": "regular"
       },
-      "embedded_korean_syllables_per_replaced_font": 11172
+      "embedded_korean_syllables_per_replaced_font": 11172,
+      "hud_digit_restoration": {
+        "font_id": 7,
+        "bold_flag": true,
+        "characters": "0123456789",
+        "source_sha256": "2a9499eef3ee02282625805579293e6d5b8a11be678476994e685e5bd013f099",
+        "previous_noto_sha256": "f5a6150d95b3f6991f6489aec3c3fdee1cd2bc915144f4a78554a0f0b91873ce",
+        "in_game_verified_ammo": [
+          "030",
+          "035"
+        ]
+      }
     },
     "Interface/fonts_console.swf": {
       "source_sha256": "340acd228bda100466a564215c58aa7234694ff429dbe68731e12e16cbdb8f53",

@@ -49,7 +49,7 @@ def patch_subrecords(data:bytes,fid:int,typ:str,plan:dict,editor_ids:dict,seen:s
             out.extend(data[start:offset]);continue
         candidates.add(key)
         original_sha256,translated=plan[key]
-        if tag not in ALLOWED_TEXT or key in seen or key in local_seen:
+        if tag not in ALLOWED_TEXT or key in local_seen:
             raise ValueError(f'Text field alignment mismatched: {key}')
         if hashlib.sha256(before).hexdigest()!=original_sha256:
             if not allow_changed:raise ValueError(f'Text field alignment mismatched: {key}')
@@ -85,7 +85,11 @@ def write_copy(source:Path,dest:Path,plan:dict,editor_ids:dict,*,allow_changed:b
     if source.resolve()==dest.resolve() or dest.exists():
         raise ValueError('Original source or existing output cannot be overwritten')
     entries={(fid,typ) for fid,typ,tag,idx in plan}
+    if any(typ=='LAND' for _,typ in entries):
+        raise ValueError('LAND records cannot be translation targets')
+    land_hash=hashlib.sha256()
     seen=set();visited=set();stat=Counter();record_types=Counter();skipped={}
+    skipped_occurrences=Counter();skipped_examples=[]
     total=source.stat().st_size
     with source.open('rb') as inp,dest.open('w+b') as out:
         pos=0;groups=[]
@@ -112,15 +116,17 @@ def write_copy(source:Path,dest:Path,plan:dict,editor_ids:dict,*,allow_changed:b
             record_types[typ]+=1
             if (fid,typ) not in entries:
                 out.write(header)
+                if tag==b'LAND':land_hash.update(header)
                 remaining=n
                 while remaining:
                     buf=inp.read(min(remaining,8*1024*1024))
                     if not buf:raise ValueError('Truncated unchanged record')
+                    if tag==b'LAND':land_hash.update(buf)
                     out.write(buf);remaining-=len(buf)
                 pos+=24+n
                 continue
             if (fid,typ) in visited:
-                raise ValueError(f'Duplicate target record FormID/type: {typ}:{fid:08X}')
+                stat['duplicate_target_records']+=1
             visited.add((fid,typ))
             raw=inp.read(n)
             if len(raw)!=n:raise ValueError('Truncated text record')
@@ -134,6 +140,11 @@ def write_copy(source:Path,dest:Path,plan:dict,editor_ids:dict,*,allow_changed:b
             changed,count,not_applied=patch_subrecords(
                 unpacked,fid,typ,plan,editor_ids,seen,allow_changed=allow_changed)
             skipped.update(not_applied)
+            skipped_occurrences.update(not_applied.values())
+            for key,reason in not_applied.items():
+                if len(skipped_examples)<50:
+                    skipped_examples.append({'formid':f'{key[0]:08X}','type':key[1],
+                                             'field':key[2],'index':key[3],'reason':reason})
             if count:
                 stat['changed_records']+=1;stat['changed_fields']+=count
                 raw=struct.pack('<I',len(changed))+zlib.compress(changed) if zipped else changed
@@ -157,14 +168,19 @@ def write_copy(source:Path,dest:Path,plan:dict,editor_ids:dict,*,allow_changed:b
     result['changed_fields']=stat['changed_fields']
     result['changed_records']=stat['changed_records']
     result['record_type_counts']=dict(record_types)
+    result['source_land_sha256']=land_hash.hexdigest()
     result['unmatched_reasons']=dict(reasons)
     result['unmatched_examples']=examples
+    result['duplicate_target_records']=stat['duplicate_target_records']
+    result['skipped_occurrence_reasons']=dict(skipped_occurrences)
+    result['skipped_occurrence_examples']=skipped_examples
     return result
 
 
 def inspect_structure(path:Path)->dict:
     """Independently parse emitted record/group boundaries, without reading assets."""
     total=path.stat().st_size;pos=0;groups=[];counts=Counter();records=0;group_count=0
+    land_hash=hashlib.sha256()
     with path.open('rb') as stream:
         while pos<total:
             while groups and groups[-1]==pos:groups.pop()
@@ -180,7 +196,16 @@ def inspect_structure(path:Path)->dict:
             if size>MAX_RECORD or pos+24+size>total or groups and pos+24+size>groups[-1]:
                 raise ValueError('Emitted record boundary invalid')
             counts[tag.decode('ascii','replace')]+=1
-            stream.seek(size,1);pos+=24+size;records+=1
+            if tag==b'LAND':
+                land_hash.update(raw)
+                remaining=size
+                while remaining:
+                    chunk=stream.read(min(remaining,8*1024*1024))
+                    if not chunk:raise ValueError('Emitted LAND record truncated')
+                    land_hash.update(chunk);remaining-=len(chunk)
+            else:stream.seek(size,1)
+            pos+=24+size;records+=1
         while groups and groups[-1]==pos:groups.pop()
         if groups or pos!=total:raise ValueError('Emitted GRUP not closed')
-    return {'records':records,'groups':group_count,'record_type_counts':dict(counts)}
+    return {'records':records,'groups':group_count,'record_type_counts':dict(counts),
+            'land_sha256':land_hash.hexdigest()}

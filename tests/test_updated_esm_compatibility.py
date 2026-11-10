@@ -41,6 +41,44 @@ def translation():
 
 
 class UpdatedConverterCompatibility(unittest.TestCase):
+    def test_47485_land_records_are_preserved_despite_47507_reference(self):
+        with tempfile.TemporaryDirectory() as td:
+            src,dest=Path(td)/'input.esm',Path(td)/'output.esm'
+            land=record(b'LAND',0x01010405,fields=[(b'DATA',b'land')])
+            src.write_bytes(group(record(b'MISC',F_ID,'lead_item',[(b'FULL',OLD)]),
+                                  *(land for _ in range(47485))))
+            plan,edids=translation()
+            result=write_copy(src,dest,plan,edids,allow_changed=True)
+            validate_updated_output('fo3',{'text_field_count':1},result,dest)
+            self.assertEqual(result['record_type_counts']['LAND'],47485)
+            self.assertEqual(inspect_structure(src)['land_sha256'],
+                             inspect_structure(dest)['land_sha256'])
+
+    def test_partial_matches_translate_without_99_percent_cutoff(self):
+        with tempfile.TemporaryDirectory() as td:
+            src,dest=Path(td)/'input.esm',Path(td)/'output.esm'
+            src.write_bytes(group(record(b'MISC',F_ID,'lead_item',
+                             [(b'FULL',OLD),(b'DESC',b'Changed description\0')]),
+                             record(b'LAND',123,fields=[(b'DATA',b'land')])))
+            plan,edids=translation()
+            plan[(F_ID,'MISC','DESC',0)]=(hashlib.sha256(b'Old description\0').hexdigest(),KO)
+            result=write_copy(src,dest,plan,edids,allow_changed=True)
+            validate_updated_output('fo3',{'text_field_count':2},result,dest)
+            self.assertEqual(result['changed_fields'],1)
+            self.assertEqual(result['unmatched_fields'],1)
+            self.assertIn(b'Changed description\0',dest.read_bytes())
+
+    def test_changed_land_bytes_rejected_even_when_record_counts_match(self):
+        with tempfile.TemporaryDirectory() as td:
+            src,dest=Path(td)/'input.esm',Path(td)/'output.esm'
+            src.write_bytes(group(record(b'MISC',F_ID,'lead_item',[(b'FULL',OLD)]),
+                                  record(b'LAND',123,fields=[(b'DATA',b'land')])))
+            plan,edids=translation()
+            result=write_copy(src,dest,plan,edids,allow_changed=True)
+            dest.write_bytes(dest.read_bytes().replace(b'land',b'FAIL'))
+            with self.assertRaisesRegex(ValueError,'LAND bytes'):
+                validate_updated_output('fo3',{'text_field_count':1},result,dest)
+
     def test_add_records_reuses_old_korean_and_preserves_new_english_and_land(self):
         with tempfile.TemporaryDirectory() as td:
             root=Path(td);src=root/'Fallout34.esm';dest=root/'mo2.esm'
@@ -58,8 +96,7 @@ class UpdatedConverterCompatibility(unittest.TestCase):
             self.assertIn(new,output)
             self.assertIn(land,output)
             self.assertEqual(inspect_structure(dest)['records'],4)
-            validate_updated_output('fo3',{'text_field_count':1},result,dest,
-                                    minimums={'LAND':1,'CELL':1})
+            validate_updated_output('fo3',{'text_field_count':1},result,dest)
 
     def test_modified_original_is_not_overwritten_and_is_reported(self):
         with tempfile.TemporaryDirectory() as td:
@@ -71,8 +108,7 @@ class UpdatedConverterCompatibility(unittest.TestCase):
             self.assertEqual(dest.read_bytes(),src.read_bytes())
             self.assertEqual(result['unmatched_reasons'],{'original_text_changed':1})
             with self.assertRaisesRegex(ValueError,'matched'):
-                validate_updated_output('fo3',{'text_field_count':1},result,dest,
-                                        minimums={})
+                validate_updated_output('fo3',{'text_field_count':1},result,dest)
 
     def test_reused_formid_with_new_editor_id_is_not_translated(self):
         with tempfile.TemporaryDirectory() as td:
@@ -84,34 +120,49 @@ class UpdatedConverterCompatibility(unittest.TestCase):
             self.assertEqual(src.read_bytes(),dest.read_bytes())
             self.assertEqual(result['unmatched_reasons'],{'editor_id_changed':1})
 
-    def test_duplicate_target_formid_rejected(self):
+    def test_duplicate_targets_are_translated_independently(self):
         with tempfile.TemporaryDirectory() as td:
             root=Path(td);src=root/'Fallout34.esm';dest=root/'mo2.esm'
             old=record(b'MISC',F_ID,'lead_item',[(b'FULL',OLD)])
             src.write_bytes(group(old,old))
             plan,edids=translation()
-            with self.assertRaisesRegex(ValueError,'Duplicate target record'):
-                write_copy(src,dest,plan,edids,allow_changed=True)
+            result=write_copy(src,dest,plan,edids,allow_changed=True)
+            self.assertEqual(result['changed_fields'],2)
+            self.assertEqual(result['unmatched_fields'],0)
+            self.assertEqual(result['duplicate_target_records'],1)
+            self.assertEqual(dest.read_bytes().count(KO),2)
 
-    def test_missing_land_rejected_even_when_translation_matches(self):
+    def test_duplicate_target_with_different_text_is_preserved_and_reported(self):
+        with tempfile.TemporaryDirectory() as td:
+            src,dest=Path(td)/'input.esm',Path(td)/'output.esm'
+            good=record(b'MISC',F_ID,'lead_item',[(b'FULL',OLD)])
+            changed=record(b'MISC',F_ID,'lead_item',[(b'FULL',b'Changed lead\0')])
+            src.write_bytes(group(good,changed))
+            plan,edids=translation()
+            result=write_copy(src,dest,plan,edids,allow_changed=True)
+            self.assertEqual(result['changed_fields'],1)
+            self.assertEqual(result['unmatched_fields'],0)
+            self.assertEqual(result['skipped_occurrence_reasons'],{'original_text_changed':1})
+            self.assertIn(changed,dest.read_bytes())
+
+    def test_input_without_land_can_translate_and_preserves_its_structure(self):
         with tempfile.TemporaryDirectory() as td:
             root=Path(td);src=root/'Fallout34.esm';dest=root/'mo2.esm'
             src.write_bytes(group(record(b'MISC',F_ID,'lead_item',[(b'FULL',OLD)])))
             plan,edids=translation()
             result=write_copy(src,dest,plan,edids,allow_changed=True)
-            with self.assertRaisesRegex(ValueError,'LAND'):
-                validate_updated_output('fo3',{'text_field_count':1},result,dest,
-                                        minimums={'LAND':1})
+            validate_updated_output('fo3',{'text_field_count':1},result,dest)
+            self.assertEqual(inspect_structure(dest)['record_type_counts'],{'MISC':1})
 
-    def test_updated_input_requires_explicit_opt_in(self):
+    def test_updated_input_is_automatic_but_internal_strict_check_remains_available(self):
         with tempfile.TemporaryDirectory() as td:
             root=Path(td)
             fo3=root/'Fallout34.esm';nv=root/'FalloutNV34.esm'
             fo3.write_bytes(b'future converter');nv.write_bytes(b'future converter')
             with self.assertRaisesRegex(ValueError,'unsupported'):
-                source_preflight(fo3,nv)
-            # File-wide SHA requirement can be relaxed only by explicit opt-in.
-            manifest,sources=source_preflight(fo3,nv,allow_updated_esms=True)
+                source_preflight(fo3,nv,allow_updated_esms=False)
+            # GUI and CLI use automatic per-field matching by default.
+            manifest,sources=source_preflight(fo3,nv)
             self.assertIn('fo3',manifest['games'])
             self.assertEqual(sources['fnv'],nv)
 

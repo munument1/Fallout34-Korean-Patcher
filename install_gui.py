@@ -81,7 +81,6 @@ class UI:
         self.app.minsize(690,320)
         self.source_folder=tk.StringVar(value='')
         self.dest=tk.StringVar(value='')
-        self.allow_updated=tk.BooleanVar(value=False)
         self.info=tk.StringVar(value='Fallout34.esm과 FalloutNV34.esm이 함께 들어 있는 폴더를 선택해 주세요.')
         self.events=queue.Queue()
         self.building=False
@@ -98,12 +97,10 @@ class UI:
 
         row('① 원본 포팅 ESM 폴더 (Fallout34.esm + FalloutNV34.esm)',self.source_folder,'source')
         row('② 결과물을 저장할 폴더 (기존 폴더 선택 가능)',self.dest,'output')
-        ttk.Checkbutton(frame,variable=self.allow_updated,
-                        text='업데이트된 Fallout34 ESM 호환 시도 (기존 번역만 안전하게 재적용)').pack(anchor='w',pady=(0,5))
         self.button=ttk.Button(frame,text='한국어 MO2 모드 생성',command=self.start)
         self.button.pack(anchor='w',pady=4)
         ttk.Label(frame,textvariable=self.info,wraplength=700,foreground='#1f5668').pack(anchor='w',pady=(10,0))
-        ttk.Label(frame,text='새 포팅 빌드는 원문 해시와 지형 레코드를 검사합니다. 신규/수정 문구는 미번역일 수 있으며 검토 보고서를 생성합니다.',wraplength=700).pack(anchor='w',pady=(8,0))
+        ttk.Label(frame,text='ESM 버전을 자동 확인합니다. 업데이트된 버전은 호환 검사를 거쳐 기존 번역을 적용하며, 신규·변경 문구는 검토 보고서에 안내합니다.',wraplength=700).pack(anchor='w',pady=(8,0))
         self.app.after(150,self.poll)
 
     def pick(self,var,mode):
@@ -133,14 +130,13 @@ class UI:
         except ValueError as exc:
             messagebox.showerror('출력 경로 오류',str(exc))
             return
-        allow_updated=self.allow_updated.get()
         self.building=True;self.button.configure(state=tk.DISABLED)
         self.info.set('원본 ESM의 지형·번역 데이터 호환성을 확인하고 있습니다.')
         def job():
             try:
                 output=choose_output_root(selected_output)
                 result=build(fo3_path=file,fnv_path=nv,output_root=output,
-                    allow_updated_esms=allow_updated,
+                    allow_updated_esms=True,
                     progress=lambda msg:self.events.put(('progress',msg)))
                 self.events.put(('done',(str(output/'Fallout34 Unified Korean'),result)))
             except Exception as e:self.events.put(('error',str(e)))

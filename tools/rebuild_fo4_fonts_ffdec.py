@@ -11,6 +11,7 @@ import argparse,hashlib,json,subprocess
 from pathlib import Path
 
 from audit_fo4_swf_glyphs import parse_swf,swf_tags
+from preserve_fo4_hud_digits import preserve_hud_digits
 
 ROOT=Path(__file__).resolve().parents[1]
 SOURCE=ROOT/'assets'/'fo4_korean'
@@ -19,8 +20,8 @@ FONT_MAP={
     'Interface/fonts_en.swf':{
         3:'bold',      # Brody ornamental font: preserve ID/name, use full Hangul
         6:'regular',   # Share-TechMono terminal
-        7:'regular',   # Roboto Condensed normal
-        8:'bold',      # Roboto Condensed Bold
+        7:'regular',   # Bold alias; retain the tested Noto face and original HUD digits
+        8:'bold',      # Normal alias; retain the existing Noto face
         9:'regular',   # Handwritten_Institute
         10:'regular',  # Arial
         14:'regular',  # Courier New
@@ -69,6 +70,8 @@ def build(ffdec:Path,regular:Path,bold:Path,output:Path,apply:bool):
                                  errors='replace',timeout=240)
         if completed.returncode!=0 or not dest.exists():
             raise ValueError(f'FFDec failed for {rel}: {completed.stdout[:1800]}')
+        if rel=='Interface/fonts_en.swf':
+            preserve_hud_digits(before,dest)
         after_meta=parse_swf(dest)
         after_ids={f['font_id']:f for f in after_meta['font_tags']}
         # FFDec intentionally drops obsolete DefineFontAlignZones (73) from
@@ -113,6 +116,8 @@ def build(ffdec:Path,regular:Path,bold:Path,output:Path,apply:bool):
              'source_bytes':before.stat().st_size,'result_bytes':dest.stat().st_size,
              'replaced_font_ids':{str(k):v for k,v in mapping.items()},
              'embedded_korean_syllables_per_replaced_font':11172}
+        if rel=='Interface/fonts_en.swf':
+            manifest['files'][rel]['preserved_hud_digits']={'font_id':7,'characters':'0123456789'}
         print('PASS',rel,'full Hangul fonts',len(mapping),'compressed bytes',dest.stat().st_size,flush=True)
     (output/'FONT_REBUILD_REPORT.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     if apply:

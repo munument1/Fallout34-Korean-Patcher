@@ -125,12 +125,12 @@ class SafeRuntimePatcher(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'alignment'):
                 write_copy(src,out,bad,{(0x01010000,'MISC'):'expected_id'})
 
-    def test_wrong_converter_sha_refused(self):
+    def test_internal_strict_mode_rejects_wrong_converter_sha(self):
         with tempfile.TemporaryDirectory() as td:
             root=Path(td);fo3=root/'Fallout34.esm';nv=root/'FalloutNV34.esm'
             fo3.write_bytes(b'not the right conversion');nv.write_bytes(b'invalid')
             with self.assertRaisesRegex(ValueError,'unsupported'):
-                source_preflight(fo3,nv)
+                source_preflight(fo3,nv,allow_updated_esms=False)
             with self.assertRaises(ValueError):
                 verify_directory_safety({'fo3':fo3,'fnv':nv},root/'inside-source')
 

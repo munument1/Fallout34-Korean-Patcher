@@ -4,14 +4,33 @@ from __future__ import annotations
 import sys
 import tempfile
 import unittest
+import queue
+from unittest.mock import Mock,patch
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
-from install_gui import choose_output_root,resolve_esm_folder,normalize_pasted_path
+from install_gui import UI,choose_output_root,resolve_esm_folder,normalize_pasted_path
 
 
 class GuiOutputSelection(unittest.TestCase):
+    def test_gui_automatically_allows_checked_compatibility_without_checkbox(self):
+        with tempfile.TemporaryDirectory() as td:
+            root=Path(td)
+            (root/'Fallout34.esm').touch()
+            (root/'FalloutNV34.esm').touch()
+            ui=UI.__new__(UI)
+            ui.building=False
+            ui.source_folder=Mock();ui.source_folder.get.return_value=str(root)
+            ui.dest=Mock();ui.dest.get.return_value=str(root/'output')
+            ui.button=Mock();ui.info=Mock();ui.events=queue.Queue()
+            with patch('install_gui.build') as build,patch('install_gui.threading.Thread') as thread:
+                UI.start(ui)
+                thread.call_args.kwargs['target']()
+                self.assertTrue(build.call_args.kwargs['allow_updated_esms'])
+                self.assertEqual(build.call_args.kwargs['fo3_path'],root/'Fallout34.esm')
+                self.assertEqual(ui.events.get_nowait()[0],'done')
+
     def test_quoted_windows_explorer_path_is_cleaned(self):
         with tempfile.TemporaryDirectory() as td:
             parent=Path(td)/'Desktop'/'새 폴더 (3)'
