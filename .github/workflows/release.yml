@@ -45,7 +45,7 @@ jobs:
           from pathlib import Path
           root = Path('.')
           version = os.environ['RELEASE_VERSION']
-          archive = root / 'dist' / f'Fallout34-Korean-Patcher-{version}-Font-Only-MO2.zip'
+          archive = root / 'dist' / f'Fallout34-폰트전용-{version}-MO2.zip'
           font = root / 'assets/fo4_korean/Interface/fonts_en.swf'
           with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED, compresslevel=8) as output:
               output.write(font, 'Interface/fonts_en.swf')

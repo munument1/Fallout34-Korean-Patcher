@@ -1,0 +1,56 @@
+name: Use Korean font package filename
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [docs/releases/v0.1.3.md]
+permissions:
+  contents: write
+jobs:
+  rename:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rename font package and update checksum and release notes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import hashlib, json, os, subprocess, tempfile, time
+          from pathlib import Path
+          repo = os.environ['GITHUB_REPOSITORY']
+          tag = 'v0.1.3'
+          old = f'Fallout34-Korean-Patcher-{tag}-Font-Only-MO2.zip'
+          new = f'Fallout34-폰트전용-{tag}-MO2.zip'
+          def gh(*args):
+              return subprocess.check_output(['gh', *args], text=True, encoding='utf-8')
+          release = None
+          for attempt in range(36):
+              result = subprocess.run(['gh','api',f'repos/{repo}/releases/tags/{tag}'], capture_output=True, text=True, encoding='utf-8')
+              if result.returncode == 0:
+                  candidate = json.loads(result.stdout)
+                  if not candidate['draft']:
+                      release = candidate
+                      break
+              time.sleep(10)
+          if release is None:
+              raise RuntimeError('Published release not available')
+          assets = {a['name']: a for a in release['assets']}
+          name = new if new in assets else old
+          if name not in assets:
+              raise RuntimeError('Font ZIP missing')
+          with tempfile.TemporaryDirectory() as temp:
+              gh('release','download',tag,'--repo',repo,'--pattern',name,'--dir',temp)
+              digest = hashlib.sha256((Path(temp)/name).read_bytes()).hexdigest()
+              checksum = Path(temp)/(new+'.sha256')
+              checksum.write_text(f'{digest}  {new}\n',encoding='utf-8')
+              if name == old:
+                  gh('api','--method','PATCH',f"repos/{repo}/releases/assets/{assets[old]['id']}",'-f',f'name={new}')
+              gh('release','upload',tag,str(checksum),'--repo',repo,'--clobber')
+          if old+'.sha256' in assets:
+              gh('release','delete-asset',tag,old+'.sha256','--repo',repo,'--yes')
+          gh('release','edit',tag,'--repo',repo,'--notes-file',f'docs/releases/{tag}.md')
+          print('Published font ZIP:',new)
+          print('SHA256:',digest)
+          PY
