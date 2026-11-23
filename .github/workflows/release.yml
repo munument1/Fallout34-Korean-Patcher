@@ -45,7 +45,7 @@ jobs:
           from pathlib import Path
           root = Path('.')
           version = os.environ['RELEASE_VERSION']
-          archive = root / 'dist' / f'Fallout34-폰트전용-{version}-MO2.zip'
+          archive = root / 'dist' / f'Fallout34-Korean-Patcher-{version}-Font-Only-MO2.zip'
           font = root / 'assets/fo4_korean/Interface/fonts_en.swf'
           with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED, compresslevel=8) as output:
               output.write(font, 'Interface/fonts_en.swf')
@@ -71,7 +71,11 @@ jobs:
           $version = $env:RELEASE_VERSION
           gh release view $version --repo $env:GITHUB_REPOSITORY 2>$null
           if ($LASTEXITCODE -eq 0) { throw "Release $version already exists; refusing to overwrite" }
-          $assets = @(Get-ChildItem dist -File | ForEach-Object { $_.FullName })
+          $assets = @(Get-ChildItem dist -File | ForEach-Object {
+            $kind = if ($_.Name -like '*Font-Only*') { '폰트 전용 - MO2 설치용' } else { '전체 설치기 - Windows 64비트' }
+            $label = if ($_.Name -like '*.sha256') { "$kind - SHA256 확인파일" } else { "$kind.zip" }
+            "$($_.FullName)#$label"
+          })
           if ($assets.Count -ne 4) { throw 'Expected two ZIPs and two SHA-256 files' }
           gh release create $version @assets --repo $env:GITHUB_REPOSITORY --target $env:GITHUB_SHA --title "$version - 단말기 해킹 폰트 수정" --notes-file "docs/releases/$version.md" --draft
           if ($LASTEXITCODE -ne 0) { throw 'Release creation/upload failed' }

@@ -22,7 +22,8 @@ jobs:
           repo = os.environ['GITHUB_REPOSITORY']
           tag = 'v0.1.3'
           old = f'Fallout34-Korean-Patcher-{tag}-Font-Only-MO2.zip'
-          new = f'Fallout34-폰트전용-{tag}-MO2.zip'
+          new = old
+          label = f'폰트 전용 - MO2 설치용 ({tag}).zip'
           def gh(*args):
               return subprocess.check_output(['gh', *args], text=True, encoding='utf-8')
           release = None
@@ -37,7 +38,7 @@ jobs:
           if release is None:
               raise RuntimeError('Published release not available')
           assets = {a['name']: a for a in release['assets']}
-          name = new if new in assets else old
+          name = next((n for n in assets if n.endswith('-MO2.zip')), None)
           if name not in assets:
               raise RuntimeError('Font ZIP missing')
           with tempfile.TemporaryDirectory() as temp:
@@ -45,11 +46,22 @@ jobs:
               digest = hashlib.sha256((Path(temp)/name).read_bytes()).hexdigest()
               checksum = Path(temp)/(new+'.sha256')
               checksum.write_text(f'{digest}  {new}\n',encoding='utf-8')
-              if name == old:
-                  gh('api','--method','PATCH',f"repos/{repo}/releases/assets/{assets[old]['id']}",'-f',f'name={new}')
+              gh('api','--method','PATCH',f"repos/{repo}/releases/assets/{assets[name]['id']}",'-f',f'name={new}','-f',f'label={label}')
               gh('release','upload',tag,str(checksum),'--repo',repo,'--clobber')
-          if old+'.sha256' in assets:
-              gh('release','delete-asset',tag,old+'.sha256','--repo',repo,'--yes')
+          for stale in assets:
+              if stale.endswith('-MO2.zip.sha256') and stale != new+'.sha256':
+                  gh('release','delete-asset',tag,stale,'--repo',repo,'--yes')
+          refreshed = json.loads(gh('api',f'repos/{repo}/releases/{release["id"]}/assets'))
+          for asset in refreshed:
+              if asset['name'] == new+'.sha256':
+                  asset_label = '폰트 전용 - SHA256 확인파일'
+              elif asset['name'].endswith('-Windows-x64.zip'):
+                  asset_label = '전체 설치기 - Windows 64비트.zip'
+              elif asset['name'].endswith('-Windows-x64.zip.sha256'):
+                  asset_label = '전체 설치기 - SHA256 확인파일'
+              else:
+                  continue
+              gh('api','--method','PATCH',f"repos/{repo}/releases/assets/{asset['id']}",'-f',f'label={asset_label}')
           gh('release','edit',tag,'--repo',repo,'--notes-file',f'docs/releases/{tag}.md')
           print('Published font ZIP:',new)
           print('SHA256:',digest)
