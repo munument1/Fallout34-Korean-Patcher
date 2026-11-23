@@ -12,6 +12,7 @@ from pathlib import Path
 
 from audit_fo4_swf_glyphs import parse_swf,swf_tags
 from preserve_fo4_hud_digits import preserve_hud_digits
+from preserve_fo4_terminal_ascii import preserve_terminal_ascii
 
 ROOT=Path(__file__).resolve().parents[1]
 SOURCE=ROOT/'assets'/'fo4_korean'
@@ -72,6 +73,7 @@ def build(ffdec:Path,regular:Path,bold:Path,output:Path,apply:bool):
             raise ValueError(f'FFDec failed for {rel}: {completed.stdout[:1800]}')
         if rel=='Interface/fonts_en.swf':
             preserve_hud_digits(before,dest)
+            preserve_terminal_ascii(before,dest)
         after_meta=parse_swf(dest)
         after_ids={f['font_id']:f for f in after_meta['font_tags']}
         # FFDec intentionally drops obsolete DefineFontAlignZones (73) from
@@ -118,6 +120,7 @@ def build(ffdec:Path,regular:Path,bold:Path,output:Path,apply:bool):
              'embedded_korean_syllables_per_replaced_font':11172}
         if rel=='Interface/fonts_en.swf':
             manifest['files'][rel]['preserved_hud_digits']={'font_id':7,'characters':'0123456789'}
+            manifest['files'][rel]['preserved_terminal_ascii']={'font_id':6,'codepoints':'U+0020-U+007E'}
         print('PASS',rel,'full Hangul fonts',len(mapping),'compressed bytes',dest.stat().st_size,flush=True)
     (output/'FONT_REBUILD_REPORT.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     if apply:

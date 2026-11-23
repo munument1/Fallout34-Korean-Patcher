@@ -1,0 +1,45 @@
+name: Build terminal font hotfix
+on:
+  workflow_dispatch:
+  push:
+    branches: [fix/terminal-font-metrics]
+    paths: [tools/restore_fo4_terminal_font.py]
+permissions:
+  contents: write
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Restore terminal ASCII from verified original
+        run: python tools/restore_fo4_terminal_font.py
+      - name: Verify fonts and bundle integrity
+        run: |
+          python -m unittest discover -s tests -p test_terminal_font.py -v
+          python -m unittest discover -s tests -p test_hud_digits.py -v
+          PYTHONPATH=tools python -c 'from fo4_korean_assets import select_assets; print(select_assets()["asset_count"])'
+      - name: Commit verified SWF and manifests
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/fo4_korean/Interface/fonts_en.swf assets/fo4_korean_sources.json docs/FONT_REBUILD_REPORT.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Restore original fixed-width terminal ASCII in bundled SWF'
+            git push origin HEAD:"$GITHUB_REF_NAME"
+          fi
+      - name: Package MO2 font override
+        run: |
+          mkdir -p work/terminal-font-hotfix/Interface
+          cp assets/fo4_korean/Interface/fonts_en.swf work/terminal-font-hotfix/Interface/
+          printf '%s\n' 'MO2: install this as a separate mod and let it overwrite Interface/fonts_en.swf from the Korean patch. Restart the game. Check hacking responses and ordinary Korean terminal text. In-game verification is pending.' > work/terminal-font-hotfix/README.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Fallout34-Terminal-Font-Hotfix
+          path: work/terminal-font-hotfix/
+          retention-days: 30

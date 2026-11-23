@@ -9,9 +9,9 @@
   "files": {
     "Interface/fonts_en.swf": {
       "source_sha256": "2a9499eef3ee02282625805579293e6d5b8a11be678476994e685e5bd013f099",
-      "result_sha256": "1fbfdc07dae159eea28409ac809ccf2153bff7541649fbb45ced4b6dfd486df5",
+      "result_sha256": "ae2147c5210d5d96fc5f47f2e2b646356dba662ee05a077d67708d7029f3af4f",
       "source_bytes": 2849542,
-      "result_bytes": 42937600,
+      "result_bytes": 43315903,
       "replaced_font_ids": {
         "3": "bold",
         "6": "regular",
@@ -32,6 +32,18 @@
           "030",
           "035"
         ]
+      },
+      "terminal_ascii_restoration": {
+        "font_id": 6,
+        "font_name": "Share-TechMono",
+        "codepoints": "U+0020-U+007E",
+        "glyph_count": 95,
+        "advance_in_definefont3_units": 11060,
+        "source_commit": "eb398887d836c364ad72d52e9f5b06b7097a2f79",
+        "source_sha256": "2a9499eef3ee02282625805579293e6d5b8a11be678476994e685e5bd013f099",
+        "unchanged_non_ascii_glyphs": true,
+        "unchanged_other_fonts_and_non_font_tags": true,
+        "in_game_verified": false
       }
     },
     "Interface/fonts_console.swf": {

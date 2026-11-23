@@ -26,10 +26,12 @@ def read_swf(path):
     return data[:start], tags
 
 
-def read_font(body):
+def read_font(body, font_id=7):
     # Only the known DefineFont3 HUD face is accepted, including its bold flag.
-    if struct.unpack_from('<H', body)[0] != 7 or not body[2] & 1 or not body[2] & 128:
-        raise ValueError('Expected HUD bold font 7 with layout')
+    if struct.unpack_from('<H', body)[0] != font_id or not body[2] & 128:
+        raise ValueError(f'Expected font {font_id} with layout')
+    if font_id == 7 and not body[2] & 1:
+        raise ValueError('Expected HUD bold font 7')
     base = 7 + body[4]
     count = struct.unpack_from('<H', body, base - 2)[0]
     offset_fmt = 'I' if body[2] & 8 else 'H'
