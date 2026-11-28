@@ -78,6 +78,7 @@ FO4의 기존 한글 SWF 폰트는 대다수가 한글 **2,350자**만 지원해
 - [UTF8_CONVERSION_HISTORY.md](UTF8_CONVERSION_HISTORY.md): CP1252/UTF-8 손상, 원본 대조 복구, xTranslator와 `NPC_:FULL` 바이너리 문제, 누락 지형의 원인, 최종 이식 검증
 - [UNIFIED_INSTALLER.md](UNIFIED_INSTALLER.md): 파일 입력·출력 및 설치 안전장치 상세
 - [docs/INSTALLER_09102_UTF8_TRIAL.md](docs/INSTALLER_09102_UTF8_TRIAL.md): 사전 한글화 ESM의 0.9.102 CP1252 충돌과 로컬 실행 파일 시험 수정 (전체 변환 미검증)
+- [docs/CONVERTER_UTF8_TROUBLESHOOTING.md](docs/CONVERTER_UTF8_TROUBLESHOOTING.md): 새 변환기 버전에서 한글 원본 ESM 오류를 진단하고 안전하게 시험하는 절차
 - [UPDATED_ESM_COMPATIBILITY.md](UPDATED_ESM_COMPATIBILITY.md): 신규 변환기 ESM에 기존 번역 재사용, 검증과 검토 절차
 - `data/canonical/manifest.json`: 사용자 소유 원본 ESM의 정확한 SHA-256, 번역 적용 필드 수, 출력 검증 해시
 - `data/canonical/*.utf8.text-fields.jsonl.gz`: **한국어 번역문, 레코드 좌표 및 원본 필드 해시만** 포함하는 배포 데이터
