@@ -77,9 +77,10 @@ class UI:
     def __init__(self):
         self.app=tk.Tk()
         self.app.title('Fallout 34 한국어 패처 — MO2용 복사본 생성')
-        self.app.geometry('760x355')
-        self.app.minsize(690,320)
+        self.app.geometry('760x415')
+        self.app.minsize(690,380)
         self.source_folder=tk.StringVar(value='')
+        self.addon_folder=tk.StringVar(value='')
         self.dest=tk.StringVar(value='')
         self.info=tk.StringVar(value='Fallout34.esm과 FalloutNV34.esm이 함께 들어 있는 폴더를 선택해 주세요.')
         self.events=queue.Queue()
@@ -96,7 +97,8 @@ class UI:
             ttk.Button(line,text='찾기',command=lambda:self.pick(var,mode),width=8).pack(side=tk.LEFT,padx=(8,0))
 
         row('① 원본 포팅 ESM 폴더 (Fallout34.esm + FalloutNV34.esm)',self.source_folder,'source')
-        row('② 결과물을 저장할 폴더 (기존 폴더 선택 가능)',self.dest,'output')
+        row('② 추가 모드 폴더 (정착지·NVSS 등이 별도라면 선택, MO2 mods 폴더 가능)',self.addon_folder,'addon')
+        row('③ 결과물을 저장할 폴더 (기존 폴더 선택 가능)',self.dest,'output')
         self.button=ttk.Button(frame,text='한국어 MO2 모드 생성',command=self.start)
         self.button.pack(anchor='w',pady=4)
         ttk.Label(frame,textvariable=self.info,wraplength=700,foreground='#1f5668').pack(anchor='w',pady=(10,0))
@@ -104,9 +106,10 @@ class UI:
         self.app.after(150,self.poll)
 
     def pick(self,var,mode):
-        folder=filedialog.askdirectory(
-            title=('원본 Fallout34.esm + FalloutNV34.esm 폴더 선택'
-                   if mode=='source' else '결과물을 저장할 폴더 선택'))
+        titles={'source':'원본 Fallout34.esm + FalloutNV34.esm 폴더 선택',
+                'addon':'추가 모드 폴더 또는 MO2 mods 폴더 선택',
+                'output':'결과물을 저장할 폴더 선택'}
+        folder=filedialog.askdirectory(title=titles[mode])
         if not folder:return
         var.set(folder)
         if mode=='source':
@@ -127,6 +130,9 @@ class UI:
         try:
             selected_output=normalize_pasted_path(self.dest.get(),'출력 폴더')
             self.dest.set(str(selected_output))
+            addon=normalize_pasted_path(self.addon_folder.get(),'추가 모드 폴더') if self.addon_folder.get().strip() else None
+            if addon and not addon.is_dir():
+                raise ValueError('추가 모드 폴더가 존재하지 않습니다.')
         except ValueError as exc:
             messagebox.showerror('출력 경로 오류',str(exc))
             return
@@ -136,7 +142,7 @@ class UI:
             try:
                 output=choose_output_root(selected_output)
                 result=build(fo3_path=file,fnv_path=nv,output_root=output,
-                    allow_updated_esms=True,
+                    allow_updated_esms=True,addon_dir=addon,
                     progress=lambda msg:self.events.put(('progress',msg)))
                 self.events.put(('done',(str(output/'Fallout34 Unified Korean'),result)))
             except Exception as e:self.events.put(('error',str(e)))
@@ -154,6 +160,20 @@ class UI:
                     text='MO2에서 새 모드로 등록할 폴더를 만들었습니다.\n\n'+data[0]+(
                       '\n\n업데이트된 ESM은 새로운 문구의 번역과 인게임 검증이 별도로 필요합니다.'
                       if updated else '')+'\n\n원본 게임 및 Data 파일은 변경되지 않았습니다.'
+                    addons=data[1]['optional_addons']
+                    if addons['settlements']:
+                        text+=f"\n\n정착지 이름: {addons['settlements']['matched_names']}개 번역"
+                    if addons['mcm']:
+                        text+='\n설정 메뉴: '+', '.join(addons['mcm'])
+                    if addons['atomic_shop']:
+                        text+=('\n아토믹 상점 화면 번역 완료' if addons['atomic_shop']['status']=='translated'
+                               else '\n아토믹 상점 화면 버전이 달라 원본을 유지했습니다.')
+                    if addons['items']:
+                        text+=f"\n아토믹 상점 물품: {addons['items']['translated_names']}개 번역, {addons['items']['unmatched_names']}개 검토 필요"
+                    if addons['ambiguous']:
+                        text+='\n\n같은 추가 모드 파일이 여러 개 있어 건너뛰었습니다: '+', '.join(addons['ambiguous'])
+                    if not addons['settlements']:
+                        text+='\n\n정착지 ESP를 찾지 못했습니다. 설치했다면 추가 모드 폴더를 선택해 다시 생성하세요.'
                     if data[1]['status']=='REVIEW_REQUIRED':
                         messagebox.showwarning('한국어 패치 생성: 검토 필요',
                             text+'\n\nbuild-report.json의 unmatched_fields를 확인하세요.')
@@ -181,10 +201,12 @@ if __name__=='__main__':
         if sys.stdout is None:sys.stdout=open(os.devnull,'w',encoding='utf-8')
         if sys.stderr is None:sys.stderr=open(os.devnull,'w',encoding='utf-8')
         from build_mo2_korean_mod import load_canonical,load_updated_extra,MANIFEST
+        from addon_localization import verify_addon_data
         from fo4_korean_assets import select_assets
         import json
         manifest=json.loads(MANIFEST.read_text('utf-8'))
         if manifest['schema']!=2:raise ValueError('Unsupported manifest')
+        verify_addon_data(ROOT/'data',manifest)
         for game,meta in manifest['games'].items():
             plan,edids=load_canonical(game,meta)
             load_updated_extra(meta,plan,edids)

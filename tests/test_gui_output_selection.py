@@ -22,6 +22,7 @@ class GuiOutputSelection(unittest.TestCase):
             ui=UI.__new__(UI)
             ui.building=False
             ui.source_folder=Mock();ui.source_folder.get.return_value=str(root)
+            ui.addon_folder=Mock();ui.addon_folder.get.return_value=''
             ui.dest=Mock();ui.dest.get.return_value=str(root/'output')
             ui.button=Mock();ui.info=Mock();ui.events=queue.Queue()
             with patch('install_gui.build') as build,patch('install_gui.threading.Thread') as thread:

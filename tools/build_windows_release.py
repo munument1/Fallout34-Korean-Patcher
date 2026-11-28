@@ -35,11 +35,13 @@ def make_release(version: str) -> tuple[Path, str]:
 
     sys.path.insert(0, str(ROOT / "tools"))
     from build_mo2_korean_mod import MANIFEST, load_canonical, load_updated_extra
+    from addon_localization import verify_addon_data
     from fo4_korean_assets import select_assets
 
     manifest = json.loads(MANIFEST.read_text("utf-8"))
     if manifest["schema"] != 2:
         raise ValueError("Unsupported canonical dataset")
+    verify_addon_data(ROOT / 'data', manifest)
     for game, meta in manifest["games"].items():
         plan, edids = load_canonical(game, meta)
         load_updated_extra(meta, plan, edids)
@@ -74,6 +76,8 @@ def make_release(version: str) -> tuple[Path, str]:
         "data/canonical",
     ]:
         shutil.copytree(ROOT / rel, stage / rel)
+    for filename in ('settlement-names.json', 'settlement-records.json', 'mcm-translations.json', 'atomic-shop-09148.json', 'atomic-bundles.json', 'atomic-items.json'):
+        shutil.copy2(ROOT / 'data' / filename, stage / 'data' / filename)
     shutil.copy2(ROOT / "assets/fo4_korean_sources.json",
                  stage / "assets/fo4_korean_sources.json")
     for filename in [
@@ -122,6 +126,12 @@ def make_release(version: str) -> tuple[Path, str]:
             f"{PRODUCT}/{PRODUCT}.exe",
             f"{PRODUCT}/assets/fo4_korean_sources.json",
             f"{PRODUCT}/data/canonical/manifest.json",
+            f"{PRODUCT}/data/settlement-names.json",
+            f"{PRODUCT}/data/settlement-records.json",
+            f"{PRODUCT}/data/mcm-translations.json",
+            f"{PRODUCT}/data/atomic-shop-09148.json",
+            f"{PRODUCT}/data/atomic-bundles.json",
+            f"{PRODUCT}/data/atomic-items.json",
             f"{PRODUCT}/assets/fo4_korean/Interface/fonts_en.swf",
             f"{PRODUCT}/assets/fo4_korean/Programs/fonts_programs.swf",
             f"{PRODUCT}/licenses/NotoSansKR-OFL.txt",

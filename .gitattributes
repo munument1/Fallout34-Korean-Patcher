@@ -1,3 +1,6 @@
 # These bundled resources are indexed by their original Windows byte hashes.
 assets/fo4_korean/Interface/Credits.txt text eol=crlf
 assets/fo4_korean/Interface/FontConfig.txt text eol=crlf
+# Translation manifests verify the exact bytes on Windows and in CI.
+data/*.json text eol=lf
+data/canonical/*.v09102-extra.json text eol=lf

@@ -1,0 +1,1390 @@
+[
+  {
+    "type": "QUST",
+    "edid": "F34S_SettlerTravel",
+    "english": "Fallout 34 Settler Travel",
+    "korean": "폴아웃 34 정착민 이동"
+  },
+  {
+    "type": "QUST",
+    "edid": "F34S_ShootingRange",
+    "english": "Shooting Range",
+    "korean": "사격장"
+  },
+  {
+    "type": "QUST",
+    "edid": "F34S_AtomicShop",
+    "english": "Atomic Shop",
+    "korean": "아토믹 상점"
+  },
+  {
+    "type": "QUST",
+    "edid": "F34S_Rewards",
+    "english": "Fallout 34 Rewards",
+    "korean": "폴아웃 34 보상"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Settlement",
+    "english": "Settlement Objects",
+    "korean": "정착지 물품"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Settlement_Power",
+    "english": "Power",
+    "korean": "전력"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Settlement_Water",
+    "english": "Water",
+    "korean": "물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Settlement_Food",
+    "english": "Food",
+    "korean": "식량"
+  },
+  {
+    "type": "FLST",
+    "edid": "F34S_WorkshopMenu_Settlement",
+    "english": "Settlement Objects",
+    "korean": "정착지 물품"
+  },
+  {
+    "type": "FACT",
+    "edid": "F34S_RaidFaction",
+    "english": "Raiders",
+    "korean": "레이더"
+  },
+  {
+    "type": "CELL",
+    "edid": "f3_dlc05bridge",
+    "source_master": "Fallout34.esm",
+    "source_id": "202FCE",
+    "before_sha256": "223c888942d004a9f9a77ce5454b0b1ae451715cceb7d260598716ef26d62be4",
+    "korean": "함교"
+  },
+  {
+    "type": "CELL",
+    "edid": "fnv_2etopspresidentialsuite",
+    "source_master": "FalloutNV34.esm",
+    "source_id": "10E19B",
+    "before_sha256": "8b38bee96b358f51635933677212b81679d923320d57ea4ad680b5876cfab53c",
+    "korean": "탑스 귀빈실 스위트룸"
+  },
+  {
+    "type": "CELL",
+    "edid": "fnv_ulpenthouse",
+    "source_master": "FalloutNV34.esm",
+    "source_id": "125AAD",
+    "before_sha256": "2beb87ea41ab2bc46a8ee68d10f8d4f9c1041b8b8e49912b2f7c00770d2f0d68",
+    "korean": "울트라-럭스 펜트하우스"
+  },
+  {
+    "type": "CELL",
+    "edid": "fnv_lucky38suitefloor22",
+    "source_master": "FalloutNV34.esm",
+    "source_id": "10F23C",
+    "before_sha256": "f6059f6c3082a690de590ec6061767b157c403318d0e5163cfc207c3c4fea478",
+    "korean": "럭키 38 22층 방"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FO3",
+    "english": "Fallout 3",
+    "korean": "폴아웃 3"
+  },
+  {
+    "type": "FLST",
+    "edid": "F34S_WorkshopMenu_FO3",
+    "english": "Fallout 3",
+    "korean": "폴아웃 3"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FO3_Structures",
+    "english": "Structures",
+    "korean": "구조물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FO3_Walls",
+    "english": "Walls & Fences",
+    "korean": "벽과 울타리"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FO3_Furniture",
+    "english": "Furniture",
+    "korean": "가구"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FO3_Storage",
+    "english": "Storage",
+    "korean": "보관함"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FO3_Lights",
+    "english": "Lights",
+    "korean": "조명"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FO3_Decor",
+    "english": "Signs & Decor",
+    "korean": "표지판과 장식"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FO3_Junk",
+    "english": "Junk & Clutter",
+    "korean": "잡동사니"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FO3_Vehicles",
+    "english": "Vehicles",
+    "korean": "차량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FO3_Plants",
+    "english": "Plants & Trees",
+    "korean": "식물과 나무"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FO3_Power",
+    "english": "Power",
+    "korean": "전력"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FO3_Water",
+    "english": "Water",
+    "korean": "물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FO3_Food",
+    "english": "Food",
+    "korean": "식량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FO3_Happy",
+    "english": "Happiness",
+    "korean": "행복도"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FO3_Training",
+    "english": "Training",
+    "korean": "훈련"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FO3_Utility",
+    "english": "Utility",
+    "korean": "편의 시설"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FNV",
+    "english": "Fallout: New Vegas",
+    "korean": "폴아웃: 뉴 베가스"
+  },
+  {
+    "type": "FLST",
+    "edid": "F34S_WorkshopMenu_FNV",
+    "english": "Fallout: New Vegas",
+    "korean": "폴아웃: 뉴 베가스"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FNV_Structures",
+    "english": "Structures",
+    "korean": "구조물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FNV_Walls",
+    "english": "Walls & Fences",
+    "korean": "벽과 울타리"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FNV_Furniture",
+    "english": "Furniture",
+    "korean": "가구"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FNV_Storage",
+    "english": "Storage",
+    "korean": "보관함"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FNV_Lights",
+    "english": "Lights",
+    "korean": "조명"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FNV_Decor",
+    "english": "Signs & Decor",
+    "korean": "표지판과 장식"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FNV_Junk",
+    "english": "Junk & Clutter",
+    "korean": "잡동사니"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FNV_Vehicles",
+    "english": "Vehicles",
+    "korean": "차량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FNV_Plants",
+    "english": "Plants & Trees",
+    "korean": "식물과 나무"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FNV_Power",
+    "english": "Power",
+    "korean": "전력"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FNV_Water",
+    "english": "Water",
+    "korean": "물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FNV_Food",
+    "english": "Food",
+    "korean": "식량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FNV_Happy",
+    "english": "Happiness",
+    "korean": "행복도"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FNV_Training",
+    "english": "Training",
+    "korean": "훈련"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_FNV_Utility",
+    "english": "Utility",
+    "korean": "편의 시설"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Anchorage",
+    "english": "Operation: Anchorage",
+    "korean": "앵커리지 작전"
+  },
+  {
+    "type": "FLST",
+    "edid": "F34S_WorkshopMenu_Anchorage",
+    "english": "Operation: Anchorage",
+    "korean": "앵커리지 작전"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Anchorage_Structures",
+    "english": "Structures",
+    "korean": "구조물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Anchorage_Walls",
+    "english": "Walls & Fences",
+    "korean": "벽과 울타리"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Anchorage_Furniture",
+    "english": "Furniture",
+    "korean": "가구"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Anchorage_Storage",
+    "english": "Storage",
+    "korean": "보관함"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Anchorage_Lights",
+    "english": "Lights",
+    "korean": "조명"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Anchorage_Decor",
+    "english": "Signs & Decor",
+    "korean": "표지판과 장식"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Anchorage_Junk",
+    "english": "Junk & Clutter",
+    "korean": "잡동사니"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Anchorage_Vehicles",
+    "english": "Vehicles",
+    "korean": "차량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Anchorage_Plants",
+    "english": "Plants & Trees",
+    "korean": "식물과 나무"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Anchorage_Power",
+    "english": "Power",
+    "korean": "전력"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Anchorage_Water",
+    "english": "Water",
+    "korean": "물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Anchorage_Food",
+    "english": "Food",
+    "korean": "식량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Anchorage_Happy",
+    "english": "Happiness",
+    "korean": "행복도"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Anchorage_Training",
+    "english": "Training",
+    "korean": "훈련"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Anchorage_Utility",
+    "english": "Utility",
+    "korean": "편의 시설"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Pitt",
+    "english": "The Pitt",
+    "korean": "더 핏"
+  },
+  {
+    "type": "FLST",
+    "edid": "F34S_WorkshopMenu_Pitt",
+    "english": "The Pitt",
+    "korean": "더 핏"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Pitt_Structures",
+    "english": "Structures",
+    "korean": "구조물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Pitt_Walls",
+    "english": "Walls & Fences",
+    "korean": "벽과 울타리"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Pitt_Furniture",
+    "english": "Furniture",
+    "korean": "가구"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Pitt_Storage",
+    "english": "Storage",
+    "korean": "보관함"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Pitt_Lights",
+    "english": "Lights",
+    "korean": "조명"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Pitt_Decor",
+    "english": "Signs & Decor",
+    "korean": "표지판과 장식"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Pitt_Junk",
+    "english": "Junk & Clutter",
+    "korean": "잡동사니"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Pitt_Vehicles",
+    "english": "Vehicles",
+    "korean": "차량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Pitt_Plants",
+    "english": "Plants & Trees",
+    "korean": "식물과 나무"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Pitt_Power",
+    "english": "Power",
+    "korean": "전력"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Pitt_Water",
+    "english": "Water",
+    "korean": "물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Pitt_Food",
+    "english": "Food",
+    "korean": "식량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Pitt_Happy",
+    "english": "Happiness",
+    "korean": "행복도"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Pitt_Training",
+    "english": "Training",
+    "korean": "훈련"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Pitt_Utility",
+    "english": "Utility",
+    "korean": "편의 시설"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_BrokenSteel",
+    "english": "Broken Steel",
+    "korean": "브로큰 스틸"
+  },
+  {
+    "type": "FLST",
+    "edid": "F34S_WorkshopMenu_BrokenSteel",
+    "english": "Broken Steel",
+    "korean": "브로큰 스틸"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_BrokenSteel_Structures",
+    "english": "Structures",
+    "korean": "구조물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_BrokenSteel_Walls",
+    "english": "Walls & Fences",
+    "korean": "벽과 울타리"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_BrokenSteel_Furniture",
+    "english": "Furniture",
+    "korean": "가구"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_BrokenSteel_Storage",
+    "english": "Storage",
+    "korean": "보관함"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_BrokenSteel_Lights",
+    "english": "Lights",
+    "korean": "조명"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_BrokenSteel_Decor",
+    "english": "Signs & Decor",
+    "korean": "표지판과 장식"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_BrokenSteel_Junk",
+    "english": "Junk & Clutter",
+    "korean": "잡동사니"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_BrokenSteel_Vehicles",
+    "english": "Vehicles",
+    "korean": "차량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_BrokenSteel_Plants",
+    "english": "Plants & Trees",
+    "korean": "식물과 나무"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_BrokenSteel_Power",
+    "english": "Power",
+    "korean": "전력"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_BrokenSteel_Water",
+    "english": "Water",
+    "korean": "물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_BrokenSteel_Food",
+    "english": "Food",
+    "korean": "식량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_BrokenSteel_Happy",
+    "english": "Happiness",
+    "korean": "행복도"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_BrokenSteel_Training",
+    "english": "Training",
+    "korean": "훈련"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_BrokenSteel_Utility",
+    "english": "Utility",
+    "korean": "편의 시설"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_PointLookout",
+    "english": "Point Lookout",
+    "korean": "포인트 룩아웃"
+  },
+  {
+    "type": "FLST",
+    "edid": "F34S_WorkshopMenu_PointLookout",
+    "english": "Point Lookout",
+    "korean": "포인트 룩아웃"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_PointLookout_Structures",
+    "english": "Structures",
+    "korean": "구조물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_PointLookout_Walls",
+    "english": "Walls & Fences",
+    "korean": "벽과 울타리"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_PointLookout_Furniture",
+    "english": "Furniture",
+    "korean": "가구"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_PointLookout_Storage",
+    "english": "Storage",
+    "korean": "보관함"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_PointLookout_Lights",
+    "english": "Lights",
+    "korean": "조명"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_PointLookout_Decor",
+    "english": "Signs & Decor",
+    "korean": "표지판과 장식"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_PointLookout_Junk",
+    "english": "Junk & Clutter",
+    "korean": "잡동사니"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_PointLookout_Vehicles",
+    "english": "Vehicles",
+    "korean": "차량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_PointLookout_Plants",
+    "english": "Plants & Trees",
+    "korean": "식물과 나무"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_PointLookout_Power",
+    "english": "Power",
+    "korean": "전력"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_PointLookout_Water",
+    "english": "Water",
+    "korean": "물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_PointLookout_Food",
+    "english": "Food",
+    "korean": "식량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_PointLookout_Happy",
+    "english": "Happiness",
+    "korean": "행복도"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_PointLookout_Training",
+    "english": "Training",
+    "korean": "훈련"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_PointLookout_Utility",
+    "english": "Utility",
+    "korean": "편의 시설"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Zeta",
+    "english": "Mothership Zeta",
+    "korean": "모선 제타"
+  },
+  {
+    "type": "FLST",
+    "edid": "F34S_WorkshopMenu_Zeta",
+    "english": "Mothership Zeta",
+    "korean": "모선 제타"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Zeta_Structures",
+    "english": "Structures",
+    "korean": "구조물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Zeta_Walls",
+    "english": "Walls & Fences",
+    "korean": "벽과 울타리"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Zeta_Furniture",
+    "english": "Furniture",
+    "korean": "가구"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Zeta_Storage",
+    "english": "Storage",
+    "korean": "보관함"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Zeta_Lights",
+    "english": "Lights",
+    "korean": "조명"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Zeta_Decor",
+    "english": "Signs & Decor",
+    "korean": "표지판과 장식"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Zeta_Junk",
+    "english": "Junk & Clutter",
+    "korean": "잡동사니"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Zeta_Vehicles",
+    "english": "Vehicles",
+    "korean": "차량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Zeta_Plants",
+    "english": "Plants & Trees",
+    "korean": "식물과 나무"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Zeta_Power",
+    "english": "Power",
+    "korean": "전력"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Zeta_Water",
+    "english": "Water",
+    "korean": "물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Zeta_Food",
+    "english": "Food",
+    "korean": "식량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Zeta_Happy",
+    "english": "Happiness",
+    "korean": "행복도"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Zeta_Training",
+    "english": "Training",
+    "korean": "훈련"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Zeta_Utility",
+    "english": "Utility",
+    "korean": "편의 시설"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_DeadMoney",
+    "english": "Dead Money",
+    "korean": "데드 머니"
+  },
+  {
+    "type": "FLST",
+    "edid": "F34S_WorkshopMenu_DeadMoney",
+    "english": "Dead Money",
+    "korean": "데드 머니"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_DeadMoney_Structures",
+    "english": "Structures",
+    "korean": "구조물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_DeadMoney_Walls",
+    "english": "Walls & Fences",
+    "korean": "벽과 울타리"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_DeadMoney_Furniture",
+    "english": "Furniture",
+    "korean": "가구"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_DeadMoney_Storage",
+    "english": "Storage",
+    "korean": "보관함"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_DeadMoney_Lights",
+    "english": "Lights",
+    "korean": "조명"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_DeadMoney_Decor",
+    "english": "Signs & Decor",
+    "korean": "표지판과 장식"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_DeadMoney_Junk",
+    "english": "Junk & Clutter",
+    "korean": "잡동사니"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_DeadMoney_Vehicles",
+    "english": "Vehicles",
+    "korean": "차량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_DeadMoney_Plants",
+    "english": "Plants & Trees",
+    "korean": "식물과 나무"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_DeadMoney_Power",
+    "english": "Power",
+    "korean": "전력"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_DeadMoney_Water",
+    "english": "Water",
+    "korean": "물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_DeadMoney_Food",
+    "english": "Food",
+    "korean": "식량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_DeadMoney_Happy",
+    "english": "Happiness",
+    "korean": "행복도"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_DeadMoney_Training",
+    "english": "Training",
+    "korean": "훈련"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_DeadMoney_Utility",
+    "english": "Utility",
+    "korean": "편의 시설"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_HonestHearts",
+    "english": "Honest Hearts",
+    "korean": "어니스트 하츠"
+  },
+  {
+    "type": "FLST",
+    "edid": "F34S_WorkshopMenu_HonestHearts",
+    "english": "Honest Hearts",
+    "korean": "어니스트 하츠"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_HonestHearts_Structures",
+    "english": "Structures",
+    "korean": "구조물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_HonestHearts_Walls",
+    "english": "Walls & Fences",
+    "korean": "벽과 울타리"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_HonestHearts_Furniture",
+    "english": "Furniture",
+    "korean": "가구"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_HonestHearts_Storage",
+    "english": "Storage",
+    "korean": "보관함"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_HonestHearts_Lights",
+    "english": "Lights",
+    "korean": "조명"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_HonestHearts_Decor",
+    "english": "Signs & Decor",
+    "korean": "표지판과 장식"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_HonestHearts_Junk",
+    "english": "Junk & Clutter",
+    "korean": "잡동사니"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_HonestHearts_Vehicles",
+    "english": "Vehicles",
+    "korean": "차량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_HonestHearts_Plants",
+    "english": "Plants & Trees",
+    "korean": "식물과 나무"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_HonestHearts_Power",
+    "english": "Power",
+    "korean": "전력"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_HonestHearts_Water",
+    "english": "Water",
+    "korean": "물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_HonestHearts_Food",
+    "english": "Food",
+    "korean": "식량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_HonestHearts_Happy",
+    "english": "Happiness",
+    "korean": "행복도"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_HonestHearts_Training",
+    "english": "Training",
+    "korean": "훈련"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_HonestHearts_Utility",
+    "english": "Utility",
+    "korean": "편의 시설"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_OWB",
+    "english": "Old World Blues",
+    "korean": "올드 월드 블루스"
+  },
+  {
+    "type": "FLST",
+    "edid": "F34S_WorkshopMenu_OWB",
+    "english": "Old World Blues",
+    "korean": "올드 월드 블루스"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_OWB_Structures",
+    "english": "Structures",
+    "korean": "구조물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_OWB_Walls",
+    "english": "Walls & Fences",
+    "korean": "벽과 울타리"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_OWB_Furniture",
+    "english": "Furniture",
+    "korean": "가구"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_OWB_Storage",
+    "english": "Storage",
+    "korean": "보관함"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_OWB_Lights",
+    "english": "Lights",
+    "korean": "조명"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_OWB_Decor",
+    "english": "Signs & Decor",
+    "korean": "표지판과 장식"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_OWB_Junk",
+    "english": "Junk & Clutter",
+    "korean": "잡동사니"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_OWB_Vehicles",
+    "english": "Vehicles",
+    "korean": "차량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_OWB_Plants",
+    "english": "Plants & Trees",
+    "korean": "식물과 나무"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_OWB_Power",
+    "english": "Power",
+    "korean": "전력"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_OWB_Water",
+    "english": "Water",
+    "korean": "물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_OWB_Food",
+    "english": "Food",
+    "korean": "식량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_OWB_Happy",
+    "english": "Happiness",
+    "korean": "행복도"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_OWB_Training",
+    "english": "Training",
+    "korean": "훈련"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_OWB_Utility",
+    "english": "Utility",
+    "korean": "편의 시설"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_LonesomeRoad",
+    "english": "Lonesome Road",
+    "korean": "론섬 로드"
+  },
+  {
+    "type": "FLST",
+    "edid": "F34S_WorkshopMenu_LonesomeRoad",
+    "english": "Lonesome Road",
+    "korean": "론섬 로드"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_LonesomeRoad_Structures",
+    "english": "Structures",
+    "korean": "구조물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_LonesomeRoad_Walls",
+    "english": "Walls & Fences",
+    "korean": "벽과 울타리"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_LonesomeRoad_Furniture",
+    "english": "Furniture",
+    "korean": "가구"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_LonesomeRoad_Storage",
+    "english": "Storage",
+    "korean": "보관함"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_LonesomeRoad_Lights",
+    "english": "Lights",
+    "korean": "조명"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_LonesomeRoad_Decor",
+    "english": "Signs & Decor",
+    "korean": "표지판과 장식"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_LonesomeRoad_Junk",
+    "english": "Junk & Clutter",
+    "korean": "잡동사니"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_LonesomeRoad_Vehicles",
+    "english": "Vehicles",
+    "korean": "차량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_LonesomeRoad_Plants",
+    "english": "Plants & Trees",
+    "korean": "식물과 나무"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_LonesomeRoad_Power",
+    "english": "Power",
+    "korean": "전력"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_LonesomeRoad_Water",
+    "english": "Water",
+    "korean": "물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_LonesomeRoad_Food",
+    "english": "Food",
+    "korean": "식량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_LonesomeRoad_Happy",
+    "english": "Happiness",
+    "korean": "행복도"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_LonesomeRoad_Training",
+    "english": "Training",
+    "korean": "훈련"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_LonesomeRoad_Utility",
+    "english": "Utility",
+    "korean": "편의 시설"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_GRA",
+    "english": "Gun Runners' Arsenal",
+    "korean": "건 러너 무기고"
+  },
+  {
+    "type": "FLST",
+    "edid": "F34S_WorkshopMenu_GRA",
+    "english": "Gun Runners' Arsenal",
+    "korean": "건 러너 무기고"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_GRA_Structures",
+    "english": "Structures",
+    "korean": "구조물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_GRA_Walls",
+    "english": "Walls & Fences",
+    "korean": "벽과 울타리"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_GRA_Furniture",
+    "english": "Furniture",
+    "korean": "가구"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_GRA_Storage",
+    "english": "Storage",
+    "korean": "보관함"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_GRA_Lights",
+    "english": "Lights",
+    "korean": "조명"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_GRA_Decor",
+    "english": "Signs & Decor",
+    "korean": "표지판과 장식"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_GRA_Junk",
+    "english": "Junk & Clutter",
+    "korean": "잡동사니"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_GRA_Vehicles",
+    "english": "Vehicles",
+    "korean": "차량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_GRA_Plants",
+    "english": "Plants & Trees",
+    "korean": "식물과 나무"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_GRA_Power",
+    "english": "Power",
+    "korean": "전력"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_GRA_Water",
+    "english": "Water",
+    "korean": "물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_GRA_Food",
+    "english": "Food",
+    "korean": "식량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_GRA_Happy",
+    "english": "Happiness",
+    "korean": "행복도"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_GRA_Training",
+    "english": "Training",
+    "korean": "훈련"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_GRA_Utility",
+    "english": "Utility",
+    "korean": "편의 시설"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Settlement_Structures",
+    "english": "Structures",
+    "korean": "구조물"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Settlement_Walls",
+    "english": "Walls & Fences",
+    "korean": "벽과 울타리"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Settlement_Furniture",
+    "english": "Furniture",
+    "korean": "가구"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Settlement_Storage",
+    "english": "Storage",
+    "korean": "보관함"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Settlement_Lights",
+    "english": "Lights",
+    "korean": "조명"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Settlement_Decor",
+    "english": "Signs & Decor",
+    "korean": "표지판과 장식"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Settlement_Junk",
+    "english": "Junk & Clutter",
+    "korean": "잡동사니"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Settlement_Vehicles",
+    "english": "Vehicles",
+    "korean": "차량"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Settlement_Plants",
+    "english": "Plants & Trees",
+    "korean": "식물과 나무"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Settlement_Happy",
+    "english": "Happiness",
+    "korean": "행복도"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Settlement_Training",
+    "english": "Training",
+    "korean": "훈련"
+  },
+  {
+    "type": "KYWD",
+    "edid": "F34S_RecipeFilter_Settlement_Utility",
+    "english": "Utility",
+    "korean": "편의 시설"
+  }
+]

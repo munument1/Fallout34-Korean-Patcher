@@ -170449,5 +170449,41 @@
     "edid": "fnv_vefr0xdebugmessage",
     "before_sha256": "a4b45e5621fae27a9bc83194af8b6dd74fb2579fe88ab809dff343671ad06672",
     "korean": "iButtonVar 값 %.0f"
+  },
+  {
+    "id": "01D17A20",
+    "type": "ALCH",
+    "field": "DESC",
+    "index": 0,
+    "edid": "f34_skillsreadout",
+    "before_sha256": "c3c2be6cd5c1ab2dc38aa7b8d5a2df3a66eea92204d0f29a56f820ec59c0032c",
+    "korean": "폴아웃 3의 카르마와 기술을 확인합니다."
+  },
+  {
+    "id": "01110938",
+    "type": "INFO",
+    "field": "NAM1",
+    "index": 0,
+    "edid": null,
+    "before_sha256": "b1a57c339bb4239e934cc626c4809a8bb98717d32a5c27a04b639c37c8c90cfb",
+    "korean": "<AUDIO: Clatter of wrench dropping>젠장, 이리 돌아와."
+  },
+  {
+    "id": "01A058FB",
+    "type": "QUST",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f34_worldtour",
+    "before_sha256": "5982133a89a6886aef9f39b04202f28769e8cace0d612cebae09409f771905f5",
+    "korean": "서로 다른 세계"
+  },
+  {
+    "id": "01F66DEA",
+    "type": "MESG",
+    "field": "ITXT",
+    "index": 3,
+    "edid": "f34_altstartmessageboth",
+    "before_sha256": "8b228ac0e8b0538c93406eddd6665b3597c62c9eef0a6488e6a9a53cb8675270",
+    "korean": "스카이림, 탐리엘"
   }
 ]

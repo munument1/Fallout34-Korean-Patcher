@@ -1,0 +1,18 @@
+{
+  "robots": ["Robot Clutter", "로봇 잡동사니"],
+  "trash": ["Trash Heaps", "쓰레기 더미"],
+  "bunkertop": ["Bunker Top Kit", "벙커 지붕 세트"],
+  "posters_FO3": ["Fallout 3 Posters", "폴아웃 3 포스터"],
+  "posters_FNV": ["Fallout: New Vegas Posters", "폴아웃: 뉴 베가스 포스터"],
+  "posters_Anchorage": ["Operation: Anchorage Posters", "앵커리지 작전 포스터"],
+  "posters_Pitt": ["The Pitt Posters", "더 핏 포스터"],
+  "posters_BrokenSteel": ["Broken Steel Posters", "브로큰 스틸 포스터"],
+  "posters_PointLookout": ["Point Lookout Posters", "포인트 룩아웃 포스터"],
+  "posters_Zeta": ["Mothership Zeta Posters", "모선 제타 포스터"],
+  "posters_DeadMoney": ["Sierra Madre Posters", "시에라 마드레 포스터"],
+  "posters_HonestHearts": ["Honest Hearts Posters", "어니스트 하츠 포스터"],
+  "posters_OWB": ["Old World Blues Posters", "올드 월드 블루스 포스터"],
+  "posters_LonesomeRoad": ["Lonesome Road Posters", "론섬 로드 포스터"],
+  "posters_GRA": ["Gun Runners' Arsenal Posters", "건 러너 무기고 포스터"],
+  "posters_Settlement": ["Settlement Objects Posters", "정착지 물품 포스터"]
+}

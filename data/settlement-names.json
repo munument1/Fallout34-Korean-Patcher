@@ -1,0 +1,242 @@
+[
+  {
+    "edid": "F34S_SpringvaleLocation",
+    "english": "Springvale",
+    "korean": "스프링베일"
+  },
+  {
+    "edid": "F34S_GoodspringsLocation",
+    "english": "Goodsprings",
+    "korean": "굿스프링스"
+  },
+  {
+    "edid": "F34S_PrimmLocation",
+    "english": "Primm",
+    "korean": "프림"
+  },
+  {
+    "edid": "F34S_IvanpahRaceTrackLocation",
+    "english": "Ivanpah Race Track",
+    "korean": "아이밴파 경주 트랙"
+  },
+  {
+    "edid": "F34S_MojaveOutpostLocation",
+    "english": "Mojave Outpost",
+    "korean": "모하비 전초기지"
+  },
+  {
+    "edid": "F34S_NiptonLocation",
+    "english": "Nipton",
+    "korean": "닙튼"
+  },
+  {
+    "edid": "F34S_MojaveDriveInLocation",
+    "english": "Mojave Drive-in",
+    "korean": "모하비 자동차 극장"
+  },
+  {
+    "edid": "F34S_NHPStationLocation",
+    "english": "Nevada Highway Patrol Station",
+    "korean": "네바다 고속도로 정찰소"
+  },
+  {
+    "edid": "F34S_WolfhornRanchLocation",
+    "english": "Wolfhorn Ranch",
+    "korean": "늑대뿔 목장"
+  },
+  {
+    "edid": "F34S_BonnieSpringsLocation",
+    "english": "Bonnie Springs",
+    "korean": "보니 스프링스"
+  },
+  {
+    "edid": "F34S_NovacLocation",
+    "english": "Novac",
+    "korean": "노박"
+  },
+  {
+    "edid": "F34S_SunsetDriveInLocation",
+    "english": "California Sunset Drive-in",
+    "korean": "캘리포니아 선셋 드라이브인"
+  },
+  {
+    "edid": "F34S_NiptonRoadPitStopLocation",
+    "english": "Nipton Road Pit Stop",
+    "korean": "닙튼 정차소"
+  },
+  {
+    "edid": "F34S_SpringMtRanchLocation",
+    "english": "Spring Mt. Ranch State Park",
+    "korean": "스프링 산맥 목장 주립공원"
+  },
+  {
+    "edid": "F34S_BrooksTumbleweedRanchLocation",
+    "english": "Brooks Tumbleweed Ranch",
+    "korean": "브룩스 회전초 목장"
+  },
+  {
+    "edid": "F34S_PoseidonGasStationLocation",
+    "english": "Poseidon Gas Station",
+    "korean": "포세이돈 주유소"
+  },
+  {
+    "edid": "F34S_GrubnGulpLocation",
+    "english": "Grub n' Gulp Rest Stop",
+    "korean": "그럽앤 걸프 휴게소"
+  },
+  {
+    "edid": "F34S_BoulderBeachLocation",
+    "english": "Boulder Beach Campground",
+    "korean": "볼더 해변 야영지"
+  },
+  {
+    "edid": "F34S_GoodspringsSourceLocation",
+    "english": "Goodsprings Source",
+    "korean": "굿스프링스 수원지"
+  },
+  {
+    "edid": "F34S_TradingPost188Location",
+    "english": "188 Trading Post",
+    "korean": "188 교역소"
+  },
+  {
+    "edid": "F34S_MinefieldLocation",
+    "english": "Minefield",
+    "korean": "마인필드"
+  },
+  {
+    "edid": "F34S_GrayditchLocation",
+    "english": "Grayditch",
+    "korean": "그레이디치"
+  },
+  {
+    "edid": "F34S_BigTownLocation",
+    "english": "Big Town",
+    "korean": "빅 타운"
+  },
+  {
+    "edid": "F34S_CanterburyCommonsLocation",
+    "english": "Canterbury Commons",
+    "korean": "캔터베리 커먼스"
+  },
+  {
+    "edid": "F34S_ArefuLocation",
+    "english": "Arefu",
+    "korean": "아르푸"
+  },
+  {
+    "edid": "F34S_AndaleLocation",
+    "english": "Andale",
+    "korean": "앤데일"
+  },
+  {
+    "edid": "F34S_EvergreenMillsLocation",
+    "english": "Evergreen Mills",
+    "korean": "에버그린 밀스"
+  },
+  {
+    "edid": "F34S_AgathasHouseLocation",
+    "english": "Agatha's House",
+    "korean": "아가사의 집"
+  },
+  {
+    "edid": "F34S_MoonbeamCinemaLocation",
+    "english": "Moonbeam Outdoor Cinema",
+    "korean": "월광 야외상영관"
+  },
+  {
+    "edid": "F34S_RockbreakersLastGasLocation",
+    "english": "Rockbreaker's Last Gas",
+    "korean": "락브레이커의 마지막 주유소"
+  },
+  {
+    "edid": "F34S_SmithCaseysGarageLocation",
+    "english": "Smith Casey's Garage",
+    "korean": "스미스 케이시의 차고"
+  },
+  {
+    "edid": "F34S_GrislyDinerLocation",
+    "english": "Grisly Diner",
+    "korean": "무서운 간이식당"
+  },
+  {
+    "edid": "F34S_ScrapyardLocation",
+    "english": "Scrapyard",
+    "korean": "고철 처리장"
+  },
+  {
+    "edid": "F34S_SuperDuperMartLocation",
+    "english": "Super-Duper Mart",
+    "korean": "수퍼-두퍼 마트"
+  },
+  {
+    "edid": "F34S_ChasteAcresDairyFarmLocation",
+    "english": "Chaste Acres Dairy Farm",
+    "korean": "청정토지 젖소농장"
+  },
+  {
+    "edid": "F34S_TempleOfTheUnionLocation",
+    "english": "Temple of the Union",
+    "korean": "연합의 신전"
+  },
+  {
+    "edid": "F34S_WilhelmsWharfLocation",
+    "english": "Wilhelm's Wharf",
+    "korean": "윌헬름의 부두"
+  },
+  {
+    "edid": "F34S_ClifftopShacksLocation",
+    "english": "Clifftop Shacks",
+    "korean": "절벽 꼭대기 오두막"
+  },
+  {
+    "edid": "F34S_ClarkFieldLocation",
+    "english": "Clark Field",
+    "korean": "클라크 필드"
+  },
+  {
+    "edid": "F34S_NCRCorrectionalLocation",
+    "english": "NCR Correctional Facility",
+    "korean": "NCR 교도소"
+  },
+  {
+    "edid": "F34S_RangerCompoundLocation",
+    "english": "Ranger Compound",
+    "korean": "레인저 기지"
+  },
+  {
+    "edid": "F34S_PittUptownLocation",
+    "english": "Pitt Uptown",
+    "korean": "핏 업타운"
+  },
+  {
+    "edid": "F34S_SorrowsForkLocation",
+    "english": "Sorrows Fork Campground",
+    "korean": "슬픔의 갈림길 야영지"
+  },
+  {
+    "edid": "F34S_Lucky38SuiteLocation",
+    "english": "Lucky 38 Presidential Suite",
+    "korean": "럭키 38 대통령 스위트룸"
+  },
+  {
+    "edid": "F34S_TopsSuiteLocation",
+    "english": "The Tops Presidential Suite",
+    "korean": "더 톱스 대통령 스위트룸"
+  },
+  {
+    "edid": "F34S_UltraLuxePenthouseLocation",
+    "english": "Ultra-Luxe Penthouse",
+    "korean": "울트라 럭스 펜트하우스"
+  },
+  {
+    "edid": "F34S_ZetaBridgeLocation",
+    "english": "Mothership Zeta Bridge",
+    "korean": "모선 제타 함교"
+  },
+  {
+    "edid": "F34S_PittDowntownLocation",
+    "english": "Pitt Downtown",
+    "korean": "핏 다운타운"
+  }
+]

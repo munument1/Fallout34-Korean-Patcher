@@ -23,6 +23,7 @@ import tempfile
 
 from runtime_esm_writer import sha256,write_copy,inspect_structure
 from fo4_korean_assets import BUNDLED,select_assets
+from addon_localization import translate_addons,verify_addon_data
 
 # In a PyInstaller executable code lives under its temporary extraction path,
 # while the canonical data and FO4 resources are shipped BESIDE the EXE.
@@ -167,12 +168,13 @@ def validate_updated_output(game:str,meta:dict,info:dict,dest:Path):
 
 
 def build(*,fo3_path:Path,fnv_path:Path,output_root:Path,
-          allow_updated_esms:bool=True,progress=print)->dict:
+          allow_updated_esms:bool=True,addon_dir:Path|None=None,progress=print)->dict:
     output_root=output_root.resolve()
     sources={'fo3':fo3_path.resolve(),'fnv':fnv_path.resolve()}
     verify_directory_safety(sources,output_root)
     manifest,sources=source_preflight(
         sources['fo3'],sources['fnv'],allow_updated_esms=allow_updated_esms)
+    verify_addon_data(ROOT/'data',manifest)
     source_hashes={game:sha256(src) for game,src in sources.items()}
 
     progress('원본 ESM 및 번역 데이터 무결성 검사 완료')
@@ -249,6 +251,18 @@ def build(*,fo3_path:Path,fnv_path:Path,output_root:Path,
         if copied!=505:raise ValueError(f'FO4 asset count unexpected: {copied}')
         progress(f'폴아웃 4 한국어 Interface·Programs·Strings 파일 {copied}개 구성 완료')
 
+        addons=translate_addons(sources['fo3'].parent,addon_dir,mod,ROOT/'data')
+        if addons['settlements']:
+            progress(f"정착지 이름 번역: {addons['settlements']['matched_names']}개")
+        for name,info in addons['mcm'].items():
+            progress(f"{name} 설정 번역: {info['translated_fields']}개")
+        if addons['atomic_shop'] and addons['atomic_shop']['status']=='translated':
+            progress(f"아토믹 상점 화면 번역: {addons['atomic_shop']['translated_strings']}개")
+        if addons['bundles']:
+            progress(f"아토믹 상점 묶음 번역: {addons['bundles']['translated_names']}개")
+        if addons['items']:
+            progress(f"아토믹 상점 물품 번역: {addons['items']['translated_names']}개, 검토 필요 {addons['items']['unmatched_names']}개")
+
         (mod/'FALLOUT34_KOREAN_README.txt').write_text(
             'Fallout34 + FalloutNV34 + Fallout4 / DLC / CC 한국어 패치\n'
             '이 모드 폴더를 MO2 Mods 경로에 놓고 활성화하세요.\n'
@@ -260,11 +274,16 @@ def build(*,fo3_path:Path,fnv_path:Path,output_root:Path,
             '번역 문구 외 원본 지형·메시·자원 데이터는 직접 수정하지 않았습니다.\n',encoding='utf-8-sig')
         # New fields introduced by the converter have no canonical translation
         # and are not counted as "unmatched"; still require user-facing review.
-        needs_review=any(x['unmatched_fields'] or x['updated_converter_input']
-                         for x in installed.values())
+        needs_review=(any(x['unmatched_fields'] or x['updated_converter_input']
+                          for x in installed.values()) or bool(addons['ambiguous']) or
+                      bool(addons['settlements'] and addons['settlements']['changed_names']) or
+                      bool(addons['atomic_shop'] and addons['atomic_shop']['status']!='translated') or
+                      bool(addons['bundles'] and addons['bundles']['unmatched_keys']) or
+                      bool(addons['items'] and addons['items']['unmatched_names']) or
+                      any(x['unmatched_strings'] for x in addons['mcm'].values()))
         summary={'version':2,'status':'REVIEW_REQUIRED' if needs_review else 'PASS',
                  'mod_folder_name':MOD_NAME,
-                 'translations':installed,'fo4_localization_files':copied,
+                 'translations':installed,'optional_addons':addons,'fo4_localization_files':copied,
                  'fo4_cc_conflicting_en_ko_variants_kept_en':assets['conflicting_en_ko_cc_variants_kept_en'],
                  'original_ESMs_modified':False,
                  'input_sha256':source_hashes,
@@ -291,12 +310,13 @@ def main():
     p.add_argument('--fo3',required=True,type=Path,help='Select the original Fallout34.esm')
     p.add_argument('--fnv',type=Path,help='FalloutNV34.esm (defaults to same parent as --fo3)')
     p.add_argument('--output',required=True,type=Path,help='New parent folder for mods/Fallout34 Unified Korean output')
+    p.add_argument('--addon-dir',type=Path,help='Optional add-on folder or MO2 mods folder')
     p.add_argument('--allow-updated-esms',action='store_true',default=True,
                    help='Accepted for compatibility; updated ESM matching is now automatic.')
     args=p.parse_args()
     fnv=args.fnv or args.fo3.with_name('FalloutNV34.esm')
     print(json.dumps(build(fo3_path=args.fo3,fnv_path=fnv,output_root=args.output,
-                           allow_updated_esms=args.allow_updated_esms),ensure_ascii=False,indent=2))
+                           allow_updated_esms=args.allow_updated_esms,addon_dir=args.addon_dir),ensure_ascii=False,indent=2))
 
 
 if __name__=='__main__':main()

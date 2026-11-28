@@ -19285,5 +19285,572 @@
     "edid": "f3_dlc03wq03",
     "before_sha256": "a5688adbfd1829a934138f9671e024ffc7e85edbc72a47a364c3a62995b91865",
     "korean": "퀘스트 실패"
+  },
+  {
+    "id": "01425FB8",
+    "type": "TERM",
+    "field": "UNAM",
+    "index": 1,
+    "edid": "f3_dcintmdcomputer911c",
+    "before_sha256": "903891187b225365d95ab1df127d36d92cee5dd45abaf445207e3943ed28135a",
+    "korean": "개시 중..."
+  },
+  {
+    "id": "0125497D",
+    "type": "TERM",
+    "field": "UNAM",
+    "index": 1,
+    "edid": "f3_dcintmdcomputer911b",
+    "before_sha256": "903891187b225365d95ab1df127d36d92cee5dd45abaf445207e3943ed28135a",
+    "korean": "개시 중..."
+  },
+  {
+    "id": "01443517",
+    "type": "TERM",
+    "field": "BTXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaterminal01suba",
+    "before_sha256": "d73bf35b5a760b3459cd174b3d065a5ca2d1500d00ae67b7e8269c52218bfa7f",
+    "korean": "메모 및 메일에 접속 중"
+  },
+  {
+    "id": "01443524",
+    "type": "TERM",
+    "field": "BTXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaterminal01subb",
+    "before_sha256": "f77c5344d3929cea4f74fc6d60c0e5aa8f751d5f73f40a10dfd08970ca4e48b7",
+    "korean": "프로젝트 진행 상황은 어떻습니까? (각자의 진행률을 합산한 총합은 100%입니다.)"
+  },
+  {
+    "id": "012D49C2",
+    "type": "TERM",
+    "field": "BTXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaterminal02suba",
+    "before_sha256": "d73bf35b5a760b3459cd174b3d065a5ca2d1500d00ae67b7e8269c52218bfa7f",
+    "korean": "메모 및 메일에 접속 중"
+  },
+  {
+    "id": "0160134F",
+    "type": "TERM",
+    "field": "BTXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaterminal02subb",
+    "before_sha256": "f77c5344d3929cea4f74fc6d60c0e5aa8f751d5f73f40a10dfd08970ca4e48b7",
+    "korean": "프로젝트 진행 상황은 어떻습니까? (각자의 진행률을 합산한 총합은 100%입니다.)"
+  },
+  {
+    "id": "016C7012",
+    "type": "TERM",
+    "field": "BTXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaterminal03suba",
+    "before_sha256": "f87a91c4df3c7eada656f614ae183ad6ec1f2940bd05cddeb03a0183e010cb55",
+    "korean": "메모 및 메일에 접속 중"
+  },
+  {
+    "id": "0161DD5E",
+    "type": "TERM",
+    "field": "BTXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaterminal03subb",
+    "before_sha256": "772f1205f8ab0e5439a882d6e5fde0de13fc33172cfaeb5709c07b48baff30cb",
+    "korean": "프로젝트 진행 상황은 어떻습니까? (각자의 진행률을 합산한 총합은 100%입니다.)"
+  },
+  {
+    "id": "014F981F",
+    "type": "NOTE",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimnote01",
+    "before_sha256": "7d71a9e49bd4b904644220c678083fdfcb2a00e87d897e8778e19372ab1e64ce",
+    "korean": "내부 메모: 소문"
+  },
+  {
+    "id": "01FA69F1",
+    "type": "TERM",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimnote01_term",
+    "before_sha256": "7d71a9e49bd4b904644220c678083fdfcb2a00e87d897e8778e19372ab1e64ce",
+    "korean": "내부 메모: 소문"
+  },
+  {
+    "id": "01FA69F1",
+    "type": "TERM",
+    "field": "BTXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimnote01_term",
+    "before_sha256": "7d71a9e49bd4b904644220c678083fdfcb2a00e87d897e8778e19372ab1e64ce",
+    "korean": "내부 메모: 소문"
+  },
+  {
+    "id": "01FA69F1",
+    "type": "TERM",
+    "field": "ITXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimnote01_term",
+    "before_sha256": "7d71a9e49bd4b904644220c678083fdfcb2a00e87d897e8778e19372ab1e64ce",
+    "korean": "내부 메모: 소문"
+  },
+  {
+    "id": "014C8157",
+    "type": "NOTE",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimnote02",
+    "before_sha256": "abfed17825d538c5b3212d6647db46ed2dd69c761dcf19c003fd014e7c46ddcd",
+    "korean": "내부 메모: 화장실"
+  },
+  {
+    "id": "01F5FADB",
+    "type": "TERM",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimnote02_term",
+    "before_sha256": "abfed17825d538c5b3212d6647db46ed2dd69c761dcf19c003fd014e7c46ddcd",
+    "korean": "내부 메모: 화장실"
+  },
+  {
+    "id": "01F5FADB",
+    "type": "TERM",
+    "field": "BTXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimnote02_term",
+    "before_sha256": "abfed17825d538c5b3212d6647db46ed2dd69c761dcf19c003fd014e7c46ddcd",
+    "korean": "내부 메모: 화장실"
+  },
+  {
+    "id": "01F5FADB",
+    "type": "TERM",
+    "field": "ITXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimnote02_term",
+    "before_sha256": "abfed17825d538c5b3212d6647db46ed2dd69c761dcf19c003fd014e7c46ddcd",
+    "korean": "내부 메모: 화장실"
+  },
+  {
+    "id": "014B4BBB",
+    "type": "NOTE",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimnote03",
+    "before_sha256": "b196b73d4a1aaadff77871d04fa9b7b801147908612bc9d95938a48a69c249e4",
+    "korean": "내부 메모: 프로젝트"
+  },
+  {
+    "id": "01CE0E10",
+    "type": "TERM",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimnote03_term",
+    "before_sha256": "b196b73d4a1aaadff77871d04fa9b7b801147908612bc9d95938a48a69c249e4",
+    "korean": "내부 메모: 프로젝트"
+  },
+  {
+    "id": "01CE0E10",
+    "type": "TERM",
+    "field": "BTXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimnote03_term",
+    "before_sha256": "b196b73d4a1aaadff77871d04fa9b7b801147908612bc9d95938a48a69c249e4",
+    "korean": "내부 메모: 프로젝트"
+  },
+  {
+    "id": "01CE0E10",
+    "type": "TERM",
+    "field": "ITXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimnote03_term",
+    "before_sha256": "b196b73d4a1aaadff77871d04fa9b7b801147908612bc9d95938a48a69c249e4",
+    "korean": "내부 메모: 프로젝트"
+  },
+  {
+    "id": "014253FF",
+    "type": "NOTE",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimrepassword",
+    "before_sha256": "3299d66641756e3a6690e8faebe8f309479294a42e4a136a6aa5c0006cb008f4",
+    "korean": "내부 메일: Re: 비밀번호"
+  },
+  {
+    "id": "01EF53FE",
+    "type": "TERM",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimrepassword_term",
+    "before_sha256": "3299d66641756e3a6690e8faebe8f309479294a42e4a136a6aa5c0006cb008f4",
+    "korean": "내부 메일: Re: 비밀번호"
+  },
+  {
+    "id": "01EF53FE",
+    "type": "TERM",
+    "field": "BTXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimrepassword_term",
+    "before_sha256": "3299d66641756e3a6690e8faebe8f309479294a42e4a136a6aa5c0006cb008f4",
+    "korean": "내부 메일: Re: 비밀번호"
+  },
+  {
+    "id": "01EF53FE",
+    "type": "TERM",
+    "field": "ITXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimrepassword_term",
+    "before_sha256": "3299d66641756e3a6690e8faebe8f309479294a42e4a136a6aa5c0006cb008f4",
+    "korean": "내부 메일: Re: 비밀번호"
+  },
+  {
+    "id": "016B2AEF",
+    "type": "NOTE",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimpassword",
+    "before_sha256": "f52185578e7e7aa3b83568942b3ee432a188d4690a42e01c9758a44bbb2368aa",
+    "korean": "내부 메일: 비밀번호"
+  },
+  {
+    "id": "01C6F183",
+    "type": "TERM",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimpassword_term",
+    "before_sha256": "f52185578e7e7aa3b83568942b3ee432a188d4690a42e01c9758a44bbb2368aa",
+    "korean": "내부 메일: 비밀번호"
+  },
+  {
+    "id": "01C6F183",
+    "type": "TERM",
+    "field": "BTXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimpassword_term",
+    "before_sha256": "f52185578e7e7aa3b83568942b3ee432a188d4690a42e01c9758a44bbb2368aa",
+    "korean": "내부 메일: 비밀번호"
+  },
+  {
+    "id": "01C6F183",
+    "type": "TERM",
+    "field": "ITXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimpassword_term",
+    "before_sha256": "f52185578e7e7aa3b83568942b3ee432a188d4690a42e01c9758a44bbb2368aa",
+    "korean": "내부 메일: 비밀번호"
+  },
+  {
+    "id": "0138E90B",
+    "type": "NOTE",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimmylove",
+    "before_sha256": "1b989f07da54114c21a10034b033373186072f16aa96c7e6eda6e768d771faa9",
+    "korean": "외부 메일: 내 사랑"
+  },
+  {
+    "id": "01A853C4",
+    "type": "TERM",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimmylove_term",
+    "before_sha256": "1b989f07da54114c21a10034b033373186072f16aa96c7e6eda6e768d771faa9",
+    "korean": "외부 메일: 내 사랑"
+  },
+  {
+    "id": "01A853C4",
+    "type": "TERM",
+    "field": "BTXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimmylove_term",
+    "before_sha256": "1b989f07da54114c21a10034b033373186072f16aa96c7e6eda6e768d771faa9",
+    "korean": "외부 메일: 내 사랑"
+  },
+  {
+    "id": "01A853C4",
+    "type": "TERM",
+    "field": "ITXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimmylove_term",
+    "before_sha256": "1b989f07da54114c21a10034b033373186072f16aa96c7e6eda6e768d771faa9",
+    "korean": "외부 메일: 내 사랑"
+  },
+  {
+    "id": "0159BA33",
+    "type": "NOTE",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimrestolenpassword",
+    "before_sha256": "9b156003c182eb0d5fb5f8cf306add7aa6466ec048e28f0f56f739b5b9af7995",
+    "korean": "내부 메일: Re: 도난당한 비밀번호"
+  },
+  {
+    "id": "01E4A135",
+    "type": "TERM",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimrestolenpassword_term",
+    "before_sha256": "9b156003c182eb0d5fb5f8cf306add7aa6466ec048e28f0f56f739b5b9af7995",
+    "korean": "내부 메일: Re: 도난당한 비밀번호"
+  },
+  {
+    "id": "01E4A135",
+    "type": "TERM",
+    "field": "BTXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimrestolenpassword_term",
+    "before_sha256": "9b156003c182eb0d5fb5f8cf306add7aa6466ec048e28f0f56f739b5b9af7995",
+    "korean": "내부 메일: Re: 도난당한 비밀번호"
+  },
+  {
+    "id": "01E4A135",
+    "type": "TERM",
+    "field": "ITXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimrestolenpassword_term",
+    "before_sha256": "9b156003c182eb0d5fb5f8cf306add7aa6466ec048e28f0f56f739b5b9af7995",
+    "korean": "내부 메일: Re: 도난당한 비밀번호"
+  },
+  {
+    "id": "014D1E39",
+    "type": "NOTE",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimstolenpassword",
+    "before_sha256": "38cb0fc7b5a93e5e6ab542e297a1497f62eb78288522d32bf47b2ddfa12794cc",
+    "korean": "내부 메일: 도난당한 비밀번호"
+  },
+  {
+    "id": "019E2AF8",
+    "type": "TERM",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimstolenpassword_term",
+    "before_sha256": "38cb0fc7b5a93e5e6ab542e297a1497f62eb78288522d32bf47b2ddfa12794cc",
+    "korean": "내부 메일: 도난당한 비밀번호"
+  },
+  {
+    "id": "019E2AF8",
+    "type": "TERM",
+    "field": "BTXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimstolenpassword_term",
+    "before_sha256": "38cb0fc7b5a93e5e6ab542e297a1497f62eb78288522d32bf47b2ddfa12794cc",
+    "korean": "내부 메일: 도난당한 비밀번호"
+  },
+  {
+    "id": "019E2AF8",
+    "type": "TERM",
+    "field": "ITXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimstolenpassword_term",
+    "before_sha256": "38cb0fc7b5a93e5e6ab542e297a1497f62eb78288522d32bf47b2ddfa12794cc",
+    "korean": "내부 메일: 도난당한 비밀번호"
+  },
+  {
+    "id": "014E6C19",
+    "type": "NOTE",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimsupper",
+    "before_sha256": "244394b00f13b3f50c8bb677e1c6b4c7bd935f999ac3949f40511fa189d2a2d5",
+    "korean": "외부 메일: Re: 저녁 식사"
+  },
+  {
+    "id": "01DE26D8",
+    "type": "TERM",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimsupper_term",
+    "before_sha256": "244394b00f13b3f50c8bb677e1c6b4c7bd935f999ac3949f40511fa189d2a2d5",
+    "korean": "외부 메일: Re: 저녁 식사"
+  },
+  {
+    "id": "01DE26D8",
+    "type": "TERM",
+    "field": "BTXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimsupper_term",
+    "before_sha256": "244394b00f13b3f50c8bb677e1c6b4c7bd935f999ac3949f40511fa189d2a2d5",
+    "korean": "외부 메일: Re: 저녁 식사"
+  },
+  {
+    "id": "01DE26D8",
+    "type": "TERM",
+    "field": "ITXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimsupper_term",
+    "before_sha256": "244394b00f13b3f50c8bb677e1c6b4c7bd935f999ac3949f40511fa189d2a2d5",
+    "korean": "외부 메일: Re: 저녁 식사"
+  },
+  {
+    "id": "0162926F",
+    "type": "NOTE",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimrumors",
+    "before_sha256": "9ae82d7ea88df88fbbee5af04bc08222aad0f09727cdf69496ee9844a1107705",
+    "korean": "외부 메일: Re: Re: 소문"
+  },
+  {
+    "id": "01C54599",
+    "type": "TERM",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimrumors_term",
+    "before_sha256": "9ae82d7ea88df88fbbee5af04bc08222aad0f09727cdf69496ee9844a1107705",
+    "korean": "외부 메일: Re: Re: 소문"
+  },
+  {
+    "id": "01C54599",
+    "type": "TERM",
+    "field": "BTXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimrumors_term",
+    "before_sha256": "9ae82d7ea88df88fbbee5af04bc08222aad0f09727cdf69496ee9844a1107705",
+    "korean": "외부 메일: Re: Re: 소문"
+  },
+  {
+    "id": "01C54599",
+    "type": "TERM",
+    "field": "ITXT",
+    "index": 0,
+    "edid": "f3_dcintssqdeltaimrumors_term",
+    "before_sha256": "9ae82d7ea88df88fbbee5af04bc08222aad0f09727cdf69496ee9844a1107705",
+    "korean": "외부 메일: Re: Re: 소문"
+  },
+  {
+    "id": "01EC4B2E",
+    "type": "MGEF",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f34_creaturerangedeffect_0dead0",
+    "before_sha256": "b62f6020ca91aeef03deec0b676401b955b2aac424f01899601613491bfc48cd",
+    "korean": "숨결"
+  },
+  {
+    "id": "01DC6268",
+    "type": "MGEF",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f34_creaturerangedeffect_24031c",
+    "before_sha256": "b62f6020ca91aeef03deec0b676401b955b2aac424f01899601613491bfc48cd",
+    "korean": "숨결"
+  },
+  {
+    "id": "01BB1C86",
+    "type": "SPEL",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f34_creaturerangedability_0dead0",
+    "before_sha256": "b62f6020ca91aeef03deec0b676401b955b2aac424f01899601613491bfc48cd",
+    "korean": "숨결"
+  },
+  {
+    "id": "01F945D5",
+    "type": "SPEL",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f34_creaturerangedability_24031c",
+    "before_sha256": "b62f6020ca91aeef03deec0b676401b955b2aac424f01899601613491bfc48cd",
+    "korean": "숨결"
+  },
+  {
+    "id": "01D17A20",
+    "type": "ALCH",
+    "field": "DESC",
+    "index": 0,
+    "edid": "f34_skillsreadout",
+    "before_sha256": "c3c2be6cd5c1ab2dc38aa7b8d5a2df3a66eea92204d0f29a56f820ec59c0032c",
+    "korean": "폴아웃 3의 카르마와 기술을 확인합니다."
+  },
+  {
+    "id": "01973995",
+    "type": "INFO",
+    "field": "NAM1",
+    "index": 0,
+    "edid": null,
+    "before_sha256": "9b7f072162b679648023ed541da6eb7d6f193dc55864a88d906074b006716358",
+    "korean": "안녕."
+  },
+  {
+    "id": "01973995",
+    "type": "INFO",
+    "field": "RNAM",
+    "index": 0,
+    "edid": null,
+    "before_sha256": "9b7f072162b679648023ed541da6eb7d6f193dc55864a88d906074b006716358",
+    "korean": "안녕."
+  },
+  {
+    "id": "01A058FB",
+    "type": "QUST",
+    "field": "FULL",
+    "index": 0,
+    "edid": "f34_worldtour",
+    "before_sha256": "5982133a89a6886aef9f39b04202f28769e8cace0d612cebae09409f771905f5",
+    "korean": "서로 다른 세계"
+  },
+  {
+    "id": "01F66DEA",
+    "type": "MESG",
+    "field": "ITXT",
+    "index": 3,
+    "edid": "f34_altstartmessageboth",
+    "before_sha256": "8b228ac0e8b0538c93406eddd6665b3597c62c9eef0a6488e6a9a53cb8675270",
+    "korean": "스카이림, 탐리엘"
+  },
+  {
+    "id": "01014EA5",
+    "type": "QUST",
+    "field": "CNAM",
+    "index": 1,
+    "edid": "f3_ms18",
+    "before_sha256": "92f3706d85c2b139af515eb904902c62005590a0bf234fb8de734e5c6abeea46",
+    "korean": "라일리의 레인저를 찾는다"
+  },
+  {
+    "id": "01014EA5",
+    "type": "QUST",
+    "field": "CNAM",
+    "index": 2,
+    "edid": "f3_ms18",
+    "before_sha256": "9c5e5e083577995c39f32c60980c4ec9d16c6447e930b6f42ba3d5449995d29c",
+    "korean": "라일리의 레인저를 안전한 곳으로 이끈다"
+  },
+  {
+    "id": "01014E9C",
+    "type": "QUST",
+    "field": "CNAM",
+    "index": 0,
+    "edid": "f3_ms09",
+    "before_sha256": "73423ada65f9f861c03446f3b0ad123247aae8d75cf7156aa02c1aa9e10d4da6",
+    "korean": "루시의 메시지를 아르푸에 전달한다."
+  },
+  {
+    "id": "01014E9C",
+    "type": "QUST",
+    "field": "CNAM",
+    "index": 2,
+    "edid": "f3_ms09",
+    "before_sha256": "94240f76ede6f78724f5fcdfa00111fe944fd4d8e342d79d367e5030ae31d6fd",
+    "korean": "아르푸 주민들의 상황을 에반 킹에게 보고한다."
+  },
+  {
+    "id": "01014E83",
+    "type": "QUST",
+    "field": "CNAM",
+    "index": 1,
+    "edid": "f3_cg01",
+    "before_sha256": "7c3f0282cf9eef05da39b6b5b33f631f1c246e23beb29075afd096fc05895553",
+    "korean": "아기 침대의 문을 연다."
+  },
+  {
+    "id": "011C3F70",
+    "type": "QUST",
+    "field": "CNAM",
+    "index": 1,
+    "edid": "f3_dlc04ff03",
+    "before_sha256": "ee2e845f9d810566bc9f3c7418742d0a9881c99ee6750424d84d59af7cc1110f",
+    "korean": "마거리트가 위스키를 만들고 있다. 완성되면 다시 확인해야겠다."
   }
 ]

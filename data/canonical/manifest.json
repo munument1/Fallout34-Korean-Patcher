@@ -57,8 +57,8 @@
       },
       "non_text_records": "not included; source full terrain ESM is required on user PC",
       "updated_extra_file": "data/canonical/fo3.v09102-extra.json",
-      "updated_extra_sha256": "6b2aed14ff60609c836289bb49912399f77f343af8a794c7de72a2ecddc8422d",
-      "updated_extra_count": 2143
+      "updated_extra_sha256": "9f0c59fed0f0b4237dad41d5d1467759bb10b213d64e65b86a32ba0394a868ee",
+      "updated_extra_count": 2206
     },
     "fnv": {
       "esm_filename": "FalloutNV34.esm",
@@ -114,8 +114,16 @@
       },
       "non_text_records": "not included; source full terrain ESM is required on user PC",
       "updated_extra_file": "data/canonical/fnv.v09102-extra.json",
-      "updated_extra_sha256": "29186e3ab0d95eea6ebfc31e248f96f3f3915f1810d4f121d487e5b90da31f92",
-      "updated_extra_count": 18939
+      "updated_extra_sha256": "e91185c88843f13d9c10d79951b9da21183a4244e906fbd37f94a3d127a12c7a",
+      "updated_extra_count": 18943
     }
+  },
+  "addon_data_sha256": {
+    "settlement-names.json": "3906f7a9ff391b91fef7c5396f1774571a580906501ec7cc9e2387aa21aa14ed",
+    "mcm-translations.json": "4ff2ca5897f575ab244018cfc51317907c4fb6ac64f958769d822c59435d468e",
+    "atomic-shop-09148.json": "51f1a63649fa5024712628503cc47d8a330ac46b059749561c73dcabe44112f5",
+    "atomic-bundles.json": "0a5249b33e12cb14a649aa44907e43ece9cd7bc9205f17ec172e21d3dfe0f691",
+    "settlement-records.json": "4a8f01d86ac610d5ce47622c241b511921ed7951725c4f709c0cd4fa1542c140",
+    "atomic-items.json": "d9530982cf354c08abb136da807824d40c379682226c9a8ff00d9caca965ab33"
   }
 }
