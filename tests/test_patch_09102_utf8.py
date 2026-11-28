@@ -6,7 +6,7 @@ from pathlib import Path
 
 from tools.patch_fallout34_09102_utf8 import (
     SOURCE_CODEC_AFTER, SOURCE_CODEC_BEFORE, OUTPUT_CODEC_AFTER,
-    OUTPUT_CODEC_BEFORE, ORIGINAL_SHA256, patch_file, patched_bytes,
+    OUTPUT_CODEC_BEFORE, GMST_CODEC_BEFORE, GMST_CODEC_AFTER, ORIGINAL_SHA256, patch_file, patched_bytes,
 )
 
 
@@ -14,12 +14,13 @@ class ExperimentalUTF8BinaryPatch(unittest.TestCase):
     def test_targeted_function_only_and_same_length(self):
         data = (
             b"MZ" + b"cp1252\0" + SOURCE_CODEC_BEFORE
-            + OUTPUT_CODEC_BEFORE + b"something else cp1252\0"
+            + OUTPUT_CODEC_BEFORE + GMST_CODEC_BEFORE + b"something else cp1252\0"
         )
         output = patched_bytes(data)
         self.assertEqual(len(output), len(data))
         self.assertEqual(output.count(SOURCE_CODEC_AFTER), 1)
         self.assertEqual(output.count(OUTPUT_CODEC_AFTER), 1)
+        self.assertEqual(output.count(GMST_CODEC_AFTER), 1)
         self.assertEqual(output.count(SOURCE_CODEC_BEFORE), 0)
         self.assertEqual(output.count(OUTPUT_CODEC_BEFORE), 0)
         self.assertEqual(output.count(b"cp1252\0"), 2)
@@ -28,7 +29,7 @@ class ExperimentalUTF8BinaryPatch(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "expected one"):
             patched_bytes(b"MZ cp1252")
         with self.assertRaisesRegex(ValueError, "found 2"):
-            patched_bytes(SOURCE_CODEC_BEFORE + SOURCE_CODEC_BEFORE + OUTPUT_CODEC_BEFORE)
+            patched_bytes(SOURCE_CODEC_BEFORE + SOURCE_CODEC_BEFORE + OUTPUT_CODEC_BEFORE + GMST_CODEC_BEFORE)
 
     def test_guards_original_and_expecting_sha(self):
         with tempfile.TemporaryDirectory() as root:

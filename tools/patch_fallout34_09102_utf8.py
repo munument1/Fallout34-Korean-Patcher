@@ -4,6 +4,7 @@ The upstream converter is distributed as a compiled Nuitka executable.
 This narrowly patches the compiled string constants used by:
 - f34.esm.Subrecord.zstr: decoding text from source ESMs
 - f34.ctx.zstr: encoding string subrecords for the FO4 ESM output
+- f34.systems.fo3_settings: reading string game settings
 These are the common source and destination helpers. It does not patch
 unrelated CP1252 reads/writes and is not an upstream UTF-8/CP1252
 fallback implementation.
@@ -36,12 +37,15 @@ SOURCE_CODEC_BEFORE = READ_ANCHOR + b"cp1252\x00"
 SOURCE_CODEC_AFTER = READ_ANCHOR + b"utf-8 \x00"
 OUTPUT_CODEC_BEFORE = WRITE_ANCHOR + b"cp1252\x00areplace\x00"
 OUTPUT_CODEC_AFTER = WRITE_ANCHOR + b"utf-8 \x00areplace\x00"
+GMST_CODEC_BEFORE = b"\x00d\x00l\x80\x04adecode\x00T\x01acp1252\x00C\xc0\x81\x02afo3_settings\x00"
+GMST_CODEC_AFTER = GMST_CODEC_BEFORE.replace(b"cp1252", b"utf-8 ")
 
 
 def patched_bytes(original: bytes) -> bytes:
     patches = (
         ("f34.esm.Subrecord.zstr", SOURCE_CODEC_BEFORE, SOURCE_CODEC_AFTER),
         ("f34.ctx.zstr", OUTPUT_CODEC_BEFORE, OUTPUT_CODEC_AFTER),
+        ("f34.systems.fo3_settings", GMST_CODEC_BEFORE, GMST_CODEC_AFTER),
     )
     for label, old, _ in patches:
         count = original.count(old)

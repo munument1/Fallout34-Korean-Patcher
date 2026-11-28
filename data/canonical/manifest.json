@@ -55,7 +55,10 @@
         "WEAP:FULL": 256,
         "WRLD:FULL": 62
       },
-      "non_text_records": "not included; source full terrain ESM is required on user PC"
+      "non_text_records": "not included; source full terrain ESM is required on user PC",
+      "updated_extra_file": "data/canonical/fo3.v09102-extra.json",
+      "updated_extra_sha256": "6b2aed14ff60609c836289bb49912399f77f343af8a794c7de72a2ecddc8422d",
+      "updated_extra_count": 2143
     },
     "fnv": {
       "esm_filename": "FalloutNV34.esm",
@@ -109,7 +112,10 @@
         "WEAP:FULL": 441,
         "WRLD:FULL": 32
       },
-      "non_text_records": "not included; source full terrain ESM is required on user PC"
+      "non_text_records": "not included; source full terrain ESM is required on user PC",
+      "updated_extra_file": "data/canonical/fnv.v09102-extra.json",
+      "updated_extra_sha256": "29186e3ab0d95eea6ebfc31e248f96f3f3915f1810d4f121d487e5b90da31f92",
+      "updated_extra_count": 18939
     }
   }
 }

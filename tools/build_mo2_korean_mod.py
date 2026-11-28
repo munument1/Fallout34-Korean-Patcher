@@ -118,6 +118,38 @@ def source_preflight(fo3_path:Path,fnv_path:Path,*,allow_updated_esms:bool=True)
     return manifest,sources
 
 
+def load_updated_extra(meta:dict, plan:dict, edids:dict):
+    """Add version-specific translations while retaining exact input checks."""
+    path=ROOT/meta['updated_extra_file']
+    if sha256(path)!=meta['updated_extra_sha256']:
+        raise ValueError(f'Updated translation data altered: {path}')
+    rows=json.loads(path.read_text('utf-8'))
+    if len(rows)!=meta['updated_extra_count']:
+        raise ValueError('Updated translation count mismatch')
+    for row in rows:
+        key=(int(row['id'],16),row['type'],row['field'],int(row['index']))
+        before=row['before_sha256'];text=row['korean']
+        if len(before)!=64 or any(c not in '0123456789abcdef' for c in before):
+            raise ValueError(f'Invalid updated translation key or hash: {key}')
+        if not text or '\0' in text or '\ufffd' in text or not any('\uac00'<=c<='\ud7a3' for c in text):
+            raise ValueError(f'Invalid updated Korean text: {key}')
+        edid=row['edid']
+        if key[:2] in edids and edids[key[:2]]!=edid:
+            raise ValueError(f'Conflicting updated EditorID: {key}')
+        translated=text.encode('utf-8')+b'\0'
+        if key in plan:
+            original,existing=plan[key]
+            if not isinstance(original,str) or original==before:
+                raise ValueError(f'Invalid updated translation key or hash: {key}')
+            # A converter may reuse a field position for different text.
+            # Keep a separate translation for each exact original fingerprint.
+            plan[key]=(((original,before) if existing==translated else
+                        {original:existing,before:translated}),existing)
+        else:
+            plan[key]=(before,translated)
+        edids[key[:2]]=edid
+
+
 def validate_updated_output(game:str,meta:dict,info:dict,dest:Path):
     """Verify output against its own input, not another converter's LAND count."""
     record_counts=info['record_type_counts']
@@ -128,7 +160,7 @@ def validate_updated_output(game:str,meta:dict,info:dict,dest:Path):
         raise ValueError(f'{game}: updated ESM output structure mismatch')
     if structural['land_sha256']!=info['source_land_sha256']:
         raise ValueError(f'{game}: LAND bytes changed while translating')
-    if not info['changed_fields']:
+    if not (info['changed_fields'] or info['already_translated_fields']):
         raise ValueError(
             f'{game}: no known text fields matched. '
             '번역할 수 있는 원문이 없습니다. 변환기 원본 ESM인지 확인해 주세요.')
@@ -162,6 +194,8 @@ def build(*,fo3_path:Path,fnv_path:Path,output_root:Path,
             updated=source_hashes[game]!=meta['base_esm_sha256']
             progress(f'{game.upper()} 한글 텍스트 적용 준비: {meta["text_field_count"]:,}개')
             plan,edids=load_canonical(game,meta)
+            if updated:
+                load_updated_extra(meta,plan,edids)
             dest=mod/meta['esm_filename']
             info=write_copy(src,dest,plan,edids,allow_changed=updated)
             if updated:
@@ -176,7 +210,9 @@ def build(*,fo3_path:Path,fnv_path:Path,output_root:Path,
             installed[game]={'esm':meta['esm_filename'],'sha256':verified_hash,
                              'source_land_sha256':info['source_land_sha256'],
                              'edited_fields':info['changed_fields'],
-                             'known_translation_fields':meta['text_field_count'],
+                             'already_translated_fields':info['already_translated_fields'],
+                             'repaired_mojibake_fields':info['repaired_mojibake_fields'],
+                             'known_translation_fields':len(plan),
                              'unmatched_fields':info['unmatched_fields'],
                              'unmatched_reasons':info['unmatched_reasons'],
                              'unmatched_examples':info['unmatched_examples'],

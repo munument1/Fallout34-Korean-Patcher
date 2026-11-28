@@ -26,7 +26,9 @@ GUI의 호환 체크박스를 제거했습니다. GUI와 CLI 모두 ESM 전체 �
 
 ## 결과 확인
 
-입력은 변환기가 생성한 원본 `Fallout34.esm`과 `FalloutNV34.esm`이어야 합니다. 이미 한국어화되거나 지형이 누락된 ESM을 복구하지 않습니다. 입력에 없는 지형을 다른 빌드에서 가져오거나 추가하지 않습니다.
+사전 한국어화된 변환 ESM에서는 기존 번역과 완전히 같은 필드를 `already_translated_fields`로 집계합니다. 동일 FormID·종류·EditorID·필드 위치에서 기존 번역의 UTF-8 바이트를 CP1252로 잘못 디코딩해 재인코딩한 값과 정확히 일치하는 문구는 복구하고 `repaired_mojibake_fields`에 따로 집계합니다. CP1252의 미정의 바이트를 대체한 과정은 손실성이므로 다른 원문이 같은 깨진 값이 될 가능성을 완전히 배제할 수 없으며 결과 검토가 필요합니다. 그 밖의 다른 한국어 문장과 추정만 가능한 문자열은 덮어쓰지 않습니다.
+
+입력은 변환기가 생성한 `Fallout34.esm`과 `FalloutNV34.esm`이어야 합니다. 이미 한국어화된 텍스트는 위 조건에 따라 처리합니다. 지형이 누락된 ESM에 다른 빌드의 지형을 가져오거나 추가하지 않습니다.
 
 업데이트된 ESM의 결과는 항상 `REVIEW_REQUIRED`입니다. `build-report.json`의 `edited_fields`, `unmatched_fields`, `unmatched_reasons`, `critical_record_count_differences`를 확인하세요. `unmatched_fields`는 기존 번역과 맞지 않은 수량이며, 새 문구 전체 수량이 아닙니다. 변환기 자체의 플레이 문제나 새 콘텐츠 번역까지 검증됐다는 뜻은 아닙니다.
 

@@ -34,15 +34,16 @@ def make_release(version: str) -> tuple[Path, str]:
         raise ValueError("Use a version such as v0.1.0-beta.3")
 
     sys.path.insert(0, str(ROOT / "tools"))
-    from build_mo2_korean_mod import MANIFEST, load_canonical
+    from build_mo2_korean_mod import MANIFEST, load_canonical, load_updated_extra
     from fo4_korean_assets import select_assets
 
     manifest = json.loads(MANIFEST.read_text("utf-8"))
     if manifest["schema"] != 2:
         raise ValueError("Unsupported canonical dataset")
     for game, meta in manifest["games"].items():
-        plan, _ = load_canonical(game, meta)
-        print(f"Verified canonical {game}: {len(plan)} entries", flush=True)
+        plan, edids = load_canonical(game, meta)
+        load_updated_extra(meta, plan, edids)
+        print(f"Verified translation data {game}: {len(plan)} entries", flush=True)
     assets = select_assets()
     print(f"Verified FO4 files: {assets['asset_count']} selected", flush=True)
 

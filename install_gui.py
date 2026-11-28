@@ -180,13 +180,14 @@ if __name__=='__main__':
     elif len(sys.argv)>1 and sys.argv[1]=='--verify-bundle':
         if sys.stdout is None:sys.stdout=open(os.devnull,'w',encoding='utf-8')
         if sys.stderr is None:sys.stderr=open(os.devnull,'w',encoding='utf-8')
-        from build_mo2_korean_mod import load_canonical,source_preflight,MANIFEST
+        from build_mo2_korean_mod import load_canonical,load_updated_extra,MANIFEST
         from fo4_korean_assets import select_assets
         import json
         manifest=json.loads(MANIFEST.read_text('utf-8'))
         if manifest['schema']!=2:raise ValueError('Unsupported manifest')
         for game,meta in manifest['games'].items():
-            plan,_=load_canonical(game,meta)
+            plan,edids=load_canonical(game,meta)
+            load_updated_extra(meta,plan,edids)
             print(game, 'translations',len(plan),flush=True)
         assets=select_assets()
         print('bundle PASS',assets['asset_count'],flush=True)

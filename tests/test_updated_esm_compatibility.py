@@ -11,7 +11,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'tools'))
 
 from runtime_esm_writer import HEADER,FIELD,write_copy,inspect_structure
-from build_mo2_korean_mod import validate_updated_output,source_preflight
+from build_mo2_korean_mod import validate_updated_output,source_preflight,load_updated_extra,MANIFEST,load_canonical
 
 F_ID=0x01010203
 OLD=b'Lead\0'
@@ -41,6 +41,78 @@ def translation():
 
 
 class UpdatedConverterCompatibility(unittest.TestCase):
+    def test_changed_text_at_same_field_uses_its_own_exact_translation(self):
+        with tempfile.TemporaryDirectory() as td:
+            src=Path(td)/'input.esm'
+            original=b'Lead\0'
+            changed=b'More...\0'
+            other=b'More?\0'
+            changed_ko='더 보기...'.encode('utf-8')+b'\0'
+            plan,edids=translation()
+            key=next(iter(plan))
+            plan[key]=({hashlib.sha256(original).hexdigest():KO,
+                        hashlib.sha256(changed).hexdigest():changed_ko},KO)
+            for index,(value,expected) in enumerate(((original,KO),(changed,changed_ko),
+                                                       (other,other),(changed_ko,changed_ko))):
+                dest=Path(td)/f'out{index}.esm'
+                src.write_bytes(group(record(b'MISC',F_ID,'lead_item',[(b'FULL',value)])))
+                result=write_copy(src,dest,plan,edids,allow_changed=True)
+                self.assertIn(expected,dest.read_bytes())
+                self.assertEqual(result['unmatched_fields'],int(value==other))
+
+    def test_additional_exact_original_hash_uses_existing_translation(self):
+        with tempfile.TemporaryDirectory() as td:
+            src,dest=Path(td)/'input.esm',Path(td)/'output.esm'
+            other=b'Lead revised\0'
+            src.write_bytes(group(record(b'MISC',F_ID,'lead_item',[(b'FULL',other)])))
+            plan,edids=translation()
+            key=next(iter(plan))
+            plan[key]=((hashlib.sha256(OLD).hexdigest(),hashlib.sha256(other).hexdigest()),KO)
+            result=write_copy(src,dest,plan,edids,allow_changed=True)
+            self.assertEqual(result['changed_fields'],1)
+            self.assertIn(KO,dest.read_bytes())
+
+    def test_updated_extra_data_is_verified_and_distinct_from_base(self):
+        import json
+        manifest=json.loads(MANIFEST.read_text('utf-8'))
+        for game in ('fo3','fnv'):
+            meta=manifest['games'][game]
+            plan,edids=load_canonical(game,meta)
+            before=len(plan)
+            rows=json.loads((ROOT/meta['updated_extra_file']).read_text('utf-8'))
+            new_count=sum((int(row['id'],16),row['type'],row['field'],row['index']) not in plan for row in rows)
+            load_updated_extra(meta,plan,edids)
+            self.assertEqual(len(plan)-before,new_count)
+            with self.assertRaisesRegex(ValueError,'Invalid updated translation key'):
+                load_updated_extra(meta,plan,edids)
+
+    def test_preserves_existing_korean_and_repairs_exact_mojibake_only(self):
+        with tempfile.TemporaryDirectory() as td:
+            src,dest=Path(td)/'input.esm',Path(td)/'output.esm'
+            text='책상 단말기'.encode('utf-8')+b'\0'
+            broken=text[:-1].decode('cp1252','replace').encode('utf-8')+b'\0'
+            plan={(F_ID,'MISC','FULL',0):(hashlib.sha256(OLD).hexdigest(),text),
+                  (F_ID,'MISC','DESC',0):(hashlib.sha256(OLD).hexdigest(),text),
+                  (F_ID,'MISC','DESC',1):(hashlib.sha256(OLD).hexdigest(),text)}
+            src.write_bytes(group(record(b'MISC',F_ID,'lead_item',[(b'FULL',text),
+                (b'DESC',broken),(b'DESC',broken[:-1]+b'!\0')])))
+            result=write_copy(src,dest,plan,{(F_ID,'MISC'):'lead_item'},allow_changed=True)
+            self.assertEqual(result['already_translated_fields'],1)
+            self.assertEqual(result['repaired_mojibake_fields'],1)
+            self.assertEqual(result['unmatched_fields'],1)
+            self.assertIn(broken[:-1]+b'!\0',dest.read_bytes())
+            self.assertEqual(dest.read_bytes().count(text),2)
+
+    def test_mojibake_is_never_repaired_when_editor_id_changed(self):
+        with tempfile.TemporaryDirectory() as td:
+            src,dest=Path(td)/'input.esm',Path(td)/'output.esm'
+            broken=KO[:-1].decode('cp1252','replace').encode('utf-8')+b'\0'
+            src.write_bytes(group(record(b'MISC',F_ID,'other_item',[(b'FULL',broken)])))
+            plan,edids=translation()
+            result=write_copy(src,dest,plan,edids,allow_changed=True)
+            self.assertEqual(result['repaired_mojibake_fields'],0)
+            self.assertEqual(src.read_bytes(),dest.read_bytes())
+
     def test_47485_land_records_are_preserved_despite_47507_reference(self):
         with tempfile.TemporaryDirectory() as td:
             src,dest=Path(td)/'input.esm',Path(td)/'output.esm'

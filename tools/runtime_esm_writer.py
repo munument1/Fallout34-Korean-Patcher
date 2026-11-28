@@ -27,7 +27,7 @@ def sha256(path:Path)->str:
 def patch_subrecords(data:bytes,fid:int,typ:str,plan:dict,editor_ids:dict,seen:set,
                      *,allow_changed:bool=False):
     offset=0;count=Counter();out=bytearray();modified=0;found_edid=None
-    local_seen=set();local_skipped={};candidates=set()
+    local_seen=set();local_skipped={};candidates=set();already=0;repaired=0
     while offset<len(data):
         start=offset
         if offset+6>len(data):raise ValueError('Truncated subrecord')
@@ -51,11 +51,25 @@ def patch_subrecords(data:bytes,fid:int,typ:str,plan:dict,editor_ids:dict,seen:s
         original_sha256,translated=plan[key]
         if tag not in ALLOWED_TEXT or key in local_seen:
             raise ValueError(f'Text field alignment mismatched: {key}')
-        if hashlib.sha256(before).hexdigest()!=original_sha256:
+        alternatives=(set(original_sha256.values()) if isinstance(original_sha256,dict)
+                      else {translated})
+        if allow_changed and before in alternatives:
+            local_seen.add(key);already+=1
+            out.extend(data[start:offset]);continue
+        actual_hash=hashlib.sha256(before).hexdigest()
+        expected_hashes=(original_sha256,) if isinstance(original_sha256,str) else original_sha256
+        if isinstance(original_sha256,dict) and actual_hash in original_sha256:
+            translated=original_sha256[actual_hash]
+        if actual_hash not in expected_hashes:
             if not allow_changed:raise ValueError(f'Text field alignment mismatched: {key}')
-            local_skipped[key]='original_text_changed'
-            out.extend(data[start:offset])
-            continue
+            # Recover only the exact lossy conversion seen in 0.9.102 text fields.
+            repairs=[candidate for candidate in alternatives if before==
+                     candidate[:-1].decode('cp1252','replace').encode('utf-8')+b'\0']
+            if len(repairs)!=1:
+                local_skipped[key]='original_text_changed'
+                out.extend(data[start:offset]);continue
+            translated=repairs[0]
+            repaired+=1
         if not translated.endswith(b'\0') or b'\0' in translated[:-1]:
             raise ValueError(f'Invalid translated text NUL terminator: {key}')
         try:target=translated[:-1].decode('utf-8')
@@ -76,9 +90,9 @@ def patch_subrecords(data:bytes,fid:int,typ:str,plan:dict,editor_ids:dict,seen:s
             raise ValueError(f'EditorID mismatch: {typ}:{fid:08X}: {found_edid!r} != {expected_edid!r}')
         # A reused FormID is NOT proof of identical content. Preserve the whole
         # incoming record instead of applying any of its apparently matching text.
-        return data,0,{key:'editor_id_changed' for key in candidates}
+        return data,0,{key:'editor_id_changed' for key in candidates},0,0
     seen.update(local_seen)
-    return bytes(out),modified,local_skipped
+    return bytes(out),modified,local_skipped,already,repaired
 
 
 def write_copy(source:Path,dest:Path,plan:dict,editor_ids:dict,*,allow_changed:bool=False)->dict:
@@ -137,8 +151,10 @@ def write_copy(source:Path,dest:Path,plan:dict,editor_ids:dict,*,allow_changed:b
                 unpacked=zlib.decompress(raw[4:])
                 if len(unpacked)!=uncompressed:raise ValueError('Compressed record content wrong size')
             else:unpacked=raw
-            changed,count,not_applied=patch_subrecords(
+            changed,count,not_applied,already,repaired=patch_subrecords(
                 unpacked,fid,typ,plan,editor_ids,seen,allow_changed=allow_changed)
+            stat['already_translated_fields']+=already
+            stat['repaired_mojibake_fields']+=repaired
             skipped.update(not_applied)
             skipped_occurrences.update(not_applied.values())
             for key,reason in not_applied.items():
@@ -167,6 +183,8 @@ def write_copy(source:Path,dest:Path,plan:dict,editor_ids:dict,*,allow_changed:b
     result=dict(stat)
     result['changed_fields']=stat['changed_fields']
     result['changed_records']=stat['changed_records']
+    result['already_translated_fields']=stat['already_translated_fields']
+    result['repaired_mojibake_fields']=stat['repaired_mojibake_fields']
     result['record_type_counts']=dict(record_types)
     result['source_land_sha256']=land_hash.hexdigest()
     result['unmatched_reasons']=dict(reasons)
